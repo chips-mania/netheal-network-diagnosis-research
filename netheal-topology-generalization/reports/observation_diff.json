@@ -1,0 +1,119 @@
+{
+  "seed": 42,
+  "ground_truth_fault": {
+    "type": "misconfiguration",
+    "location": "edge_0"
+  },
+  "snapshots": [
+    {
+      "label": "obs0_reset",
+      "discovery_nonzero": 0,
+      "discovery_sum": 0.0,
+      "device_status_nonzero": 0,
+      "device_status_sum": 0.0,
+      "recent_diagnostics_nonzero": 0,
+      "recent_diagnostics_sum": 0.0,
+      "metadata": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "obs_after_scan_network",
+      "discovery_nonzero": 9,
+      "discovery_sum": 9.0,
+      "device_status_nonzero": 0,
+      "device_status_sum": 0.0,
+      "recent_diagnostics_nonzero": 6,
+      "recent_diagnostics_sum": 4.579999923706055,
+      "metadata": [
+        0.06666667014360428,
+        0.06666667014360428,
+        1.0,
+        0.009999999776482582
+      ]
+    },
+    {
+      "label": "obs_after_ping",
+      "discovery_nonzero": 9,
+      "discovery_sum": 9.0,
+      "device_status_nonzero": 4,
+      "device_status_sum": 2.7200000286102295,
+      "recent_diagnostics_nonzero": 12,
+      "recent_diagnostics_sum": 9.059999465942383,
+      "metadata": [
+        0.13333334028720856,
+        0.13333334028720856,
+        1.0,
+        0.019999999552965164
+      ]
+    },
+    {
+      "label": "obs_after_check_interfaces",
+      "discovery_nonzero": 9,
+      "discovery_sum": 9.0,
+      "device_status_nonzero": 5,
+      "device_status_sum": 3.2200000286102295,
+      "recent_diagnostics_nonzero": 18,
+      "recent_diagnostics_sum": 13.319999694824219,
+      "metadata": [
+        0.20000000298023224,
+        0.20000000298023224,
+        1.0,
+        0.029999999329447746
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "action": "scan_network",
+      "action_id": 6,
+      "reward": -0.1,
+      "terminated": false,
+      "truncated": false,
+      "valid_action": true
+    },
+    {
+      "action": "ping",
+      "action_id": 7,
+      "reward": -0.1,
+      "terminated": false,
+      "truncated": false,
+      "valid_action": true
+    },
+    {
+      "action": "check_interfaces",
+      "action_id": 73,
+      "reward": -0.1,
+      "terminated": false,
+      "truncated": false,
+      "valid_action": true
+    }
+  ],
+  "deltas": [
+    {
+      "from": "obs0_reset",
+      "to": "obs_after_scan_network",
+      "discovery_nonzero_delta": 9,
+      "device_status_nonzero_delta": 0,
+      "recent_diagnostics_nonzero_delta": 6
+    },
+    {
+      "from": "obs_after_scan_network",
+      "to": "obs_after_ping",
+      "discovery_nonzero_delta": 0,
+      "device_status_nonzero_delta": 4,
+      "recent_diagnostics_nonzero_delta": 6
+    },
+    {
+      "from": "obs_after_ping",
+      "to": "obs_after_check_interfaces",
+      "discovery_nonzero_delta": 0,
+      "device_status_nonzero_delta": 1,
+      "recent_diagnostics_nonzero_delta": 6
+    }
+  ],
+  "observation_changes_after_tools": true
+}

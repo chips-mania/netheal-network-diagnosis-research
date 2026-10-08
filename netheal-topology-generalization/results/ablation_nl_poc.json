@@ -1,0 +1,502 @@
+{
+  "control_src": "masked_ppo_e3_control_star.zip",
+  "control_nl_sto": {
+    "deterministic": false,
+    "fault_names": [
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.04,
+      "macro_f1": 0.1098990556821882,
+      "avg_steps_all": 2.83,
+      "normalized_steps_all": 2.83,
+      "tool_cost_index": 0.2953833333333334,
+      "topology_coverage": 0.0,
+      "ttd_success": 3.75
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.17,
+      "location_accuracy": 0.22,
+      "exact_diagnosis_accuracy": 0.04
+    },
+    "per_fault_dsr": {
+      "device_failure": 0.0,
+      "performance_degradation": 0.12121212121212122,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "device_failure": {
+        "n": 34,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.058823529411764705
+      },
+      "performance_degradation": {
+        "n": 33,
+        "exact_n": 4,
+        "exact_consistent_n": 1,
+        "dsr": 0.12121212121212122,
+        "acquisition": 0.15151515151515152
+      },
+      "misconfiguration": {
+        "n": 33,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.06060606060606061
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.55,
+      "scan_then_diagnose": 0.55,
+      "shortcut_rate": 0.55
+    },
+    "avg_steps": 2.83,
+    "tool_use_before_dx": 0.43,
+    "evidence": {
+      "nonlink_episodes": 100,
+      "evidence_acquisition": 0.09,
+      "evidence_consistency": 0.1111111111111111,
+      "nonlink_dsr": 0.04,
+      "early_acquisition_count": 43,
+      "late_acquisition_count": 0
+    }
+  },
+  "control_nl_det": {
+    "deterministic": true,
+    "fault_names": [
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.09,
+      "macro_f1": 0.1398305084745763,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.33,
+      "location_accuracy": 0.47,
+      "exact_diagnosis_accuracy": 0.09
+    },
+    "per_fault_dsr": {
+      "device_failure": 0.0,
+      "performance_degradation": 0.2727272727272727,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "device_failure": {
+        "n": 34,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "performance_degradation": {
+        "n": 33,
+        "exact_n": 9,
+        "exact_consistent_n": 0,
+        "dsr": 0.2727272727272727,
+        "acquisition": 0.0
+      },
+      "misconfiguration": {
+        "n": 33,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx": 0.0,
+    "evidence": {
+      "nonlink_episodes": 100,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.09,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "nl_sto": {
+    "deterministic": false,
+    "fault_names": [
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.04,
+      "macro_f1": 0.0981585518102372,
+      "avg_steps_all": 2.65,
+      "normalized_steps_all": 2.65,
+      "tool_cost_index": 0.29659285714285727,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.16,
+      "location_accuracy": 0.3,
+      "exact_diagnosis_accuracy": 0.04
+    },
+    "per_fault_dsr": {
+      "device_failure": 0.0,
+      "performance_degradation": 0.12121212121212122,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "device_failure": {
+        "n": 34,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.058823529411764705
+      },
+      "performance_degradation": {
+        "n": 33,
+        "exact_n": 4,
+        "exact_consistent_n": 0,
+        "dsr": 0.12121212121212122,
+        "acquisition": 0.18181818181818182
+      },
+      "misconfiguration": {
+        "n": 33,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.030303030303030304
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.63,
+      "scan_then_diagnose": 0.63,
+      "shortcut_rate": 0.63
+    },
+    "avg_steps": 2.65,
+    "tool_use_before_dx": 0.34,
+    "evidence": {
+      "nonlink_episodes": 100,
+      "evidence_acquisition": 0.09,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.04,
+      "early_acquisition_count": 34,
+      "late_acquisition_count": 0
+    }
+  },
+  "nl_det": {
+    "deterministic": true,
+    "fault_names": [
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.09,
+      "macro_f1": 0.12406015037593984,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.33,
+      "location_accuracy": 0.37,
+      "exact_diagnosis_accuracy": 0.09
+    },
+    "per_fault_dsr": {
+      "device_failure": 0.0,
+      "performance_degradation": 0.2727272727272727,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "device_failure": {
+        "n": 34,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "performance_degradation": {
+        "n": 33,
+        "exact_n": 9,
+        "exact_consistent_n": 0,
+        "dsr": 0.2727272727272727,
+        "acquisition": 0.0
+      },
+      "misconfiguration": {
+        "n": 33,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx": 0.0,
+    "evidence": {
+      "nonlink_episodes": 100,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.09,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "nl_4_sto": {
+    "deterministic": false,
+    "fault_names": [
+      "link_failure",
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.03,
+      "macro_f1": 0.14395645645645647,
+      "avg_steps_all": 2.92,
+      "normalized_steps_all": 2.92,
+      "tool_cost_index": 0.2937587301587303,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.21,
+      "location_accuracy": 0.29,
+      "exact_diagnosis_accuracy": 0.03
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.08,
+      "device_failure": 0.0,
+      "performance_degradation": 0.04,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 2,
+        "exact_consistent_n": 0,
+        "dsr": 0.08,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.12
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 1,
+        "exact_consistent_n": 0,
+        "dsr": 0.04,
+        "acquisition": 0.24
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.58,
+      "scan_then_diagnose": 0.58,
+      "shortcut_rate": 0.58
+    },
+    "avg_steps": 2.92,
+    "tool_use_before_dx": 0.4666666666666667,
+    "evidence": {
+      "nonlink_episodes": 75,
+      "evidence_acquisition": 0.12,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.013333333333333334,
+      "early_acquisition_count": 35,
+      "late_acquisition_count": 0
+    }
+  },
+  "nl_4_det": {
+    "deterministic": true,
+    "fault_names": [
+      "link_failure",
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.11,
+      "macro_f1": 0.1875,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.3,
+      "location_accuracy": 0.44,
+      "exact_diagnosis_accuracy": 0.11
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.2,
+      "device_failure": 0.0,
+      "performance_degradation": 0.24,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 5,
+        "exact_consistent_n": 0,
+        "dsr": 0.2,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 6,
+        "exact_consistent_n": 0,
+        "dsr": 0.24,
+        "acquisition": 0.0
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx": 0.0,
+    "evidence": {
+      "nonlink_episodes": 75,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.08,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "control_4_det": {
+    "deterministic": true,
+    "fault_names": [
+      "link_failure",
+      "device_failure",
+      "performance_degradation",
+      "misconfiguration"
+    ],
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.2,
+      "macro_f1": 0.272366220735786,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.39,
+      "location_accuracy": 0.58,
+      "exact_diagnosis_accuracy": 0.2
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.56,
+      "device_failure": 0.0,
+      "performance_degradation": 0.24,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 14,
+        "exact_consistent_n": 0,
+        "dsr": 0.56,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 6,
+        "exact_consistent_n": 0,
+        "dsr": 0.24,
+        "acquisition": 0.0
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx": 0.0,
+    "evidence": {
+      "nonlink_episodes": 75,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.08,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "decision": {
+    "hypothesis_support": false,
+    "support_faults": [],
+    "nonlink_dsr_delta": 0.0,
+    "go": false,
+    "decision": "no_go",
+    "shortcut_same": true,
+    "perf_up": false,
+    "rule": "Go if Device/Misconfig det exact>=2 and exact-consistent>=2 AND NL DSR +5%p (det)"
+  }
+}

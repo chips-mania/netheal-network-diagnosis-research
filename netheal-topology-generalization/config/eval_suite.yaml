@@ -1,0 +1,20 @@
+# Evaluation suite seeds (topology × fault × episode index)
+# episode_seed = base + episode_index
+
+seen:
+  star:
+    base_seed: 100000
+  linear:
+    base_seed: 200000
+
+unseen:
+  mesh:
+    M1:
+      base_seed: 300000
+      instance_seed: 90001
+    M2:
+      base_seed: 310000
+      instance_seed: 90002
+    M3:
+      base_seed: 320000
+      instance_seed: 90003

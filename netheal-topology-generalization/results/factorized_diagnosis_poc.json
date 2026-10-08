@@ -1,0 +1,169 @@
+{
+  "smoke": {
+    "post_scan_type_actions": 4,
+    "type_commit_terminated": false,
+    "type_commit_reward": -0.1,
+    "type_commit_phase": "type_commit",
+    "committed_type": "device_failure",
+    "post_commit_location_actions": 6,
+    "expected_locations": 6,
+    "obs_has_committed_type": true,
+    "ok": true
+  },
+  "control": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.12,
+      "macro_f1": 0.059405940594059396,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7364999999999997,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "link_failure": 76,
+        "performance_degradation": 24
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.48,
+        "device_failure": 0.0,
+        "performance_degradation": 0.0,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "performance_degradation": 13,
+          "link_failure": 12
+        },
+        "device_failure": {
+          "link_failure": 25
+        },
+        "performance_degradation": {
+          "link_failure": 25
+        },
+        "misconfiguration": {
+          "link_failure": 14,
+          "performance_degradation": 11
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.12,
+      "location_accuracy": 0.55,
+      "exact_diagnosis_accuracy": 0.12
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.48,
+      "device_failure": 0.0,
+      "performance_degradation": 0.0,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0,
+      "factorized_shortcut_rate": 0.0,
+      "type_then_location_rate": 0.0
+    }
+  },
+  "variant": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.0,
+      "macro_f1": 0.0,
+      "avg_steps_all": 15.0,
+      "normalized_steps_all": 15.0,
+      "tool_cost_index": 0.21473333333333347,
+      "topology_coverage": 0.0,
+      "ttd_success": null
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 15.0,
+      "avg_tool_actions_before_diagnosis_success_only": null,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 1.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.09,
+      "check_interfaces_usage_rate": 0.15,
+      "action_type_frequency": {
+        "ping": 1341,
+        "scan_network": 100,
+        "check_interfaces": 36,
+        "check_status": 15,
+        "discover_neighbors": 8
+      },
+      "action_category_frequency": {
+        "diagnostic": 1392,
+        "topology_discovery": 108
+      },
+      "predicted_diagnosis_distribution": {},
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.0,
+        "device_failure": 0.0,
+        "performance_degradation": 0.0,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {}
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.0,
+      "location_accuracy": 0.0,
+      "exact_diagnosis_accuracy": 0.0
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.0,
+      "device_failure": 0.0,
+      "performance_degradation": 0.0,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0,
+      "factorized_shortcut_rate": 0.0,
+      "type_then_location_rate": 0.0
+    }
+  },
+  "assessment": {
+    "dsr_delta": -0.12,
+    "shortcut_control": 1.0,
+    "shortcut_factorized": 0.0,
+    "factorized_shortcut_rate": 0.0,
+    "nonlink_improved": 0,
+    "uses_tools": false,
+    "verdict": "diagnosis_avoidance_collapse",
+    "next_step": "Policy never submits type or location; timeout (-1.5) beats a wrong diagnosis (~-16). Do not scale 100k or Mesh on factorization alone."
+  }
+}

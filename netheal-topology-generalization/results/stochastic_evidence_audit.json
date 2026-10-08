@@ -1,0 +1,504 @@
+{
+  "control": {
+    "n": 400,
+    "n_tool_use": 144,
+    "n_phi": 41,
+    "p_tool_use": 0.36,
+    "p_phi": 0.1025,
+    "p_phi_given_tool": 0.2847222222222222,
+    "p_exact_cons_given_tool": 0.006944444444444444,
+    "p_exact_cons_given_phi": 0.024390243902439025,
+    "n_exact_consistent": 1,
+    "per_fault": {
+      "device_failure": {
+        "n": 134,
+        "tool": 52,
+        "phi": 21,
+        "exact_cons": 0
+      },
+      "performance_degradation": {
+        "n": 133,
+        "tool": 46,
+        "phi": 15,
+        "exact_cons": 1
+      },
+      "misconfiguration": {
+        "n": 133,
+        "tool": 46,
+        "phi": 5,
+        "exact_cons": 0
+      }
+    }
+  },
+  "ablation_nl": {
+    "n": 400,
+    "n_tool_use": 148,
+    "n_phi": 37,
+    "p_tool_use": 0.37,
+    "p_phi": 0.0925,
+    "p_phi_given_tool": 0.25,
+    "p_exact_cons_given_tool": 0.006756756756756757,
+    "p_exact_cons_given_phi": 0.02702702702702703,
+    "n_exact_consistent": 1,
+    "per_fault": {
+      "device_failure": {
+        "n": 134,
+        "tool": 54,
+        "phi": 10,
+        "exact_cons": 0
+      },
+      "performance_degradation": {
+        "n": 133,
+        "tool": 43,
+        "phi": 17,
+        "exact_cons": 1
+      },
+      "misconfiguration": {
+        "n": 133,
+        "tool": 51,
+        "phi": 10,
+        "exact_cons": 0
+      }
+    }
+  },
+  "probes_control": [
+    {
+      "label": "device_edge0_ping_to_gt",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_0": "DeviceStatus.DOWN"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 0,
+      "tool_success": false,
+      "tool_latency_ms": null,
+      "tool_error": "Destination device edge_0 is unreachable",
+      "tv_diagnosis": 0.036902137100696564,
+      "p_correct_scan": 0.00037364126183092594,
+      "p_correct_after_tool": 0.0004349750524852425,
+      "argmax_scan": 102,
+      "argmax_after": 102
+    },
+    {
+      "label": "device_edge0_ping_healthy_pair",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 0,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_1": "DeviceStatus.UP",
+        "edge_2": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 6.17,
+      "tool_error": null,
+      "tv_diagnosis": 0.07628177106380463,
+      "p_correct_scan": 0.00037364126183092594,
+      "p_correct_after_tool": 0.0005054718931205571,
+      "argmax_scan": 102,
+      "argmax_after": 95
+    },
+    {
+      "label": "device_edge0_check_status",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_0": "DeviceStatus.DOWN"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 0,
+      "tool_success": true,
+      "tool_latency_ms": null,
+      "tool_error": null,
+      "tv_diagnosis": 0.06822199374437332,
+      "p_correct_scan": 0.00037364126183092594,
+      "p_correct_after_tool": 0.0004376548167783767,
+      "argmax_scan": 102,
+      "argmax_after": 95
+    },
+    {
+      "label": "perf_center_edge0_ping",
+      "gt_type": "performance_degradation",
+      "gt_loc": "center->edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "center": "DeviceStatus.UP",
+        "edge_0": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 20.65,
+      "tool_error": null,
+      "tv_diagnosis": 0.08763447403907776,
+      "p_correct_scan": 0.06364618241786957,
+      "p_correct_after_tool": 0.05237848870456219,
+      "argmax_scan": 102,
+      "argmax_after": 95
+    },
+    {
+      "label": "misconfig_edge0_ping_to_gt",
+      "gt_type": "misconfiguration",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 0,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_1": "DeviceStatus.UP",
+        "edge_0": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 5.43,
+      "tool_error": null,
+      "tv_diagnosis": 0.06850968301296234,
+      "p_correct_scan": 0.0005664742784574628,
+      "p_correct_after_tool": 0.0007197713712230325,
+      "argmax_scan": 102,
+      "argmax_after": 101
+    }
+  ],
+  "probes_nl": [
+    {
+      "label": "device_edge0_ping_to_gt",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_0": "DeviceStatus.DOWN"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 0,
+      "tool_success": false,
+      "tool_latency_ms": null,
+      "tool_error": "Destination device edge_0 is unreachable",
+      "tv_diagnosis": 0.0998511016368866,
+      "p_correct_scan": 0.0004032356955576688,
+      "p_correct_after_tool": 0.0008904374553821981,
+      "argmax_scan": 102,
+      "argmax_after": 102
+    },
+    {
+      "label": "device_edge0_ping_healthy_pair",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 0,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_1": "DeviceStatus.UP",
+        "edge_2": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 6.17,
+      "tool_error": null,
+      "tv_diagnosis": 0.1787024736404419,
+      "p_correct_scan": 0.0004032356955576688,
+      "p_correct_after_tool": 0.001846725819632411,
+      "argmax_scan": 102,
+      "argmax_after": 92
+    },
+    {
+      "label": "device_edge0_check_status",
+      "gt_type": "device_failure",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_0": "DeviceStatus.DOWN"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 0,
+      "tool_success": true,
+      "tool_latency_ms": null,
+      "tool_error": null,
+      "tv_diagnosis": 0.1438780128955841,
+      "p_correct_scan": 0.0004032356955576688,
+      "p_correct_after_tool": 0.0012344999704509974,
+      "argmax_scan": 102,
+      "argmax_after": 92
+    },
+    {
+      "label": "perf_center_edge0_ping",
+      "gt_type": "performance_degradation",
+      "gt_loc": "center->edge_0",
+      "phi_after_tool": 2,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "center": "DeviceStatus.UP",
+        "edge_0": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 20.65,
+      "tool_error": null,
+      "tv_diagnosis": 0.17038097977638245,
+      "p_correct_scan": 0.08418152295053005,
+      "p_correct_after_tool": 0.09632738307118416,
+      "argmax_scan": 102,
+      "argmax_after": 92
+    },
+    {
+      "label": "misconfig_edge0_ping_to_gt",
+      "gt_type": "misconfiguration",
+      "gt_loc": "edge_0",
+      "phi_after_tool": 0,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      },
+      "device_status_feat0_changed": false,
+      "device_status_feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_status_feat0_after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "internal_status_scan": {},
+      "internal_status_after": {
+        "edge_1": "DeviceStatus.UP",
+        "edge_0": "DeviceStatus.UP"
+      },
+      "connection_properties_in_obs": false,
+      "n_connection_properties_internal": 1,
+      "tool_success": true,
+      "tool_latency_ms": 5.43,
+      "tool_error": null,
+      "tv_diagnosis": 0.1434372514486313,
+      "p_correct_scan": 0.0006031605298630893,
+      "p_correct_after_tool": 0.0014303895877674222,
+      "argmax_scan": 102,
+      "argmax_after": 92
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "unit_tests": {
+    "1": "ok",
+    "2": "ok",
+    "3": "ok",
+    "4": "ok",
+    "5": "ok",
+    "6": "ok",
+    "7": "ok",
+    "8": "ok"
+  },
+  "control": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.07,
+      "macro_f1": 0.15229215229215226,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "performance_degradation": 92,
+        "link_failure": 8
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.12,
+        "device_failure": 0.0,
+        "performance_degradation": 0.16,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "performance_degradation": 22,
+          "link_failure": 3
+        },
+        "device_failure": {
+          "performance_degradation": 25
+        },
+        "performance_degradation": {
+          "performance_degradation": 25
+        },
+        "misconfiguration": {
+          "performance_degradation": 20,
+          "link_failure": 5
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.28,
+      "location_accuracy": 0.57,
+      "exact_diagnosis_accuracy": 0.07
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.12,
+      "device_failure": 0.0,
+      "performance_degradation": 0.16,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "evidence": {
+      "nonlink_episodes": 75,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.05333333333333334,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "variant": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.07,
+      "macro_f1": 0.15603044496487117,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 2.0,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.0,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "performance_degradation": 97,
+        "link_failure": 3
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.12,
+        "device_failure": 0.0,
+        "performance_degradation": 0.16,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "performance_degradation": 22,
+          "link_failure": 3
+        },
+        "device_failure": {
+          "performance_degradation": 25
+        },
+        "performance_degradation": {
+          "performance_degradation": 25
+        },
+        "misconfiguration": {
+          "performance_degradation": 25
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.28,
+      "location_accuracy": 0.33,
+      "exact_diagnosis_accuracy": 0.07
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.12,
+      "device_failure": 0.0,
+      "performance_degradation": 0.16,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "evidence": {
+      "nonlink_episodes": 75,
+      "evidence_acquisition": 0.0,
+      "evidence_consistency": 0.0,
+      "nonlink_dsr": 0.05333333333333334,
+      "early_acquisition_count": 0,
+      "late_acquisition_count": 0
+    }
+  },
+  "go_nogo": {
+    "nonlink_dsr_delta": 0.0,
+    "acquisition_delta": 0.0,
+    "nogo": true,
+    "decision": "no_go",
+    "rule": "No-Go if non-link DSR \u0394 < +3%p AND Evidence Acquisition \u0394 < +5%p"
+  },
+  "assessment": {
+    "nonlink_dsr_delta": 0.0,
+    "consistency_delta": 0.0,
+    "link_dsr_delta": 0.0,
+    "link_only_pattern": false,
+    "verdict": "no_go_seed1",
+    "next_step": "Dense credit alone did not move non-link / acquisition. Hold seed 2/3. Consider E2."
+  }
+}

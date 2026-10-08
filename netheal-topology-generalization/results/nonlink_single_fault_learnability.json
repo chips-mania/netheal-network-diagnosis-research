@@ -1,0 +1,302 @@
+{
+  "results": [
+    {
+      "fault_type": "device_failure",
+      "alias": "D",
+      "ppo_stats": {
+        "episodes": 100,
+        "dsr": 0.0,
+        "macro_f1": 0.0,
+        "avg_steps_all": 3.44,
+        "normalized_steps_all": 0.22933333333333322,
+        "tool_cost_index": 0.2740833333333333,
+        "topology_coverage": 0.75,
+        "ttd_success": null
+      },
+      "rv_stats": {
+        "episodes": 100,
+        "dsr": 0.01,
+        "macro_f1": 0.041284403669724766,
+        "avg_steps_all": 15.0,
+        "normalized_steps_all": 1.0,
+        "tool_cost_index": 0.2803333333333334,
+        "topology_coverage": 0.7990000000000007,
+        "ttd_success": 15.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 0.0,
+        "invalid_action_rate": 0.0,
+        "avg_tool_actions_before_diagnosis": 2.44,
+        "avg_tool_actions_before_diagnosis_success_only": null,
+        "scan_usage_rate": 1.0,
+        "ping_usage_rate": 1.0,
+        "traceroute_usage_rate": 0.15,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.29,
+        "action_type_frequency": {
+          "scan_network": 100,
+          "ping": 100,
+          "check_interfaces": 29,
+          "traceroute": 15
+        },
+        "action_category_frequency": {
+          "diagnostic": 144,
+          "topology_discovery": 100,
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "performance_degradation": 100
+        },
+        "actual_fault_distribution": {
+          "device_failure": 100
+        },
+        "fault_type_dsr": {
+          "device_failure": 0.0
+        },
+        "confusion_matrix": {
+          "device_failure": {
+            "performance_degradation": 100
+          }
+        }
+      },
+      "location_analysis": {
+        "actual_location_distribution": {
+          "edge_1": 23,
+          "edge_4": 22,
+          "edge_0": 18,
+          "center": 15,
+          "edge_2": 11,
+          "edge_3": 11
+        },
+        "predicted_location_distribution": {
+          "edge_4->edge_0": 85,
+          "center->edge_0": 15
+        },
+        "unique_predicted_locations": 2
+      },
+      "learnability": {
+        "verdict": "no_valid_policy_30k",
+        "dsr": 0.0,
+        "dsr_margin_vs_random": -0.01,
+        "avg_steps": 3.44,
+        "tool_before_diagnosis": 2.44,
+        "tool_usage_rate_max": 1.0,
+        "scan_usage": 1.0,
+        "ping_usage": 1.0,
+        "traceroute_usage": 0.15,
+        "check_status_usage": 0.0,
+        "check_interfaces_usage": 0.29
+      },
+      "ttd_success": null
+    },
+    {
+      "fault_type": "performance_degradation",
+      "alias": "P",
+      "ppo_stats": {
+        "episodes": 100,
+        "dsr": 0.19,
+        "macro_f1": 0.25,
+        "avg_steps_all": 2.0,
+        "normalized_steps_all": 0.13333333333333308,
+        "tool_cost_index": 0.30000000000000027,
+        "topology_coverage": 0.75,
+        "ttd_success": 2.0
+      },
+      "rv_stats": {
+        "episodes": 100,
+        "dsr": 0.01,
+        "macro_f1": 0.14028776978417265,
+        "avg_steps_all": 15.0,
+        "normalized_steps_all": 1.0,
+        "tool_cost_index": 0.2803333333333334,
+        "topology_coverage": 0.8245000000000009,
+        "ttd_success": 15.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 0.0,
+        "invalid_action_rate": 0.0,
+        "avg_tool_actions_before_diagnosis": 1.0,
+        "avg_tool_actions_before_diagnosis_success_only": 1.0,
+        "scan_usage_rate": 1.0,
+        "ping_usage_rate": 0.0,
+        "traceroute_usage_rate": 0.0,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.0,
+        "action_type_frequency": {
+          "scan_network": 100
+        },
+        "action_category_frequency": {
+          "topology_discovery": 100,
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "performance_degradation": 100
+        },
+        "actual_fault_distribution": {
+          "performance_degradation": 100
+        },
+        "fault_type_dsr": {
+          "performance_degradation": 0.19
+        },
+        "confusion_matrix": {
+          "performance_degradation": {
+            "performance_degradation": 100
+          }
+        }
+      },
+      "location_analysis": {
+        "actual_location_distribution": {
+          "edge_0->center": 16,
+          "center->edge_4": 13,
+          "center->edge_2": 12,
+          "edge_1->center": 10,
+          "center->edge_1": 9,
+          "edge_2->center": 9,
+          "center->edge_0": 8,
+          "edge_4->center": 8,
+          "center->edge_3": 8,
+          "edge_3->center": 7
+        },
+        "predicted_location_distribution": {
+          "edge_1->center": 100
+        },
+        "unique_predicted_locations": 1
+      },
+      "learnability": {
+        "verdict": "no_valid_policy_30k",
+        "dsr": 0.19,
+        "dsr_margin_vs_random": 0.18,
+        "avg_steps": 2.0,
+        "tool_before_diagnosis": 1.0,
+        "tool_usage_rate_max": 0.0,
+        "scan_usage": 1.0,
+        "ping_usage": 0.0,
+        "traceroute_usage": 0.0,
+        "check_status_usage": 0.0,
+        "check_interfaces_usage": 0.0
+      },
+      "ttd_success": 2.0
+    },
+    {
+      "fault_type": "misconfiguration",
+      "alias": "M",
+      "ppo_stats": {
+        "episodes": 100,
+        "dsr": 0.22,
+        "macro_f1": 0.09016393442622951,
+        "avg_steps_all": 2.0,
+        "normalized_steps_all": 0.13333333333333308,
+        "tool_cost_index": 0.30000000000000027,
+        "topology_coverage": 0.7424999999999998,
+        "ttd_success": 2.0
+      },
+      "rv_stats": {
+        "episodes": 100,
+        "dsr": 0.02,
+        "macro_f1": 0.05357142857142856,
+        "avg_steps_all": 15.0,
+        "normalized_steps_all": 1.0,
+        "tool_cost_index": 0.2803333333333334,
+        "topology_coverage": 0.8185000000000009,
+        "ttd_success": 15.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 0.0,
+        "invalid_action_rate": 0.0,
+        "avg_tool_actions_before_diagnosis": 1.0,
+        "avg_tool_actions_before_diagnosis_success_only": 1.0,
+        "scan_usage_rate": 1.0,
+        "ping_usage_rate": 0.0,
+        "traceroute_usage_rate": 0.0,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.0,
+        "action_type_frequency": {
+          "scan_network": 100
+        },
+        "action_category_frequency": {
+          "topology_discovery": 100,
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "performance_degradation": 40,
+          "link_failure": 38,
+          "misconfiguration": 22
+        },
+        "actual_fault_distribution": {
+          "misconfiguration": 100
+        },
+        "fault_type_dsr": {
+          "misconfiguration": 0.22
+        },
+        "confusion_matrix": {
+          "misconfiguration": {
+            "misconfiguration": 22,
+            "link_failure": 38,
+            "performance_degradation": 40
+          }
+        }
+      },
+      "location_analysis": {
+        "actual_location_distribution": {
+          "edge_1": 23,
+          "edge_4": 22,
+          "edge_0": 18,
+          "center": 15,
+          "edge_2": 11,
+          "edge_3": 11
+        },
+        "predicted_location_distribution": {
+          "edge_1->center": 38,
+          "edge_4->center": 22,
+          "edge_0->center": 18,
+          "edge_2": 11,
+          "edge_3": 11
+        },
+        "unique_predicted_locations": 5
+      },
+      "learnability": {
+        "verdict": "no_valid_policy_30k",
+        "dsr": 0.22,
+        "dsr_margin_vs_random": 0.2,
+        "avg_steps": 2.0,
+        "tool_before_diagnosis": 1.0,
+        "tool_usage_rate_max": 0.0,
+        "scan_usage": 1.0,
+        "ping_usage": 0.0,
+        "traceroute_usage": 0.0,
+        "check_status_usage": 0.0,
+        "check_interfaces_usage": 0.0
+      },
+      "ttd_success": 2.0
+    }
+  ],
+  "diagnosis_decomposition": {
+    "device_failure": {
+      "fault_type_accuracy": 0.0,
+      "location_accuracy": 0.55,
+      "exact_diagnosis_accuracy": 0.0
+    },
+    "performance_degradation": {
+      "fault_type_accuracy": 1.0,
+      "location_accuracy": 0.19,
+      "exact_diagnosis_accuracy": 0.19
+    },
+    "misconfiguration": {
+      "fault_type_accuracy": 0.22,
+      "location_accuracy": 1.0,
+      "exact_diagnosis_accuracy": 0.22
+    }
+  },
+  "overall": {
+    "case": "no_valid_policy_under_current_settings",
+    "valid_policy_count": 0,
+    "partial_count": 0,
+    "no_valid_policy_count": 3,
+    "next_step": "Do not run multi-fault 100k yet. Run Step 9.10 solvability audit to separate environment evidence limits from RL learning limits.",
+    "wording": "Under current settings (MaskablePPO, 30k, seed 1), no valid troubleshooting policy was learned for the three non-link faults. This does NOT yet prove the faults are unsolvable \u2014 only that PPO did not learn effective policies in this run."
+  },
+  "link_reference": {
+    "dsr": 1.0,
+    "avg_steps": 2.0
+  }
+}

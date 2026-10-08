@@ -1,0 +1,9 @@
+[submodule "netheal-ai-agent-benchmark"]
+	path = netheal-ai-agent-benchmark
+	url = https://github.com/cisco-ai-platform/netheal-ai-agent-benchmark.git
+[submodule "OutlierDenStream-BigDama18"]
+	path = OutlierDenStream-BigDama18
+	url = https://github.com/anrputina/OutlierDenStream-BigDama18.git
+[submodule "telemetry"]
+	path = telemetry
+	url = https://github.com/cisco-ie/telemetry.git

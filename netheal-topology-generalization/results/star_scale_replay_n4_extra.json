@@ -1,0 +1,259 @@
+{
+  "ft4_losses": [
+    1.2832222010778345,
+    1.057214818570925,
+    0.8939665815104609,
+    0.770991076161896,
+    0.678762593779011,
+    0.6020367158495862,
+    0.5372218874053679,
+    0.4648854976546937,
+    0.416703429127085,
+    0.38100362623083417,
+    0.3494811379823132,
+    0.3266174916339957,
+    0.3050047206705895,
+    0.2867011733461117,
+    0.27275305446507275
+  ],
+  "ft4_n4": {
+    "exact": 0.77,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 16,
+        "exact_consistent_n": 16,
+        "dsr": 0.64,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 22,
+        "dsr": 0.96,
+        "acquisition": 0.88
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 12,
+        "exact_consistent_n": 8,
+        "dsr": 0.48,
+        "acquisition": 0.32
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.0,
+    "avg_steps": 4.88
+  },
+  "ft4_n6": {
+    "exact": 0.94,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 22,
+        "exact_consistent_n": 0,
+        "dsr": 0.88,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 22,
+        "dsr": 0.96,
+        "acquisition": 0.88
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 23,
+        "exact_consistent_n": 23,
+        "dsr": 0.92,
+        "acquisition": 0.92
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.01,
+    "avg_steps": 5.84
+  },
+  "ft4_n8": {
+    "exact": 0.62,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 11,
+        "exact_consistent_n": 0,
+        "dsr": 0.44,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 15,
+        "exact_consistent_n": 15,
+        "dsr": 0.6,
+        "acquisition": 0.6
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 18,
+        "exact_consistent_n": 18,
+        "dsr": 0.72,
+        "acquisition": 0.72
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 18,
+        "exact_consistent_n": 16,
+        "dsr": 0.72,
+        "acquisition": 0.64
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.18,
+    "avg_steps": 7.55
+  },
+  "ft4_n10": {
+    "exact": 0.41,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 6,
+        "exact_consistent_n": 0,
+        "dsr": 0.24,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 12,
+        "exact_consistent_n": 12,
+        "dsr": 0.48,
+        "acquisition": 0.48
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 13,
+        "exact_consistent_n": 12,
+        "dsr": 0.52,
+        "acquisition": 0.48
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 10,
+        "exact_consistent_n": 9,
+        "dsr": 0.4,
+        "acquisition": 0.44
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.31,
+    "avg_steps": 9.07
+  },
+  "zero_n4": {
+    "exact": 0.22,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.24
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 9,
+        "exact_consistent_n": 0,
+        "dsr": 0.36,
+        "acquisition": 0.0
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 13,
+        "exact_consistent_n": 0,
+        "dsr": 0.52,
+        "acquisition": 0.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.0,
+    "avg_steps": 4.15
+  },
+  "rule_n4": {
+    "exact": 1.0,
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 21,
+        "dsr": 1.0,
+        "acquisition": 0.84
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.0,
+    "avg_steps": 5.06
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "decision": "weight_helps_oversample_adds",
+  "claim": "Weight-only helps but undershoots Generic; oversampling still contributes to the full gain.",
+  "losses": [
+    0.0051052456940449825,
+    0.0027747574456550993,
+    0.0010616230048219942,
+    0.001072664687621169,
+    0.001714107523065819,
+    0.0008756282932312769,
+    0.0004030178643019585,
+    0.00034356482306753435,
+    0.05182583485627092,
+    0.0018599952927404449,
+    0.001082089396562836,
+    0.0008310500384669827,
+    0.0006801868794989491,
+    0.0005809923813801508,
+    0.0005217783188559118,
+    0.0005585566298916177,
+    0.0003699658813867393,
+    0.0003285641078856463,
+    0.00040452122088619185,
+    0.0004455781397451193,
+    0.00022878257397921918,
+    0.0002468641073365625,
+    0.0471020970253237,
+    0.004263874059067221,
+    0.0021886427070015534,
+    0.0021999429094606503,
+    0.0009525394055418834,
+    0.0006991524150241314,
+    0.0005534334533750066,
+    0.0005434436452190333,
+    0.0004499037545534774,
+    0.0006436974479909221,
+    0.0005463863883294327,
+    0.0003401385505809273,
+    0.00027411416099206435,
+    0.0002535008830860999,
+    0.00021325352531147113,
+    0.0001987598742331567,
+    0.00019945576874242973,
+    0.0002844658106897801
+  ],
+  "b_exact": {
+    "6": 1.0,
+    "8": 0.86,
+    "10": 0.61
+  },
+  "b_per_fault": {
+    "6": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 21,
+        "dsr": 1.0,
+        "acquisition": 0.84
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      }
+    },
+    "8": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 22,
+        "dsr": 0.96,
+        "acquisition": 0.88
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 12,
+        "exact_consistent_n": 12,
+        "dsr": 0.48,
+        "acquisition": 0.48
+      }
+    },
+    "10": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 17,
+        "exact_consistent_n": 0,
+        "dsr": 0.68,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 17,
+        "exact_consistent_n": 17,
+        "dsr": 0.68,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 24,
+        "dsr": 1.0,
+        "acquisition": 0.96
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 2,
+        "exact_consistent_n": 2,
+        "dsr": 0.08,
+        "acquisition": 0.08
+      }
+    }
+  },
+  "quality": {
+    "baseline": {
+      "8": {
+        "n_devices": 8,
+        "exact": 0.91,
+        "timeout": 0.09,
+        "ready_commit_rate": 0.4945652173913043,
+        "ready_steps": 184,
+        "premature_among_diag": 0.0,
+        "diag_steps": 91,
+        "premature_episode_rate": 0.0,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.64,
+            "timeout": 0.36,
+            "premature_ep": 0.0
+          }
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "exact": 0.45,
+        "timeout": 0.55,
+        "ready_commit_rate": 0.087890625,
+        "ready_steps": 512,
+        "premature_among_diag": 0.0,
+        "diag_steps": 45,
+        "premature_episode_rate": 0.0,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 0.0,
+            "timeout": 1.0,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 0.8,
+            "timeout": 0.2,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.0,
+            "timeout": 1.0,
+            "premature_ep": 0.0
+          }
+        }
+      }
+    },
+    "B_wonly": {
+      "8": {
+        "n_devices": 8,
+        "exact": 0.87,
+        "timeout": 0.12,
+        "ready_commit_rate": 0.5918367346938775,
+        "ready_steps": 147,
+        "premature_among_diag": 0.011363636363636364,
+        "diag_steps": 88,
+        "premature_episode_rate": 0.01,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.48,
+            "timeout": 0.48,
+            "premature_ep": 0.04
+          }
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "exact": 0.76,
+        "timeout": 0.22,
+        "ready_commit_rate": 0.5342465753424658,
+        "ready_steps": 146,
+        "premature_among_diag": 0.0,
+        "diag_steps": 78,
+        "premature_episode_rate": 0.0,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 0.8,
+            "timeout": 0.12,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 0.8,
+            "timeout": 0.2,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.44,
+            "timeout": 0.56,
+            "premature_ep": 0.0
+          }
+        }
+      }
+    },
+    "generic": {
+      "8": {
+        "n_devices": 8,
+        "exact": 0.87,
+        "timeout": 0.09,
+        "ready_commit_rate": 0.5918367346938775,
+        "ready_steps": 147,
+        "premature_among_diag": 0.04395604395604396,
+        "diag_steps": 91,
+        "premature_episode_rate": 0.04,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.48,
+            "timeout": 0.36,
+            "premature_ep": 0.16
+          }
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "exact": 0.7,
+        "timeout": 0.27,
+        "ready_commit_rate": 0.9605263157894737,
+        "ready_steps": 76,
+        "premature_among_diag": 0.0,
+        "diag_steps": 73,
+        "premature_episode_rate": 0.0,
+        "by_fault": {
+          "link_failure": {
+            "n": 25,
+            "exact": 0.88,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "device_failure": {
+            "n": 25,
+            "exact": 0.84,
+            "timeout": 0.16,
+            "premature_ep": 0.0
+          },
+          "performance_degradation": {
+            "n": 25,
+            "exact": 1.0,
+            "timeout": 0.0,
+            "premature_ep": 0.0
+          },
+          "misconfiguration": {
+            "n": 25,
+            "exact": 0.08,
+            "timeout": 0.92,
+            "premature_ep": 0.0
+          }
+        }
+      }
+    }
+  },
+  "baseline_exact": {
+    "6": 1.0,
+    "8": 0.9,
+    "10": 0.42
+  },
+  "generic_exact": {
+    "6": 1.0,
+    "8": 0.86,
+    "10": 0.66
+  }
+}

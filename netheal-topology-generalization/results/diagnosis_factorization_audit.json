@@ -1,0 +1,369 @@
+{
+  "audit": {
+    "network_seed": 42,
+    "anchor": "edge_0",
+    "reward_grids": {
+      "link_failure": {
+        "ground_truth_type": "link_failure",
+        "ground_truth_location": "center->edge_0",
+        "network_size": 6,
+        "scaling_multiplier": 1.6,
+        "full_reward_base": 10.0,
+        "penalty_base": -10.0,
+        "cases": [
+          {
+            "case": "type_ok_loc_ok",
+            "predicted_type": "link_failure",
+            "predicted_location": "center->edge_0",
+            "action_id": 91,
+            "type_correct": true,
+            "location_correct": true,
+            "exact_correct": true,
+            "total_reward": 15.9,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_ok_loc_wrong",
+            "predicted_type": "link_failure",
+            "predicted_location": "center->edge_1",
+            "action_id": 93,
+            "type_correct": true,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": 2.3000000000000003,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 2.4000000000000004
+            }
+          },
+          {
+            "case": "type_wrong_loc_ok",
+            "predicted_type": "performance_degradation",
+            "predicted_location": "center->edge_0",
+            "action_id": 92,
+            "type_correct": false,
+            "location_correct": true,
+            "exact_correct": false,
+            "total_reward": 4.700000000000001,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 4.800000000000001
+            }
+          },
+          {
+            "case": "both_wrong",
+            "predicted_type": "device_failure",
+            "predicted_location": "edge_3",
+            "action_id": 87,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          }
+        ]
+      },
+      "device_failure": {
+        "ground_truth_type": "device_failure",
+        "ground_truth_location": "edge_0",
+        "network_size": 6,
+        "scaling_multiplier": 1.6,
+        "full_reward_base": 10.0,
+        "penalty_base": -10.0,
+        "cases": [
+          {
+            "case": "type_ok_loc_ok",
+            "predicted_type": "device_failure",
+            "predicted_location": "edge_0",
+            "action_id": 81,
+            "type_correct": true,
+            "location_correct": true,
+            "exact_correct": true,
+            "total_reward": 15.9,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_ok_loc_wrong",
+            "predicted_type": "device_failure",
+            "predicted_location": "edge_1",
+            "action_id": 83,
+            "type_correct": true,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_wrong_loc_ok",
+            "predicted_type": "performance_degradation",
+            "predicted_location": "center->edge_0",
+            "action_id": 92,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": 4.700000000000001,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 4.800000000000001
+            }
+          },
+          {
+            "case": "both_wrong",
+            "predicted_type": "link_failure",
+            "predicted_location": "center->edge_3",
+            "action_id": 97,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          }
+        ]
+      },
+      "performance_degradation": {
+        "ground_truth_type": "performance_degradation",
+        "ground_truth_location": "center->edge_0",
+        "network_size": 6,
+        "scaling_multiplier": 1.6,
+        "full_reward_base": 10.0,
+        "penalty_base": -10.0,
+        "cases": [
+          {
+            "case": "type_ok_loc_ok",
+            "predicted_type": "performance_degradation",
+            "predicted_location": "center->edge_0",
+            "action_id": 92,
+            "type_correct": true,
+            "location_correct": true,
+            "exact_correct": true,
+            "total_reward": 15.9,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_ok_loc_wrong",
+            "predicted_type": "performance_degradation",
+            "predicted_location": "center->edge_2",
+            "action_id": 96,
+            "type_correct": true,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": 2.3000000000000003,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 2.4000000000000004
+            }
+          },
+          {
+            "case": "type_wrong_loc_ok",
+            "predicted_type": "link_failure",
+            "predicted_location": "center->edge_0",
+            "action_id": 91,
+            "type_correct": false,
+            "location_correct": true,
+            "exact_correct": false,
+            "total_reward": 4.700000000000001,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 4.800000000000001
+            }
+          },
+          {
+            "case": "both_wrong",
+            "predicted_type": "device_failure",
+            "predicted_location": "edge_3",
+            "action_id": 87,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          }
+        ]
+      },
+      "misconfiguration": {
+        "ground_truth_type": "misconfiguration",
+        "ground_truth_location": "edge_0",
+        "network_size": 6,
+        "scaling_multiplier": 1.6,
+        "full_reward_base": 10.0,
+        "penalty_base": -10.0,
+        "cases": [
+          {
+            "case": "type_ok_loc_ok",
+            "predicted_type": "misconfiguration",
+            "predicted_location": "edge_0",
+            "action_id": 82,
+            "type_correct": true,
+            "location_correct": true,
+            "exact_correct": true,
+            "total_reward": 15.9,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_ok_loc_wrong",
+            "predicted_type": "misconfiguration",
+            "predicted_location": "edge_1",
+            "action_id": 84,
+            "type_correct": true,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          },
+          {
+            "case": "type_wrong_loc_ok",
+            "predicted_type": "link_failure",
+            "predicted_location": "edge_0->center",
+            "action_id": 101,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": 4.700000000000001,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": 0.0,
+              "partial_device_reward": 4.800000000000001
+            }
+          },
+          {
+            "case": "both_wrong",
+            "predicted_type": "device_failure",
+            "predicted_location": "edge_3",
+            "action_id": 87,
+            "type_correct": false,
+            "location_correct": false,
+            "exact_correct": false,
+            "total_reward": -16.1,
+            "breakdown": {
+              "step_penalty": -0.1,
+              "diagnosis_reward": -16.0,
+              "partial_device_reward": 0.0
+            }
+          }
+        ]
+      }
+    },
+    "post_scan_valid_actions": {
+      "pre_scan_valid_total": 1,
+      "post_scan_valid_total": 151,
+      "pre_scan_by_category": {
+        "topology_discovery": 1
+      },
+      "post_scan_by_category": {
+        "topology_discovery": 7,
+        "diagnostic": 72,
+        "diagnosis": 72
+      },
+      "post_scan_diagnosis_count": 72,
+      "post_scan_diagnosis_by_type": {
+        "device_failure": 6,
+        "misconfiguration": 6,
+        "link_failure": 30,
+        "performance_degradation": 30
+      },
+      "post_scan_non_diagnosis": 72
+    },
+    "post_scan_valid_actions_misconfig": {
+      "pre_scan_valid_total": 1,
+      "post_scan_valid_total": 151,
+      "pre_scan_by_category": {
+        "topology_discovery": 1
+      },
+      "post_scan_by_category": {
+        "topology_discovery": 7,
+        "diagnostic": 72,
+        "diagnosis": 72
+      },
+      "post_scan_diagnosis_count": 72,
+      "post_scan_diagnosis_by_type": {
+        "device_failure": 6,
+        "misconfiguration": 6,
+        "link_failure": 30,
+        "performance_degradation": 30
+      },
+      "post_scan_non_diagnosis": 72
+    }
+  },
+  "action_space_summary": {
+    "n_devices": 6,
+    "devices": [
+      "center",
+      "edge_0",
+      "edge_1",
+      "edge_2",
+      "edge_3",
+      "edge_4"
+    ],
+    "n_directed_links": 30,
+    "total_action_space": "151",
+    "diagnosis_action_count": 72,
+    "expected_diagnosis_count": 72,
+    "is_fault_type_x_location_product": true,
+    "diagnosis_by_fault_type": {
+      "device_failure": 6,
+      "misconfiguration": 6,
+      "link_failure": 30,
+      "performance_degradation": 30
+    },
+    "unique_device_locations": 6,
+    "unique_link_locations": 30
+  },
+  "ppo_marginals_summary": {
+    "misconfiguration": {
+      "mean_p_correct_type": 0.10773995586932869,
+      "mean_p_correct_location": 0.13400530088692902,
+      "n_episodes": 20
+    },
+    "performance_degradation": {
+      "mean_p_correct_type": 0.8339156977817765,
+      "mean_p_correct_location": 0.08619377974246163,
+      "n_episodes": 20
+    },
+    "device_failure": {
+      "mean_p_correct_type": 0.009040779259521514,
+      "mean_p_correct_location": 0.0,
+      "n_episodes": 20
+    }
+  }
+}

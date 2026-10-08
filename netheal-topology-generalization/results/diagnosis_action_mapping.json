@@ -1,0 +1,362 @@
+[
+  {
+    "action_id": 79,
+    "fault_type": "device_failure",
+    "location": "center"
+  },
+  {
+    "action_id": 80,
+    "fault_type": "misconfiguration",
+    "location": "center"
+  },
+  {
+    "action_id": 81,
+    "fault_type": "device_failure",
+    "location": "edge_0"
+  },
+  {
+    "action_id": 82,
+    "fault_type": "misconfiguration",
+    "location": "edge_0"
+  },
+  {
+    "action_id": 83,
+    "fault_type": "device_failure",
+    "location": "edge_1"
+  },
+  {
+    "action_id": 84,
+    "fault_type": "misconfiguration",
+    "location": "edge_1"
+  },
+  {
+    "action_id": 85,
+    "fault_type": "device_failure",
+    "location": "edge_2"
+  },
+  {
+    "action_id": 86,
+    "fault_type": "misconfiguration",
+    "location": "edge_2"
+  },
+  {
+    "action_id": 87,
+    "fault_type": "device_failure",
+    "location": "edge_3"
+  },
+  {
+    "action_id": 88,
+    "fault_type": "misconfiguration",
+    "location": "edge_3"
+  },
+  {
+    "action_id": 89,
+    "fault_type": "device_failure",
+    "location": "edge_4"
+  },
+  {
+    "action_id": 90,
+    "fault_type": "misconfiguration",
+    "location": "edge_4"
+  },
+  {
+    "action_id": 91,
+    "fault_type": "link_failure",
+    "location": "center->edge_0"
+  },
+  {
+    "action_id": 92,
+    "fault_type": "performance_degradation",
+    "location": "center->edge_0"
+  },
+  {
+    "action_id": 93,
+    "fault_type": "link_failure",
+    "location": "center->edge_1"
+  },
+  {
+    "action_id": 94,
+    "fault_type": "performance_degradation",
+    "location": "center->edge_1"
+  },
+  {
+    "action_id": 95,
+    "fault_type": "link_failure",
+    "location": "center->edge_2"
+  },
+  {
+    "action_id": 96,
+    "fault_type": "performance_degradation",
+    "location": "center->edge_2"
+  },
+  {
+    "action_id": 97,
+    "fault_type": "link_failure",
+    "location": "center->edge_3"
+  },
+  {
+    "action_id": 98,
+    "fault_type": "performance_degradation",
+    "location": "center->edge_3"
+  },
+  {
+    "action_id": 99,
+    "fault_type": "link_failure",
+    "location": "center->edge_4"
+  },
+  {
+    "action_id": 100,
+    "fault_type": "performance_degradation",
+    "location": "center->edge_4"
+  },
+  {
+    "action_id": 101,
+    "fault_type": "link_failure",
+    "location": "edge_0->center"
+  },
+  {
+    "action_id": 102,
+    "fault_type": "performance_degradation",
+    "location": "edge_0->center"
+  },
+  {
+    "action_id": 103,
+    "fault_type": "link_failure",
+    "location": "edge_0->edge_1"
+  },
+  {
+    "action_id": 104,
+    "fault_type": "performance_degradation",
+    "location": "edge_0->edge_1"
+  },
+  {
+    "action_id": 105,
+    "fault_type": "link_failure",
+    "location": "edge_0->edge_2"
+  },
+  {
+    "action_id": 106,
+    "fault_type": "performance_degradation",
+    "location": "edge_0->edge_2"
+  },
+  {
+    "action_id": 107,
+    "fault_type": "link_failure",
+    "location": "edge_0->edge_3"
+  },
+  {
+    "action_id": 108,
+    "fault_type": "performance_degradation",
+    "location": "edge_0->edge_3"
+  },
+  {
+    "action_id": 109,
+    "fault_type": "link_failure",
+    "location": "edge_0->edge_4"
+  },
+  {
+    "action_id": 110,
+    "fault_type": "performance_degradation",
+    "location": "edge_0->edge_4"
+  },
+  {
+    "action_id": 111,
+    "fault_type": "link_failure",
+    "location": "edge_1->center"
+  },
+  {
+    "action_id": 112,
+    "fault_type": "performance_degradation",
+    "location": "edge_1->center"
+  },
+  {
+    "action_id": 113,
+    "fault_type": "link_failure",
+    "location": "edge_1->edge_0"
+  },
+  {
+    "action_id": 114,
+    "fault_type": "performance_degradation",
+    "location": "edge_1->edge_0"
+  },
+  {
+    "action_id": 115,
+    "fault_type": "link_failure",
+    "location": "edge_1->edge_2"
+  },
+  {
+    "action_id": 116,
+    "fault_type": "performance_degradation",
+    "location": "edge_1->edge_2"
+  },
+  {
+    "action_id": 117,
+    "fault_type": "link_failure",
+    "location": "edge_1->edge_3"
+  },
+  {
+    "action_id": 118,
+    "fault_type": "performance_degradation",
+    "location": "edge_1->edge_3"
+  },
+  {
+    "action_id": 119,
+    "fault_type": "link_failure",
+    "location": "edge_1->edge_4"
+  },
+  {
+    "action_id": 120,
+    "fault_type": "performance_degradation",
+    "location": "edge_1->edge_4"
+  },
+  {
+    "action_id": 121,
+    "fault_type": "link_failure",
+    "location": "edge_2->center"
+  },
+  {
+    "action_id": 122,
+    "fault_type": "performance_degradation",
+    "location": "edge_2->center"
+  },
+  {
+    "action_id": 123,
+    "fault_type": "link_failure",
+    "location": "edge_2->edge_0"
+  },
+  {
+    "action_id": 124,
+    "fault_type": "performance_degradation",
+    "location": "edge_2->edge_0"
+  },
+  {
+    "action_id": 125,
+    "fault_type": "link_failure",
+    "location": "edge_2->edge_1"
+  },
+  {
+    "action_id": 126,
+    "fault_type": "performance_degradation",
+    "location": "edge_2->edge_1"
+  },
+  {
+    "action_id": 127,
+    "fault_type": "link_failure",
+    "location": "edge_2->edge_3"
+  },
+  {
+    "action_id": 128,
+    "fault_type": "performance_degradation",
+    "location": "edge_2->edge_3"
+  },
+  {
+    "action_id": 129,
+    "fault_type": "link_failure",
+    "location": "edge_2->edge_4"
+  },
+  {
+    "action_id": 130,
+    "fault_type": "performance_degradation",
+    "location": "edge_2->edge_4"
+  },
+  {
+    "action_id": 131,
+    "fault_type": "link_failure",
+    "location": "edge_3->center"
+  },
+  {
+    "action_id": 132,
+    "fault_type": "performance_degradation",
+    "location": "edge_3->center"
+  },
+  {
+    "action_id": 133,
+    "fault_type": "link_failure",
+    "location": "edge_3->edge_0"
+  },
+  {
+    "action_id": 134,
+    "fault_type": "performance_degradation",
+    "location": "edge_3->edge_0"
+  },
+  {
+    "action_id": 135,
+    "fault_type": "link_failure",
+    "location": "edge_3->edge_1"
+  },
+  {
+    "action_id": 136,
+    "fault_type": "performance_degradation",
+    "location": "edge_3->edge_1"
+  },
+  {
+    "action_id": 137,
+    "fault_type": "link_failure",
+    "location": "edge_3->edge_2"
+  },
+  {
+    "action_id": 138,
+    "fault_type": "performance_degradation",
+    "location": "edge_3->edge_2"
+  },
+  {
+    "action_id": 139,
+    "fault_type": "link_failure",
+    "location": "edge_3->edge_4"
+  },
+  {
+    "action_id": 140,
+    "fault_type": "performance_degradation",
+    "location": "edge_3->edge_4"
+  },
+  {
+    "action_id": 141,
+    "fault_type": "link_failure",
+    "location": "edge_4->center"
+  },
+  {
+    "action_id": 142,
+    "fault_type": "performance_degradation",
+    "location": "edge_4->center"
+  },
+  {
+    "action_id": 143,
+    "fault_type": "link_failure",
+    "location": "edge_4->edge_0"
+  },
+  {
+    "action_id": 144,
+    "fault_type": "performance_degradation",
+    "location": "edge_4->edge_0"
+  },
+  {
+    "action_id": 145,
+    "fault_type": "link_failure",
+    "location": "edge_4->edge_1"
+  },
+  {
+    "action_id": 146,
+    "fault_type": "performance_degradation",
+    "location": "edge_4->edge_1"
+  },
+  {
+    "action_id": 147,
+    "fault_type": "link_failure",
+    "location": "edge_4->edge_2"
+  },
+  {
+    "action_id": 148,
+    "fault_type": "performance_degradation",
+    "location": "edge_4->edge_2"
+  },
+  {
+    "action_id": 149,
+    "fault_type": "link_failure",
+    "location": "edge_4->edge_3"
+  },
+  {
+    "action_id": 150,
+    "fault_type": "performance_degradation",
+    "location": "edge_4->edge_3"
+  }
+]

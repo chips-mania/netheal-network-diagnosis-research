@@ -1,0 +1,720 @@
+{
+  "narrative": "Many N=10 timeouts look like **commit/continue failures**: Rule-style conclude already matches GT from the same evidence mem, but the policy did not diagnose.",
+  "rollouts": {
+    "6": {
+      "n_devices": 6,
+      "n": 100,
+      "max_steps": 15,
+      "overall": {
+        "n": 100,
+        "exact": 1.0,
+        "timeout": 0.0,
+        "submit": 1.0,
+        "conclude_match_any": 0.97,
+        "conclude_match_on_timeout": 0.0,
+        "evidence_no_commit": 0.0,
+        "commit_fail": 0.0,
+        "phi_ge1": 0.72,
+        "missing_hit_rate": 0.25,
+        "mean_steps": 5.8,
+        "diagnose_kind_rate": 1.0
+      },
+      "by_fault": {
+        "device_failure": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 1.0,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 8.16,
+          "diagnose_kind_rate": 1.0
+        },
+        "link_failure": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 0.0,
+          "missing_hit_rate": 1.0,
+          "mean_steps": 4.0,
+          "diagnose_kind_rate": 1.0
+        },
+        "misconfiguration": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 1.0,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 5.0,
+          "diagnose_kind_rate": 1.0
+        },
+        "performance_degradation": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 0.88,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 0.88,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 6.04,
+          "diagnose_kind_rate": 1.0
+        }
+      },
+      "kind_hist": {
+        "scan": 100,
+        "check_status": 147,
+        "diagnose": 100,
+        "ping": 208,
+        "check_interfaces": 25
+      },
+      "timeout_samples": [],
+      "n_episodes": 100
+    },
+    "8": {
+      "n_devices": 8,
+      "n": 100,
+      "max_steps": 15,
+      "overall": {
+        "n": 100,
+        "exact": 0.87,
+        "timeout": 0.13,
+        "submit": 0.87,
+        "conclude_match_any": 1.0,
+        "conclude_match_on_timeout": 1.0,
+        "evidence_no_commit": 0.13,
+        "commit_fail": 0.13,
+        "phi_ge1": 0.64,
+        "missing_hit_rate": 0.25,
+        "mean_steps": 7.35,
+        "diagnose_kind_rate": 0.87
+      },
+      "by_fault": {
+        "device_failure": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 1.0,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 9.48,
+          "diagnose_kind_rate": 1.0
+        },
+        "link_failure": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 0.0,
+          "missing_hit_rate": 1.0,
+          "mean_steps": 4.0,
+          "diagnose_kind_rate": 1.0
+        },
+        "misconfiguration": {
+          "n": 25,
+          "exact": 0.48,
+          "timeout": 0.52,
+          "submit": 0.48,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 1.0,
+          "evidence_no_commit": 0.52,
+          "commit_fail": 0.52,
+          "phi_ge1": 0.64,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 10.2,
+          "diagnose_kind_rate": 0.48
+        },
+        "performance_degradation": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 0.92,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 5.72,
+          "diagnose_kind_rate": 1.0
+        }
+      },
+      "kind_hist": {
+        "scan": 100,
+        "check_status": 271,
+        "diagnose": 87,
+        "ping": 252,
+        "check_interfaces": 25
+      },
+      "timeout_samples": [
+        {
+          "fault_type": "misconfiguration",
+          "fault_location": "edge_6",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": true,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": false,
+            "conclude_ready": true,
+            "conclude_type_ok": true,
+            "conclude_loc_ok": true,
+            "conclude_match": true
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "misconfiguration",
+          "fault_location": "edge_0",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": true,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": false,
+            "conclude_ready": true,
+            "conclude_type_ok": true,
+            "conclude_loc_ok": true,
+            "conclude_match": true
+          },
+          "submitted": false,
+          "steps": 15
+        }
+      ],
+      "n_episodes": 100
+    },
+    "10": {
+      "n_devices": 10,
+      "n": 100,
+      "max_steps": 15,
+      "overall": {
+        "n": 100,
+        "exact": 0.46,
+        "timeout": 0.54,
+        "submit": 0.46,
+        "conclude_match_any": 0.81,
+        "conclude_match_on_timeout": 0.6481481481481481,
+        "evidence_no_commit": 0.35,
+        "commit_fail": 0.35,
+        "phi_ge1": 0.49,
+        "missing_hit_rate": 0.25,
+        "mean_steps": 12.38,
+        "diagnose_kind_rate": 0.46
+      },
+      "by_fault": {
+        "device_failure": {
+          "n": 25,
+          "exact": 0.84,
+          "timeout": 0.16,
+          "submit": 0.84,
+          "conclude_match_any": 0.84,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 1.0,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 11.68,
+          "diagnose_kind_rate": 0.84
+        },
+        "link_failure": {
+          "n": 25,
+          "exact": 0.0,
+          "timeout": 1.0,
+          "submit": 0.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 1.0,
+          "evidence_no_commit": 1.0,
+          "commit_fail": 1.0,
+          "phi_ge1": 0.0,
+          "missing_hit_rate": 1.0,
+          "mean_steps": 15.0,
+          "diagnose_kind_rate": 0.0
+        },
+        "misconfiguration": {
+          "n": 25,
+          "exact": 0.0,
+          "timeout": 1.0,
+          "submit": 0.0,
+          "conclude_match_any": 0.4,
+          "conclude_match_on_timeout": 0.4,
+          "evidence_no_commit": 0.4,
+          "commit_fail": 0.4,
+          "phi_ge1": 0.12,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 15.0,
+          "diagnose_kind_rate": 0.0
+        },
+        "performance_degradation": {
+          "n": 25,
+          "exact": 1.0,
+          "timeout": 0.0,
+          "submit": 1.0,
+          "conclude_match_any": 1.0,
+          "conclude_match_on_timeout": 0.0,
+          "evidence_no_commit": 0.0,
+          "commit_fail": 0.0,
+          "phi_ge1": 0.84,
+          "missing_hit_rate": 0.0,
+          "mean_steps": 7.84,
+          "diagnose_kind_rate": 1.0
+        }
+      },
+      "kind_hist": {
+        "scan": 100,
+        "check_status": 648,
+        "check_interfaces": 73,
+        "ping": 371,
+        "diagnose": 46
+      },
+      "timeout_samples": [
+        {
+          "fault_type": "link_failure",
+          "fault_location": "edge_5->center",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": true,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": true,
+            "conclude_ready": true,
+            "conclude_type_ok": true,
+            "conclude_loc_ok": true,
+            "conclude_match": true
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "link_failure",
+          "fault_location": "center->edge_7",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": true,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": true,
+            "conclude_ready": true,
+            "conclude_type_ok": true,
+            "conclude_loc_ok": true,
+            "conclude_match": true
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "device_failure",
+          "fault_location": "edge_4",
+          "traj_kinds": [
+            "scan",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping"
+          ],
+          "conclude_match_any": false,
+          "evidence": {
+            "phi_proxy_type": false,
+            "phi_proxy_loc": false,
+            "missing_hits_gt": false,
+            "conclude_ready": false,
+            "conclude_type_ok": false,
+            "conclude_loc_ok": false,
+            "conclude_match": false
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "device_failure",
+          "fault_location": "edge_4",
+          "traj_kinds": [
+            "scan",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping",
+            "ping"
+          ],
+          "conclude_match_any": false,
+          "evidence": {
+            "phi_proxy_type": false,
+            "phi_proxy_loc": false,
+            "missing_hits_gt": false,
+            "conclude_ready": false,
+            "conclude_type_ok": false,
+            "conclude_loc_ok": false,
+            "conclude_match": false
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "misconfiguration",
+          "fault_location": "edge_4",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": false,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": false,
+            "conclude_ready": false,
+            "conclude_type_ok": false,
+            "conclude_loc_ok": false,
+            "conclude_match": false
+          },
+          "submitted": false,
+          "steps": 15
+        },
+        {
+          "fault_type": "misconfiguration",
+          "fault_location": "edge_4",
+          "traj_kinds": [
+            "scan",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_interfaces",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status",
+            "check_status"
+          ],
+          "conclude_match_any": false,
+          "evidence": {
+            "phi_proxy_type": true,
+            "phi_proxy_loc": true,
+            "missing_hits_gt": false,
+            "conclude_ready": false,
+            "conclude_type_ok": false,
+            "conclude_loc_ok": false,
+            "conclude_match": false
+          },
+          "submitted": false,
+          "steps": 15
+        }
+      ],
+      "n_episodes": 100
+    }
+  },
+  "heads": {
+    "6": {
+      "collect": {
+        "ok": 200,
+        "tries": 200,
+        "per_fault_ok": {
+          "link_failure": 46,
+          "performance_degradation": 57,
+          "misconfiguration": 43,
+          "device_failure": 54
+        },
+        "n_transitions": 1149,
+        "n_devices": 6
+      },
+      "n_transitions": 1149,
+      "kind_acc": 1.0,
+      "node_acc": 1.0,
+      "edge_acc": 1.0,
+      "fault_acc": 1.0,
+      "diagnose_kind_acc": 1.0,
+      "tool_kind_acc": 1.0,
+      "mean_rank": {
+        "node": 1.0,
+        "edge": 1.0,
+        "fault": 1.0,
+        "kind": 1.0
+      },
+      "top3": {
+        "node": 1.0,
+        "edge": 1.0
+      },
+      "by_kind": {
+        "scan": {
+          "n": 200,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": null
+        },
+        "check_status": {
+          "n": 257,
+          "kind_acc": 1.0,
+          "node_acc": 1.0,
+          "edge_acc": null
+        },
+        "diagnose": {
+          "n": 200,
+          "kind_acc": 1.0,
+          "node_acc": 1.0,
+          "edge_acc": 1.0
+        },
+        "ping": {
+          "n": 449,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": 1.0
+        },
+        "check_interfaces": {
+          "n": 43,
+          "kind_acc": 1.0,
+          "node_acc": 1.0,
+          "edge_acc": null
+        }
+      }
+    },
+    "8": {
+      "collect": {
+        "ok": 200,
+        "tries": 200,
+        "per_fault_ok": {
+          "performance_degradation": 40,
+          "misconfiguration": 50,
+          "device_failure": 56,
+          "link_failure": 54
+        },
+        "n_transitions": 1319,
+        "n_devices": 8
+      },
+      "n_transitions": 1319,
+      "kind_acc": 0.9977255496588324,
+      "node_acc": 0.9774266365688488,
+      "edge_acc": 0.5857988165680473,
+      "fault_acc": 1.0,
+      "diagnose_kind_acc": 0.985,
+      "tool_kind_acc": 1.0,
+      "mean_rank": {
+        "node": 1.0383747178329572,
+        "edge": 3.3520710059171597,
+        "fault": 1.0,
+        "kind": 1.0022744503411676
+      },
+      "top3": {
+        "node": 1.0,
+        "edge": 0.7248520710059172
+      },
+      "by_kind": {
+        "scan": {
+          "n": 200,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": null
+        },
+        "ping": {
+          "n": 582,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": 0.5189003436426117
+        },
+        "diagnose": {
+          "n": 200,
+          "kind_acc": 0.985,
+          "node_acc": 1.0,
+          "edge_acc": 1.0
+        },
+        "check_status": {
+          "n": 287,
+          "kind_acc": 1.0,
+          "node_acc": 0.9930313588850174,
+          "edge_acc": null
+        },
+        "check_interfaces": {
+          "n": 50,
+          "kind_acc": 1.0,
+          "node_acc": 0.84,
+          "edge_acc": null
+        }
+      }
+    },
+    "10": {
+      "collect": {
+        "ok": 200,
+        "tries": 202,
+        "per_fault_ok": {
+          "misconfiguration": 45,
+          "link_failure": 53,
+          "device_failure": 62,
+          "performance_degradation": 40
+        },
+        "n_transitions": 1500,
+        "n_devices": 10
+      },
+      "n_transitions": 1500,
+      "kind_acc": 0.934,
+      "node_acc": 0.9170506912442397,
+      "edge_acc": 0.648960739030023,
+      "fault_acc": 1.0,
+      "diagnose_kind_acc": 0.52,
+      "tool_kind_acc": 0.9976923076923077,
+      "mean_rank": {
+        "node": 1.2235023041474655,
+        "edge": 2.68013856812933,
+        "fault": 1.0,
+        "kind": 1.1013333333333333
+      },
+      "top3": {
+        "node": 0.9516129032258065,
+        "edge": 0.6732101616628176
+      },
+      "by_kind": {
+        "scan": {
+          "n": 200,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": null
+        },
+        "check_status": {
+          "n": 282,
+          "kind_acc": 1.0,
+          "node_acc": 0.8794326241134752,
+          "edge_acc": null
+        },
+        "check_interfaces": {
+          "n": 45,
+          "kind_acc": 0.9333333333333333,
+          "node_acc": 0.9555555555555556,
+          "edge_acc": null
+        },
+        "diagnose": {
+          "n": 200,
+          "kind_acc": 0.52,
+          "node_acc": 1.0,
+          "edge_acc": 1.0
+        },
+        "ping": {
+          "n": 773,
+          "kind_acc": 1.0,
+          "node_acc": null,
+          "edge_acc": 0.6067270375161707
+        }
+      }
+    }
+  }
+}

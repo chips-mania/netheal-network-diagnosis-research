@@ -1,0 +1,164 @@
+{
+  "decision": "generic_commit_sufficient",
+  "claim": "Generic diagnose-commit objective (no fault-specific \u00d72) recovers Link and matches Current within noise \u2014 fault-hard weight not required for the main gain.",
+  "losses": [
+    0.012093381132179098,
+    0.0015658058396049747,
+    0.00085073782729485,
+    0.0009098269450150991,
+    0.0005388763417118476,
+    0.0015906345172377093,
+    0.0002643995965105351,
+    0.04215737811065554,
+    0.0009936743522514068,
+    0.0006772326307887882,
+    0.0004315955264069914,
+    0.0003520798754796311,
+    0.000306705694915744,
+    0.0002884846766514803,
+    0.00024545778227402174,
+    0.00019565305656253434,
+    0.00017116232256624624,
+    0.00015559511277526234,
+    0.00015855767341301297,
+    0.00013407117199784027,
+    0.00012507864793509656,
+    0.00016363580506000857,
+    0.03203548725938577,
+    0.0031432204836594406,
+    0.0009720048099567864,
+    0.0019002087267640318,
+    0.00040213234313472146,
+    0.0003112381936212066,
+    0.00023596919372683085,
+    0.0001959037851907997,
+    0.00016611665500452158,
+    0.0001391096486550555,
+    0.00012382426538800855,
+    0.0001096124147991333,
+    9.167051719310537e-05,
+    8.262195647167661e-05,
+    8.85940736927434e-05,
+    6.752486719174177e-05,
+    6.104481769133472e-05,
+    5.0530638837672506e-05
+  ],
+  "generic_exact": {
+    "6": 1.0,
+    "8": 0.86,
+    "10": 0.66
+  },
+  "generic_timeout": {
+    "6": 0.0,
+    "8": 0.05,
+    "10": 0.32
+  },
+  "generic_per_fault": {
+    "6": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 21,
+        "dsr": 1.0,
+        "acquisition": 0.84
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      }
+    },
+    "8": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 21,
+        "dsr": 0.96,
+        "acquisition": 0.84
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 12,
+        "exact_consistent_n": 12,
+        "dsr": 0.48,
+        "acquisition": 0.48
+      }
+    },
+    "10": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 23,
+        "exact_consistent_n": 0,
+        "dsr": 0.92,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 18,
+        "exact_consistent_n": 18,
+        "dsr": 0.72,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 24,
+        "dsr": 1.0,
+        "acquisition": 0.96
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      }
+    }
+  },
+  "baseline_exact": {
+    "6": 1.0,
+    "8": 0.9,
+    "10": 0.42
+  },
+  "current_exact": {
+    "6": 0.99,
+    "8": 0.96,
+    "10": 0.67
+  },
+  "recipe_generic": {
+    "oversample": 3,
+    "w_diag": 4.0,
+    "w_hard": 1.0,
+    "epochs": 40
+  }
+}

@@ -1,0 +1,2331 @@
+{
+  "smoke": {
+    "locked_after_scan": true,
+    "open_after_fail_ping": true,
+    "dummy_healthy_ping_locked": true
+  },
+  "collect": {
+    "ok": 400,
+    "tries": 400,
+    "per_fault_ok": {
+      "misconfiguration": 107,
+      "device_failure": 90,
+      "link_failure": 109,
+      "performance_degradation": 94
+    },
+    "n_transitions": 2290,
+    "avg_demo_len": 5.725,
+    "n_devices": 6,
+    "pad": 6,
+    "max_steps": 15
+  },
+  "bc_losses": [
+    3.9440141717592874,
+    3.3282307982444763,
+    2.8797412978278265,
+    2.706861562199063,
+    2.6421194208992853,
+    2.6076522535747952,
+    2.5806676348050437,
+    2.5539261963632374,
+    2.5232172542148166,
+    2.4764696889453464,
+    2.413110613822937,
+    2.3352891537878246,
+    2.2598889503214092,
+    2.177946835756302,
+    2.100571506553226
+  ],
+  "seed_eval": {
+    "n_devices": 6,
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.0,
+      "macro_f1": 0.05063291139240506,
+      "avg_steps_all": 11.76,
+      "normalized_steps_all": 11.76,
+      "tool_cost_index": 0.1841777777777781,
+      "topology_coverage": 0.0,
+      "ttd_success": null
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 11.22,
+      "avg_tool_actions_before_diagnosis_success_only": null,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 1.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 1.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "ping": 616,
+        "check_status": 406,
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "diagnostic": 1022,
+        "topology_discovery": 100,
+        "diagnosis": 54
+      },
+      "predicted_diagnosis_distribution": {
+        "device_failure": 54
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.0,
+        "device_failure": 0.0,
+        "performance_degradation": 0.0,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "device_failure": 25
+        },
+        "device_failure": {
+          "device_failure": 8
+        },
+        "performance_degradation": {
+          "device_failure": 3
+        },
+        "misconfiguration": {
+          "device_failure": 18
+        }
+      }
+    },
+    "decomposition": {
+      "episodes": 100,
+      "fault_type_accuracy": 0.08,
+      "location_accuracy": 0.03,
+      "exact_diagnosis_accuracy": 0.0,
+      "rows": [
+        {
+          "episode_id": 0,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 1,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 2,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 3,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 4,
+          "actual_type": "link_failure",
+          "actual_location": "edge_1->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 5,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 6,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 7,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 8,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 9,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 10,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 11,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 12,
+          "actual_type": "link_failure",
+          "actual_location": "edge_3->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 13,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 14,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 15,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 16,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 17,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 18,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 19,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 20,
+          "actual_type": "link_failure",
+          "actual_location": "edge_0->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 21,
+          "actual_type": "device_failure",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 22,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 23,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 24,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 25,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 26,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 27,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 28,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 29,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 30,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 31,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 32,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 33,
+          "actual_type": "device_failure",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 34,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 35,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 36,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 37,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 38,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 39,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 40,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 41,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 42,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 43,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 44,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 45,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 46,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 47,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 48,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 49,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 50,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 51,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 52,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 53,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 54,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 55,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 56,
+          "actual_type": "link_failure",
+          "actual_location": "edge_1->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 57,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 58,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 59,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 60,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 61,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 62,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 63,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 64,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 65,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 66,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 67,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 68,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 69,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 70,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 71,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 72,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 73,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 74,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 75,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 76,
+          "actual_type": "link_failure",
+          "actual_location": "edge_4->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 77,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 78,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 79,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 80,
+          "actual_type": "link_failure",
+          "actual_location": "edge_0->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 81,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 82,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_3->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 83,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 84,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 85,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 86,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 87,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 88,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_0",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 89,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 90,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 91,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 92,
+          "actual_type": "link_failure",
+          "actual_location": "edge_3->center",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 93,
+          "actual_type": "device_failure",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 94,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 95,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 96,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_4",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 97,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "device_failure",
+          "predicted_location": "edge_4",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 98,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 99,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        }
+      ]
+    },
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.44
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.4
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.04
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.46,
+    "submit_rate": 0.54,
+    "exact_consistent_n": 0,
+    "n": 100,
+    "max_steps": 15
+  },
+  "variant": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.02,
+      "macro_f1": 0.06666666666666667,
+      "avg_steps_all": 10.14,
+      "normalized_steps_all": 10.14,
+      "tool_cost_index": 0.19823333333333323,
+      "topology_coverage": 0.0,
+      "ttd_success": 7.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 9.64,
+      "avg_tool_actions_before_diagnosis_success_only": 6.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 1.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.5,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "ping": 440,
+        "check_status": 424,
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "diagnostic": 864,
+        "topology_discovery": 100,
+        "diagnosis": 50
+      },
+      "predicted_diagnosis_distribution": {
+        "performance_degradation": 50
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.0,
+        "device_failure": 0.0,
+        "performance_degradation": 0.08,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "performance_degradation": 18
+        },
+        "device_failure": {
+          "performance_degradation": 20
+        },
+        "performance_degradation": {
+          "performance_degradation": 10
+        },
+        "misconfiguration": {
+          "performance_degradation": 2
+        }
+      }
+    },
+    "decomposition": {
+      "episodes": 100,
+      "fault_type_accuracy": 0.1,
+      "location_accuracy": 0.23,
+      "exact_diagnosis_accuracy": 0.02,
+      "rows": [
+        {
+          "episode_id": 0,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 1,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 2,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 3,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 4,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 5,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 6,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 7,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 8,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 9,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 10,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 11,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 12,
+          "actual_type": "link_failure",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 13,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 14,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 15,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 16,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 17,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 18,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 19,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 20,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 21,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 22,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 23,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 24,
+          "actual_type": "link_failure",
+          "actual_location": "edge_3->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 25,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 26,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 27,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 28,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 29,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 30,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 31,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 32,
+          "actual_type": "link_failure",
+          "actual_location": "edge_3->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 33,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 34,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_3->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": true,
+          "exact_correct": true
+        },
+        {
+          "episode_id": 35,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 36,
+          "actual_type": "link_failure",
+          "actual_location": "edge_3->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 37,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 38,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 39,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 40,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 41,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 42,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 43,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 44,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 45,
+          "actual_type": "device_failure",
+          "actual_location": "edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 46,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 47,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 48,
+          "actual_type": "link_failure",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 49,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 50,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 51,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 52,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 53,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 54,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 55,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 56,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 57,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 58,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 59,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 60,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 61,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 62,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 63,
+          "actual_type": "misconfiguration",
+          "actual_location": "center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 64,
+          "actual_type": "link_failure",
+          "actual_location": "edge_0->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 65,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 66,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_0->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 67,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 68,
+          "actual_type": "link_failure",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 69,
+          "actual_type": "device_failure",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 70,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 71,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_2",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 72,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 73,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 74,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 75,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 76,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 77,
+          "actual_type": "device_failure",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 78,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 79,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 80,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 81,
+          "actual_type": "device_failure",
+          "actual_location": "center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 82,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_1->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 83,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 84,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 85,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 86,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 87,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 88,
+          "actual_type": "link_failure",
+          "actual_location": "edge_4->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 89,
+          "actual_type": "device_failure",
+          "actual_location": "edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 90,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_2->center",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 91,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_4",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 92,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 93,
+          "actual_type": "device_failure",
+          "actual_location": "edge_3",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": true,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 94,
+          "actual_type": "performance_degradation",
+          "actual_location": "center->edge_1",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 95,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_3",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 96,
+          "actual_type": "link_failure",
+          "actual_location": "center->edge_0",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 97,
+          "actual_type": "device_failure",
+          "actual_location": "edge_2",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        },
+        {
+          "episode_id": 98,
+          "actual_type": "performance_degradation",
+          "actual_location": "edge_3->center",
+          "predicted_type": "performance_degradation",
+          "predicted_location": "center->edge_3",
+          "fault_type_correct": true,
+          "location_correct": true,
+          "exact_correct": true
+        },
+        {
+          "episode_id": 99,
+          "actual_type": "misconfiguration",
+          "actual_location": "edge_0",
+          "predicted_type": null,
+          "predicted_location": null,
+          "fault_type_correct": false,
+          "location_correct": false,
+          "exact_correct": false
+        }
+      ]
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.0,
+      "device_failure": 0.0,
+      "performance_degradation": 0.08,
+      "misconfiguration": 0.0
+    },
+    "per_fault": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.8
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 2,
+        "exact_consistent_n": 2,
+        "dsr": 0.08,
+        "acquisition": 0.4
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 0,
+        "exact_consistent_n": 0,
+        "dsr": 0.0,
+        "acquisition": 0.08
+      }
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    },
+    "timeout_rate": 0.5,
+    "submit_rate": 0.5,
+    "exact_consistent_n": 2,
+    "n": 100,
+    "max_steps": 15
+  },
+  "train": {
+    "n": 3101,
+    "p_tool_use": 0.999677523379555,
+    "p_exact": 0.04095453079651725,
+    "p_exact_and_tool": 0.04095453079651725,
+    "p_exact_given_tool": 0.04096774193548387,
+    "p_exact_cons_given_tool": 0.03,
+    "p_exact_cons_given_phi": 0.060077519379844964,
+    "p_shortcut": 0.0,
+    "per_fault": {
+      "device_failure": {
+        "n": 766,
+        "tool": 766,
+        "exact": 18,
+        "exact_tool": 18,
+        "exact_cons": 18,
+        "shortcut": 0
+      },
+      "link_failure": {
+        "n": 787,
+        "tool": 787,
+        "exact": 34,
+        "exact_tool": 34,
+        "exact_cons": 0,
+        "shortcut": 0
+      },
+      "misconfiguration": {
+        "n": 754,
+        "tool": 754,
+        "exact": 5,
+        "exact_tool": 5,
+        "exact_cons": 5,
+        "shortcut": 0
+      },
+      "performance_degradation": {
+        "n": 794,
+        "tool": 793,
+        "exact": 70,
+        "exact_tool": 70,
+        "exact_cons": 70,
+        "shortcut": 0
+      }
+    }
+  },
+  "gate": {
+    "decision": "ambiguous",
+    "shortcut": 0.0,
+    "timeout_rate": 0.5,
+    "submit_rate": 0.5,
+    "hard_ok": false,
+    "dummy_like": false,
+    "avoidance": false,
+    "exact_consistent_n": 2,
+    "rule": "Go if shortcut<10% and Device or Misconfig exact>=2 & cons>=2, not timeout/dummy"
+  },
+  "prior_gate_only": {
+    "exact": 0.0,
+    "shortcut": 0.0,
+    "timeout": 0.76,
+    "submit": 0.22
+  },
+  "prior_bc_rule": {
+    "exact": 0.99,
+    "shortcut": 0.0
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "timesteps": 2048,
+    "entropy_loss": null,
+    "ep_len_mean_sb3": null,
+    "avg_steps_stochastic": 3.375,
+    "p_scan": 0.2962962962962963,
+    "p_tool_given_post_scan": 0.5789473684210527,
+    "p_diagnosis_given_post_scan": 0.42105263157894735,
+    "tool_use_before_dx_nonlink": 0.8333333333333334
+  },
+  {
+    "timesteps": 5120,
+    "entropy_loss": -3.398019030690193,
+    "ep_len_mean_sb3": null,
+    "avg_steps_stochastic": 2.875,
+    "p_scan": 0.34782608695652173,
+    "p_tool_given_post_scan": 0.36666666666666664,
+    "p_diagnosis_given_post_scan": 0.5333333333333333,
+    "tool_use_before_dx_nonlink": 0.16666666666666666
+  },
+  {
+    "timesteps": 10240,
+    "entropy_loss": -3.352712566405535,
+    "ep_len_mean_sb3": null,
+    "avg_steps_stochastic": 3.25,
+    "p_scan": 0.3076923076923077,
+    "p_tool_given_post_scan": 0.5277777777777778,
+    "p_diagnosis_given_post_scan": 0.4444444444444444,
+    "tool_use_before_dx_nonlink": 0.4166666666666667
+  },
+  {
+    "timesteps": 20480,
+    "entropy_loss": -3.124978866428137,
+    "ep_len_mean_sb3": null,
+    "avg_steps_stochastic": 3.125,
+    "p_scan": 0.32,
+    "p_tool_given_post_scan": 0.5,
+    "p_diagnosis_given_post_scan": 0.47058823529411764,
+    "tool_use_before_dx_nonlink": 0.5833333333333334
+  },
+  {
+    "timesteps": 30720,
+    "entropy_loss": -2.707691026851535,
+    "ep_len_mean_sb3": null,
+    "avg_steps_stochastic": 3.25,
+    "p_scan": 0.3076923076923077,
+    "p_tool_given_post_scan": 0.5555555555555556,
+    "p_diagnosis_given_post_scan": 0.4444444444444444,
+    "tool_use_before_dx_nonlink": 0.6666666666666666
+  }
+]

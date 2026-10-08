@@ -1,0 +1,28 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+# Temporary local files (keep research results and final checkpoints)
+.tmp/
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+netheal-topology-generalization/models/checkpoints/_tmp_*
+netheal-topology-generalization/results/_tmp_*

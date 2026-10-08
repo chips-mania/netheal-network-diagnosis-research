@@ -1,0 +1,379 @@
+{
+  "decision": "partial_commit_help",
+  "recipe": {
+    "oversample": 3,
+    "w_diag": 4.0,
+    "w_hard": 2.0,
+    "epochs": 40
+  },
+  "losses": [
+    0.002524931431360659,
+    0.030590878393431845,
+    0.0025087037974566256,
+    0.0012273602796112333,
+    0.0007717713956116455,
+    0.0006347620343103124,
+    0.0004458656846282843,
+    0.0016072284958800812,
+    0.0004208409882842635,
+    0.0008202748071244635,
+    0.00023845720593636401,
+    0.00021139049640777355,
+    0.00018698259860369952,
+    0.00020085423399525352,
+    0.00016508210192037596,
+    0.00011503484882437674,
+    0.00010012827830333943,
+    9.140889839232565e-05,
+    8.99406581129945e-05,
+    7.789857683462982e-05,
+    6.721583916352088e-05,
+    0.00011141504414482688,
+    0.04486528433995439,
+    0.0011033194374241758,
+    0.00046436346584502686,
+    0.000345110333323128,
+    0.00025900899658430534,
+    0.00021580387775556336,
+    0.0001921566778221433,
+    0.00016906428510670202,
+    0.00014669192106849714,
+    0.0001301508136287949,
+    0.00012034664815715425,
+    0.00010905181303690826,
+    9.35621968976945e-05,
+    8.557789534137448e-05,
+    8.391801913089329e-05,
+    7.103676314742987e-05,
+    6.552688229263206e-05,
+    0.00014975448822974902
+  ],
+  "exact": {
+    "6": 0.99,
+    "8": 0.96,
+    "10": 0.67
+  },
+  "timeout": {
+    "6": 0.0,
+    "8": 0.04,
+    "10": 0.33
+  },
+  "per_fault": {
+    "6": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 21,
+        "dsr": 0.96,
+        "acquisition": 0.84
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      }
+    },
+    "8": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 25,
+        "dsr": 1.0,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 24,
+        "exact_consistent_n": 22,
+        "dsr": 0.96,
+        "acquisition": 0.88
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 22,
+        "exact_consistent_n": 22,
+        "dsr": 0.88,
+        "acquisition": 0.88
+      }
+    },
+    "10": {
+      "link_failure": {
+        "n": 25,
+        "exact_n": 25,
+        "exact_consistent_n": 0,
+        "dsr": 1.0,
+        "acquisition": 0.0
+      },
+      "device_failure": {
+        "n": 25,
+        "exact_n": 17,
+        "exact_consistent_n": 17,
+        "dsr": 0.68,
+        "acquisition": 1.0
+      },
+      "performance_degradation": {
+        "n": 25,
+        "exact_n": 23,
+        "exact_consistent_n": 22,
+        "dsr": 0.92,
+        "acquisition": 0.88
+      },
+      "misconfiguration": {
+        "n": 25,
+        "exact_n": 2,
+        "exact_consistent_n": 2,
+        "dsr": 0.08,
+        "acquisition": 0.08
+      }
+    }
+  },
+  "margin10": {
+    "n_devices": 10,
+    "n": 100,
+    "max_steps": 15,
+    "buckets": {
+      "all": {
+        "n": 900,
+        "p_diagnose_mean": 0.08731256107258285,
+        "p_diagnose_median": 3.5846512932459496e-13,
+        "p_diagnose_p10": 5.940108831317e-20,
+        "p_diagnose_p90": 0.09834863245487213,
+        "margin_mean": -23.05927955786387,
+        "margin_median": -28.66402244567871,
+        "rank_mean": 2.8933333333333335,
+        "diag_is_top": 0.08333333333333333,
+        "diag_in_top2": 0.15777777777777777,
+        "diag_in_top3": 0.8655555555555555,
+        "top_kind_hist": {
+          "scan": 100,
+          "check_status": 359,
+          "diagnose": 75,
+          "ping": 356,
+          "check_interfaces": 10
+        }
+      },
+      "conclude_match": {
+        "n": 75,
+        "p_diagnose_mean": 0.9793026367823283,
+        "p_diagnose_median": 0.9903725385665894,
+        "p_diagnose_p10": 0.9336849093437195,
+        "p_diagnose_p90": 0.9998603343963623,
+        "margin_mean": 5.629146722157796,
+        "margin_median": 4.710536003112793,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 75
+        }
+      },
+      "first_conclude_match": {
+        "n": 75,
+        "p_diagnose_mean": 0.9793026367823283,
+        "p_diagnose_median": 0.9903725385665894,
+        "p_diagnose_p10": 0.9336849093437195,
+        "p_diagnose_p90": 0.9998603343963623,
+        "margin_mean": 5.629146722157796,
+        "margin_median": 4.710536003112793,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 75
+        }
+      },
+      "success_final_step": {
+        "n": 75,
+        "p_diagnose_mean": 0.9793026367823283,
+        "p_diagnose_median": 0.9903725385665894,
+        "p_diagnose_p10": 0.9336849093437195,
+        "p_diagnose_p90": 0.9998603343963623,
+        "margin_mean": 5.629146722157796,
+        "margin_median": 4.710536003112793,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 75
+        }
+      },
+      "timeout_last_k": {
+        "n": 75,
+        "p_diagnose_mean": 0.018556063189171256,
+        "p_diagnose_median": 0.0006794019718654454,
+        "p_diagnose_p10": 1.7300114157680046e-19,
+        "p_diagnose_p90": 0.09732446819543839,
+        "margin_mean": -13.348297843933105,
+        "margin_median": -6.988827705383301,
+        "rank_mean": 2.96,
+        "diag_is_top": 0.0,
+        "diag_in_top2": 0.2,
+        "diag_in_top3": 0.84,
+        "top_kind_hist": {
+          "check_status": 60,
+          "ping": 15
+        }
+      },
+      "timeout_final_step": {
+        "n": 25,
+        "p_diagnose_mean": 0.018556063189171256,
+        "p_diagnose_median": 0.0006794019718654454,
+        "p_diagnose_p10": 1.7322879719101154e-19,
+        "p_diagnose_p90": 0.09702181071043015,
+        "margin_mean": -13.348102226257325,
+        "margin_median": -6.988827705383301,
+        "rank_mean": 2.96,
+        "diag_is_top": 0.0,
+        "diag_in_top2": 0.2,
+        "diag_in_top3": 0.84,
+        "top_kind_hist": {
+          "check_status": 20,
+          "ping": 5
+        }
+      }
+    },
+    "by_fault_conclude_match": {
+      "device_failure": {
+        "n": 21,
+        "p_diagnose_mean": 0.9663883107049125,
+        "p_diagnose_median": 0.9869174957275391,
+        "p_diagnose_p10": 0.8765817880630493,
+        "p_diagnose_p90": 0.9892337322235107,
+        "margin_mean": 4.165813173566546,
+        "margin_median": 4.323311805725098,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 21
+        }
+      },
+      "link_failure": {
+        "n": 25,
+        "p_diagnose_mean": 0.9667507338523865,
+        "p_diagnose_median": 0.9827978610992432,
+        "p_diagnose_p10": 0.9241949319839478,
+        "p_diagnose_p90": 0.9907759189605713,
+        "margin_mean": 3.9383960342407227,
+        "margin_median": 4.170891761779785,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 25
+        }
+      },
+      "misconfiguration": {
+        "n": 5,
+        "p_diagnose_mean": 0.9987807154655457,
+        "p_diagnose_median": 0.9985361099243164,
+        "p_diagnose_p10": 0.998039960861206,
+        "p_diagnose_p90": 0.9996179580688477,
+        "margin_mean": 6.952186870574951,
+        "margin_median": 6.525232315063477,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 5
+        }
+      },
+      "performance_degradation": {
+        "n": 24,
+        "p_diagnose_mean": 0.9996196379264196,
+        "p_diagnose_median": 0.999684751033783,
+        "p_diagnose_p10": 0.9992325782775879,
+        "p_diagnose_p90": 0.9999460697174072,
+        "margin_mean": 8.395128846168518,
+        "margin_median": 8.066540718078613,
+        "rank_mean": 1.0,
+        "diag_is_top": 1.0,
+        "diag_in_top2": 1.0,
+        "diag_in_top3": 1.0,
+        "top_kind_hist": {
+          "diagnose": 24
+        }
+      }
+    },
+    "episodes": {
+      "exact": 0.75,
+      "timeout": 0.25,
+      "timeout_with_ready": 0.0,
+      "timeout_ready_final_p_diag_mean": null,
+      "timeout_ready_final_margin_mean": null,
+      "timeout_ready_final_rank_mean": null
+    }
+  },
+  "collects": {
+    "graph_4": {
+      "ok": 700,
+      "tries": 700,
+      "per_fault_ok": {
+        "device_failure": 164,
+        "misconfiguration": 180,
+        "performance_degradation": 190,
+        "link_failure": 166
+      },
+      "n_transitions": 3396,
+      "n_devices": 4
+    },
+    "graph_5": {
+      "ok": 700,
+      "tries": 700,
+      "per_fault_ok": {
+        "device_failure": 168,
+        "performance_degradation": 195,
+        "misconfiguration": 170,
+        "link_failure": 167
+      },
+      "n_transitions": 3649,
+      "n_devices": 5
+    },
+    "graph_6": {
+      "ok": 700,
+      "tries": 700,
+      "per_fault_ok": {
+        "performance_degradation": 190,
+        "link_failure": 173,
+        "device_failure": 164,
+        "misconfiguration": 173
+      },
+      "n_transitions": 3902,
+      "n_devices": 6
+    }
+  },
+  "baseline_exact": {
+    "6": 1.0,
+    "8": 0.9,
+    "10": 0.42
+  }
+}

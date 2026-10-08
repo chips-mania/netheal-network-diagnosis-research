@@ -1,0 +1,406 @@
+{
+  "unit_tests": {
+    "1_status_down": true,
+    "2_ping_fail": true,
+    "3_perf_latency": true,
+    "4_healthy_ping": true,
+    "5_raw_feat0_zero": true
+  },
+  "probes": [
+    {
+      "label": "device_edge0_ping_to_gt",
+      "gt_type": "device_failure",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": true,
+      "max_latency_slot": 0.0,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": null,
+      "tv_diagnosis": 0.033753152936697006,
+      "p_correct_scan": 0.0002460591495037079,
+      "p_correct_after_tool": 0.0002847257419489324,
+      "delta_p_correct": 3.8666592445224524e-05,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "device_edge0_ping_healthy_pair",
+      "gt_type": "device_failure",
+      "phi_after_tool": 0,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.0617000013589859,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": 6.17,
+      "tv_diagnosis": 0.09071740508079529,
+      "p_correct_scan": 0.0002460591495037079,
+      "p_correct_after_tool": 0.00036799570079892874,
+      "delta_p_correct": 0.00012193655129522085,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "device_edge0_check_status",
+      "gt_type": "device_failure",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": true,
+      "max_latency_slot": 0.0,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": null,
+      "tv_diagnosis": 0.043747201561927795,
+      "p_correct_scan": 0.0002460591495037079,
+      "p_correct_after_tool": 0.0002801463706418872,
+      "delta_p_correct": 3.40872211381793e-05,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "perf_center_edge0_ping",
+      "gt_type": "performance_degradation",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.20649999380111694,
+      "discovery_has_degraded": true,
+      "tool_latency_ms": 20.65,
+      "tv_diagnosis": 0.08832621574401855,
+      "p_correct_scan": 0.06813367828726768,
+      "p_correct_after_tool": 0.06619849056005478,
+      "delta_p_correct": -0.0019351877272129059,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "misconfig_edge0_ping_to_gt",
+      "gt_type": "misconfiguration",
+      "phi_after_tool": 0,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.05429999902844429,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": 5.43,
+      "tv_diagnosis": 0.08030243217945099,
+      "p_correct_scan": 0.0004327968636061996,
+      "p_correct_after_tool": 0.0005630555679090321,
+      "delta_p_correct": 0.00013025870430283248,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    }
+  ],
+  "frozen_e3": [
+    {
+      "label": "device_edge0_ping_to_gt",
+      "gt_type": "device_failure",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": true,
+      "max_latency_slot": 0.0,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": null,
+      "tv_diagnosis": 0.0488533154129982,
+      "p_correct_scan": 0.0004017228202428669,
+      "p_correct_after_tool": 0.0004130390880163759,
+      "delta_p_correct": 1.1316267773509026e-05,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "device_edge0_ping_healthy_pair",
+      "gt_type": "device_failure",
+      "phi_after_tool": 0,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.0617000013589859,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": 6.17,
+      "tv_diagnosis": 0.08593043684959412,
+      "p_correct_scan": 0.0004017228202428669,
+      "p_correct_after_tool": 0.0005559651181101799,
+      "delta_p_correct": 0.00015424229786731303,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "device_edge0_check_status",
+      "gt_type": "device_failure",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": true,
+      "max_latency_slot": 0.0,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": null,
+      "tv_diagnosis": 0.08704978972673416,
+      "p_correct_scan": 0.0004017228202428669,
+      "p_correct_after_tool": 0.0004128081491217017,
+      "delta_p_correct": 1.1085328878834844e-05,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 0.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "perf_center_edge0_ping",
+      "gt_type": "performance_degradation",
+      "phi_after_tool": 2,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.20649999380111694,
+      "discovery_has_degraded": true,
+      "tool_latency_ms": 20.65,
+      "tv_diagnosis": 0.09284850209951401,
+      "p_correct_scan": 0.06035314314067364,
+      "p_correct_after_tool": 0.049313368275761604,
+      "delta_p_correct": -0.011039774864912033,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    },
+    {
+      "label": "misconfig_edge0_ping_to_gt",
+      "gt_type": "misconfiguration",
+      "phi_after_tool": 0,
+      "feat0_scan": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_after": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feat0_has_down": false,
+      "max_latency_slot": 0.05429999902844429,
+      "discovery_has_degraded": false,
+      "tool_latency_ms": 5.43,
+      "tv_diagnosis": 0.07570413500070572,
+      "p_correct_scan": 0.0006383580039255321,
+      "p_correct_after_tool": 0.0008465061546303332,
+      "delta_p_correct": 0.00020814815070480108,
+      "obs_max_abs_delta": {
+        "discovery_matrix": 1.0,
+        "device_status": 1.0,
+        "recent_diagnostics": 1.0,
+        "episode_metadata": 0.06666667014360428
+      }
+    }
+  ],
+  "sto": {
+    "n": 200,
+    "n_tool_use": 84,
+    "n_phi": 19,
+    "p_tool_use": 0.42,
+    "p_phi": 0.095,
+    "p_phi_given_tool": 0.2261904761904762,
+    "p_exact_cons_given_tool": 0.0,
+    "p_exact_cons_given_phi": 0.0,
+    "n_exact_consistent": 0,
+    "per_fault": {
+      "device_failure": {
+        "n": 67,
+        "tool": 24,
+        "phi": 7,
+        "exact_cons": 0
+      },
+      "performance_degradation": {
+        "n": 67,
+        "tool": 27,
+        "phi": 9,
+        "exact_cons": 0
+      },
+      "misconfiguration": {
+        "n": 66,
+        "tool": 33,
+        "phi": 3,
+        "exact_cons": 0
+      }
+    }
+  },
+  "decision": {
+    "delta_p_device": 3.8666592445224524e-05,
+    "delta_p_perf": -0.0019351877272129059,
+    "delta_p_dummy": 0.00012193655129522085,
+    "best_delta_p": 3.8666592445224524e-05,
+    "hypothesis_support": false,
+    "sto_exact_cons_given_phi": 0.0,
+    "sto_exact_cons_given_tool": 0.0,
+    "decision": "no_go",
+    "open_e4": false,
+    "rule": "Go if (Device or Perf \u0394P>=+0.05 and > dummy) AND (P(ec|\u03a6)>=10% or \u0394P>=0.05 & P(ec|tool)>=5%)"
+  }
+}

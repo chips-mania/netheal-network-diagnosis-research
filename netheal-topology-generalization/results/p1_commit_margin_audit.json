@@ -1,0 +1,567 @@
+{
+  "narrative": "On conclude-ready states at N=10, diagnose often has **non-trivial mass / top-2 rank** \u2192 closer to **decision-boundary / calibration** than zero commit.",
+  "by_n": {
+    "6": {
+      "n_devices": 6,
+      "n": 100,
+      "max_steps": 15,
+      "buckets": {
+        "all": {
+          "n": 567,
+          "p_diagnose_mean": 0.17704714755064233,
+          "p_diagnose_median": 4.584872204116408e-10,
+          "p_diagnose_p10": 1.5835291748589222e-15,
+          "p_diagnose_p90": 0.9997780680656433,
+          "margin_mean": -18.500779881889436,
+          "margin_median": -21.503087997436523,
+          "rank_mean": 2.7372134038800704,
+          "diag_is_top": 0.1763668430335097,
+          "diag_in_top2": 0.23985890652557318,
+          "diag_in_top3": 0.8977072310405644,
+          "top_kind_hist": {
+            "scan": 100,
+            "check_status": 134,
+            "diagnose": 100,
+            "ping": 208,
+            "check_interfaces": 25
+          }
+        },
+        "conclude_match": {
+          "n": 100,
+          "p_diagnose_mean": 0.9996474826335907,
+          "p_diagnose_median": 0.9998750388622284,
+          "p_diagnose_p10": 0.9988877356052399,
+          "p_diagnose_p90": 0.9999998807907104,
+          "margin_mean": 11.08854995250702,
+          "margin_median": 9.295459747314453,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 100
+          }
+        },
+        "first_conclude_match": {
+          "n": 100,
+          "p_diagnose_mean": 0.9996474826335907,
+          "p_diagnose_median": 0.9998750388622284,
+          "p_diagnose_p10": 0.9988877356052399,
+          "p_diagnose_p90": 0.9999998807907104,
+          "margin_mean": 11.08854995250702,
+          "margin_median": 9.295459747314453,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 100
+          }
+        },
+        "success_final_step": {
+          "n": 100,
+          "p_diagnose_mean": 0.9996474826335907,
+          "p_diagnose_median": 0.9998750388622284,
+          "p_diagnose_p10": 0.9988877356052399,
+          "p_diagnose_p90": 0.9999998807907104,
+          "margin_mean": 11.08854995250702,
+          "margin_median": 9.295459747314453,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 100
+          }
+        }
+      },
+      "by_fault_conclude_match": {
+        "device_failure": {
+          "n": 25,
+          "p_diagnose_mean": 0.9999999141693116,
+          "p_diagnose_median": 0.9999998807907104,
+          "p_diagnose_p10": 0.9999998807907104,
+          "p_diagnose_p90": 1.0,
+          "margin_mean": 16.41763328552246,
+          "margin_median": 16.474454879760742,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        },
+        "link_failure": {
+          "n": 25,
+          "p_diagnose_mean": 0.9990814971923828,
+          "p_diagnose_median": 0.9990205764770508,
+          "p_diagnose_p10": 0.9984981536865234,
+          "p_diagnose_p90": 0.9995469927787781,
+          "margin_mean": 7.4534906387329105,
+          "margin_median": 7.202122688293457,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        },
+        "misconfiguration": {
+          "n": 25,
+          "p_diagnose_mean": 0.9995193719863892,
+          "p_diagnose_median": 0.9997181296348572,
+          "p_diagnose_p10": 0.9989746332168579,
+          "p_diagnose_p90": 0.9998042702674865,
+          "margin_mean": 8.176904392242431,
+          "margin_median": 8.484949111938477,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        },
+        "performance_degradation": {
+          "n": 25,
+          "p_diagnose_mean": 0.9999891471862793,
+          "p_diagnose_median": 0.999995231628418,
+          "p_diagnose_p10": 0.9999748706817627,
+          "p_diagnose_p90": 0.9999988317489624,
+          "margin_mean": 12.306171493530274,
+          "margin_median": 12.405542373657227,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        }
+      },
+      "episodes": {
+        "exact": 1.0,
+        "timeout": 0.0,
+        "timeout_with_ready": 0.0,
+        "timeout_ready_final_p_diag_mean": null,
+        "timeout_ready_final_margin_mean": null,
+        "timeout_ready_final_rank_mean": null
+      }
+    },
+    "8": {
+      "n_devices": 8,
+      "n": 100,
+      "max_steps": 15,
+      "buckets": {
+        "all": {
+          "n": 705,
+          "p_diagnose_mean": 0.13722418496890643,
+          "p_diagnose_median": 8.063649747924728e-11,
+          "p_diagnose_p10": 1.9536803678764124e-17,
+          "p_diagnose_p90": 0.7726123571395875,
+          "margin_mean": -20.928701707826438,
+          "margin_median": -23.241069793701172,
+          "rank_mean": 2.8127659574468087,
+          "diag_is_top": 0.12907801418439716,
+          "diag_in_top2": 0.225531914893617,
+          "diag_in_top3": 0.8936170212765957,
+          "top_kind_hist": {
+            "scan": 100,
+            "check_status": 213,
+            "diagnose": 91,
+            "ping": 266,
+            "check_interfaces": 35
+          }
+        },
+        "conclude_match": {
+          "n": 177,
+          "p_diagnose_mean": 0.5415619201109729,
+          "p_diagnose_median": 0.5139661431312561,
+          "p_diagnose_p10": 0.0029419471975415945,
+          "p_diagnose_p90": 0.9999881505966186,
+          "margin_mean": 1.397435331075205,
+          "margin_median": 0.6527938842773438,
+          "rank_mean": 1.7231638418079096,
+          "diag_is_top": 0.5141242937853108,
+          "diag_in_top2": 0.7627118644067796,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 91,
+            "check_status": 76,
+            "check_interfaces": 10
+          }
+        },
+        "first_conclude_match": {
+          "n": 99,
+          "p_diagnose_mean": 0.8227422375060298,
+          "p_diagnose_median": 0.9109988808631897,
+          "p_diagnose_p10": 0.513170599937439,
+          "p_diagnose_p90": 0.9999977350234985,
+          "margin_mean": 4.965446019413496,
+          "margin_median": 2.326852798461914,
+          "rank_mean": 1.121212121212121,
+          "diag_is_top": 0.9191919191919192,
+          "diag_in_top2": 0.9595959595959596,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 91,
+            "check_status": 8
+          }
+        },
+        "success_final_step": {
+          "n": 91,
+          "p_diagnose_mean": 0.879704923420162,
+          "p_diagnose_median": 0.980231761932373,
+          "p_diagnose_p10": 0.670012891292572,
+          "p_diagnose_p90": 0.9999977350234985,
+          "margin_mean": 5.710729640918774,
+          "margin_median": 3.9037160873413086,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 91
+          }
+        },
+        "timeout_last_k": {
+          "n": 27,
+          "p_diagnose_mean": 0.16013175173159647,
+          "p_diagnose_median": 0.004008929245173931,
+          "p_diagnose_p10": 0.0008009225245132257,
+          "p_diagnose_p90": 0.4611087143421173,
+          "margin_mean": -4.608247615672924,
+          "margin_median": -5.19691801071167,
+          "rank_mean": 2.4444444444444446,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5555555555555556,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 24,
+            "check_interfaces": 3
+          }
+        },
+        "timeout_conclude_match": {
+          "n": 86,
+          "p_diagnose_mean": 0.18375943986520302,
+          "p_diagnose_median": 0.028113949578255415,
+          "p_diagnose_p10": 0.001334363711066544,
+          "p_diagnose_p90": 0.46569716930389404,
+          "margin_mean": -3.166631903759269,
+          "margin_median": -3.588609218597412,
+          "rank_mean": 2.488372093023256,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5116279069767442,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 76,
+            "check_interfaces": 10
+          }
+        },
+        "timeout_final_step": {
+          "n": 9,
+          "p_diagnose_mean": 0.1601318047711402,
+          "p_diagnose_median": 0.004008929245173931,
+          "p_diagnose_p10": 0.001067643117789885,
+          "p_diagnose_p90": 0.4595792293548584,
+          "margin_mean": -4.397475136650933,
+          "margin_median": -5.19691801071167,
+          "rank_mean": 2.4444444444444446,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5555555555555556,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 8,
+            "check_interfaces": 1
+          }
+        }
+      },
+      "by_fault_conclude_match": {
+        "device_failure": {
+          "n": 25,
+          "p_diagnose_mean": 0.9913582849502564,
+          "p_diagnose_median": 0.9933788776397705,
+          "p_diagnose_p10": 0.9801034808158875,
+          "p_diagnose_p90": 0.9999996185302734,
+          "margin_mean": 8.36203540802002,
+          "margin_median": 5.0108489990234375,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        },
+        "link_failure": {
+          "n": 25,
+          "p_diagnose_mean": 0.7239345622062683,
+          "p_diagnose_median": 0.7674077749252319,
+          "p_diagnose_p10": 0.5163436532020569,
+          "p_diagnose_p90": 0.8075133562088013,
+          "margin_mean": 1.303136100769043,
+          "margin_median": 1.3610954284667969,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        },
+        "misconfiguration": {
+          "n": 103,
+          "p_diagnose_mean": 0.28132049033974377,
+          "p_diagnose_median": 0.049539949744939804,
+          "p_diagnose_p10": 0.001655880408361556,
+          "p_diagnose_p90": 0.7556290507316586,
+          "margin_mean": -2.4259062044828843,
+          "margin_median": -2.2841429710388184,
+          "rank_mean": 2.2427184466019416,
+          "diag_is_top": 0.1650485436893204,
+          "diag_in_top2": 0.5922330097087378,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 17,
+            "check_status": 76,
+            "check_interfaces": 10
+          }
+        },
+        "performance_degradation": {
+          "n": 24,
+          "p_diagnose_mean": 0.9999220073223114,
+          "p_diagnose_median": 0.9999772906303406,
+          "p_diagnose_p10": 0.9998601317405701,
+          "p_diagnose_p90": 0.9999961972236633,
+          "margin_mean": 10.64937937259674,
+          "margin_median": 10.771499633789062,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 24
+          }
+        }
+      },
+      "episodes": {
+        "exact": 0.91,
+        "timeout": 0.09,
+        "timeout_with_ready": 0.08,
+        "timeout_ready_final_p_diag_mean": 0.18014818527444731,
+        "timeout_ready_final_margin_mean": -3.186038613319397,
+        "timeout_ready_final_rank_mean": 2.5
+      }
+    },
+    "10": {
+      "n_devices": 10,
+      "n": 100,
+      "max_steps": 15,
+      "buckets": {
+        "all": {
+          "n": 1221,
+          "p_diagnose_mean": 0.10375781242630804,
+          "p_diagnose_median": 5.667125719810429e-07,
+          "p_diagnose_p10": 1.1384245233828454e-17,
+          "p_diagnose_p90": 0.3457767367362976,
+          "margin_mean": -17.849923600924004,
+          "margin_median": -14.370262145996094,
+          "rank_mean": 2.701883701883702,
+          "diag_is_top": 0.03767403767403767,
+          "diag_in_top2": 0.2964782964782965,
+          "diag_in_top3": 0.963963963963964,
+          "top_kind_hist": {
+            "scan": 100,
+            "check_status": 628,
+            "check_interfaces": 93,
+            "ping": 354,
+            "diagnose": 46
+          }
+        },
+        "conclude_match": {
+          "n": 451,
+          "p_diagnose_mean": 0.28083670643005026,
+          "p_diagnose_median": 0.30476313829421997,
+          "p_diagnose_p10": 0.001354811480268836,
+          "p_diagnose_p90": 0.9815785884857178,
+          "margin_mean": -1.613184322010387,
+          "margin_median": -0.8225431442260742,
+          "rank_mean": 2.097560975609756,
+          "diag_is_top": 0.10199556541019955,
+          "diag_in_top2": 0.8004434589800443,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 332,
+            "check_interfaces": 73,
+            "diagnose": 46
+          }
+        },
+        "first_conclude_match": {
+          "n": 81,
+          "p_diagnose_mean": 0.568932469977297,
+          "p_diagnose_median": 0.9826589822769165,
+          "p_diagnose_p10": 0.005636837799102068,
+          "p_diagnose_p90": 0.999916672706604,
+          "margin_mean": 1.6805422453232755,
+          "margin_median": 4.0371904373168945,
+          "rank_mean": 1.8024691358024691,
+          "diag_is_top": 0.5679012345679012,
+          "diag_in_top2": 0.6296296296296297,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 22,
+            "diagnose": 46,
+            "check_interfaces": 13
+          }
+        },
+        "timeout_last_k": {
+          "n": 162,
+          "p_diagnose_mean": 0.14854855507972997,
+          "p_diagnose_median": 0.03029548842459917,
+          "p_diagnose_p10": 7.784326783166762e-08,
+          "p_diagnose_p90": 0.34950724244117737,
+          "margin_mean": -7.257941908306545,
+          "margin_median": -3.4665772914886475,
+          "rank_mean": 2.4444444444444446,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5555555555555556,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 135,
+            "check_interfaces": 15,
+            "ping": 12
+          }
+        },
+        "timeout_conclude_match": {
+          "n": 405,
+          "p_diagnose_mean": 0.1998968708827171,
+          "p_diagnose_median": 0.28471964597702026,
+          "p_diagnose_p10": 0.0012151756556704643,
+          "p_diagnose_p90": 0.35427260398864746,
+          "margin_mean": -2.567286742175067,
+          "margin_median": -0.919123649597168,
+          "rank_mean": 2.2222222222222223,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.7777777777777778,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 332,
+            "check_interfaces": 73
+          }
+        },
+        "timeout_final_step": {
+          "n": 54,
+          "p_diagnose_mean": 0.14854855507972997,
+          "p_diagnose_median": 0.03029548842459917,
+          "p_diagnose_p10": 1.150114457004748e-07,
+          "p_diagnose_p90": 0.34899523556232454,
+          "margin_mean": -7.257941908306545,
+          "margin_median": -3.4665772914886475,
+          "rank_mean": 2.4444444444444446,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5555555555555556,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 45,
+            "check_interfaces": 5,
+            "ping": 4
+          }
+        },
+        "success_final_step": {
+          "n": 46,
+          "p_diagnose_mean": 0.9934591715750487,
+          "p_diagnose_median": 0.9992291927337646,
+          "p_diagnose_p10": 0.9826093912124634,
+          "p_diagnose_p90": 0.9999377131462097,
+          "margin_mean": 6.7870652468308155,
+          "margin_median": 7.1675286293029785,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 46
+          }
+        }
+      },
+      "by_fault_conclude_match": {
+        "device_failure": {
+          "n": 21,
+          "p_diagnose_mean": 0.9860682288805643,
+          "p_diagnose_median": 0.986064076423645,
+          "p_diagnose_p10": 0.9817361831665039,
+          "p_diagnose_p90": 0.9893479347229004,
+          "margin_mean": 4.625195594060989,
+          "margin_median": 4.25925350189209,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 21
+          }
+        },
+        "link_failure": {
+          "n": 300,
+          "p_diagnose_mean": 0.26483260170168554,
+          "p_diagnose_median": 0.30713261663913727,
+          "p_diagnose_p10": 0.01246905867010355,
+          "p_diagnose_p90": 0.3713129967451097,
+          "margin_mean": -1.4488314263025919,
+          "margin_median": -0.8111953735351562,
+          "rank_mean": 2.1333333333333333,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.8666666666666667,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 275,
+            "check_interfaces": 25
+          }
+        },
+        "misconfiguration": {
+          "n": 105,
+          "p_diagnose_mean": 0.014366211399950165,
+          "p_diagnose_median": 0.021039696410298347,
+          "p_diagnose_p10": 8.809684513835239e-05,
+          "p_diagnose_p90": 0.03178506195545197,
+          "margin_mean": -5.762873358953566,
+          "margin_median": -3.8400139808654785,
+          "rank_mean": 2.4761904761904763,
+          "diag_is_top": 0.0,
+          "diag_in_top2": 0.5238095238095238,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "check_status": 57,
+            "check_interfaces": 48
+          }
+        },
+        "performance_degradation": {
+          "n": 25,
+          "p_diagnose_mean": 0.9996675634384156,
+          "p_diagnose_median": 0.999855637550354,
+          "p_diagnose_p10": 0.9992288112640381,
+          "p_diagnose_p90": 0.9999410152435303,
+          "margin_mean": 8.603035755157471,
+          "margin_median": 8.843581199645996,
+          "rank_mean": 1.0,
+          "diag_is_top": 1.0,
+          "diag_in_top2": 1.0,
+          "diag_in_top3": 1.0,
+          "top_kind_hist": {
+            "diagnose": 25
+          }
+        }
+      },
+      "episodes": {
+        "exact": 0.46,
+        "timeout": 0.54,
+        "timeout_with_ready": 0.35,
+        "timeout_ready_final_p_diag_mean": 0.22914739243050072,
+        "timeout_ready_final_margin_mean": -2.2362103734697616,
+        "timeout_ready_final_rank_mean": 2.142857142857143
+      }
+    }
+  }
+}

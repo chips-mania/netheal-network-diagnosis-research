@@ -1,0 +1,272 @@
+# Primary protocol — fixed before Unseen eval (Step 6)
+min_devices: 6
+max_devices: 6
+max_episode_steps: 15
+enable_user_hints: false
+
+train_topology_types:
+  - star
+  - linear
+
+mesh_instances:
+  M1: 90001
+  M2: 90002
+  M3: 90003
+
+# Set after runtime_benchmark (Step 6); initial PoC value
+episodes_per_fault: 10
+
+fault_types:
+  - link_failure
+  - device_failure
+  - performance_degradation
+  - misconfiguration
+
+policy_training_seeds:
+  - 1
+  - 2
+  - 3
+
+ppo_sanity:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+
+link_only_sanity:
+  topology_types:
+    - star
+  fault_types:
+    - link_failure
+  timesteps: 30000
+  policy_seed: 1
+
+nonlink_single_fault_sanity:
+  topology_types:
+    - star
+  fault_types:
+    - device_failure
+    - performance_degradation
+    - misconfiguration
+  timesteps: 30000
+  policy_seed: 1
+
+symmetric_reward_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 95000
+
+diagnosis_gate_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 96000
+  min_diagnostic_actions: 1
+
+factorized_diagnosis_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 97000
+
+e1_pbrs_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 98000
+  alpha: 1.0
+  gamma: 0.99
+
+e2_timeout_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 99000
+
+e3_exploration_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 100000
+  ent_coef: 0.01
+
+ablation_nl_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 101000
+  train_fault_types:
+    - device_failure
+    - performance_degradation
+    - misconfiguration
+
+obs_then_e4_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 200
+  eval_seed_base: 102000
+
+evidence_diagnose_gate_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 103000
+
+bc_seed_gate_ppo_poc:
+  topology_types:
+    - star
+  seed_demos: 400
+  seed_bc_epochs: 15
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 111000
+
+bc_rule_gate_ppo_poc:
+  topology_types:
+    - star
+  n_demos: 2000
+  bc_epochs: 40
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 112000
+  pad: 6
+
+graph_expert_bc_poc:
+  train_ns: [4, 5, 6]
+  demos_per_n: 700
+  bc_epochs: 40
+  p1_epochs: 80
+  commit_epochs: 40
+  commit_oversample: 3
+  commit_w_diag: 4.0
+  commit_w_hard: 2.0
+  batch_size: 64
+  pad_max_devices: 12
+  pad_edges: 132
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 130000
+  mesh_max_steps: 40
+
+repeat_penalty_poc:
+  topology_types:
+    - star
+  timesteps: 30000
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 104000
+  repeat_penalty: -2.0
+
+bc_informed_poc:
+  topology_types:
+    - star
+  n_demos: 2000
+  bc_epochs: 40
+  batch_size: 64
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 105000
+
+rule_ceiling_poc:
+  topology_types:
+    - star
+  eval_episodes: 100
+  eval_seed_base: 106000
+
+rule_v2_ceiling_poc:
+  eval_episodes: 100
+  mesh_episodes: 100
+  eval_seed_base: 120000
+  mesh_max_steps: 40
+
+bc_rule_poc:
+  topology_types:
+    - star
+  n_demos: 2000
+  bc_epochs: 40
+  batch_size: 64
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 107000
+
+star_scale_poc:
+  topology_types:
+    - star
+  pad_max_devices: 12
+  n_list:
+    - 6
+    - 8
+    - 10
+  base_n: 6
+  base_demos: 2000
+  base_bc_epochs: 40
+  ft_demos: 300
+  ft_bc_epochs: 10
+  ft_lr: 0.0001
+  batch_size: 64
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 108000
+
+star_scale_replay_poc:
+  topology_types:
+    - star
+  pad_max_devices: 12
+  n_list:
+    - 4
+    - 6
+    - 8
+    - 10
+  base_n: 6
+  base_demos: 2000
+  base_bc_epochs: 40
+  replay6_demos: 500
+  ft_target_demos: 300
+  ft_bc_epochs: 15
+  ft_lr: 0.0001
+  batch_size: 64
+  policy_seed: 1
+  eval_episodes: 100
+  eval_seed_base: 109000
+
+star_mix456_poc:
+  topology_types:
+    - star
+  pad_max_devices: 12
+  train_ns:
+    - 4
+    - 5
+    - 6
+  demos_per_n: 700
+  bc_epochs: 40
+  batch_size: 64
+  policy_seed: 1
+  eval_episodes: 100
+  eval_ns:
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+  eval_seed_base: 110000

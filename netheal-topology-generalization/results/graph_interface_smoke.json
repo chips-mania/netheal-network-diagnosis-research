@@ -1,0 +1,172 @@
+{
+  "decision": "go",
+  "graph": {
+    "ok": true,
+    "rows": {
+      "star_4": {
+        "n_nodes": 4,
+        "n_edges": 6,
+        "node_feat_shape": [
+          4,
+          7
+        ],
+        "edge_feat_shape": [
+          6,
+          5
+        ],
+        "edge_index_shape": [
+          2,
+          6
+        ],
+        "globals_shape": [
+          4
+        ],
+        "pad_node_sum": 4.0,
+        "node_dim_ok": true,
+        "edge_dim_ok": true,
+        "nodes_match": true
+      },
+      "star_6": {
+        "n_nodes": 6,
+        "n_edges": 10,
+        "node_feat_shape": [
+          6,
+          7
+        ],
+        "edge_feat_shape": [
+          10,
+          5
+        ],
+        "edge_index_shape": [
+          2,
+          10
+        ],
+        "globals_shape": [
+          4
+        ],
+        "pad_node_sum": 6.0,
+        "node_dim_ok": true,
+        "edge_dim_ok": true,
+        "nodes_match": true
+      },
+      "star_8": {
+        "n_nodes": 8,
+        "n_edges": 14,
+        "node_feat_shape": [
+          8,
+          7
+        ],
+        "edge_feat_shape": [
+          14,
+          5
+        ],
+        "edge_index_shape": [
+          2,
+          14
+        ],
+        "globals_shape": [
+          4
+        ],
+        "pad_node_sum": 8.0,
+        "node_dim_ok": true,
+        "edge_dim_ok": true,
+        "nodes_match": true
+      },
+      "mesh_6": {
+        "n_nodes": 6,
+        "n_edges": 12,
+        "node_feat_shape": [
+          6,
+          7
+        ],
+        "edge_feat_shape": [
+          12,
+          5
+        ],
+        "edge_index_shape": [
+          2,
+          12
+        ],
+        "globals_shape": [
+          4
+        ],
+        "pad_node_sum": 6.0,
+        "node_dim_ok": true,
+        "edge_dim_ok": true,
+        "nodes_match": true
+      },
+      "linear_6": {
+        "n_nodes": 6,
+        "n_edges": 10,
+        "node_feat_shape": [
+          6,
+          7
+        ],
+        "edge_feat_shape": [
+          10,
+          5
+        ],
+        "edge_index_shape": [
+          2,
+          10
+        ],
+        "globals_shape": [
+          4
+        ],
+        "pad_node_sum": 6.0,
+        "node_dim_ok": true,
+        "edge_dim_ok": true,
+        "nodes_match": true
+      }
+    }
+  },
+  "pointer": {
+    "sizes": {
+      "4": {
+        "n": 4,
+        "action_space_n": 69,
+        "ping_id": 5,
+        "scan_id": 4,
+        "status_id": 30,
+        "ping_endpoints": [
+          "center",
+          "edge_0"
+        ]
+      },
+      "6": {
+        "n": 6,
+        "action_space_n": 151,
+        "ping_id": 7,
+        "scan_id": 6,
+        "status_id": 68,
+        "ping_endpoints": [
+          "center",
+          "edge_0"
+        ]
+      },
+      "8": {
+        "n": 8,
+        "action_space_n": 265,
+        "ping_id": 9,
+        "scan_id": 8,
+        "status_id": 122,
+        "ping_endpoints": [
+          "center",
+          "edge_0"
+        ]
+      }
+    },
+    "ok": true,
+    "ping_ids": [
+      5,
+      7,
+      9
+    ],
+    "action_space_ns": [
+      69,
+      151,
+      265
+    ],
+    "spaces_vary": true
+  }
+}
