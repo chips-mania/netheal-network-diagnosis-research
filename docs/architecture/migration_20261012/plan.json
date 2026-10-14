@@ -1,0 +1,648 @@
+{
+  "date": "2026-10-12",
+  "actions": [
+    {
+      "old": "netheal-topology-generalization/results/ablation_nl_control_nl_det_trace.csv",
+      "new": "runs/legacy_poc/artifacts/ablation_nl_control_nl_det_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/ablation_nl_poc.json",
+      "new": "runs/legacy_poc/artifacts/ablation_nl_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/ablation_nl_variant_4fault_det_trace.csv",
+      "new": "runs/legacy_poc/artifacts/ablation_nl_variant_4fault_det_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/ablation_nl_variant_nl_det_trace.csv",
+      "new": "runs/legacy_poc/artifacts/ablation_nl_variant_nl_det_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/api_pilot_20261009",
+      "new": "runs/api_pilot/api_pilot_20261009",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/api_preflight_20261009_041051",
+      "new": "runs/api_pilot/api_preflight_20261009_041051",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/api_smoke_20261009",
+      "new": "runs/api_pilot/api_smoke_20261009",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/archive",
+      "new": "runs/archive",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/bc_informed_poc.json",
+      "new": "runs/legacy_poc/artifacts/bc_informed_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/bc_rule_gate_ppo_poc.json",
+      "new": "runs/legacy_poc/artifacts/bc_rule_gate_ppo_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/bc_rule_poc.json",
+      "new": "runs/legacy_poc/artifacts/bc_rule_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/bc_seed_gate_ppo_poc.json",
+      "new": "runs/legacy_poc/artifacts/bc_seed_gate_ppo_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/device_failure_only_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/device_failure_only_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/diagnosis_action_mapping.json",
+      "new": "runs/legacy_poc/artifacts/diagnosis_action_mapping.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/diagnosis_factorization_audit.json",
+      "new": "runs/legacy_poc/artifacts/diagnosis_factorization_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/diagnosis_gate_poc.json",
+      "new": "runs/legacy_poc/artifacts/diagnosis_gate_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/diagnosis_gate_poc_control_trace.csv",
+      "new": "runs/legacy_poc/artifacts/diagnosis_gate_poc_control_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/diagnosis_gate_poc_variant_trace.csv",
+      "new": "runs/legacy_poc/artifacts/diagnosis_gate_poc_variant_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e1_pbrs_poc.json",
+      "new": "runs/legacy_poc/artifacts/e1_pbrs_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e1_pbrs_poc_control_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e1_pbrs_poc_control_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e1_pbrs_poc_variant_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e1_pbrs_poc_variant_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e2_timeout_poc.json",
+      "new": "runs/legacy_poc/artifacts/e2_timeout_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e2_timeout_poc_control_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e2_timeout_poc_control_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e2_timeout_poc_variant_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e2_timeout_poc_variant_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_control_det_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e3_control_det_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_control_stoch_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e3_control_stoch_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_exploration_poc.json",
+      "new": "runs/legacy_poc/artifacts/e3_exploration_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_stage_a_probes.json",
+      "new": "runs/legacy_poc/artifacts/e3_stage_a_probes.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_variant_det_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e3_variant_det_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/e3_variant_stoch_trace.csv",
+      "new": "runs/legacy_poc/artifacts/e3_variant_stoch_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/evidence_diagnose_gate_poc.json",
+      "new": "runs/legacy_poc/artifacts/evidence_diagnose_gate_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/factorial_v3_20261008",
+      "new": "runs/generalization/factorial_v3_20261008",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/factorized_diagnosis_poc.json",
+      "new": "runs/legacy_poc/artifacts/factorized_diagnosis_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/factorized_diagnosis_poc_control_trace.csv",
+      "new": "runs/legacy_poc/artifacts/factorized_diagnosis_poc_control_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/factorized_diagnosis_poc_variant_trace.csv",
+      "new": "runs/legacy_poc/artifacts/factorized_diagnosis_poc_variant_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/failure_mode_audit.json",
+      "new": "runs/legacy_poc/artifacts/failure_mode_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/graph_expert_poc.json",
+      "new": "runs/legacy_poc/artifacts/graph_expert_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/graph_interface_smoke.json",
+      "new": "runs/legacy_poc/artifacts/graph_interface_smoke.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_baseline_compact_fp32_v2",
+      "new": "runs/laya_pilot/laya_baseline_compact_fp32_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_baseline_compact_v2",
+      "new": "runs/laya_pilot/laya_baseline_compact_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_baseline_cpu_v1",
+      "new": "runs/laya_pilot/laya_baseline_cpu_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_baseline_cpu_v1_retry",
+      "new": "runs/laya_pilot/laya_baseline_cpu_v1_retry",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_baseline_gpu_pilot_v1",
+      "new": "runs/laya_pilot/laya_baseline_gpu_pilot_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_data_compact_v2",
+      "new": "data/generated/laya/laya_data_compact_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_data_v1",
+      "new": "data/generated/laya/laya_data_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_diagnosis_only_v2",
+      "new": "runs/laya_pilot/laya_diagnosis_only_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_gpu_full_smoke_v1",
+      "new": "runs/laya_pilot/laya_gpu_full_smoke_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_gpu_smoke_v1",
+      "new": "runs/laya_pilot/laya_gpu_smoke_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_head_compact_48ep_v2",
+      "new": "runs/laya_pilot/laya_head_compact_48ep_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_head_compact_fp32_v2",
+      "new": "runs/laya_pilot/laya_head_compact_fp32_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_learning_controls_20261010",
+      "new": "runs/laya_controls/laya_learning_controls_20261010",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_learning_controls_ce_20261010",
+      "new": "runs/laya_controls/laya_learning_controls_ce_20261010",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_observation_controls_v1",
+      "new": "runs/laya_controls/laya_observation_controls_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_official_resource_20261012_v1",
+      "new": "runs/official_benchmark/laya/resource_probes/laya_official_resource_20261012_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_official_resource_long_20261012_v1",
+      "new": "runs/official_benchmark/laya/resource_probes/laya_official_resource_long_20261012_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_optimization_controls_v1",
+      "new": "runs/laya_controls/laya_optimization_controls_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_pilot_report_v2",
+      "new": "runs/laya_pilot/laya_pilot_report_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_short_controls_v1",
+      "new": "runs/laya_controls/laya_short_controls_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/laya_symbol_controls_v1",
+      "new": "runs/laya_controls/laya_symbol_controls_v1",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/link_only_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/link_only_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/link_only_sanity_summary.json",
+      "new": "runs/legacy_poc/artifacts/link_only_sanity_summary.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/masked_ppo_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/masked_ppo_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/misconfiguration_only_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/misconfiguration_only_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/netheal_official_jev_20261011_v2",
+      "new": "runs/official_benchmark/jev/netheal_official_jev_20261011_v2",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/netheal_official_jev_20261011_v3",
+      "new": "runs/official_benchmark/jev/netheal_official_jev_20261011_v3",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/netheal_official_jev_20261011_v4",
+      "new": "runs/official_benchmark/jev/netheal_official_jev_20261011_v4",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/nonlink_single_fault_learnability.json",
+      "new": "runs/legacy_poc/artifacts/nonlink_single_fault_learnability.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/obs_then_e4_stage_b.json",
+      "new": "runs/legacy_poc/artifacts/obs_then_e4_stage_b.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_commit_ablation.json",
+      "new": "runs/legacy_poc/artifacts/p1_commit_ablation.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_commit_factor_ablation.json",
+      "new": "runs/legacy_poc/artifacts/p1_commit_factor_ablation.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_commit_fix.json",
+      "new": "runs/legacy_poc/artifacts/p1_commit_fix.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_commit_margin_audit.json",
+      "new": "runs/legacy_poc/artifacts/p1_commit_margin_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_misconfig_path_audit.json",
+      "new": "runs/legacy_poc/artifacts/p1_misconfig_path_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_misconfig_pointer_rank.json",
+      "new": "runs/legacy_poc/artifacts/p1_misconfig_pointer_rank.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_pointer_curriculum.json",
+      "new": "runs/legacy_poc/artifacts/p1_pointer_curriculum.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_pointer_only_probe.json",
+      "new": "runs/legacy_poc/artifacts/p1_pointer_only_probe.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_star10_failure_audit.json",
+      "new": "runs/legacy_poc/artifacts/p1_star10_failure_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/p1_train_audit.json",
+      "new": "runs/legacy_poc/artifacts/p1_train_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/performance_degradation_only_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/performance_degradation_only_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/post_scan_audit.json",
+      "new": "runs/legacy_poc/artifacts/post_scan_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/ppo_action_trace.csv",
+      "new": "runs/legacy_poc/artifacts/ppo_action_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/ppo_diagnosis_baselines.json",
+      "new": "runs/legacy_poc/artifacts/ppo_diagnosis_baselines.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/random_valid_baseline.csv",
+      "new": "runs/legacy_poc/artifacts/random_valid_baseline.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/reliability_v2_20261008",
+      "new": "runs/generalization/reliability_v2_20261008",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/results/repeat_penalty_poc.json",
+      "new": "runs/legacy_poc/artifacts/repeat_penalty_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/rule_ceiling_poc.json",
+      "new": "runs/legacy_poc/artifacts/rule_ceiling_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/rule_v2_ceiling.json",
+      "new": "runs/legacy_poc/artifacts/rule_v2_ceiling.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/star_mix456_poc.json",
+      "new": "runs/legacy_poc/artifacts/star_mix456_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/star_scale_poc.json",
+      "new": "runs/legacy_poc/artifacts/star_scale_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/star_scale_replay_n4_extra.json",
+      "new": "runs/legacy_poc/artifacts/star_scale_replay_n4_extra.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/star_scale_replay_poc.json",
+      "new": "runs/legacy_poc/artifacts/star_scale_replay_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/stochastic_evidence_audit.json",
+      "new": "runs/legacy_poc/artifacts/stochastic_evidence_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/symmetric_reward_poc.json",
+      "new": "runs/legacy_poc/artifacts/symmetric_reward_poc.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/symmetric_reward_poc_control_trace.csv",
+      "new": "runs/legacy_poc/artifacts/symmetric_reward_poc_control_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/symmetric_reward_poc_variant_trace.csv",
+      "new": "runs/legacy_poc/artifacts/symmetric_reward_poc_variant_trace.csv",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/tool_solvability_audit.json",
+      "new": "runs/legacy_poc/artifacts/tool_solvability_audit.json",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/results/train_episode_log",
+      "new": "runs/legacy_poc/train_episode_log",
+      "kind": "junction"
+    },
+    {
+      "old": "netheal-topology-generalization/src/metrics_utils.py",
+      "new": "src/netheal_research/evaluation/metrics_utils.py",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/src/research_metrics.py",
+      "new": "src/netheal_research/evaluation/research_metrics.py",
+      "kind": "hardlink"
+    },
+    {
+      "old": "netheal-topology-generalization/src/controlled_faults.py",
+      "new": "src/netheal_research/environments/controlled_faults.py",
+      "kind": "hardlink"
+    },
+    {
+      "old": "docs/results/GNN_expert_guided_results_report.md",
+      "new": "docs/research/generalization/reports/GNN_expert_guided_results_report.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/gpt_jev_pilot_v1.md",
+      "new": "docs/research/api_pilot/reports/gpt_jev_pilot_v1.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/laya_learning_controls_20261010.md",
+      "new": "docs/research/laya_controls/reports/laya_learning_controls_20261010.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/laya_observation_controls_v1.md",
+      "new": "docs/research/laya_controls/reports/laya_observation_controls_v1.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/laya_optimization_controls_v1.md",
+      "new": "docs/research/laya_controls/reports/laya_optimization_controls_v1.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/laya_pilot_v2.md",
+      "new": "docs/research/laya_controls/reports/laya_pilot_v2.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/laya_symbol_controls_v1.md",
+      "new": "docs/research/laya_controls/reports/laya_symbol_controls_v1.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/NetHeal_experiment_history.md",
+      "new": "docs/research/generalization/reports/NetHeal_experiment_history.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/netheal_official_jev_context_fix_20261012.md",
+      "new": "docs/research/official_benchmark/reports/netheal_official_jev_context_fix_20261012.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/netheal_official_jev_preflight_20261011.md",
+      "new": "docs/research/official_benchmark/reports/netheal_official_jev_preflight_20261011.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/netheal_official_jev_results_20261011.md",
+      "new": "docs/research/official_benchmark/reports/netheal_official_jev_results_20261011.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/NetHeal_RL_results_summary.md",
+      "new": "docs/research/generalization/reports/NetHeal_RL_results_summary.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/reliability_v2_conclusions.md",
+      "new": "docs/research/generalization/reports/reliability_v2_conclusions.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/results/reliability_v3_conclusions.md",
+      "new": "docs/research/generalization/reports/reliability_v3_conclusions.md",
+      "kind": "document"
+    },
+    {
+      "old": "docs/specs/laya_handoff_20261012.md",
+      "new": "docs/handoffs/2026-10-12_laya_handoff.md",
+      "kind": "document"
+    }
+  ],
+  "protected_sha256": {
+    "netheal-topology-generalization/src/run_nonlink_single_fault_audit.py": "56675eda39c289d80694944e9506765a7990ee2fbc46f235b8368d5f840e3fce",
+    "netheal-topology-generalization/scripts/audit_jev_partitions_v4.py": "01d37b949a68bd756efc7c10fd06507a9ca3031f853632166d30a2788f2ae7ac",
+    "netheal-topology-generalization/scripts/check_jev_partition_v3.py": "c7e7f493b5e9ac1ebb4e3a9ebc9535191fd102d536b52deda01ad451ca5d2322",
+    "netheal-topology-generalization/scripts/check_jev_partition_v4.py": "20abb095fec3f26eb408369da483c925d554368348d43c03ee6fc1cff270559f",
+    "netheal-topology-generalization/scripts/evaluate_laya_diagnosis_only.py": "33088d62c13bce8bde6eedbac170318cb2fae0516f9d9ddfa17b9baea20db21b",
+    "netheal-topology-generalization/scripts/jev_context_api_check.py": "64d11c616ed031324f2c90534e321cd5af9cc4d341d49ceabd7c4c3c0fbb7606",
+    "netheal-topology-generalization/scripts/jev_context_codec.py": "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "netheal-topology-generalization/scripts/jev_context_codec_v4.py": "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "netheal-topology-generalization/scripts/jev_official_eval.py": "451458f050118116003892e4844a9458fbdbe22c91893cc3e74068ede478049f",
+    "netheal-topology-generalization/scripts/jev_official_eval_v2.py": "0073ff742559bff50248b31eafd1a2c9823a6f2f2c025fc329fb98009a542cc3",
+    "netheal-topology-generalization/scripts/jev_official_eval_v3.py": "736ae06d6f7df5f22394a7e83098352aa1e2c9ed029706f20ab40ef86fde5a05",
+    "netheal-topology-generalization/scripts/jev_official_eval_v4.py": "32e96d137362aaabf301c8de1024a87aed0d5862cac67b7e0c5be6ee41b2d711",
+    "netheal-topology-generalization/scripts/jev_tree_partition_v4.py": "5ab774a18c493a5d9efc25492c5ee0ba7316e3f2fe85a21fc3931ef4650678e9",
+    "netheal-topology-generalization/scripts/laya_gradient_audit.py": "1f19b05fbe9af3fc4fe5cb026a4264e13fcce4f9edb41e60ccaecda2e3c50fc3",
+    "netheal-topology-generalization/scripts/laya_learning_controls.py": "353a053d2481f33a4d7ec62b46ee51062cb1c2862d7b06e5186df7cf363a909f",
+    "netheal-topology-generalization/scripts/laya_learning_controls_ce.py": "986b10213c4fe212a8586788852532c219537ab0bc92e1f3e99b0c7b2beed589",
+    "netheal-topology-generalization/scripts/laya_observation_batched_eval.py": "49b8e12e091d5796fa95d03c299dc00fb926a718d2fe78e5c6de78be3b4d1a21",
+    "netheal-topology-generalization/scripts/laya_observation_controls.py": "a2c8641a169b3c0ece432f12249847123c1689b2d20db6825915fc47ad0807db",
+    "netheal-topology-generalization/scripts/laya_observation_data.py": "0efa1353866c9d4ccaabb9ba2a23d66203fda9b6ce1ba568db306ee5d67004c2",
+    "netheal-topology-generalization/scripts/laya_observation_finish.py": "7e0941adc501dd56ac8963a5333107c10661bf2fc9cb4de151ce375f349fac67",
+    "netheal-topology-generalization/scripts/laya_official_capped_probe.py": "7ba88d47c472b205964117194edec4e9190c90c2e656dd47b05b53bc9f39e027",
+    "netheal-topology-generalization/scripts/laya_official_data.py": "00f4a3dd66a5a68cb3eb1cf0086deabd43bead539526101d7ba870be0acc382a",
+    "netheal-topology-generalization/scripts/laya_official_input.py": "a94bc5a562c9fd4c099a2273dc561cd4d9ba02f018068a766c0921a575469ed2",
+    "netheal-topology-generalization/scripts/laya_official_long_resource_probe.py": "126ce93e9d29722254a849ca98897f6ede7a02cac8871facc322e6b8c647102f",
+    "netheal-topology-generalization/scripts/laya_official_prepare.py": "08f9d54e3202b0a706b772b2db03df85f2de16a1d239f1a3fdce2595997b2a97",
+    "netheal-topology-generalization/scripts/laya_official_resource_probe.py": "9a094dce9935824fe1aec0db50a4ef4700780fe4e5ca559fd3f5e3239712eb0c",
+    "netheal-topology-generalization/scripts/laya_optimization_controls.py": "a7817eb32a4362e80d96c5e8591ccbd8a799b7f314a5af357ff36805aaceedfa",
+    "netheal-topology-generalization/scripts/laya_short_controls.py": "844563a7d5d927c183fbb50ba00907ae605c5d79885cb00334c5572ef287d2a2",
+    "netheal-topology-generalization/scripts/laya_symbol_controls.py": "3e04473e608a135450299f7e0ffcd42da51d4ef0d5be32003f3347352d1934fb",
+    "netheal-topology-generalization/scripts/report_jev_official_eval.py": "a248c8b85250560a84c70a36bb76198ed4fdaa1bc982de4287b2b040577bc705",
+    "netheal-topology-generalization/scripts/report_jev_official_eval_v3.py": "4577cea8e3a8cf0faa8a70b0b140e79952744f636856a41358e9064e7743bdfa",
+    "netheal-topology-generalization/scripts/report_jev_official_eval_v4.py": "58b2f5d916e4000dab430252c9844e77a2d7a0ba72a9bbef6bdf5f4d4ef00cc2",
+    "netheal-topology-generalization/scripts/report_laya_learning_controls.py": "a7d1046729d89d2fdbfbde4d744abacf1a11be7d7bb815d170b45aac4989eff5",
+    "netheal-topology-generalization/scripts/report_laya_observation_controls.py": "f5f724a7926e27f06500b31d53abefde56a10e45d91e46ad6937cd2ea4cae195",
+    "netheal-topology-generalization/scripts/report_laya_optimization_controls.py": "edb056977a9eb1fc124243363e0fe6a0768a2985d3178592ab05b300c7f2210e",
+    "netheal-topology-generalization/scripts/report_laya_pilot.py": "e4f4a6a4ca159f20d5073e1657db66c40d00be48b179d136e8875f02469c86eb",
+    "netheal-topology-generalization/scripts/report_laya_short_controls.py": "27b88e1682c0dd83a3e768df39f666c6c037b3f9817d593114d2b83d8d87835d",
+    "netheal-topology-generalization/scripts/report_laya_symbol_controls.py": "0e5426f7fc555d39059696a1bf68da6f228542b8b13b236cfb5887d068f5b4b6",
+    "netheal-topology-generalization/scripts/verify_jev_context_v3.py": "05a81cd2011e42739f27f6c50edf8e33a7878fae315d2e6eec4e6953fa29ec14",
+    "netheal-topology-generalization/scripts/verify_laya_checkpoint.py": "8e9d9dbedd10e75e051679d7c6e5c049870e69985a85e0d59122419d13302552",
+    "netheal-topology-generalization/scripts/verify_laya_observation_data.py": "cdb2a018dd61f93c08894a1baca8dddef26ece124f74551fc543b40cc35b1e41",
+    "netheal-topology-generalization/scripts/verify_laya_optimization_restore.py": "cefbbcdf8596d946c025d176f8540a7d40795cc06af94c7f5f66e3d6fcca5427",
+    "docs/specs/Ablation_NL_spec_수정.md": "a4f72578f362998a9d8ff80375aff18c274d0fb457e85a3a06e71814c05f2334",
+    "docs/specs/E1_PBRS_spec_수정.md": "a2c949932bd3cf3f79412977c4e9f293428fa9937384b07ec1aec04344a711b2",
+    "docs/specs/E2_timeout_spec.md": "f9605ac548832ef040f14197db567eb55af9125592d778adf7dec7e8b240d463",
+    "docs/specs/E3_exploration_spec.md": "a9dfa88588c4d109f74c57fa4f5be1e7a70dd6490a8717744364dd678bbfcc82",
+    "docs/specs/GNN_expert_guided_spec.md": "3b403d4276af054a7518e03276e2e3fa606adb07d4f2659e155208bddef809d5",
+    "docs/specs/gpt_jev_comparison_v1.md": "39874e468da1db4651bb2431f0e3b9f3fbbff86305b199a62887102223a57761",
+    "docs/specs/laya_diagnosis_v1.md": "404c120c6823887a5e11d6cba75f141e03dd31717c01c819fdd4627cf3c999f7",
+    "docs/specs/laya_observation_controls_v1.md": "01eecd5909e987652e1f830d535632ce65c99194b109549bf6841eb22eaeeaf7",
+    "docs/specs/laya_observation_controls_v1_execution.md": "fae28d33dc60cd52ea3e565a7daf68a9f7dee1148a4577f6dc88bc83460846fe",
+    "docs/specs/laya_official_input_execution_20261012.md": "0eefa5b366c7ac12728b594903a0ce9d122a55dbc4d88aeffee18e17852cce14",
+    "docs/specs/laya_official_long_resource_probe_20261012.md": "30f5c8ae52f61c2121abd1f266c0a3d2fb39c77381a7a93e3ea96ea9f870ca61",
+    "docs/specs/laya_official_memory_cap_20261012.md": "3ac698560a7f2962213ecb22e16ef333432a1df01743d60794baab54cea9ff91",
+    "docs/specs/laya_official_resource_probe_20261012.md": "33f303f71879fbcf6e58aadfa8b9c681e26b54f16398030e898b9bf533e57ac8",
+    "docs/specs/laya_official_training_20261012.md": "f67f3363a4b0a63137369c364f0e74d45bedaafedd693d153daeae9d6c98bce4",
+    "docs/specs/netheal_official_jev_execution_20261011.md": "74cc45a42079b0d8e5d56f75ade7c2bb152240093523898b41a1d923a765bd5f",
+    "docs/specs/netheal_official_jev_execution_v2_20261011.md": "b64b6e7555fe87ed99fc01317002b0e068c14b180b9e3d114b3faa0a6378089e",
+    "docs/specs/netheal_official_jev_execution_v3_20261011.md": "207e12db1baa0a123835472cc80b3eda48e12e3249a2b65f06be092d23f6d019",
+    "docs/specs/netheal_official_jev_execution_v4_20261011.md": "c8f5fccc4d05e0c16e03529d58e5c3694e250395e099460e1f4cd83878901a60",
+    "docs/specs/netheal_official_jev_laya_evaluation_20261011.md": "6669f6a29545d4708e5e1641f608121d5f02a386ed3745ae20b4687ff72cf010",
+    "docs/specs/netheal_official_jev_v4_resume_20261012.md": "9a664016e858848c5f4ec80f48f5369fad84bd6e90bbb89d300abd16c239c43b",
+    "docs/specs/Obs_then_E4_spec.md": "68b33ce4899e487a61ea73d53bbef4071ed01ecae5b3d0468440debb1386a81f",
+    "docs/specs/reliability_v2_protocol.md": "a53c83ab0e4beb303a511574bb3eeeab3c4781fad10da67d38ee75b7539dee0a",
+    "docs/specs/reliability_v3_hypotheses.md": "682664a18aa4e3e08e0c49d32195c6fcfb96c5e217f8629773ec8f20a65fde3d",
+    "docs/specs/reliability_v3_runbook.md": "95bd3cf47a48d3fbb0d7ecf5a5ff2435f3507a70eba30428afae8fa70cf7d2c5"
+  }
+}

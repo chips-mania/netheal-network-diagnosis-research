@@ -1,0 +1,20 @@
+{
+  "description": "GNN·MLP 일반화 v2. 기존 결과 완료.",
+  "stages": {
+    "run": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.run_research_suite",
+      "cwd": "netheal-topology-generalization"
+    },
+    "verify": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.verify_research_run",
+      "cwd": "netheal-topology-generalization"
+    },
+    "report": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.report_research_suite",
+      "cwd": "netheal-topology-generalization"
+    }
+  }
+}

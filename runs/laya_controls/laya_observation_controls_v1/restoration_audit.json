@@ -1,0 +1,239 @@
+{
+  "status": "completed_verified",
+  "checks": [
+    {
+      "arm": "table",
+      "seed": 41,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.12368421052631579,
+        "location_accuracy": 0.1875,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            2,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "seed": 41,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.390625,
+        "macro_f1": 0.33059062751217666,
+        "location_accuracy": 0.140625,
+        "exact": 0.09375,
+        "oracle_location_accuracy": 0.34375,
+        "confusion_matrix": [
+          [
+            11,
+            1,
+            0,
+            4
+          ],
+          [
+            12,
+            4,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            8
+          ],
+          [
+            6,
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "seed": 52,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.2777777777777778,
+        "location_accuracy": 0.203125,
+        "exact": 0.125,
+        "oracle_location_accuracy": 0.28125,
+        "confusion_matrix": [
+          [
+            8,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "arm": "table",
+      "seed": 52,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.17159297897002818,
+        "location_accuracy": 0.15625,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            12,
+            4,
+            0,
+            0
+          ],
+          [
+            13,
+            3,
+            0,
+            0
+          ],
+          [
+            10,
+            5,
+            0,
+            1
+          ],
+          [
+            10,
+            5,
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "arm": "table",
+      "seed": 63,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.12368421052631579,
+        "location_accuracy": 0.1875,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            2,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "seed": 63,
+      "max_logit_error": 0.0,
+      "metrics": {
+        "n": 64,
+        "type_accuracy": 0.34375,
+        "macro_f1": 0.2222222222222222,
+        "location_accuracy": 0.203125,
+        "exact": 0.109375,
+        "oracle_location_accuracy": 0.3125,
+        "confusion_matrix": [
+          [
+            7,
+            9,
+            0,
+            0
+          ],
+          [
+            1,
+            15,
+            0,
+            0
+          ],
+          [
+            8,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            12,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "train": {
+    "episodes": 16,
+    "unique_states": 16,
+    "contradictory_state_labels": 0
+  },
+  "validation": {
+    "episodes": 32,
+    "unique_states": 31,
+    "contradictory_state_labels": 0
+  },
+  "exact_observation_overlap_between_splits": 1
+}

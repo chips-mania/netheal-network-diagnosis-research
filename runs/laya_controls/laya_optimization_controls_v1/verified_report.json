@@ -1,0 +1,95 @@
+{
+  "status": "completed_verified",
+  "effects": {
+    "head_lr_1e3": {
+      "paired_validation_differences": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "passes": 0
+    },
+    "updates_1024": {
+      "paired_validation_differences": [
+        0.5625,
+        0.6562,
+        0.6562
+      ],
+      "mean_difference": 0.6249666666666667,
+      "passes": 0
+    },
+    "fixed_order": {
+      "paired_validation_differences": [
+        0.1875,
+        0.1562,
+        0.0625
+      ],
+      "mean_difference": 0.1354,
+      "passes": 0
+    }
+  },
+  "checks": [
+    {
+      "arm": "fixed_order",
+      "seed": 41,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "fixed_order",
+      "seed": 52,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "fixed_order",
+      "seed": 63,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 41,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 52,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 63,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "reference",
+      "seed": 41,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "reference",
+      "seed": 52,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "reference",
+      "seed": 63,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 41,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 52,
+      "changed_tensors": 37
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 63,
+      "changed_tensors": 37
+    }
+  ],
+  "api_cost_usd": 0
+}

@@ -1,0 +1,1140 @@
+﻿{
+    "sha":  "815dba180bc1f700a978013ce62837f2021285ca",
+    "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/815dba180bc1f700a978013ce62837f2021285ca",
+    "tree":  [
+                 {
+                     "path":  ".dockerignore",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "6ba8b40574a947bf0b27629114454ef5d7251f3a",
+                     "size":  806,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/6ba8b40574a947bf0b27629114454ef5d7251f3a"
+                 },
+                 {
+                     "path":  ".github",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "c330804d6f0c16a81f8c94b0627fcb26736d28c4",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/c330804d6f0c16a81f8c94b0627fcb26736d28c4"
+                 },
+                 {
+                     "path":  ".github/CODEOWNERS",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d5eafbfb84296d2fb07b06534a15e2658b209779",
+                     "size":  686,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d5eafbfb84296d2fb07b06534a15e2658b209779"
+                 },
+                 {
+                     "path":  ".github/ISSUE_TEMPLATE",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "44b2df1d44b86c34851ee85cb524979669b37784",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/44b2df1d44b86c34851ee85cb524979669b37784"
+                 },
+                 {
+                     "path":  ".github/ISSUE_TEMPLATE/bug_report.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "351ad885fbc7deaa9924632db79d7be6d550cf32",
+                     "size":  1596,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/351ad885fbc7deaa9924632db79d7be6d550cf32"
+                 },
+                 {
+                     "path":  ".github/ISSUE_TEMPLATE/feature_request.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "19e15bf950b9fab76a0801e2857901e3520da4f6",
+                     "size":  1631,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/19e15bf950b9fab76a0801e2857901e3520da4f6"
+                 },
+                 {
+                     "path":  ".github/dependabot.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d531de28c8f7b599c32594ccc8c5b07051cf4dbb",
+                     "size":  373,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d531de28c8f7b599c32594ccc8c5b07051cf4dbb"
+                 },
+                 {
+                     "path":  ".github/pull_request_template.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e8282afc24b894f633e830910ac3a0da9d2afcdd",
+                     "size":  931,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/e8282afc24b894f633e830910ac3a0da9d2afcdd"
+                 },
+                 {
+                     "path":  ".github/settings.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "dc1e17a3c72f67e8b1a6bc8503ed17819d6f8473",
+                     "size":  5179,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/dc1e17a3c72f67e8b1a6bc8503ed17819d6f8473"
+                 },
+                 {
+                     "path":  ".github/workflows",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "1ede3d92e6542b30ea1ff2b7d6d618d9878ac183",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/1ede3d92e6542b30ea1ff2b7d6d618d9878ac183"
+                 },
+                 {
+                     "path":  ".github/workflows/dependency.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "02d71a3eac1af81be9481ad03995639706b08f29",
+                     "size":  888,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/02d71a3eac1af81be9481ad03995639706b08f29"
+                 },
+                 {
+                     "path":  ".github/workflows/lint.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "31b148229b403216c529800f8d99e738164c53e8",
+                     "size":  1064,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/31b148229b403216c529800f8d99e738164c53e8"
+                 },
+                 {
+                     "path":  ".github/workflows/publish-green-agent.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cbcbae8d91947960474a33e1a65733bff3f89b3e",
+                     "size":  2702,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/cbcbae8d91947960474a33e1a65733bff3f89b3e"
+                 },
+                 {
+                     "path":  ".github/workflows/scorecard.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d8ca5d7c656c63fe0aeb5a24992d5fe427496a01",
+                     "size":  652,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d8ca5d7c656c63fe0aeb5a24992d5fe427496a01"
+                 },
+                 {
+                     "path":  ".github/workflows/stale.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "87be5b1093f36db7c44f8e9a77b134ed4c9f8437",
+                     "size":  525,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/87be5b1093f36db7c44f8e9a77b134ed4c9f8437"
+                 },
+                 {
+                     "path":  ".gitignore",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a8d5b457365fc797a87ee2d743df98f2f4727a23",
+                     "size":  1126,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/a8d5b457365fc797a87ee2d743df98f2f4727a23"
+                 },
+                 {
+                     "path":  "CODE_OF_CONDUCT.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d86d130b03110f6a01b4d75319f8f4f1c4f7f58c",
+                     "size":  5520,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d86d130b03110f6a01b4d75319f8f4f1c4f7f58c"
+                 },
+                 {
+                     "path":  "CONTRIBUTING.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c1b91fde482e830c7cd4dae9bf65b18871ba3787",
+                     "size":  6491,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/c1b91fde482e830c7cd4dae9bf65b18871ba3787"
+                 },
+                 {
+                     "path":  "Dockerfile",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "be8f4c2f01e0cf51741c6594e67c82c1eff46821",
+                     "size":  1182,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/be8f4c2f01e0cf51741c6594e67c82c1eff46821"
+                 },
+                 {
+                     "path":  "Dockerfile.purple",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0e418f734201a09a4389b355a74f301fc72936b2",
+                     "size":  1169,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/0e418f734201a09a4389b355a74f301fc72936b2"
+                 },
+                 {
+                     "path":  "LICENSE",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+                     "size":  11357,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+                 },
+                 {
+                     "path":  "README.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2802ebe3be05701eddd19b563c4a8b9294d6fa8f",
+                     "size":  21217,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/2802ebe3be05701eddd19b563c4a8b9294d6fa8f"
+                 },
+                 {
+                     "path":  "SECURITY.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e76ef036cf262975aa8c4c1f2e815d52e09d3e8a",
+                     "size":  2344,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/e76ef036cf262975aa8c4c1f2e815d52e09d3e8a"
+                 },
+                 {
+                     "path":  "docker-compose.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "da4523841b9b032dd38ee577cdf5804ee179cd81",
+                     "size":  3040,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/da4523841b9b032dd38ee577cdf5804ee179cd81"
+                 },
+                 {
+                     "path":  "docs",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "a99ecfa6a947c67b11f7c56bb8bf600bac387bc4",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/a99ecfa6a947c67b11f7c56bb8bf600bac387bc4"
+                 },
+                 {
+                     "path":  "docs/concepts.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2dff9769198edec508e577daeebd762954805600",
+                     "size":  703,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/2dff9769198edec508e577daeebd762954805600"
+                 },
+                 {
+                     "path":  "docs/examples.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a41f440bce8e5f7d578a2ad66c251399db004ab6",
+                     "size":  378,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/a41f440bce8e5f7d578a2ad66c251399db004ab6"
+                 },
+                 {
+                     "path":  "docs/explanation",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "8499bf94a23320692c1c1ccba2754f662203ba70",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/8499bf94a23320692c1c1ccba2754f662203ba70"
+                 },
+                 {
+                     "path":  "docs/explanation/architecture.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2f9c9c2710eebfaafbb710d9447c1b47e66edac8",
+                     "size":  658,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/2f9c9c2710eebfaafbb710d9447c1b47e66edac8"
+                 },
+                 {
+                     "path":  "docs/faq.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5ed81306c7d480d49e9fb769c364fd4ba6de413a",
+                     "size":  373,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/5ed81306c7d480d49e9fb769c364fd4ba6de413a"
+                 },
+                 {
+                     "path":  "docs/fault-behaviors.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0823e1fa64bd0bcdb8dbb16a2c15cbc085e1d0a9",
+                     "size":  4461,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/0823e1fa64bd0bcdb8dbb16a2c15cbc085e1d0a9"
+                 },
+                 {
+                     "path":  "docs/getting-started.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0e1c6ed8a16b63c044fea2136ca6e582e0d2af71",
+                     "size":  2166,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/0e1c6ed8a16b63c044fea2136ca6e582e0d2af71"
+                 },
+                 {
+                     "path":  "docs/guides",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "7762c40ac789dfe30cf6ae69454f0788ac518a02",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/7762c40ac789dfe30cf6ae69454f0788ac518a02"
+                 },
+                 {
+                     "path":  "docs/guides/training-sb3.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3b92604b7f0b7f3068161b5fba1c71b9d90144cf",
+                     "size":  865,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/3b92604b7f0b7f3068161b5fba1c71b9d90144cf"
+                 },
+                 {
+                     "path":  "docs/index.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3be2d669825a5a894d19512a54f12d5c6ac3572f",
+                     "size":  1533,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/3be2d669825a5a894d19512a54f12d5c6ac3572f"
+                 },
+                 {
+                     "path":  "docs/reference",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "41e1a282a694644b62b504530249afad4e489871",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/41e1a282a694644b62b504530249afad4e489871"
+                 },
+                 {
+                     "path":  "docs/reference/environment.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b3ca7d1be7e0300c1d9fb9f11f5256fa06a8c36f",
+                     "size":  2508,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/b3ca7d1be7e0300c1d9fb9f11f5256fa06a8c36f"
+                 },
+                 {
+                     "path":  "docs/reference/metrics.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ee6b32114998e60daf72817a643459f04a3ceab5",
+                     "size":  6067,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/ee6b32114998e60daf72817a643459f04a3ceab5"
+                 },
+                 {
+                     "path":  "docs/reference/web-api.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fe33d8e3c2b849f790a2a0de5a1ddd1fd5179bad",
+                     "size":  966,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/fe33d8e3c2b849f790a2a0de5a1ddd1fd5179bad"
+                 },
+                 {
+                     "path":  "docs/troubleshooting.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "02dc5566d9383fee2d2f6dde46514ade286c076c",
+                     "size":  6714,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/02dc5566d9383fee2d2f6dde46514ade286c076c"
+                 },
+                 {
+                     "path":  "docs/tutorials",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "af4d0e98da82573642301fad1aa37d87e42830eb",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/af4d0e98da82573642301fad1aa37d87e42830eb"
+                 },
+                 {
+                     "path":  "docs/tutorials/running-assessments.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4806241de7d598f8999a5e959bf4f6aca0b91c41",
+                     "size":  5760,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/4806241de7d598f8999a5e959bf4f6aca0b91c41"
+                 },
+                 {
+                     "path":  "docs/webapp.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0fe0cfd3b9f83f4572f59153f40b0abd6318b6cb",
+                     "size":  1001,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/0fe0cfd3b9f83f4572f59153f40b0abd6318b6cb"
+                 },
+                 {
+                     "path":  "examples",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e08690b179af00094664441546bfd7eb70bb3f96",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/e08690b179af00094664441546bfd7eb70bb3f96"
+                 },
+                 {
+                     "path":  "examples/basic_usage.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ab4dd689be6b8c73629e05a6ebc92e3f4e96cb65",
+                     "size":  6578,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/ab4dd689be6b8c73629e05a6ebc92e3f4e96cb65"
+                 },
+                 {
+                     "path":  "examples/demo_network.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "84c68c3f93ac5ec61f5364d0a2fcca89da04e3ce",
+                     "size":  81923,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/84c68c3f93ac5ec61f5364d0a2fcca89da04e3ce"
+                 },
+                 {
+                     "path":  "examples/export_import_basic.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "dafe89afe57d46bec96c9d0b3893947fa81e94e8",
+                     "size":  3172,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/dafe89afe57d46bec96c9d0b3893947fa81e94e8"
+                 },
+                 {
+                     "path":  "examples/interactive_demo.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "99659eda31585dd0ab35c710269df710beae47cb",
+                     "size":  12990,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/99659eda31585dd0ab35c710269df710beae47cb"
+                 },
+                 {
+                     "path":  "examples/network_example.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "04a50a91e063d4ac7839d68bcc4d27790d5cd888",
+                     "size":  75550,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/04a50a91e063d4ac7839d68bcc4d27790d5cd888"
+                 },
+                 {
+                     "path":  "examples/quick_demo.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "340abd1b5a1aa80ef947b9539ab973022ed8207c",
+                     "size":  2010,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/340abd1b5a1aa80ef947b9539ab973022ed8207c"
+                 },
+                 {
+                     "path":  "generate_compose.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "295171395eb38df0bed2d27ad4da38c17698715b",
+                     "size":  10170,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/295171395eb38df0bed2d27ad4da38c17698715b"
+                 },
+                 {
+                     "path":  "getting_started.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ccf63af68848df6e68a0c75dc3b429942d6e94a8",
+                     "size":  7332,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/ccf63af68848df6e68a0c75dc3b429942d6e94a8"
+                 },
+                 {
+                     "path":  "gym_interface_guide.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "62efa3ce751df33242d2468e3355e877f7f85e07",
+                     "size":  21636,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/62efa3ce751df33242d2468e3355e877f7f85e07"
+                 },
+                 {
+                     "path":  "leaderboard_queries.json",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "064cab48decd9967cc6296a1397f85a1db7bfcd8",
+                     "size":  3113,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/064cab48decd9967cc6296a1397f85a1db7bfcd8"
+                 },
+                 {
+                     "path":  "netheal",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "c51b1eb6b935523eb01dd5eb606cd5d4a11c7ee8",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/c51b1eb6b935523eb01dd5eb606cd5d4a11c7ee8"
+                 },
+                 {
+                     "path":  "netheal/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d49cf6e3f6e4426f57461abb765ca470c772d695",
+                     "size":  570,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d49cf6e3f6e4426f57461abb765ca470c772d695"
+                 },
+                 {
+                     "path":  "netheal/aaa",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "13734e01bf43950a2c63cb99872ff9892d974c67",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/13734e01bf43950a2c63cb99872ff9892d974c67"
+                 },
+                 {
+                     "path":  "netheal/aaa/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "beae31ea32267728c491416567369bd0834d8567",
+                     "size":  1510,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/beae31ea32267728c491416567369bd0834d8567"
+                 },
+                 {
+                     "path":  "netheal/aaa/__main__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a6d24432f18d6c6e57ab63e1373e15f0bf00d1a0",
+                     "size":  214,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/a6d24432f18d6c6e57ab63e1373e15f0bf00d1a0"
+                 },
+                 {
+                     "path":  "netheal/aaa/benchmark.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7e6ccb5940d14190ff91125bdd9fcdcc404710b5",
+                     "size":  15141,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/7e6ccb5940d14190ff91125bdd9fcdcc404710b5"
+                 },
+                 {
+                     "path":  "netheal/aaa/cli.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "20184118873896b2d108efabafeed678276a292d",
+                     "size":  2760,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/20184118873896b2d108efabafeed678276a292d"
+                 },
+                 {
+                     "path":  "netheal/aaa/demo.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "be1821e0a7b26981999d52f7596feebfbbc51564",
+                     "size":  31073,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/be1821e0a7b26981999d52f7596feebfbbc51564"
+                 },
+                 {
+                     "path":  "netheal/aaa/dummy_agent.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "85874607b6cf34cde0c2bbd54a0a7b33e6f7467d",
+                     "size":  6245,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/85874607b6cf34cde0c2bbd54a0a7b33e6f7467d"
+                 },
+                 {
+                     "path":  "netheal/aaa/gpt_agent.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "467ef809aee0f972e61da76fbe870f41d1e31530",
+                     "size":  43801,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/467ef809aee0f972e61da76fbe870f41d1e31530"
+                 },
+                 {
+                     "path":  "netheal/aaa/green_agent.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bb69613b27d3e7fa9e0b02c73fb04b620f373267",
+                     "size":  29863,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/bb69613b27d3e7fa9e0b02c73fb04b620f373267"
+                 },
+                 {
+                     "path":  "netheal/aaa/mcp_server.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3ef09f6f07d65747d587741e641281f2321a9359",
+                     "size":  33422,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/3ef09f6f07d65747d587741e641281f2321a9359"
+                 },
+                 {
+                     "path":  "netheal/aaa/purple_server.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4a504c3ca5f5f4531f805e1c7c9ae96479a6d55c",
+                     "size":  17951,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/4a504c3ca5f5f4531f805e1c7c9ae96479a6d55c"
+                 },
+                 {
+                     "path":  "netheal/aaa/schemas.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1e66b94dc8c5345bbe2a46f88cd1bac0d9b07475",
+                     "size":  9102,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/1e66b94dc8c5345bbe2a46f88cd1bac0d9b07475"
+                 },
+                 {
+                     "path":  "netheal/aaa/server.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "355ff257de5bcb4714758a87c5bf0b9ebf2bf35c",
+                     "size":  24468,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/355ff257de5bcb4714758a87c5bf0b9ebf2bf35c"
+                 },
+                 {
+                     "path":  "netheal/environment",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "42f048ccc79356931184e167146d6948ef54239d",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/42f048ccc79356931184e167146d6948ef54239d"
+                 },
+                 {
+                     "path":  "netheal/environment/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "6c2415b9fbf2c8d4fcc418d92b11d8890b6c3949",
+                     "size":  243,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/6c2415b9fbf2c8d4fcc418d92b11d8890b6c3949"
+                 },
+                 {
+                     "path":  "netheal/environment/actions.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1812f54d8629bbb5da5d76414b6cca02966ab3ff",
+                     "size":  15643,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/1812f54d8629bbb5da5d76414b6cca02966ab3ff"
+                 },
+                 {
+                     "path":  "netheal/environment/env.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "996f14b774fe5e780637ec23ee607f9f1865b76f",
+                     "size":  22711,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/996f14b774fe5e780637ec23ee607f9f1865b76f"
+                 },
+                 {
+                     "path":  "netheal/environment/observation.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "00a98f140768486396ebd2eb90f522882d907132",
+                     "size":  17077,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/00a98f140768486396ebd2eb90f522882d907132"
+                 },
+                 {
+                     "path":  "netheal/environment/rewards.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0e8d005ffdc5074fdb06e7551d56ee67b82e234c",
+                     "size":  8076,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/0e8d005ffdc5074fdb06e7551d56ee67b82e234c"
+                 },
+                 {
+                     "path":  "netheal/evaluation",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "908ff35cf3f9ef53af7ae6cff9bafa8598987acc",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/908ff35cf3f9ef53af7ae6cff9bafa8598987acc"
+                 },
+                 {
+                     "path":  "netheal/evaluation/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "339b7b83ae2df666c2d26de61a4bd7303a763f27",
+                     "size":  886,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/339b7b83ae2df666c2d26de61a4bd7303a763f27"
+                 },
+                 {
+                     "path":  "netheal/evaluation/aaa.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b7c1ae1d53bd291c1b4ad40ea94a34c6e4063801",
+                     "size":  5306,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/b7c1ae1d53bd291c1b4ad40ea94a34c6e4063801"
+                 },
+                 {
+                     "path":  "netheal/evaluation/metrics.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "19cac31c2a697742e112324f1b8d96c991494970",
+                     "size":  17394,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/19cac31c2a697742e112324f1b8d96c991494970"
+                 },
+                 {
+                     "path":  "netheal/evaluation/wrapper.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bd7ae8382de188391e61e0a9a45f3acc9efe1aeb",
+                     "size":  10798,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/bd7ae8382de188391e61e0a9a45f3acc9efe1aeb"
+                 },
+                 {
+                     "path":  "netheal/faults",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "9aa8bbc9ed499ded03120a60cc0cee0360a47fce",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/9aa8bbc9ed499ded03120a60cc0cee0360a47fce"
+                 },
+                 {
+                     "path":  "netheal/faults/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1cfb7d5a2da2ddca25e62aabb9c9b62fd975543b",
+                     "size":  304,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/1cfb7d5a2da2ddca25e62aabb9c9b62fd975543b"
+                 },
+                 {
+                     "path":  "netheal/faults/injector.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eb0176fc5e1a1c97f1e5ff679a11a1a7dca6717b",
+                     "size":  16261,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/eb0176fc5e1a1c97f1e5ff679a11a1a7dca6717b"
+                 },
+                 {
+                     "path":  "netheal/hints",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "bfa4dd0d468e660826f1eb8cc7b90857a1c7b492",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/bfa4dd0d468e660826f1eb8cc7b90857a1c7b492"
+                 },
+                 {
+                     "path":  "netheal/hints/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8d60728e2935cdff040fd8cccd51115f17d57fd0",
+                     "size":  640,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/8d60728e2935cdff040fd8cccd51115f17d57fd0"
+                 },
+                 {
+                     "path":  "netheal/hints/provider.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "89bb8f14a16760e2554dfbbb5b8411361b29dbfc",
+                     "size":  23808,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/89bb8f14a16760e2554dfbbb5b8411361b29dbfc"
+                 },
+                 {
+                     "path":  "netheal/network",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "59a00facc46d67d87673a025a3068a965873f41a",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/59a00facc46d67d87673a025a3068a965873f41a"
+                 },
+                 {
+                     "path":  "netheal/network/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eda5791b3610625b0e124a4039e0b2c220bc3d46",
+                     "size":  281,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/eda5791b3610625b0e124a4039e0b2c220bc3d46"
+                 },
+                 {
+                     "path":  "netheal/network/graph.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e257e4687c2e933b4a2446935d225c4e11a623b0",
+                     "size":  8084,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/e257e4687c2e933b4a2446935d225c4e11a623b0"
+                 },
+                 {
+                     "path":  "netheal/network/topology.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5bcee17323167eabf356801b4eaeb316abee8b72",
+                     "size":  11321,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/5bcee17323167eabf356801b4eaeb316abee8b72"
+                 },
+                 {
+                     "path":  "netheal/scenario",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f56e3a811c986a1cd72e53d4dd970fc9917b6ea6",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/f56e3a811c986a1cd72e53d4dd970fc9917b6ea6"
+                 },
+                 {
+                     "path":  "netheal/scenario/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c99d544226a6a453d6df125219988221e424875b",
+                     "size":  436,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/c99d544226a6a453d6df125219988221e424875b"
+                 },
+                 {
+                     "path":  "netheal/scenario/__main__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "81f77a1ddb6b128a3687b93f6a75a32bef8d2ee5",
+                     "size":  227,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/81f77a1ddb6b128a3687b93f6a75a32bef8d2ee5"
+                 },
+                 {
+                     "path":  "netheal/scenario/cli.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9490348465db5945572e1b60b6df6acf03c357ce",
+                     "size":  5642,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/9490348465db5945572e1b60b6df6acf03c357ce"
+                 },
+                 {
+                     "path":  "netheal/scenario/snapshot.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9aec9e20fea400554b009375f3edb7588f356547",
+                     "size":  14202,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/9aec9e20fea400554b009375f3edb7588f356547"
+                 },
+                 {
+                     "path":  "netheal/tools",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "353e8c8de7b32457c0a285b0ac0401ebdf6f74ab",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/353e8c8de7b32457c0a285b0ac0401ebdf6f74ab"
+                 },
+                 {
+                     "path":  "netheal/tools/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "021784ed09e0dcbfcdc61eefe190aab57dbc362b",
+                     "size":  253,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/021784ed09e0dcbfcdc61eefe190aab57dbc362b"
+                 },
+                 {
+                     "path":  "netheal/tools/simulator.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e9d4f441de806b72f718681442a9c8fae4f9be92",
+                     "size":  11774,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/e9d4f441de806b72f718681442a9c8fae4f9be92"
+                 },
+                 {
+                     "path":  "netheal/utils",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "8be8a2a01b6936dd8cc2b213d1b65990d666fd6d",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/8be8a2a01b6936dd8cc2b213d1b65990d666fd6d"
+                 },
+                 {
+                     "path":  "netheal/utils/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bc366693e6a6be59e93fa345700c6b024b21d582",
+                     "size":  238,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/bc366693e6a6be59e93fa345700c6b024b21d582"
+                 },
+                 {
+                     "path":  "netheal/utils/visualization.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fd85f2f112c4971e498cbe1325c2264c92eaaccc",
+                     "size":  14946,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/fd85f2f112c4971e498cbe1325c2264c92eaaccc"
+                 },
+                 {
+                     "path":  "output",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e8953f8a683bc936b3eba70cddefbb0940767f7e",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/e8953f8a683bc936b3eba70cddefbb0940767f7e"
+                 },
+                 {
+                     "path":  "output/.gitignore",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2b78977f6c5d159ac496dd3e2afe104de6cb75be",
+                     "size":  64,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/2b78977f6c5d159ac496dd3e2afe104de6cb75be"
+                 },
+                 {
+                     "path":  "requirements-dev.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4676ab2f717629ec6c60b6682aa44eb69c8c1683",
+                     "size":  144,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/4676ab2f717629ec6c60b6682aa44eb69c8c1683"
+                 },
+                 {
+                     "path":  "requirements-llm.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "338aed6de9085fa98311bea3ec7962fe229d2ba4",
+                     "size":  253,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/338aed6de9085fa98311bea3ec7962fe229d2ba4"
+                 },
+                 {
+                     "path":  "requirements.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9fb13f6db4e813252d7a559a738b9b8987501a7b",
+                     "size":  294,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/9fb13f6db4e813252d7a559a738b9b8987501a7b"
+                 },
+                 {
+                     "path":  "scenarios",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "12c9972c43c726e165dea15808e91341f2e28d77",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/12c9972c43c726e165dea15808e91341f2e28d77"
+                 },
+                 {
+                     "path":  "scenarios/netheal",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "65e8fd85808f065b209f5222159cfb7890889223",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/65e8fd85808f065b209f5222159cfb7890889223"
+                 },
+                 {
+                     "path":  "scenarios/netheal/local_test.toml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d11f5373fbc21ec65ed9d57a3cb96d892cec8401",
+                     "size":  573,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d11f5373fbc21ec65ed9d57a3cb96d892cec8401"
+                 },
+                 {
+                     "path":  "tests",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "787ac932e520d4d19a0f6c838f7a223dd8cf0fbf",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/787ac932e520d4d19a0f6c838f7a223dd8cf0fbf"
+                 },
+                 {
+                     "path":  "tests/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8b3c4c991c7f0d9815f67a8ad175e2324ec2aa3d",
+                     "size":  139,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/8b3c4c991c7f0d9815f67a8ad175e2324ec2aa3d"
+                 },
+                 {
+                     "path":  "tests/test_aaa_mcp_server.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ea68a0d1b822ebf3f5fb1123546d043d5216f4d1",
+                     "size":  12000,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/ea68a0d1b822ebf3f5fb1123546d043d5216f4d1"
+                 },
+                 {
+                     "path":  "tests/test_actions.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "571bcfdc54207dcebb950b072d8da24cb9976bd0",
+                     "size":  12427,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/571bcfdc54207dcebb950b072d8da24cb9976bd0"
+                 },
+                 {
+                     "path":  "tests/test_demo_integration.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "87570c5572e3b33459971451e96a9992c171ed0f",
+                     "size":  7601,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/87570c5572e3b33459971451e96a9992c171ed0f"
+                 },
+                 {
+                     "path":  "tests/test_device_failure_behavior.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "782ebf39c20469f80da4613552600d615e8a45bd",
+                     "size":  50781,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/782ebf39c20469f80da4613552600d615e8a45bd"
+                 },
+                 {
+                     "path":  "tests/test_dynamic_actions.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "70845c99b12c41ff887ce9dade388c3464db77e5",
+                     "size":  2078,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/70845c99b12c41ff887ce9dade388c3464db77e5"
+                 },
+                 {
+                     "path":  "tests/test_environment.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a2bcd097bcedcc5b3a577e6f014435c357924e7f",
+                     "size":  12470,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/a2bcd097bcedcc5b3a577e6f014435c357924e7f"
+                 },
+                 {
+                     "path":  "tests/test_evaluation_metrics.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5df2dc0d05448f6904cee04dc97f225928d759d9",
+                     "size":  8153,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/5df2dc0d05448f6904cee04dc97f225928d759d9"
+                 },
+                 {
+                     "path":  "tests/test_example_fixes.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "82c124e03e46da9677643e5bc5bcd3aba4855d26",
+                     "size":  8867,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/82c124e03e46da9677643e5bc5bcd3aba4855d26"
+                 },
+                 {
+                     "path":  "tests/test_fault_injector.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b566521a81e2f0c3bcc3287d38a3388a82c49e8d",
+                     "size":  6105,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/b566521a81e2f0c3bcc3287d38a3388a82c49e8d"
+                 },
+                 {
+                     "path":  "tests/test_link_failure_behavior.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cb010bc6ebfe5b8799d94a1c469fd19e845c905f",
+                     "size":  48598,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/cb010bc6ebfe5b8799d94a1c469fd19e845c905f"
+                 },
+                 {
+                     "path":  "tests/test_misconfiguration_behavior.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "af8d411006469d1647d0663a116938ff313ea077",
+                     "size":  80563,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/af8d411006469d1647d0663a116938ff313ea077"
+                 },
+                 {
+                     "path":  "tests/test_network_graph.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "503620d1dec0847ef2739b679adbf618bc3c359a",
+                     "size":  6318,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/503620d1dec0847ef2739b679adbf618bc3c359a"
+                 },
+                 {
+                     "path":  "tests/test_observation.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "67768014e7b31892f8a1977b2243521d2774c9ec",
+                     "size":  11180,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/67768014e7b31892f8a1977b2243521d2774c9ec"
+                 },
+                 {
+                     "path":  "tests/test_partial_rewards.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "35748031b308eac228453fac11437c7daba077be",
+                     "size":  6169,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/35748031b308eac228453fac11437c7daba077be"
+                 },
+                 {
+                     "path":  "tests/test_performance_degradation_behavior.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "773e9b36f1556e1282bcbf6ecc767b2cbc113ccc",
+                     "size":  49782,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/773e9b36f1556e1282bcbf6ecc767b2cbc113ccc"
+                 },
+                 {
+                     "path":  "tests/test_purple_server.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bf00bc2a77096948e0502148194d51ba014f85c8",
+                     "size":  5451,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/bf00bc2a77096948e0502148194d51ba014f85c8"
+                 },
+                 {
+                     "path":  "tests/test_scenario_export_import.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1bc92657b29e17725aacac92b9b726bc2977c95a",
+                     "size":  9806,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/1bc92657b29e17725aacac92b9b726bc2977c95a"
+                 },
+                 {
+                     "path":  "tests/test_seed_reproducibility.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8b80a06b05fc5adce1561fb5042d62e88feff092",
+                     "size":  2812,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/8b80a06b05fc5adce1561fb5042d62e88feff092"
+                 },
+                 {
+                     "path":  "tests/test_tool_result_attributes.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7c41c64e18c9457a7afe9416b0000457e4e267a2",
+                     "size":  8869,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/7c41c64e18c9457a7afe9416b0000457e4e267a2"
+                 },
+                 {
+                     "path":  "tests/test_user_hints.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d766cdfbf499b17ff86ad4c6008d23b07ea0cbc9",
+                     "size":  2156,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d766cdfbf499b17ff86ad4c6008d23b07ea0cbc9"
+                 },
+                 {
+                     "path":  "tests/test_web_api.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "748344ed1798c6234804455b2924f8420d2d51f8",
+                     "size":  2789,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/748344ed1798c6234804455b2924f8420d2d51f8"
+                 },
+                 {
+                     "path":  "webapp",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "ee064f96f56c17b4c0bf62608fabca8e9696a600",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/ee064f96f56c17b4c0bf62608fabca8e9696a600"
+                 },
+                 {
+                     "path":  "webapp/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2434bc65ebe69f81db0f1d0239eba756f2c236a3",
+                     "size":  122,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/2434bc65ebe69f81db0f1d0239eba756f2c236a3"
+                 },
+                 {
+                     "path":  "webapp/backend",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "ca51eedee8f0cd4ec1865a16376be25566f75212",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/ca51eedee8f0cd4ec1865a16376be25566f75212"
+                 },
+                 {
+                     "path":  "webapp/backend/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7b79aa25b43ddecca973349ee458e0fd5b8b86cf",
+                     "size":  123,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/7b79aa25b43ddecca973349ee458e0fd5b8b86cf"
+                 },
+                 {
+                     "path":  "webapp/backend/app",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "804d945826c8d9a6029973e9289318f06918619b",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/804d945826c8d9a6029973e9289318f06918619b"
+                 },
+                 {
+                     "path":  "webapp/backend/app/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ed347c631c2fc8a6b49a4db19025c21d9dd30710",
+                     "size":  131,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/ed347c631c2fc8a6b49a4db19025c21d9dd30710"
+                 },
+                 {
+                     "path":  "webapp/backend/app/main.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "49b88476ccdad36c99c63f6a3787ff77eff9fb4e",
+                     "size":  4351,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/49b88476ccdad36c99c63f6a3787ff77eff9fb4e"
+                 },
+                 {
+                     "path":  "webapp/backend/app/manager.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d8b39c3073b6649c7db056dbb7ab58dfab68969d",
+                     "size":  27928,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/d8b39c3073b6649c7db056dbb7ab58dfab68969d"
+                 },
+                 {
+                     "path":  "webapp/backend/app/schemas.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c1632bd16edaab22e0efc711607a0fc10721951a",
+                     "size":  867,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/c1632bd16edaab22e0efc711607a0fc10721951a"
+                 },
+                 {
+                     "path":  "webapp/frontend",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "11e3c84fd8053c662cd3be32601308978aa892fa",
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/trees/11e3c84fd8053c662cd3be32601308978aa892fa"
+                 },
+                 {
+                     "path":  "webapp/frontend/app.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7f3dea0f8a4e7a266b1362ee596ac370faed1fc8",
+                     "size":  14055,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/7f3dea0f8a4e7a266b1362ee596ac370faed1fc8"
+                 },
+                 {
+                     "path":  "webapp/frontend/index.html",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c0433a376c818044d517e0ecf8f5e02b1f345707",
+                     "size":  4469,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/c0433a376c818044d517e0ecf8f5e02b1f345707"
+                 },
+                 {
+                     "path":  "webapp/frontend/style.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "944f74ec24fe23eb871e853b7ab483fbe4f109b4",
+                     "size":  4450,
+                     "url":  "https://api.github.com/repos/cisco-ai-platform/netheal-ai-agent-benchmark/git/blobs/944f74ec24fe23eb871e853b7ab483fbe4f109b4"
+                 }
+             ],
+    "truncated":  false
+}

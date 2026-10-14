@@ -1,0 +1,15 @@
+{
+  "case": "00bd290a-df64-46a6-8f06-f087bde022a9",
+  "max_turns": 100,
+  "deadline_seconds": 1200,
+  "concurrency": 1,
+  "fixed_wait_seconds": 0,
+  "dtype": "float32",
+  "seed": 1012,
+  "max_len": 8192,
+  "head_len": 8192,
+  "checkpoint": "C:\\Users\\leejaewon\\Desktop\\leejaewon\\projects\\netheal-network-diagnosis-research\\.runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148",
+  "baseline_sha256": "9934830c349c0e451374ab82ce3ba33a4dabe787c4bc0408a62c20c804ad92a2",
+  "timing": "Exclusive wall time. Model load separate; Python imports/snapshot loading excluded. Forward includes collation, transfer, softmax and CPU result synchronization.",
+  "change": "Timing wrappers only; unchanged input, model, temperature, partitioning and environment loop."
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "phase": "preflight",
+    "provider": "gpt",
+    "attempt": 0,
+    "model_requested": "gpt-6.1-sol",
+    "utc_unix": 1791486652.4099793,
+    "request_sha256": "f9c422ff14f4cec20f1b1d2899caaa0b6440d21a7d4258cb16b81f15406d4dcc",
+    "request": {
+      "model": "gpt-6.1-sol",
+      "instructions": "Choose the next action to diagnose exactly one network fault, including its type and location.\nUse only the observed state. Nominal inventory is not live health. Unknown observations are not healthy evidence.\nFaults: device_failure is a failed node; misconfiguration is a node configuration fault;\nlink_failure is a broken link; performance_degradation is an abnormally slow link.\nGather evidence with tools when needed, then diagnose. Minimize unnecessary or repeated tools.\nSelect one complete action from the supplied candidates. Do not assume hidden state.",
+      "input": "{\"state\":{\"test\":\"Connectivity check. Only scan is allowed.\"},\"candidates\":{\"a000\":{\"kind\":\"scan\"}}}",
+      "reasoning": {
+        "effort": "medium"
+      },
+      "max_output_tokens": 8192,
+      "service_tier": "default",
+      "store": false,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "action_choice",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "action_id": {
+                "type": "string",
+                "enum": [
+                  "a000"
+                ]
+              }
+            },
+            "required": [
+              "action_id"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "http_status": 200,
+    "request_id": "req_bbe059c209c54070864b5fae3b5cf693",
+    "seconds": 3.9706492999976035,
+    "usage": {
+      "input_tokens": 169,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 15,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 184
+    },
+    "estimated_usd": 0.000488,
+    "response_model": "gpt-6.1-sol",
+    "response": {
+      "id": "resp_04982090671fc0aa016ac7eabe4f6887d1aac70893fc5d7b53",
+      "model": "gpt-6.1-sol",
+      "status": "completed",
+      "output": [
+        {
+          "id": "msg_04982090671fc0aa016ac7eabffa5487d1aa7d77df185595a2",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"action_id\":\"a000\"}"
+            }
+          ],
+          "phase": "final_answer",
+          "role": "assistant"
+        }
+      ],
+      "usage": {
+        "input_tokens": 169,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 184
+      },
+      "incomplete_details": null
+    }
+  }
+]

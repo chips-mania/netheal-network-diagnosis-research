@@ -1,0 +1,98 @@
+{
+  "status": "completed",
+  "total_seconds": 123.07075510000004,
+  "model_load_seconds": 70.26318219999985,
+  "accounted_seconds": 123.07073790000004,
+  "fixed_wait_seconds": 0,
+  "categories": {
+    "episode_other": {
+      "seconds": 0.013026400000399008,
+      "percent": 0.01058448043957683,
+      "count": 1
+    },
+    "environment_setup": {
+      "seconds": 0.026628300000083982,
+      "percent": 0.021636578063121,
+      "count": 1
+    },
+    "decision_adapter_other": {
+      "seconds": 0.10389179999447151,
+      "percent": 0.08441631800345675,
+      "count": 43
+    },
+    "partition_other": {
+      "seconds": 0.3005548000010094,
+      "percent": 0.24421301369021123,
+      "count": 86
+    },
+    "compression_roundtrip": {
+      "seconds": 5.652060099999744,
+      "percent": 4.592528984978774,
+      "count": 86
+    },
+    "tokenization_checks": {
+      "seconds": 0.4636537999990651,
+      "percent": 0.3767375926330568,
+      "count": 43
+    },
+    "log_write": {
+      "seconds": 0.15766400000256908,
+      "percent": 0.1281084201315419,
+      "count": 172
+    },
+    "model_forward": {
+      "seconds": 116.30076020000115,
+      "percent": 94.49910346735258,
+      "count": 43
+    },
+    "environment_tools": {
+      "seconds": 0.0507396000011795,
+      "percent": 0.04122799113400376,
+      "count": 41
+    },
+    "candidate_list_actions": {
+      "seconds": 0.0017589000003681576,
+      "percent": 0.0014291778732802762,
+      "count": 1
+    }
+  },
+  "result": {
+    "snapshot_id": "00bd290a-df64-46a6-8f06-f087bde022a9",
+    "status": "completed",
+    "seconds": 123.06674859999976,
+    "model_requests": 43,
+    "metrics": {
+      "diagnosis_success": false,
+      "network_size": 8,
+      "steps": 41,
+      "normalized_steps": 0.41,
+      "total_reward": -1.4000000000000017,
+      "tool_cost": 81.0,
+      "tool_cost_normalized": 0.3951219512195122,
+      "tool_error_count": 0,
+      "tool_error_rate": 0.0,
+      "topology_coverage": 0.7142857142857143,
+      "node_coverage": 1.0,
+      "edge_coverage": 0.42857142857142855,
+      "evidence_sufficiency": 0.0,
+      "redundancy_count": 0,
+      "redundancy_rate": 0.0,
+      "wall_time_seconds": 123.06101441383362,
+      "ground_truth_type": "link_failure",
+      "ground_truth_location": "center->edge_5",
+      "predicted_type": "performance_degradation",
+      "predicted_location": "center->edge_0",
+      "composite_episode_score": -1.4000000000000017,
+      "location_correct": false,
+      "steps_per_device": 5.125,
+      "cost_efficiency": 0.0,
+      "episode_seed": 1283,
+      "scenario_fingerprint": "bd4ca296e5f4fce321c46157b4560a425cde64385e335faf8afa7edc098927e0",
+      "snapshot_id": "00bd290a-df64-46a6-8f06-f087bde022a9"
+    }
+  },
+  "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+  "gpu_peak_allocated": 2737641984,
+  "gpu_peak_reserved": 5591007232,
+  "limitation": "One autonomous rollout; same case but observations and decisions can differ from Jev."
+}

@@ -1,0 +1,98 @@
+﻿[
+    {
+        "name":  "feature/snapshot-infrastructure",
+        "commit":  {
+                       "sha":  "18b55a915c1a229490ff457cf72cf312ab7615ce",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/18b55a915c1a229490ff457cf72cf312ab7615ce"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "main",
+        "commit":  {
+                       "sha":  "496a07b13bdc1174325afefd8a7d63416e246c41",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/496a07b13bdc1174325afefd8a7d63416e246c41"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "run-bedrock-claude",
+        "commit":  {
+                       "sha":  "9143dea2c0b45f1764f772f29bab7489a4576d18",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/9143dea2c0b45f1764f772f29bab7489a4576d18"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "run-gpt5-high",
+        "commit":  {
+                       "sha":  "85227f9a5cfcffec11f1be3f92f90706d88060d1",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/85227f9a5cfcffec11f1be3f92f90706d88060d1"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260129-161910",
+        "commit":  {
+                       "sha":  "eacae9b92e3087d0cb9970940ecf81f8646df3ef",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/eacae9b92e3087d0cb9970940ecf81f8646df3ef"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260129-162246",
+        "commit":  {
+                       "sha":  "38d9f2eb375ed545f5a77fb9bd57689d6d888242",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/38d9f2eb375ed545f5a77fb9bd57689d6d888242"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260129-162533",
+        "commit":  {
+                       "sha":  "d142cadc7ea3f709b815aab4ebe1e8345914c8b6",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/d142cadc7ea3f709b815aab4ebe1e8345914c8b6"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260129-162701",
+        "commit":  {
+                       "sha":  "0c37b9b1ab5157b9eead71815c603c5f7dfcb0cf",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/0c37b9b1ab5157b9eead71815c603c5f7dfcb0cf"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260129-163924",
+        "commit":  {
+                       "sha":  "3b1564a875a2ffe857783c93eb513a6230465059",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/3b1564a875a2ffe857783c93eb513a6230465059"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260130-195726",
+        "commit":  {
+                       "sha":  "ed9ffdd0ad091e2e5c551864f37a77d869ea3541",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/ed9ffdd0ad091e2e5c551864f37a77d869ea3541"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260201-100940",
+        "commit":  {
+                       "sha":  "22fb87ae961bc15f2968e24cd5c048759a589a0c",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/22fb87ae961bc15f2968e24cd5c048759a589a0c"
+                   },
+        "protected":  false
+    },
+    {
+        "name":  "submission-manikyabard-20260201-203841",
+        "commit":  {
+                       "sha":  "9876cf59a15b927c88b054575eb205eea9e891f9",
+                       "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/commits/9876cf59a15b927c88b054575eb205eea9e891f9"
+                   },
+        "protected":  false
+    }
+]

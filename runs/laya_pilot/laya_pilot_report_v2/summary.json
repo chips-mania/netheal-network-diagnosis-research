@@ -1,0 +1,284 @@
+{
+  "status": "completed_verified",
+  "runs": {
+    "기본 LAYA": {
+      "episodes": 64,
+      "exact": 0.0,
+      "type_accuracy": 0.0,
+      "location_accuracy": 0.0,
+      "fault_macro_f1": 0.0,
+      "termination_counts": {
+        "step_limit": 64
+      },
+      "wrong_diagnosis_rate": 0.0,
+      "mean_seconds": 20.0790039421874,
+      "p95_seconds": 34.72076370500108,
+      "mean_tool_calls": 40.0,
+      "mean_tool_cost": 20.0,
+      "repeated_tool_rate": 0.969921875,
+      "api_cost_usd": 0,
+      "local_compute_cost_usd": null,
+      "conditions": {
+        "linear_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "mesh_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "mesh_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "random_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "random_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_12": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_6": {
+          "n": 8,
+          "exact": 0.0
+        }
+      },
+      "exact_ci95": [
+        0,
+        0.05662405979280239
+      ],
+      "question_latency_p50_p95": [
+        0.22528905000035593,
+        0.4576520300002812
+      ],
+      "peak_gpu_allocated_bytes": 2209778176,
+      "cpu_fallback_count": 0,
+      "question_count": 5120,
+      "question_input_tokens_p50_p95_max": [
+        779.0,
+        1287.0,
+        1380
+      ],
+      "questions_over_checkpoint_default_512": 5112,
+      "fault_macro_precision": 0.0,
+      "fault_macro_recall": 0.0,
+      "mean_seconds_successful_only": null,
+      "faults": {
+        "device_failure": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "link_failure": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "misconfiguration": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "performance_degradation": {
+          "n": 16,
+          "exact": 0.0
+        }
+      },
+      "actions": {
+        "check_status": 2560
+      }
+    },
+    "Head 학습 LAYA": {
+      "episodes": 64,
+      "exact": 0.0,
+      "type_accuracy": 0.0,
+      "location_accuracy": 0.0,
+      "fault_macro_f1": 0.0,
+      "termination_counts": {
+        "step_limit": 64
+      },
+      "wrong_diagnosis_rate": 0.0,
+      "mean_seconds": 20.418786504687716,
+      "p95_seconds": 37.10534439000074,
+      "mean_tool_calls": 40.0,
+      "mean_tool_cost": 20.0,
+      "repeated_tool_rate": 0.9703125,
+      "api_cost_usd": 0,
+      "local_compute_cost_usd": null,
+      "conditions": {
+        "linear_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "mesh_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "mesh_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "random_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "random_6": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_10": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_12": {
+          "n": 8,
+          "exact": 0.0
+        },
+        "star_6": {
+          "n": 8,
+          "exact": 0.0
+        }
+      },
+      "exact_ci95": [
+        0,
+        0.05662405979280239
+      ],
+      "question_latency_p50_p95": [
+        0.2259999499983678,
+        0.4624935200006803
+      ],
+      "peak_gpu_allocated_bytes": 2209778176,
+      "cpu_fallback_count": 0,
+      "question_count": 5120,
+      "question_input_tokens_p50_p95_max": [
+        779.0,
+        1287.0,
+        1380
+      ],
+      "questions_over_checkpoint_default_512": 5112,
+      "fault_macro_precision": 0.0,
+      "fault_macro_recall": 0.0,
+      "mean_seconds_successful_only": null,
+      "faults": {
+        "device_failure": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "link_failure": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "misconfiguration": {
+          "n": 16,
+          "exact": 0.0
+        },
+        "performance_degradation": {
+          "n": 16,
+          "exact": 0.0
+        }
+      },
+      "actions": {
+        "check_status": 2560
+      }
+    }
+  },
+  "paired": {
+    "delta": 0.0,
+    "conditional_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "improved": 0,
+    "worsened": 0,
+    "mcnemar_exact_p": 1.0,
+    "warning": "Bootstrap interval is conditional on these pilot cases. A degenerate all-zero interval does not prove equivalence."
+  },
+  "verification": {
+    "기본 LAYA": {
+      "episodes": 64,
+      "no_train_overlap": true,
+      "no_truncation": true,
+      "source_hashes_match": true,
+      "episode_sha256": "13a305669101a461f8738026d9ab849068c86dcd59696a0964eccfebe38ee44d",
+      "requests_sha256": "a9eda67d5065656437cb35d98a46a3974d95fb58ae30064f3039aae5a000020d"
+    },
+    "Head 학습 LAYA": {
+      "episodes": 64,
+      "no_train_overlap": true,
+      "no_truncation": true,
+      "source_hashes_match": true,
+      "episode_sha256": "5eaecc10993156c33ddc67e197fcf56d27ba1312c2f1dc46af4935198f3c6f80",
+      "requests_sha256": "bc7314e50c443cf9657acb5517cf4645413e482edbefe12c2163214476ecb1ad"
+    },
+    "matches_existing_api_pilot_cases": true
+  },
+  "training": {
+    "status": "training_completed_uncalibrated",
+    "seconds": 183.3391159999992,
+    "items": 516,
+    "history": [
+      1.7027340660434822,
+      1.6683487180591554
+    ],
+    "freeze_encoder": true,
+    "peak_gpu_allocated_bytes": 2150486528,
+    "warning": "Smoke demonstrates gradients and runtime only, not useful fine-tuned accuracy.",
+    "head_weights_changed": true,
+    "full_training_completed": true
+  },
+  "diagnosis_only": {
+    "base": {
+      "n": 288,
+      "exact": 0.059027777777777776,
+      "type_accuracy": 0.25,
+      "location_accuracy": 0.11805555555555555,
+      "mean_seconds": 0.32413196562481517,
+      "cpu_fallback_count": 0,
+      "fault_accuracy": {
+        "device_failure": 0.2361111111111111,
+        "link_failure": 0.0,
+        "misconfiguration": 0.0,
+        "performance_degradation": 0.0
+      },
+      "exact_ci95": [
+        0.03717718258774225,
+        0.09248725567818464
+      ],
+      "predicted_type_counts": {
+        "device_failure": 288
+      }
+    },
+    "head": {
+      "n": 288,
+      "exact": 0.059027777777777776,
+      "type_accuracy": 0.25,
+      "location_accuracy": 0.11805555555555555,
+      "mean_seconds": 0.31465227951386826,
+      "cpu_fallback_count": 0,
+      "fault_accuracy": {
+        "device_failure": 0.2361111111111111,
+        "link_failure": 0.0,
+        "misconfiguration": 0.0,
+        "performance_degradation": 0.0
+      },
+      "exact_ci95": [
+        0.03717718258774225,
+        0.09248725567818464
+      ],
+      "predicted_type_counts": {
+        "device_failure": 288
+      }
+    },
+    "paired": {
+      "changed_locations": 4,
+      "improved": 1,
+      "worsened": 1
+    }
+  }
+}

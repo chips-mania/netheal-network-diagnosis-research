@@ -1,0 +1,119 @@
+{
+  "schema_version": "netheal.api-comparison.v1",
+  "status": "prepared_not_executed",
+  "created_on": "2026-10-09",
+  "purpose": "Compare observed cost, latency and accuracy under identical task conditions; do not equalize expenditure or latency.",
+  "providers": {
+    "gpt": {
+      "model": "gpt-6.1-sol",
+      "api": "responses",
+      "base_url": "https://api.openai.com/v1",
+      "key_env": "OPENAI_API_KEY",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 8192,
+      "service_tier": "default",
+      "temperature": null,
+      "store": false
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "endpoint": "https://api.typesafe.ai/v1/systemone",
+      "key_env": "TYPESAFE_API_KEY",
+      "text_helper": false
+    }
+  },
+  "common": {
+    "observation": "observed-only public graph; known nominal inventory",
+    "action_interface": "one complete legal action selected from identical indexed candidates",
+    "language": "en",
+    "history": "current public graph only; no cross-step private conversation state",
+    "max_decisions": 40,
+    "concurrency": 1,
+    "request_timeout_seconds": 120,
+    "max_transport_retries": 1,
+    "retry_backoff_seconds": 1,
+    "episode_watchdog_seconds": 600,
+    "max_cost_per_episode_usd": null,
+    "web_search": false,
+    "rag": false,
+    "few_shot_examples": 0,
+    "application_response_cache": false
+  },
+  "evaluation": {
+    "conditions": [
+      "star_6",
+      "star_10",
+      "star_12",
+      "linear_6",
+      "mesh_6",
+      "mesh_10",
+      "random_6",
+      "random_10"
+    ],
+    "pilot_cases_per_condition": 8,
+    "final_cases_per_condition": 100,
+    "fault_types_per_condition": 4,
+    "repeats": 3,
+    "naming_variants": [
+      "canonical",
+      "renamed"
+    ],
+    "pilot_seed_base": 9100000,
+    "final_seed_base": 9200000,
+    "execution_order": "paired randomized AB/BA, alternate providers, shuffle cases",
+    "bootstrap_repeats": 10000,
+    "cluster_unit": "physical_case",
+    "primary_family_ci": 0.9833333333333333
+  },
+  "metrics": {
+    "primary": [
+      "exact_accuracy",
+      "mean_billed_usd_per_episode",
+      "mean_end_to_end_seconds_per_episode"
+    ],
+    "secondary": [
+      "wrong_diagnosis_rate",
+      "step_limit_rate",
+      "watchdog_rate",
+      "api_failure_rate",
+      "invalid_action_rate",
+      "fault_macro_f1",
+      "type_accuracy",
+      "location_accuracy",
+      "tool_calls",
+      "repeated_tool_call_rate",
+      "weighted_tool_cost",
+      "request_latency_p50_p95",
+      "episode_latency_p50_p95",
+      "total_usd_per_correct_diagnosis",
+      "input_cached_output_reasoning_tokens",
+      "repeat_agreement",
+      "canonical_renamed_accuracy_gap"
+    ]
+  },
+  "pricing": {
+    "checked_on": "2026-10-09",
+    "currency": "USD",
+    "gpt_usd_per_million": {
+      "input_uncached": 2,
+      "input_cached": 0.1,
+      "cache_write": 2.5,
+      "output": 10
+    },
+    "jev_usd_per_million": {
+      "input": 0.042,
+      "output": 0
+    },
+    "sources": [
+      "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "https://docs.typesafe.ai/models"
+    ],
+    "actual_invoice_reconciliation_required": true
+  },
+  "execution": {
+    "runner_implemented": false,
+    "live_calls_made": false,
+    "total_run_spend_guard_usd": null,
+    "freeze_after_pilot": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "completed_verified",
+  "data_split": "train_only",
+  "batch_size": 4,
+  "checks": [
+    {
+      "arm": "table",
+      "question": "fault",
+      "orders": 24,
+      "max_logit_difference": 3.647804260253906e-05
+    },
+    {
+      "arm": "table",
+      "question": "diagnosis_node",
+      "orders": 3,
+      "max_logit_difference": 1.3113021850585938e-05
+    },
+    {
+      "arm": "table",
+      "question": "diagnosis_edge",
+      "orders": 3,
+      "max_logit_difference": 4.172325134277344e-07
+    },
+    {
+      "arm": "prose",
+      "question": "fault",
+      "orders": 24,
+      "max_logit_difference": 9.5367431640625e-07
+    },
+    {
+      "arm": "prose",
+      "question": "diagnosis_node",
+      "orders": 3,
+      "max_logit_difference": 5.960464477539062e-07
+    },
+    {
+      "arm": "prose",
+      "question": "diagnosis_edge",
+      "orders": 3,
+      "max_logit_difference": 5.841255187988281e-06
+    }
+  ],
+  "source_sha256": "49b8e12e091d5796fa95d03c299dc00fb926a718d2fe78e5c6de78be3b4d1a21"
+}

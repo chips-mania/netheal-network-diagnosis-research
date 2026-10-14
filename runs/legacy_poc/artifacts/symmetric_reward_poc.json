@@ -1,0 +1,153 @@
+{
+  "control": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.19,
+      "macro_f1": 0.2835314091680815,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7349999999999997,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "performance_degradation": 68,
+        "link_failure": 32
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.68,
+        "device_failure": 0.0,
+        "performance_degradation": 0.08,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "link_failure": 17,
+          "performance_degradation": 8
+        },
+        "device_failure": {
+          "performance_degradation": 25
+        },
+        "performance_degradation": {
+          "performance_degradation": 25
+        },
+        "misconfiguration": {
+          "performance_degradation": 10,
+          "link_failure": 15
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.42,
+      "location_accuracy": 0.49,
+      "exact_diagnosis_accuracy": 0.19
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.68,
+      "device_failure": 0.0,
+      "performance_degradation": 0.08,
+      "misconfiguration": 0.0
+    }
+  },
+  "variant": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.04,
+      "macro_f1": 0.1,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7349999999999997,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "device_failure": 100
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.0,
+        "device_failure": 0.16,
+        "performance_degradation": 0.0,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "device_failure": 25
+        },
+        "device_failure": {
+          "device_failure": 25
+        },
+        "performance_degradation": {
+          "device_failure": 25
+        },
+        "misconfiguration": {
+          "device_failure": 25
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.25,
+      "location_accuracy": 0.09,
+      "exact_diagnosis_accuracy": 0.04
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.0,
+      "device_failure": 0.16,
+      "performance_degradation": 0.0,
+      "misconfiguration": 0.0
+    }
+  },
+  "assessment": {
+    "dsr_delta": -0.15,
+    "complementary_reduced": false,
+    "nonlink_faults_improved": 1,
+    "top_prediction_share": 1.0,
+    "verdict": "inconclusive_or_fail",
+    "next_step": "Proceed to 9.13-B Diagnosis Gate ablation; do not scale to 100k yet."
+  }
+}

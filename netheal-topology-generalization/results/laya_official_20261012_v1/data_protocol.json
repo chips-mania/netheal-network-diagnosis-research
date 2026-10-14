@@ -1,0 +1,6 @@
+{
+  "spec_sha256": "f67f3363a4b0a63137369c364f0e74d45bedaafedd693d153daeae9d6c98bce4",
+  "source_sha256": "61791da511c28a2c9a8f31165b06aed34677be44fdfcfd1600f5b9832b7ba539",
+  "train": 40,
+  "development": 20
+}

@@ -1,0 +1,67 @@
+{
+  "status": "verified_read_only",
+  "runs": [
+    {
+      "arm": "fixed_order",
+      "seed": 41,
+      "accuracy_recomputed": 0.4375
+    },
+    {
+      "arm": "fixed_order",
+      "seed": 52,
+      "accuracy_recomputed": 0.40625
+    },
+    {
+      "arm": "fixed_order",
+      "seed": 63,
+      "accuracy_recomputed": 0.3125
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 41,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 52,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "head_lr_1e3",
+      "seed": 63,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "reference",
+      "seed": 41,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "reference",
+      "seed": 52,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "reference",
+      "seed": 63,
+      "accuracy_recomputed": 0.25
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 41,
+      "accuracy_recomputed": 0.8125
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 52,
+      "accuracy_recomputed": 0.90625
+    },
+    {
+      "arm": "updates_1024",
+      "seed": 63,
+      "accuracy_recomputed": 0.90625
+    }
+  ],
+  "prior_restoration_status": "completed_verified",
+  "note": "Validated prior stored logits, saved-weight hashes and recorded restoration audit; did not rerun prior GPU experiments."
+}

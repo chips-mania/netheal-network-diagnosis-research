@@ -1,0 +1,55 @@
+{
+  "status": "completed_verified",
+  "passes": {
+    "frozen": 0,
+    "last_block": 0
+  },
+  "checks": [
+    {
+      "arm": "frozen",
+      "seed": 41,
+      "head_sha256": "194f46e39369de0530ec9dad6f4504d6fc47ddabf64aabb86bf8ee32c26fab5d",
+      "encoder_delta": 0.0,
+      "trainable_parameters": 26512131
+    },
+    {
+      "arm": "frozen",
+      "seed": 52,
+      "head_sha256": "9f4260314ba94b3a64fdfd84108fe0d4303de6d0210c3afa238930f08df4d70d",
+      "encoder_delta": 0.0,
+      "trainable_parameters": 26512131
+    },
+    {
+      "arm": "frozen",
+      "seed": 63,
+      "head_sha256": "e7804f3804a0f1d95836f3b80c3771ca28639ba7f38cc51734418750c7bfc9b5",
+      "encoder_delta": 0.0,
+      "trainable_parameters": 26512131
+    },
+    {
+      "arm": "last_block",
+      "seed": 41,
+      "head_sha256": "ce3dca3bb8e4a583840ec8eb1585a0f91951d18e4366367c4795ae0c8901ca4f",
+      "encoder_delta": 0.0010916590690612793,
+      "trainable_parameters": 38769411
+    },
+    {
+      "arm": "last_block",
+      "seed": 52,
+      "head_sha256": "ec7434917b98717db6a4333478ef080d5910b9a2b7a1be0632e186baea46fbc6",
+      "encoder_delta": 0.0012779831886291504,
+      "trainable_parameters": 38769411
+    },
+    {
+      "arm": "last_block",
+      "seed": 63,
+      "head_sha256": "f8adc1b624b33396987392ba74f2099c66e89d3fd3ecbf0080b87c0fba1f5130",
+      "encoder_delta": 0.0011415481567382812,
+      "trainable_parameters": 38769411
+    }
+  ],
+  "input_hashes": {
+    "train": "3e2fec58c2254cbb76ab8d5e6c640b38c69e5bab6c3622db0f3d3c66d0628c3b",
+    "validation": "9377b410b56ad30f661de5589dd21b94eb9cfaa554d79ff1cc068d08bd19ddb2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "recorded_at":  "2026-10-11T23:19:42.0395772+09:00",
+    "status":  "interrupted",
+    "successor":  "netheal_official_jev_20261011_v4",
+    "finalized_episodes":  14,
+    "reason":  "local ContextBudgetError with combined ping candidates and public observation"
+}

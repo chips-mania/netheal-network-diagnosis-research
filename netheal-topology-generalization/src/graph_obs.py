@@ -47,8 +47,8 @@ def _nominal_edges(root) -> List[Tuple[str, str]]:
     return [(str(a), str(b)) for a, b in root.network.get_all_connections()]
 
 
-def build_graph_obs(env, *, mem: Any = None) -> GraphObs:
-    """Construct GraphObs. Pass RuleAgentV2.mem (or compatible) for evidence history."""
+def build_graph_obs(env, *, mem: Any = None, privileged: bool = False) -> GraphObs:
+    """Construct tool-evidence features; privileged=True is for legacy leakage audits only."""
     root = base_env(env)
     struct = structured_obs(env)
     node_ids = _device_ids(root)
@@ -93,7 +93,7 @@ def build_graph_obs(env, *, mem: Any = None) -> GraphObs:
         id_rank[sorted_ids[0]] = 0.0
 
     for i, did in enumerate(node_ids):
-        node_feat[i, 1] = 1.0 if (not discovered) or (did in discovered) else 0.0
+        node_feat[i, 1] = 1.0 if did in discovered else 0.0
         node_feat[i, 9] = float(id_rank.get(did, 0.0))
 
     deg = {d: 0 for d in node_ids}
@@ -168,14 +168,14 @@ def build_graph_obs(env, *, mem: Any = None) -> GraphObs:
         ia, ib = node_index[a], node_index[b]
         is_conn = 1.0 if (a, b) in connected else 0.0
         lat = lat_edge.get((a, b))
-        if lat is None and root.network is not None:
+        if privileged and lat is None and root.network is not None:
             try:
                 lat = float(root.network.graph.edges[a, b].get("latency", 0.0) or 0.0)
             except Exception:
                 lat = 0.0
         lat_n = float(lat or 0.0) / LATENCY_SCALE
         is_down = 0.0
-        if root.network is not None and not root.network.is_connection_up(a, b):
+        if privileged and root.network is not None and not root.network.is_connection_up(a, b):
             is_down = 1.0
         missing = 1.0 if ((a, b) in missing_mem) or ((a, b) not in connected and scanned) else 0.0
         # if mem.missing empty but scanned, missing := nominal not connected
@@ -212,7 +212,7 @@ def build_graph_obs(env, *, mem: Any = None) -> GraphObs:
     edge_index = np.array([edge_src, edge_dst], dtype=np.int64) if e else np.zeros((2, 0), dtype=np.int64)
     edge_feat = np.array(edge_feat_list, dtype=np.float32) if e else np.zeros((0, EDGE_DIM), dtype=np.float32)
 
-    step = float(getattr(root, "current_step", 0) or 0)
+    step = float(getattr(root, "step_count", 0) or 0)
     max_steps = float(getattr(root, "max_episode_steps", 15) or 15)
     n_miss = float(sum(1 for row in edge_feat_list if row[4] > 0.5)) if edge_feat_list else 0.0
     n_ping = float(len(ping_map))

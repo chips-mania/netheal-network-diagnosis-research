@@ -1,0 +1,17 @@
+{
+  "choice": "c006",
+  "selected": "check_interfaces",
+  "probabilities": {
+    "c000": 0.0,
+    "c001": 0.0,
+    "c002": 0.06,
+    "c003": 0.16,
+    "c004": 0.21,
+    "c005": 0.14,
+    "c006": 0.36,
+    "c007": 0.07
+  },
+  "calls": 1,
+  "http_seconds": 0.24244020000014643,
+  "input_tokens": 14831
+}

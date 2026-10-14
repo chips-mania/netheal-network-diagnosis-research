@@ -1,0 +1,8 @@
+{
+  "status": "superseded_before_model_evaluation",
+  "reason": "User clarified baseline must use the official 100 episodes used for Jev and Claude, not the separate 40 train / 20 development cases.",
+  "completed_model_evaluation_cases": 0,
+  "updates": 0,
+  "replacement_plan": "docs/specs/laya_official_baseline_plan_20261012.md",
+  "preserve_existing_audit_artifacts": true
+}

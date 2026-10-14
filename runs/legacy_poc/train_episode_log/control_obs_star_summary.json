@@ -1,0 +1,184 @@
+{
+  "n_episodes": 10499,
+  "timesteps": 30000,
+  "evidence_obs": true,
+  "overall": {
+    "n": 10499,
+    "p_tool_use": 0.4349938089341842,
+    "p_exact": 0.03867034955710068,
+    "p_exact_and_tool": 0.014668063625107154,
+    "p_exact_given_tool": 0.03372016641121086,
+    "p_exact_cons_given_tool": 0.003941318151959711,
+    "p_exact_cons_given_phi": 0.017928286852589643,
+    "p_shortcut": 0.5338603676540623,
+    "per_fault": {
+      "device_failure": {
+        "n": 2641,
+        "tool": 1153,
+        "exact": 11,
+        "exact_tool": 5,
+        "exact_cons": 1,
+        "shortcut": 1393
+      },
+      "link_failure": {
+        "n": 2700,
+        "tool": 1187,
+        "exact": 210,
+        "exact_tool": 80,
+        "exact_cons": 0,
+        "shortcut": 1435
+      },
+      "misconfiguration": {
+        "n": 2511,
+        "tool": 1073,
+        "exact": 15,
+        "exact_tool": 5,
+        "exact_cons": 0,
+        "shortcut": 1354
+      },
+      "performance_degradation": {
+        "n": 2647,
+        "tool": 1154,
+        "exact": 170,
+        "exact_tool": 64,
+        "exact_cons": 17,
+        "shortcut": 1423
+      }
+    }
+  },
+  "windows": {
+    "0-10k": {
+      "n": 3168,
+      "p_tool_use": 0.5148358585858586,
+      "p_exact": 0.02335858585858586,
+      "p_exact_and_tool": 0.010101010101010102,
+      "p_exact_given_tool": 0.019619865113427344,
+      "p_exact_cons_given_tool": 0.004291845493562232,
+      "p_exact_cons_given_phi": 0.01876675603217158,
+      "p_shortcut": 0.45580808080808083,
+      "per_fault": {
+        "device_failure": {
+          "n": 838,
+          "tool": 440,
+          "exact": 5,
+          "exact_tool": 3,
+          "exact_cons": 1,
+          "shortcut": 373
+        },
+        "link_failure": {
+          "n": 797,
+          "tool": 412,
+          "exact": 32,
+          "exact_tool": 14,
+          "exact_cons": 0,
+          "shortcut": 363
+        },
+        "misconfiguration": {
+          "n": 767,
+          "tool": 397,
+          "exact": 5,
+          "exact_tool": 2,
+          "exact_cons": 0,
+          "shortcut": 342
+        },
+        "performance_degradation": {
+          "n": 766,
+          "tool": 382,
+          "exact": 32,
+          "exact_tool": 13,
+          "exact_cons": 6,
+          "shortcut": 366
+        }
+      }
+    },
+    "10-20k": {
+      "n": 3332,
+      "p_tool_use": 0.453781512605042,
+      "p_exact": 0.03871548619447779,
+      "p_exact_and_tool": 0.016206482593037214,
+      "p_exact_given_tool": 0.03571428571428571,
+      "p_exact_cons_given_tool": 0.003968253968253968,
+      "p_exact_cons_given_phi": 0.01834862385321101,
+      "p_shortcut": 0.5105042016806722,
+      "per_fault": {
+        "device_failure": {
+          "n": 849,
+          "tool": 382,
+          "exact": 5,
+          "exact_tool": 2,
+          "exact_cons": 0,
+          "shortcut": 433
+        },
+        "link_failure": {
+          "n": 892,
+          "tool": 416,
+          "exact": 65,
+          "exact_tool": 28,
+          "exact_cons": 0,
+          "shortcut": 446
+        },
+        "misconfiguration": {
+          "n": 749,
+          "tool": 325,
+          "exact": 4,
+          "exact_tool": 0,
+          "exact_cons": 0,
+          "shortcut": 393
+        },
+        "performance_degradation": {
+          "n": 842,
+          "tool": 389,
+          "exact": 55,
+          "exact_tool": 24,
+          "exact_cons": 6,
+          "shortcut": 429
+        }
+      }
+    },
+    "20-30k": {
+      "n": 3999,
+      "p_tool_use": 0.3560890222555639,
+      "p_exact": 0.05076269067266817,
+      "p_exact_and_tool": 0.01700425106276569,
+      "p_exact_given_tool": 0.047752808988764044,
+      "p_exact_cons_given_tool": 0.0035112359550561797,
+      "p_exact_cons_given_phi": 0.01644736842105263,
+      "p_shortcut": 0.6151537884471118,
+      "per_fault": {
+        "device_failure": {
+          "n": 954,
+          "tool": 331,
+          "exact": 1,
+          "exact_tool": 0,
+          "exact_cons": 0,
+          "shortcut": 587
+        },
+        "link_failure": {
+          "n": 1011,
+          "tool": 359,
+          "exact": 113,
+          "exact_tool": 38,
+          "exact_cons": 0,
+          "shortcut": 626
+        },
+        "misconfiguration": {
+          "n": 995,
+          "tool": 351,
+          "exact": 6,
+          "exact_tool": 3,
+          "exact_cons": 0,
+          "shortcut": 619
+        },
+        "performance_degradation": {
+          "n": 1039,
+          "tool": 383,
+          "exact": 83,
+          "exact_tool": 27,
+          "exact_cons": 5,
+          "shortcut": 628
+        }
+      }
+    }
+  },
+  "jsonl": "C:\\Users\\jaewon\\Desktop\\Project\\NW_AI\\NW_AI\\netheal-topology-generalization\\results\\train_episode_log\\control_obs_star.jsonl"
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Jev v4 100개 완료: 성공 42 / 오진 58 / 문맥 오류 0. 재실행 시 유료 API 가능.",
+  "stages": {
+    "structured-audit": {
+      "python": ".runtime/jev-official-venv/Scripts/python.exe",
+      "script": "experiments/official_benchmark/jev/audit_structured_run.py"
+    },
+    "structured-validate": {
+      "python": ".runtime/jev-official-venv/Scripts/python.exe",
+      "script": "experiments/official_benchmark/jev/verify_structured_state.py"
+    },
+    "structured-evaluate": {
+      "python": ".runtime/jev-official-venv/Scripts/python.exe",
+      "script": "experiments/official_benchmark/jev/structured_baseline.py"
+    },
+    "evaluate": {
+      "python": ".runtime/jev-official-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/jev_official_eval_v4.py",
+      "args": [
+        "evaluate"
+      ]
+    },
+    "report": {
+      "python": ".runtime/jev-official-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/report_jev_official_eval_v4.py"
+    }
+  }
+}

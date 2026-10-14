@@ -1,0 +1,17 @@
+{
+  "cases": 39,
+  "max_calls": 117,
+  "model": "jev-1.13.0",
+  "variants": [
+    "original v2 body, state object unchanged",
+    "v4 lossless compression, state string",
+    "prior readable transformation: keep all history, simplify tool schemas, state string"
+  ],
+  "questions_and_options": "historical exact",
+  "guard": null,
+  "partition": null,
+  "interval": "at least one second between starts; sequential",
+  "retry": 0,
+  "purpose": "API acceptance and reported token usage; not autonomous episodes or accuracy evaluation",
+  "source_sha256": "fa85b6053cf134b6b86d68ff7f103461d82066b58f0be748a41d914cbad906b3"
+}

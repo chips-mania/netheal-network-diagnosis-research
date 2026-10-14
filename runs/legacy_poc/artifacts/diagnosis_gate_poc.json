@@ -1,0 +1,168 @@
+{
+  "control": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.19,
+      "macro_f1": 0.09663865546218488,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7344999999999996,
+      "ttd_success": 2.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 1.0,
+      "avg_tool_actions_before_diagnosis_success_only": 1.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 0.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "link_failure": 94,
+        "performance_degradation": 6
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.76,
+        "device_failure": 0.0,
+        "performance_degradation": 0.0,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "link_failure": 23,
+          "performance_degradation": 2
+        },
+        "device_failure": {
+          "link_failure": 25
+        },
+        "performance_degradation": {
+          "link_failure": 25
+        },
+        "misconfiguration": {
+          "link_failure": 21,
+          "performance_degradation": 4
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.23,
+      "location_accuracy": 0.48,
+      "exact_diagnosis_accuracy": 0.19
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.76,
+      "device_failure": 0.0,
+      "performance_degradation": 0.0,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    }
+  },
+  "variant": {
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.1,
+      "macro_f1": 0.2153072033898305,
+      "avg_steps_all": 3.0,
+      "normalized_steps_all": 0.20000000000000034,
+      "tool_cost_index": 0.26666666666666616,
+      "topology_coverage": 0.7344999999999996,
+      "ttd_success": 3.0
+    },
+    "behavior": {
+      "first_action_diagnosis_rate": 0.0,
+      "invalid_action_rate": 0.0,
+      "avg_tool_actions_before_diagnosis": 2.0,
+      "avg_tool_actions_before_diagnosis_success_only": 2.0,
+      "scan_usage_rate": 1.0,
+      "ping_usage_rate": 1.0,
+      "traceroute_usage_rate": 0.0,
+      "check_status_usage_rate": 0.0,
+      "check_interfaces_usage_rate": 0.0,
+      "action_type_frequency": {
+        "scan_network": 100,
+        "ping": 100
+      },
+      "action_category_frequency": {
+        "topology_discovery": 100,
+        "diagnostic": 100,
+        "diagnosis": 100
+      },
+      "predicted_diagnosis_distribution": {
+        "performance_degradation": 93,
+        "link_failure": 7
+      },
+      "actual_fault_distribution": {
+        "link_failure": 25,
+        "device_failure": 25,
+        "performance_degradation": 25,
+        "misconfiguration": 25
+      },
+      "fault_type_dsr": {
+        "link_failure": 0.28,
+        "device_failure": 0.0,
+        "performance_degradation": 0.12,
+        "misconfiguration": 0.0
+      },
+      "confusion_matrix": {
+        "link_failure": {
+          "link_failure": 7,
+          "performance_degradation": 18
+        },
+        "device_failure": {
+          "performance_degradation": 25
+        },
+        "performance_degradation": {
+          "performance_degradation": 25
+        },
+        "misconfiguration": {
+          "performance_degradation": 25
+        }
+      }
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.32,
+      "location_accuracy": 0.28,
+      "exact_diagnosis_accuracy": 0.1
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.28,
+      "device_failure": 0.0,
+      "performance_degradation": 0.12,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 0.0,
+      "scan_then_diagnose": 0.0,
+      "shortcut_rate": 0.0
+    }
+  },
+  "assessment": {
+    "dsr_delta": -0.09,
+    "shortcut_control": 1.0,
+    "shortcut_gate": 0.0,
+    "nonlink_improved": 1,
+    "dummy_tool_collapse": true,
+    "verdict": "dummy_tool_collapse",
+    "next_step": "Gate only forced a dummy diagnostic; proceed to 9.13-C Factorized Diagnosis."
+  }
+}

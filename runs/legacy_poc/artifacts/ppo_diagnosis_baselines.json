@@ -1,0 +1,291 @@
+{
+  "episodes": 100,
+  "agents": {
+    "Random-Valid": {
+      "stats": {
+        "episodes": 100,
+        "dsr": 0.04,
+        "macro_f1": 0.25018917390240925,
+        "avg_steps_all": 15.0,
+        "normalized_steps_all": 1.0,
+        "tool_cost_index": 0.2803333333333334,
+        "topology_coverage": 0.8090000000000008,
+        "ttd_success": 15.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 0.0,
+        "invalid_action_rate": 0.0,
+        "avg_tool_actions_before_diagnosis": 14.0,
+        "avg_tool_actions_before_diagnosis_success_only": 14.0,
+        "scan_usage_rate": 1.0,
+        "ping_usage_rate": 0.99,
+        "traceroute_usage_rate": 1.0,
+        "check_status_usage_rate": 0.68,
+        "check_interfaces_usage_rate": 0.61,
+        "action_type_frequency": {
+          "traceroute": 496,
+          "ping": 480,
+          "discover_neighbors": 126,
+          "scan_network": 113,
+          "check_status": 99,
+          "check_interfaces": 86
+        },
+        "action_category_frequency": {
+          "diagnostic": 1161,
+          "topology_discovery": 239,
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "link_failure": 40,
+          "performance_degradation": 39,
+          "misconfiguration": 12,
+          "device_failure": 9
+        },
+        "actual_fault_distribution": {
+          "link_failure": 25,
+          "device_failure": 25,
+          "performance_degradation": 25,
+          "misconfiguration": 25
+        },
+        "fault_type_dsr": {
+          "link_failure": 0.0,
+          "device_failure": 0.08,
+          "performance_degradation": 0.04,
+          "misconfiguration": 0.04
+        },
+        "confusion_matrix": {
+          "link_failure": {
+            "link_failure": 10,
+            "misconfiguration": 3,
+            "performance_degradation": 11,
+            "device_failure": 1
+          },
+          "device_failure": {
+            "performance_degradation": 12,
+            "device_failure": 4,
+            "link_failure": 8,
+            "misconfiguration": 1
+          },
+          "performance_degradation": {
+            "performance_degradation": 6,
+            "link_failure": 16,
+            "misconfiguration": 3
+          },
+          "misconfiguration": {
+            "performance_degradation": 10,
+            "link_failure": 6,
+            "misconfiguration": 5,
+            "device_failure": 4
+          }
+        }
+      }
+    },
+    "Immediate-Random-Diagnosis": {
+      "stats": {
+        "episodes": 100,
+        "dsr": 0.04,
+        "macro_f1": 0.22482174688057038,
+        "avg_steps_all": 1.0,
+        "normalized_steps_all": 0.06666666666666654,
+        "tool_cost_index": 0.20000000000000034,
+        "topology_coverage": 0.0,
+        "ttd_success": 1.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 1.0,
+        "invalid_action_rate": 1.0,
+        "avg_tool_actions_before_diagnosis": 0.0,
+        "avg_tool_actions_before_diagnosis_success_only": 0.0,
+        "scan_usage_rate": 0.0,
+        "ping_usage_rate": 0.0,
+        "traceroute_usage_rate": 0.0,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.0,
+        "action_type_frequency": {},
+        "action_category_frequency": {
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "performance_degradation": 43,
+          "link_failure": 41,
+          "misconfiguration": 8,
+          "device_failure": 8
+        },
+        "actual_fault_distribution": {
+          "link_failure": 25,
+          "device_failure": 25,
+          "performance_degradation": 25,
+          "misconfiguration": 25
+        },
+        "fault_type_dsr": {
+          "link_failure": 0.04,
+          "device_failure": 0.0,
+          "performance_degradation": 0.08,
+          "misconfiguration": 0.04
+        },
+        "confusion_matrix": {
+          "link_failure": {
+            "performance_degradation": 12,
+            "link_failure": 9,
+            "device_failure": 3,
+            "misconfiguration": 1
+          },
+          "device_failure": {
+            "performance_degradation": 9,
+            "link_failure": 8,
+            "misconfiguration": 4,
+            "device_failure": 4
+          },
+          "performance_degradation": {
+            "misconfiguration": 2,
+            "performance_degradation": 11,
+            "link_failure": 11,
+            "device_failure": 1
+          },
+          "misconfiguration": {
+            "performance_degradation": 11,
+            "link_failure": 13,
+            "misconfiguration": 1
+          }
+        }
+      }
+    },
+    "Majority-Diagnosis (link_failure)": {
+      "stats": {
+        "episodes": 100,
+        "dsr": 0.02,
+        "macro_f1": 0.1,
+        "avg_steps_all": 1.0,
+        "normalized_steps_all": 0.06666666666666654,
+        "tool_cost_index": 0.20000000000000034,
+        "topology_coverage": 0.0,
+        "ttd_success": 1.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 1.0,
+        "invalid_action_rate": 1.0,
+        "avg_tool_actions_before_diagnosis": 0.0,
+        "avg_tool_actions_before_diagnosis_success_only": 0.0,
+        "scan_usage_rate": 0.0,
+        "ping_usage_rate": 0.0,
+        "traceroute_usage_rate": 0.0,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.0,
+        "action_type_frequency": {},
+        "action_category_frequency": {
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "link_failure": 100
+        },
+        "actual_fault_distribution": {
+          "link_failure": 25,
+          "device_failure": 25,
+          "performance_degradation": 25,
+          "misconfiguration": 25
+        },
+        "fault_type_dsr": {
+          "link_failure": 0.08,
+          "device_failure": 0.0,
+          "performance_degradation": 0.0,
+          "misconfiguration": 0.0
+        },
+        "confusion_matrix": {
+          "link_failure": {
+            "link_failure": 25
+          },
+          "device_failure": {
+            "link_failure": 25
+          },
+          "performance_degradation": {
+            "link_failure": 25
+          },
+          "misconfiguration": {
+            "link_failure": 25
+          }
+        }
+      }
+    },
+    "PPO (30k sanity)": {
+      "stats": {
+        "episodes": 100,
+        "dsr": 0.04,
+        "macro_f1": 0.1,
+        "avg_steps_all": 1.0,
+        "normalized_steps_all": 0.06666666666666654,
+        "tool_cost_index": 0.20000000000000034,
+        "topology_coverage": 0.0,
+        "ttd_success": 1.0
+      },
+      "behavior": {
+        "first_action_diagnosis_rate": 1.0,
+        "invalid_action_rate": 1.0,
+        "avg_tool_actions_before_diagnosis": 0.0,
+        "avg_tool_actions_before_diagnosis_success_only": 0.0,
+        "scan_usage_rate": 0.0,
+        "ping_usage_rate": 0.0,
+        "traceroute_usage_rate": 0.0,
+        "check_status_usage_rate": 0.0,
+        "check_interfaces_usage_rate": 0.0,
+        "action_type_frequency": {},
+        "action_category_frequency": {
+          "diagnosis": 100
+        },
+        "predicted_diagnosis_distribution": {
+          "performance_degradation": 100
+        },
+        "actual_fault_distribution": {
+          "link_failure": 25,
+          "device_failure": 25,
+          "performance_degradation": 25,
+          "misconfiguration": 25
+        },
+        "fault_type_dsr": {
+          "link_failure": 0.0,
+          "device_failure": 0.0,
+          "performance_degradation": 0.16,
+          "misconfiguration": 0.0
+        },
+        "confusion_matrix": {
+          "link_failure": {
+            "performance_degradation": 25
+          },
+          "device_failure": {
+            "performance_degradation": 25
+          },
+          "performance_degradation": {
+            "performance_degradation": 25
+          },
+          "misconfiguration": {
+            "performance_degradation": 25
+          }
+        }
+      }
+    }
+  },
+  "reward_table": {
+    "network_size": 6,
+    "step_penalty": -0.1,
+    "correct_diagnosis_reward_scaled": 16.0,
+    "incorrect_diagnosis_penalty_scaled": -16.0,
+    "partial_device_reward_single_scaled": 4.800000000000001,
+    "partial_device_reward_per_device_scaled": 2.4000000000000004,
+    "invalid_action_penalty": -5.0,
+    "diagnosis_terminates_episode": true,
+    "max_step_truncation_reward": "no terminal bonus; last step still gets step_penalty",
+    "scenarios": {
+      "immediate_correct": 15.9,
+      "immediate_wrong": -16.1,
+      "explore_5_steps_then_correct": 15.5,
+      "explore_10_steps_then_correct": 15.0,
+      "explore_14_steps_then_correct": 14.6
+    }
+  },
+  "go_assessment": {
+    "performance": false,
+    "behavior": false,
+    "not_blind_guess_only": false,
+    "overall_go": false,
+    "recommendation": "Proceed to Star-only 100k sanity ONLY if undertraining suspected; otherwise fix reward/action-space design first."
+  }
+}

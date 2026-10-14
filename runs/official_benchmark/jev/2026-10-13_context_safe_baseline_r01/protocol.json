@@ -1,0 +1,28 @@
+{
+  "model": "jev-1.13.0",
+  "cases": 100,
+  "fresh_runs": 100,
+  "concurrency": 1,
+  "routing": "readable <= local 24KB envelope, else lossless compression, else JSON-tree partitions",
+  "fallback_budgets": [
+    24000,
+    12000,
+    6000,
+    3000
+  ],
+  "fallback_trigger": "API max_tokens_exceeded only",
+  "aggregation": "value-byte-weighted probabilities; single part provider choice",
+  "max_steps": 100,
+  "max_turns": 100,
+  "deadline_seconds": 1200,
+  "fixed_wait": 0,
+  "source_hashes": {
+    "experiments\\official_benchmark\\jev\\context_safe_baseline.py": "7d4d87dd4e939674f0c73aab6d350f674aa23a44b173022f4b57096b0466213c",
+    "experiments\\official_benchmark\\jev\\readable_baseline_smoke.py": "75e8d24657e60c6d5757c20a7ecee72a80ec602ecea530eb5d36ac05a02a2633",
+    "netheal-topology-generalization\\scripts\\jev_official_eval_v4.py": "32e96d137362aaabf301c8de1024a87aed0d5862cac67b7e0c5be6ee41b2d711",
+    "experiments\\official_benchmark\\jev\\compare_first_case_input.py": "9e42ca72c850819d7682ba7a37a73586ddc910fbe2c67b93f5d7bc318081107d",
+    "netheal-topology-generalization\\scripts\\jev_context_codec_v4.py": "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "netheal-topology-generalization\\scripts\\jev_tree_partition_v4.py": "5ab774a18c493a5d9efc25492c5ee0ba7316e3f2fe85a21fc3931ef4650678e9"
+  },
+  "limitation": "Compression preserves reconstructability, not model comprehension. Partition aggregation is not joint-context inference."
+}

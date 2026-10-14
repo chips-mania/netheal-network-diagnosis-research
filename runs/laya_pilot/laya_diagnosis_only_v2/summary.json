@@ -1,0 +1,30 @@
+{
+  "base": {
+    "n": 288,
+    "exact": 0.059027777777777776,
+    "type_accuracy": 0.25,
+    "location_accuracy": 0.11805555555555555,
+    "mean_seconds": 0.32413196562481517,
+    "cpu_fallback_count": 0,
+    "fault_accuracy": {
+      "device_failure": 0.2361111111111111,
+      "link_failure": 0.0,
+      "misconfiguration": 0.0,
+      "performance_degradation": 0.0
+    }
+  },
+  "head": {
+    "n": 288,
+    "exact": 0.059027777777777776,
+    "type_accuracy": 0.25,
+    "location_accuracy": 0.11805555555555555,
+    "mean_seconds": 0.31465227951386826,
+    "cpu_fallback_count": 0,
+    "fault_accuracy": {
+      "device_failure": 0.2361111111111111,
+      "link_failure": 0.0,
+      "misconfiguration": 0.0,
+      "performance_degradation": 0.0
+    }
+  }
+}

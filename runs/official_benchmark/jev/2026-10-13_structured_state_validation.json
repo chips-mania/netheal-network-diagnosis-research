@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "episodes": 100,
+  "measurements_verified": 844,
+  "checks": [
+    "all numeric measurement fields and timestamps roundtrip",
+    "action counts and result_changed compare all observations",
+    "latency changes and return to prior value retained",
+    "prefix-only rendering and hidden-field independence",
+    "returned state cannot mutate after future updates"
+  ],
+  "strict_lossless_claim": false
+}

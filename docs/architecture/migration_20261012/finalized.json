@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "documents": {
+    "docs/research/generalization/reports/GNN_expert_guided_results_report.md": "1d1c636dbe7e226c28057f86e114447c7287ffef32766fc6d9122c6e77d4b7b3",
+    "docs/research/api_pilot/reports/gpt_jev_pilot_v1.md": "7d57074d3d3e3506d32216e258fadf3b484caecf2985227eae29edbee7a7614c",
+    "docs/research/laya_controls/reports/laya_learning_controls_20261010.md": "37e210ded51d8caa0d9c63c0492bdbc491879be48bd95b6fe336db929e61fbf1",
+    "docs/research/laya_controls/reports/laya_observation_controls_v1.md": "6ccc76245733deb5267d0b7e421a128cf11257ce30b3f8b70709069bfdb4f709",
+    "docs/research/laya_controls/reports/laya_optimization_controls_v1.md": "8591e4d1a06752beace4debc5537b998609defe558df3f5bbb164d9efb840055",
+    "docs/research/laya_controls/reports/laya_pilot_v2.md": "1f7868cf69a5c9026bf6647962442535cfbcdc8ae93e840c4a80c3035d1c2fe3",
+    "docs/research/laya_controls/reports/laya_symbol_controls_v1.md": "236d6c1ddfb9e33090de76c9eb3a26692d40d87927e2422401fed8e7f9387923",
+    "docs/research/generalization/reports/NetHeal_experiment_history.md": "01738f9f7253299f0f587589914d9c89217affe4deacf9957958deec4768c1aa",
+    "docs/research/official_benchmark/reports/netheal_official_jev_context_fix_20261012.md": "1bc62901c47dfe0db9eeb027847620a48bcfdb215b474500bbe673dc26bebe0d",
+    "docs/research/official_benchmark/reports/netheal_official_jev_preflight_20261011.md": "41db865cbf89f196534fd3d4a74e6a6b94b45779b0db3325499188e68e615a28",
+    "docs/research/official_benchmark/reports/netheal_official_jev_results_20261011.md": "a35bde391389dddade25cafa14dbe259cc10c2a4687a88c9c3b23b7d2c41faf5",
+    "docs/research/generalization/reports/NetHeal_RL_results_summary.md": "f80fbc8947ad87371a3556d4d12e911600f286b240401bd5d1f4f931d047ca2a",
+    "docs/research/generalization/reports/reliability_v2_conclusions.md": "520178500fb75fd3398bde0daed924077f33a3a8791cb8d7a50e69878b5e0cba",
+    "docs/research/generalization/reports/reliability_v3_conclusions.md": "a14015a96ab3e46f6c3c075e79394d4e0f12a7b0f693e9136c68592e8ffa4130",
+    "docs/handoffs/2026-10-12_laya_handoff.md": "b65097edb130652eceb36729d4e9ba6732868f1677c7d082dcd93a62eef98155"
+  },
+  "experiment_entrypoints": [
+    "generalization/reliability_v2",
+    "generalization/factorial_v3",
+    "api_pilot",
+    "laya_controls/learning",
+    "laya_controls/symbols",
+    "laya_controls/optimization",
+    "laya_controls/observations",
+    "official_benchmark/jev",
+    "official_benchmark/laya"
+  ]
+}

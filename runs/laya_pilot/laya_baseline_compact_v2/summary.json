@@ -1,0 +1,24 @@
+{
+  "episodes": 1,
+  "exact": 0.0,
+  "type_accuracy": 0.0,
+  "location_accuracy": 0.0,
+  "fault_macro_f1": 0.0,
+  "termination_counts": {
+    "step_limit": 1
+  },
+  "wrong_diagnosis_rate": 0.0,
+  "mean_seconds": 76.04332109999814,
+  "p95_seconds": 76.04332109999814,
+  "mean_tool_calls": 40.0,
+  "mean_tool_cost": 20.0,
+  "repeated_tool_rate": 0.975,
+  "api_cost_usd": 0,
+  "local_compute_cost_usd": null,
+  "conditions": {
+    "star_6": {
+      "n": 1,
+      "exact": 0.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "max_request_text_bytes":  24000,
+    "codec_sha256":  "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "spec_sha256":  "207e12db1baa0a123835472cc80b3eda48e12e3249a2b65f06be092d23f6d019",
+    "script_sha256":  "736ae06d6f7df5f22394a7e83098352aa1e2c9ed029706f20ab40ef86fde5a05",
+    "frozen_at":  "2026-10-11T23:11:04.3438566+09:00",
+    "status":  "frozen_before_evaluation",
+    "episodes":  100,
+    "aggregation":  "event_count_weighted_probability_mean"
+}

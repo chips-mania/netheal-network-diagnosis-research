@@ -1,0 +1,636 @@
+{
+  "status": "completed_verified",
+  "paired": {
+    "type_accuracy": {
+      "prose_minus_table": 0.11979166666666666,
+      "case_bootstrap_95": [
+        0.005208333333333324,
+        0.234375
+      ]
+    },
+    "location_accuracy": {
+      "prose_minus_table": 0.005208333333333322,
+      "case_bootstrap_95": [
+        -0.125,
+        0.13020833333333331
+      ]
+    },
+    "exact": {
+      "prose_minus_table": 0.031249999999999993,
+      "case_bootstrap_95": [
+        -0.05729166666666667,
+        0.11458333333333333
+      ]
+    },
+    "macro_f1": {
+      "prose_minus_table": 0.13720974249650564,
+      "case_bootstrap_95": [
+        0.053557335503305145,
+        0.2084911576889017
+      ]
+    }
+  },
+  "pattern_overlap_ignoring_latency": 47,
+  "runs": [
+    {
+      "arm": "table",
+      "seed": "base",
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.10256410256410256,
+        "location_accuracy": 0.15625,
+        "exact": 0.0625,
+        "oracle_location_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            1,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.12368421052631579,
+        "location_accuracy": 0.1875,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "prose",
+      "seed": "base",
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.2777777777777778,
+        "location_accuracy": 0.34375,
+        "exact": 0.1875,
+        "oracle_location_accuracy": 0.4375,
+        "confusion_matrix": [
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.2777777777777778,
+        "location_accuracy": 0.203125,
+        "exact": 0.125,
+        "oracle_location_accuracy": 0.34375,
+        "confusion_matrix": [
+          [
+            8,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "table",
+      "seed": 41,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.10526315789473684,
+        "location_accuracy": 0.125,
+        "exact": 0.0625,
+        "oracle_location_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.12368421052631579,
+        "location_accuracy": 0.1875,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "prose",
+      "seed": 41,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.40625,
+        "macro_f1": 0.3719298245614035,
+        "location_accuracy": 0.1875,
+        "exact": 0.1875,
+        "oracle_location_accuracy": 0.4375,
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            0,
+            3
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.390625,
+        "macro_f1": 0.33059062751217666,
+        "location_accuracy": 0.140625,
+        "exact": 0.09375,
+        "oracle_location_accuracy": 0.34375,
+        "confusion_matrix": [
+          [
+            11,
+            1,
+            0,
+            4
+          ],
+          [
+            12,
+            4,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            8
+          ],
+          [
+            6,
+            0,
+            0,
+            10
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "prose",
+      "seed": 52,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.2777777777777778,
+        "location_accuracy": 0.34375,
+        "exact": 0.1875,
+        "oracle_location_accuracy": 0.375,
+        "confusion_matrix": [
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.2777777777777778,
+        "location_accuracy": 0.203125,
+        "exact": 0.125,
+        "oracle_location_accuracy": 0.28125,
+        "confusion_matrix": [
+          [
+            8,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "table",
+      "seed": 52,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.28125,
+        "macro_f1": 0.17272727272727273,
+        "location_accuracy": 0.1875,
+        "exact": 0.09375,
+        "oracle_location_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            7,
+            1,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.17159297897002818,
+        "location_accuracy": 0.15625,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            12,
+            4,
+            0,
+            0
+          ],
+          [
+            13,
+            3,
+            0,
+            0
+          ],
+          [
+            10,
+            5,
+            0,
+            1
+          ],
+          [
+            10,
+            5,
+            0,
+            1
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "table",
+      "seed": 63,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.10526315789473684,
+        "location_accuracy": 0.125,
+        "exact": 0.0625,
+        "oracle_location_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.25,
+        "macro_f1": 0.12368421052631579,
+        "location_accuracy": 0.1875,
+        "exact": 0.078125,
+        "oracle_location_accuracy": 0.359375,
+        "confusion_matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    },
+    {
+      "arm": "prose",
+      "seed": 63,
+      "train": {
+        "n": 32,
+        "type_accuracy": 0.375,
+        "macro_f1": 0.28055555555555556,
+        "location_accuracy": 0.25,
+        "exact": 0.21875,
+        "oracle_location_accuracy": 0.4375,
+        "confusion_matrix": [
+          [
+            3,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            7,
+            0,
+            0
+          ],
+          [
+            3,
+            4,
+            0,
+            1
+          ]
+        ]
+      },
+      "test": {
+        "n": 64,
+        "type_accuracy": 0.34375,
+        "macro_f1": 0.2222222222222222,
+        "location_accuracy": 0.203125,
+        "exact": 0.109375,
+        "oracle_location_accuracy": 0.3125,
+        "confusion_matrix": [
+          [
+            7,
+            9,
+            0,
+            0
+          ],
+          [
+            1,
+            15,
+            0,
+            0
+          ],
+          [
+            8,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            12,
+            0,
+            0
+          ]
+        ]
+      },
+      "memorization_pass": false,
+      "new_case_pass": false
+    }
+  ],
+  "source_sha256": {
+    "laya_observation_batched_eval.py": "49b8e12e091d5796fa95d03c299dc00fb926a718d2fe78e5c6de78be3b4d1a21",
+    "laya_observation_controls.py": "a2c8641a169b3c0ece432f12249847123c1689b2d20db6825915fc47ad0807db",
+    "laya_observation_data.py": "0efa1353866c9d4ccaabb9ba2a23d66203fda9b6ce1ba568db306ee5d67004c2",
+    "laya_observation_finish.py": "7e0941adc501dd56ac8963a5333107c10661bf2fc9cb4de151ce375f349fac67",
+    "report_laya_observation_controls.py": "f5f724a7926e27f06500b31d53abefde56a10e45d91e46ad6937cd2ea4cae195",
+    "verify_laya_observation_data.py": "cdb2a018dd61f93c08894a1baca8dddef26ece124f74551fc543b40cc35b1e41"
+  }
+}

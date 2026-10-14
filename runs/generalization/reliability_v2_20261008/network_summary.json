@@ -1,0 +1,82 @@
+{
+  "star_6": {
+    "probe_failure": 0.21833333333333332,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 7.674833976311336,
+    "mean_episode_p95_ms": 17.19180964467005,
+    "healthy_mean_episode_p95_ms": 7.557617499999999,
+    "same_pair_abs_delta_ms": 0.5123892131979695,
+    "conditional_packet_loss": 0.14,
+    "packet_counter_coverage": 0.9166666666666665
+  },
+  "star_8": {
+    "probe_failure": 0.175,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 7.177805302633874,
+    "mean_episode_p95_ms": 17.533317948717947,
+    "healthy_mean_episode_p95_ms": 7.85791,
+    "same_pair_abs_delta_ms": 0.48439165794522937,
+    "conditional_packet_loss": 0.11875,
+    "packet_counter_coverage": 0.9375
+  },
+  "star_10": {
+    "probe_failure": 0.153,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 7.058873776626367,
+    "mean_episode_p95_ms": 18.251269430051813,
+    "healthy_mean_episode_p95_ms": 8.127137499999998,
+    "same_pair_abs_delta_ms": 0.4717792210388281,
+    "conditional_packet_loss": 0.11,
+    "packet_counter_coverage": 0.95
+  },
+  "star_12": {
+    "probe_failure": 0.12083333333333332,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 6.627456317816383,
+    "mean_episode_p95_ms": 17.497874999999997,
+    "healthy_mean_episode_p95_ms": 8.20242,
+    "same_pair_abs_delta_ms": 0.4414101749170743,
+    "conditional_packet_loss": 0.0825,
+    "packet_counter_coverage": 0.9583333333333335
+  },
+  "linear_6": {
+    "probe_failure": 0.30116666666666664,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 10.55434525021645,
+    "mean_episode_p95_ms": 21.6564025,
+    "healthy_mean_episode_p95_ms": 13.224269999999997,
+    "same_pair_abs_delta_ms": 0.7030890446428572,
+    "conditional_packet_loss": 0.24483333333333332,
+    "packet_counter_coverage": 0.9166666666666665
+  },
+  "mesh_6": {
+    "probe_failure": 0.23716666666666664,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 8.299895230735931,
+    "mean_episode_p95_ms": 18.578355,
+    "healthy_mean_episode_p95_ms": 10.500869999999995,
+    "same_pair_abs_delta_ms": 0.5563754699675324,
+    "conditional_packet_loss": 0.17233333333333334,
+    "packet_counter_coverage": 0.9166666666666665
+  },
+  "random_6": {
+    "probe_failure": 0.0935,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 5.452253966666667,
+    "mean_episode_p95_ms": 16.5443175,
+    "healthy_mean_episode_p95_ms": 7.3507675,
+    "same_pair_abs_delta_ms": 0.36967391666666666,
+    "conditional_packet_loss": 0.0115,
+    "packet_counter_coverage": 0.9166666666666665
+  },
+  "star_10_mild": {
+    "probe_failure": 0.14900000000000002,
+    "healthy_probe_failure": 0.0,
+    "latency_mean_ms": 5.261050709558356,
+    "mean_episode_p95_ms": 9.333067010309277,
+    "healthy_mean_episode_p95_ms": 8.142097499999998,
+    "same_pair_abs_delta_ms": 0.3501395610602011,
+    "conditional_packet_loss": 0.105,
+    "packet_counter_coverage": 0.95
+  }
+}

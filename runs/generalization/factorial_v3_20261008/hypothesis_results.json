@@ -1,0 +1,66 @@
+{
+  "H1_augmentation_renamed": {
+    "delta": 0.110625,
+    "interval": [
+      0.061875,
+      0.16125781250000018
+    ],
+    "coverage": 0.975,
+    "replicas": 3,
+    "paired_scenarios": 800,
+    "per_replica_delta": [
+      0.07,
+      0.1575,
+      0.104375
+    ],
+    "verdict": "improvement"
+  },
+  "H1_gap_reduction_secondary": {
+    "delta": 0.08333333333333333,
+    "interval": [
+      0.03998437500000006,
+      0.12270833333333334
+    ],
+    "coverage": 0.95,
+    "replicas": 3,
+    "paired_scenarios": 800,
+    "per_replica_delta": [
+      0.035625,
+      0.104375,
+      0.11
+    ],
+    "verdict": "improvement"
+  },
+  "H2_diversity_heldout": {
+    "delta": 0.15819444444444444,
+    "interval": [
+      0.11332812500000002,
+      0.21166666666666667
+    ],
+    "coverage": 0.975,
+    "replicas": 3,
+    "paired_scenarios": 400,
+    "per_replica_delta": [
+      0.195,
+      0.15666666666666665,
+      0.12291666666666665
+    ],
+    "verdict": "improvement"
+  },
+  "H3_interaction_exploratory": {
+    "delta": -0.017083333333333332,
+    "interval": [
+      -0.14125,
+      0.16125
+    ],
+    "coverage": 0.95,
+    "replicas": 3,
+    "paired_scenarios": 400,
+    "per_replica_delta": [
+      0.16875,
+      -0.08875,
+      -0.13125
+    ],
+    "verdict": "inconclusive"
+  }
+}

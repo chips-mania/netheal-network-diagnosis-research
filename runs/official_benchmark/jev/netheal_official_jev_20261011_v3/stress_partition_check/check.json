@@ -1,0 +1,17 @@
+{
+  "status": "accepted",
+  "events": 100,
+  "partitions": 8,
+  "guard_bytes": [
+    23579,
+    23987,
+    23573,
+    23479,
+    23724,
+    23574,
+    23431,
+    15740
+  ],
+  "requests": 8,
+  "roundtrip": "exact"
+}

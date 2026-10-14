@@ -1,0 +1,800 @@
+{
+  "gnn_base_minus_mlp_base": {
+    "star_6": {
+      "delta_exact": 0.008333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        0.0,
+        0.023333333333333334
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.005,
+        0.01,
+        0.01
+      ]
+    },
+    "star_8": {
+      "delta_exact": 0.71,
+      "paired_hierarchical_bootstrap95": [
+        0.615,
+        0.805
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.62,
+        0.735,
+        0.775
+      ]
+    },
+    "star_10": {
+      "delta_exact": 0.4633333333333333,
+      "paired_hierarchical_bootstrap95": [
+        0.375,
+        0.5533333333333333
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.485,
+        0.385,
+        0.52
+      ]
+    },
+    "star_12": {
+      "delta_exact": 0.46166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        0.39,
+        0.5367083333333331
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.46,
+        0.42,
+        0.505
+      ]
+    },
+    "linear_6": {
+      "delta_exact": 0.0033333333333333335,
+      "paired_hierarchical_bootstrap95": [
+        -0.15004166666666666,
+        0.1717083333333331
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.01,
+        0.17,
+        -0.15
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": -0.008333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.14666666666666667,
+        0.12166666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.045,
+        0.07,
+        -0.14
+      ]
+    },
+    "random_6": {
+      "delta_exact": 0.013333333333333334,
+      "paired_hierarchical_bootstrap95": [
+        -0.09,
+        0.12004166666666644
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.055,
+        0.075,
+        -0.09
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": 0.43,
+      "paired_hierarchical_bootstrap95": [
+        0.31333333333333335,
+        0.545
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.44,
+        0.31,
+        0.54
+      ]
+    }
+  },
+  "gnn_continue_minus_gnn_base": {
+    "star_6": {
+      "delta_exact": 0.0,
+      "paired_hierarchical_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "star_8": {
+      "delta_exact": 0.01,
+      "paired_hierarchical_bootstrap95": [
+        -0.08,
+        0.08666666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.08,
+        0.04,
+        -0.09
+      ]
+    },
+    "star_10": {
+      "delta_exact": 0.056666666666666664,
+      "paired_hierarchical_bootstrap95": [
+        -0.135125,
+        0.265
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.045,
+        0.27,
+        -0.145
+      ]
+    },
+    "star_12": {
+      "delta_exact": -0.2,
+      "paired_hierarchical_bootstrap95": [
+        -0.475,
+        0.19512499999999933
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.34,
+        0.205,
+        -0.465
+      ]
+    },
+    "linear_6": {
+      "delta_exact": -0.06166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.175,
+        0.06166666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.17,
+        -0.08,
+        0.065
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": -0.07333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.16670833333333332,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.16,
+        -0.015,
+        -0.045
+      ]
+    },
+    "random_6": {
+      "delta_exact": -0.03666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.14004166666666668,
+        0.06837499999999977
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.14,
+        -0.04,
+        0.07
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": 0.04833333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.265,
+        0.34012499999999934
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.075,
+        0.355,
+        -0.285
+      ]
+    }
+  },
+  "gnn_weight_minus_gnn_continue": {
+    "star_6": {
+      "delta_exact": 0.0,
+      "paired_hierarchical_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "star_8": {
+      "delta_exact": 0.03166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        0.0,
+        0.06666666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.06,
+        0.0,
+        0.035
+      ]
+    },
+    "star_10": {
+      "delta_exact": 0.06166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.06166666666666667,
+        0.23012499999999933
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.045,
+        -0.015,
+        0.245
+      ]
+    },
+    "star_12": {
+      "delta_exact": 0.3016666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.045,
+        0.5817083333333332
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.365,
+        -0.06,
+        0.6
+      ]
+    },
+    "linear_6": {
+      "delta_exact": -0.005,
+      "paired_hierarchical_bootstrap95": [
+        -0.075,
+        0.06
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        0.05,
+        -0.065
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": 0.028333333333333332,
+      "paired_hierarchical_bootstrap95": [
+        -0.02,
+        0.07666666666666666
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        0.04,
+        0.045
+      ]
+    },
+    "random_6": {
+      "delta_exact": -0.018333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.07,
+        0.02666666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.005,
+        -0.005,
+        -0.055
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": 0.011666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.165,
+        0.27512499999999934
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.1,
+        -0.155,
+        0.29
+      ]
+    }
+  },
+  "gnn_oversample_minus_gnn_continue": {
+    "star_6": {
+      "delta_exact": -0.0016666666666666668,
+      "paired_hierarchical_bootstrap95": [
+        -0.01,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        0.0,
+        -0.005
+      ]
+    },
+    "star_8": {
+      "delta_exact": 0.013333333333333334,
+      "paired_hierarchical_bootstrap95": [
+        -0.01,
+        0.05
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.01,
+        0.0,
+        0.03
+      ]
+    },
+    "star_10": {
+      "delta_exact": 0.13666666666666666,
+      "paired_hierarchical_bootstrap95": [
+        0.01329166666666667,
+        0.285
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.095,
+        0.02,
+        0.295
+      ]
+    },
+    "star_12": {
+      "delta_exact": 0.09,
+      "paired_hierarchical_bootstrap95": [
+        -0.115,
+        0.415
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.43,
+        -0.095,
+        -0.065
+      ]
+    },
+    "linear_6": {
+      "delta_exact": 0.07,
+      "paired_hierarchical_bootstrap95": [
+        -0.06,
+        0.19
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.195,
+        0.08,
+        -0.065
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": 0.08,
+      "paired_hierarchical_bootstrap95": [
+        0.005,
+        0.15
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.125,
+        0.105,
+        0.01
+      ]
+    },
+    "random_6": {
+      "delta_exact": 0.008333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.08,
+        0.095
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.09,
+        0.015,
+        -0.08
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": 0.14333333333333334,
+      "paired_hierarchical_bootstrap95": [
+        -0.065,
+        0.4
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.075,
+        -0.065,
+        0.42
+      ]
+    }
+  },
+  "gnn_generic_minus_gnn_continue": {
+    "star_6": {
+      "delta_exact": -0.0016666666666666668,
+      "paired_hierarchical_bootstrap95": [
+        -0.006708333333333332,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        -0.005,
+        0.0
+      ]
+    },
+    "star_8": {
+      "delta_exact": 0.0016666666666666668,
+      "paired_hierarchical_bootstrap95": [
+        -0.04,
+        0.043333333333333335
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.035,
+        0.0,
+        -0.03
+      ]
+    },
+    "star_10": {
+      "delta_exact": -0.015,
+      "paired_hierarchical_bootstrap95": [
+        -0.18170833333333333,
+        0.14504166666666643
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.2,
+        0.005,
+        0.15
+      ]
+    },
+    "star_12": {
+      "delta_exact": 0.23,
+      "paired_hierarchical_bootstrap95": [
+        -0.205,
+        0.5383749999999998
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.395,
+        -0.23,
+        0.525
+      ]
+    },
+    "linear_6": {
+      "delta_exact": 0.016666666666666666,
+      "paired_hierarchical_bootstrap95": [
+        -0.075,
+        0.105
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.105,
+        0.01,
+        -0.065
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": 0.07833333333333334,
+      "paired_hierarchical_bootstrap95": [
+        -0.0016666666666666668,
+        0.16
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.155,
+        0.02,
+        0.06
+      ]
+    },
+    "random_6": {
+      "delta_exact": 0.018333333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.055,
+        0.0967083333333331
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.1,
+        -0.005,
+        -0.04
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": 0.0,
+      "paired_hierarchical_bootstrap95": [
+        -0.185,
+        0.23
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.195,
+        -0.05,
+        0.245
+      ]
+    }
+  },
+  "gnn_generic_minus_gnn_weight": {
+    "star_6": {
+      "delta_exact": -0.0016666666666666668,
+      "paired_hierarchical_bootstrap95": [
+        -0.006708333333333332,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.0,
+        -0.005,
+        0.0
+      ]
+    },
+    "star_8": {
+      "delta_exact": -0.03,
+      "paired_hierarchical_bootstrap95": [
+        -0.07,
+        0.0
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.025,
+        0.0,
+        -0.065
+      ]
+    },
+    "star_10": {
+      "delta_exact": -0.07666666666666666,
+      "paired_hierarchical_bootstrap95": [
+        -0.165,
+        0.028333333333333332
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.155,
+        0.02,
+        -0.095
+      ]
+    },
+    "star_12": {
+      "delta_exact": -0.07166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.18333333333333332,
+        0.025
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.03,
+        -0.17,
+        -0.075
+      ]
+    },
+    "linear_6": {
+      "delta_exact": 0.021666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.045,
+        0.1
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.105,
+        -0.04,
+        0.0
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": 0.05,
+      "paired_hierarchical_bootstrap95": [
+        -0.03333333333333333,
+        0.15
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.155,
+        -0.02,
+        0.015
+      ]
+    },
+    "random_6": {
+      "delta_exact": 0.03666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.016708333333333332,
+        0.1
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.095,
+        0.0,
+        0.015
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": -0.011666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.105,
+        0.105
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.095,
+        0.105,
+        -0.045
+      ]
+    }
+  },
+  "gnn_generic_rank_shuffle_minus_gnn_generic": {
+    "star_6": {
+      "delta_exact": -0.39666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.5366666666666666,
+        -0.24487500000000068
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.225,
+        -0.455,
+        -0.51
+      ]
+    },
+    "star_8": {
+      "delta_exact": -0.4483333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.59,
+        -0.27662500000000023
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.255,
+        -0.565,
+        -0.525
+      ]
+    },
+    "star_10": {
+      "delta_exact": -0.37,
+      "paired_hierarchical_bootstrap95": [
+        -0.57,
+        -0.11987500000000068
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.095,
+        -0.555,
+        -0.46
+      ]
+    },
+    "star_12": {
+      "delta_exact": -0.33166666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.46670833333333334,
+        -0.21995833333333356
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.255,
+        -0.27,
+        -0.47
+      ]
+    },
+    "linear_6": {
+      "delta_exact": 0.03833333333333333,
+      "paired_hierarchical_bootstrap95": [
+        -0.01,
+        0.08666666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        0.015,
+        0.04,
+        0.06
+      ]
+    },
+    "mesh_6": {
+      "delta_exact": 0.005,
+      "paired_hierarchical_bootstrap95": [
+        -0.051666666666666666,
+        0.058333333333333334
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.025,
+        0.015,
+        0.025
+      ]
+    },
+    "random_6": {
+      "delta_exact": -0.02666666666666667,
+      "paired_hierarchical_bootstrap95": [
+        -0.075,
+        0.021666666666666667
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.055,
+        -0.015,
+        -0.01
+      ]
+    },
+    "star_10_mild": {
+      "delta_exact": -0.335,
+      "paired_hierarchical_bootstrap95": [
+        -0.5167083333333334,
+        -0.115
+      ],
+      "training_seeds": 3,
+      "matched_cases": 200,
+      "per_seed_delta": [
+        -0.105,
+        -0.52,
+        -0.38
+      ]
+    }
+  }
+}

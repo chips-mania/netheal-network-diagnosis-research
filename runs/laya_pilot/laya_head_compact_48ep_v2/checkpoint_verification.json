@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "encoder_tensors": 170,
+  "head_tensors": 36,
+  "changed_head_tensors": 31,
+  "encoder_unchanged": true,
+  "warning": "Verifies the saved fp16 checkpoint tensors, not calibrated accuracy."
+}

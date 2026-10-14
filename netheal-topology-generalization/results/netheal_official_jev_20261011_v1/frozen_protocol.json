@@ -1,0 +1,10 @@
+{
+    "model":  "jev-1.13.0",
+    "api_authorized":  true,
+    "script_sha256":  "451458f050118116003892e4844a9458fbdbe22c91893cc3e74068ede478049f",
+    "status":  "frozen_before_evaluation",
+    "concurrency":  5,
+    "max_turns":  100,
+    "episodes":  100,
+    "date_kst":  "2026-10-11"
+}

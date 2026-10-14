@@ -1,0 +1,1064 @@
+{
+  "status": "completed",
+  "totals": {
+    "old": {
+      "calls": 22,
+      "http_seconds": 4.465168800000356,
+      "median_judgment_http_seconds": 0.20218780000027436,
+      "input_tokens": 99930
+    },
+    "new": {
+      "calls": 34,
+      "http_seconds": 8.000850899999932,
+      "median_judgment_http_seconds": 0.34877294999978403,
+      "input_tokens": 380182
+    }
+  },
+  "same_choices": 13,
+  "old_matches_historical": 19,
+  "rows": [
+    {
+      "judgment": 1,
+      "old": {
+        "choice": "c001",
+        "selected": "scan_network",
+        "probabilities": {
+          "c000": 0.05,
+          "c001": 0.95,
+          "c002": 0.0,
+          "c003": 0.0,
+          "c004": 0.0,
+          "c005": 0.0,
+          "c006": 0.0,
+          "c007": 0.0
+        },
+        "calls": 1,
+        "http_seconds": 0.22831399999995483,
+        "input_tokens": 1550
+      },
+      "new": {
+        "choice": "c001",
+        "selected": "scan_network",
+        "probabilities": {
+          "c000": 0.03,
+          "c001": 0.97,
+          "c002": 0.0,
+          "c003": 0.0,
+          "c004": 0.0,
+          "c005": 0.0,
+          "c006": 0.0,
+          "c007": 0.0
+        },
+        "calls": 1,
+        "http_seconds": 0.1895795000000362,
+        "input_tokens": 941
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 2,
+      "old": {
+        "choice": "c002",
+        "selected": "discover_neighbors",
+        "probabilities": {
+          "c000": 0.02,
+          "c001": 0.0,
+          "c002": 0.47,
+          "c003": 0.12,
+          "c004": 0.04,
+          "c005": 0.33,
+          "c006": 0.01,
+          "c007": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.20105720000037763,
+        "input_tokens": 2413
+      },
+      "new": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.29,
+          "c003": 0.08,
+          "c004": 0.06,
+          "c005": 0.51,
+          "c006": 0.02,
+          "c007": 0.03
+        },
+        "calls": 1,
+        "http_seconds": 0.19807519999994838,
+        "input_tokens": 3604
+      },
+      "same_choice": false,
+      "old_matches_historical": false
+    },
+    {
+      "judgment": 3,
+      "old": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.83,
+          "c001": 0.05,
+          "c002": 0.01,
+          "c003": 0.01,
+          "c004": 0.01,
+          "c005": 0.01,
+          "c006": 0.04,
+          "c007": 0.04
+        },
+        "calls": 1,
+        "http_seconds": 0.20582780000040657,
+        "input_tokens": 2458
+      },
+      "new": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.74,
+          "c001": 0.02,
+          "c002": 0.01,
+          "c003": 0.01,
+          "c004": 0.01,
+          "c005": 0.01,
+          "c006": 0.1,
+          "c007": 0.1
+        },
+        "calls": 1,
+        "http_seconds": 0.2136916999997993,
+        "input_tokens": 3649
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 4,
+      "old": {
+        "choice": "c002",
+        "selected": "discover_neighbors",
+        "probabilities": {
+          "c000": 0.02,
+          "c001": 0.01,
+          "c002": 0.54,
+          "c003": 0.1,
+          "c004": 0.04,
+          "c005": 0.19,
+          "c006": 0.08,
+          "c007": 0.02
+        },
+        "calls": 1,
+        "http_seconds": 0.18040700000028664,
+        "input_tokens": 2999
+      },
+      "new": {
+        "choice": "c002",
+        "selected": "discover_neighbors",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.39,
+          "c003": 0.1,
+          "c004": 0.05,
+          "c005": 0.13,
+          "c006": 0.28,
+          "c007": 0.04
+        },
+        "calls": 1,
+        "http_seconds": 0.20696040000029825,
+        "input_tokens": 6325
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 5,
+      "old": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.91,
+          "c001": 0.07,
+          "c002": 0.01,
+          "c003": 0.0,
+          "c004": 0.0,
+          "c005": 0.0,
+          "c006": 0.0,
+          "c007": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.18991259999984322,
+        "input_tokens": 3044
+      },
+      "new": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.87,
+          "c001": 0.03,
+          "c002": 0.01,
+          "c003": 0.0,
+          "c004": 0.01,
+          "c005": 0.0,
+          "c006": 0.05,
+          "c007": 0.03
+        },
+        "calls": 1,
+        "http_seconds": 0.19933940000009898,
+        "input_tokens": 6370
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 6,
+      "old": {
+        "choice": "c003",
+        "selected": "ping",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.05,
+          "c003": 0.49,
+          "c004": 0.08,
+          "c005": 0.21,
+          "c006": 0.13,
+          "c007": 0.03
+        },
+        "calls": 1,
+        "http_seconds": 0.20688259999997172,
+        "input_tokens": 3363
+      },
+      "new": {
+        "choice": "c003",
+        "selected": "ping",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.03,
+          "c003": 0.35,
+          "c004": 0.08,
+          "c005": 0.21,
+          "c006": 0.25,
+          "c007": 0.07
+        },
+        "calls": 1,
+        "http_seconds": 0.23012020000032862,
+        "input_tokens": 9097
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 7,
+      "old": {
+        "choice": "c000",
+        "selected": "{\"source\": \"center\", \"destination\": \"edge_0\"}",
+        "probabilities": {
+          "c000": 0.86,
+          "c001": 0.03,
+          "c002": 0.01,
+          "c003": 0.02,
+          "c004": 0.0,
+          "c005": 0.0,
+          "c006": 0.02,
+          "c007": 0.0,
+          "c008": 0.04,
+          "c009": 0.0,
+          "c010": 0.0,
+          "c011": 0.0,
+          "c012": 0.0,
+          "c013": 0.0,
+          "c014": 0.0,
+          "c015": 0.0,
+          "c016": 0.0,
+          "c017": 0.0,
+          "c018": 0.0,
+          "c019": 0.0,
+          "c020": 0.0,
+          "c021": 0.0,
+          "c022": 0.0,
+          "c023": 0.0,
+          "c024": 0.0,
+          "c025": 0.0,
+          "c026": 0.0,
+          "c027": 0.0,
+          "c028": 0.0,
+          "c029": 0.0,
+          "c030": 0.0,
+          "c031": 0.0,
+          "c032": 0.0,
+          "c033": 0.0,
+          "c034": 0.0,
+          "c035": 0.0,
+          "c036": 0.0,
+          "c037": 0.0,
+          "c038": 0.0,
+          "c039": 0.0,
+          "c040": 0.0,
+          "c041": 0.0,
+          "c042": 0.0,
+          "c043": 0.0,
+          "c044": 0.0,
+          "c045": 0.0,
+          "c046": 0.0,
+          "c047": 0.0,
+          "c048": 0.0,
+          "c049": 0.02,
+          "c050": 0.0,
+          "c051": 0.0,
+          "c052": 0.0,
+          "c053": 0.0,
+          "c054": 0.0,
+          "c055": 0.0
+        },
+        "calls": 1,
+        "http_seconds": 0.19465190000028088,
+        "input_tokens": 4885
+      },
+      "new": {
+        "choice": "c000",
+        "selected": "{\"source\": \"center\", \"destination\": \"edge_0\"}",
+        "probabilities": {
+          "c000": 0.56,
+          "c001": 0.04,
+          "c002": 0.04,
+          "c003": 0.05,
+          "c004": 0.01,
+          "c005": 0.03,
+          "c006": 0.15000000000000002,
+          "c007": 0.01,
+          "c008": 0.0,
+          "c009": 0.0,
+          "c010": 0.0,
+          "c011": 0.0,
+          "c012": 0.0,
+          "c013": 0.0,
+          "c014": 0.01,
+          "c015": 0.0,
+          "c016": 0.0,
+          "c017": 0.0,
+          "c018": 0.0,
+          "c019": 0.0,
+          "c020": 0.0,
+          "c021": 0.0,
+          "c022": 0.0,
+          "c023": 0.0,
+          "c024": 0.0,
+          "c025": 0.0,
+          "c026": 0.0,
+          "c027": 0.0,
+          "c028": 0.0,
+          "c029": 0.0,
+          "c030": 0.0,
+          "c031": 0.0,
+          "c032": 0.0,
+          "c033": 0.0,
+          "c034": 0.0,
+          "c035": 0.02,
+          "c036": 0.0,
+          "c037": 0.0,
+          "c038": 0.0,
+          "c039": 0.0,
+          "c040": 0.0,
+          "c041": 0.0,
+          "c042": 0.0,
+          "c043": 0.0,
+          "c044": 0.0,
+          "c045": 0.0,
+          "c046": 0.0,
+          "c047": 0.0,
+          "c048": 0.0,
+          "c049": 0.06999999999999999,
+          "c050": 0.0,
+          "c051": 0.0,
+          "c052": 0.0,
+          "c053": 0.0,
+          "c054": 0.0,
+          "c055": 0.0
+        },
+        "calls": 1,
+        "http_seconds": 0.22619799999984025,
+        "input_tokens": 10619
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 8,
+      "old": {
+        "choice": "c003",
+        "selected": "ping",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.07,
+          "c003": 0.34,
+          "c004": 0.24,
+          "c005": 0.23,
+          "c006": 0.07,
+          "c007": 0.04
+        },
+        "calls": 1,
+        "http_seconds": 0.1918345999997655,
+        "input_tokens": 3804
+      },
+      "new": {
+        "choice": "c003",
+        "selected": "ping",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.02,
+          "c003": 0.27,
+          "c004": 0.18,
+          "c005": 0.22,
+          "c006": 0.22,
+          "c007": 0.08
+        },
+        "calls": 1,
+        "http_seconds": 0.2363863999999012,
+        "input_tokens": 11948
+      },
+      "same_choice": true,
+      "old_matches_historical": false
+    },
+    {
+      "judgment": 9,
+      "old": {
+        "choice": "c001",
+        "selected": "{\"device\": \"edge_0\"}",
+        "probabilities": {
+          "c000": 0.16,
+          "c001": 0.63,
+          "c002": 0.13,
+          "c003": 0.02,
+          "c004": 0.03,
+          "c005": 0.01,
+          "c006": 0.01,
+          "c007": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.19324569999980667,
+        "input_tokens": 3849
+      },
+      "new": {
+        "choice": "c001",
+        "selected": "{\"device\": \"edge_0\"}",
+        "probabilities": {
+          "c000": 0.02,
+          "c001": 0.41,
+          "c002": 0.1,
+          "c003": 0.04,
+          "c004": 0.1,
+          "c005": 0.03,
+          "c006": 0.08,
+          "c007": 0.22
+        },
+        "calls": 1,
+        "http_seconds": 0.23016299999972034,
+        "input_tokens": 11993
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 10,
+      "old": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.1,
+          "c003": 0.23,
+          "c004": 0.15,
+          "c005": 0.29,
+          "c006": 0.18,
+          "c007": 0.04
+        },
+        "calls": 1,
+        "http_seconds": 0.21131209999975908,
+        "input_tokens": 4196
+      },
+      "new": {
+        "choice": "c006",
+        "selected": "check_interfaces",
+        "probabilities": {
+          "c000": 0.0,
+          "c001": 0.0,
+          "c002": 0.06,
+          "c003": 0.16,
+          "c004": 0.21,
+          "c005": 0.14,
+          "c006": 0.36,
+          "c007": 0.07
+        },
+        "calls": 1,
+        "http_seconds": 0.24244020000014643,
+        "input_tokens": 14831
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 11,
+      "old": {
+        "choice": "c002",
+        "selected": "{\"device\": \"edge_1\"}",
+        "probabilities": {
+          "c000": 0.07,
+          "c001": 0.18,
+          "c002": 0.66,
+          "c003": 0.04,
+          "c004": 0.02,
+          "c005": 0.01,
+          "c006": 0.01,
+          "c007": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.1849793999999747,
+        "input_tokens": 4241
+      },
+      "new": {
+        "choice": "c002",
+        "selected": "{\"device\": \"edge_1\"}",
+        "probabilities": {
+          "c000": 0.02,
+          "c001": 0.02,
+          "c002": 0.39,
+          "c003": 0.1,
+          "c004": 0.2,
+          "c005": 0.03,
+          "c006": 0.08,
+          "c007": 0.16
+        },
+        "calls": 1,
+        "http_seconds": 0.25478819999989355,
+        "input_tokens": 14876
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 12,
+      "old": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.09,
+          "c003": 0.28,
+          "c004": 0.14,
+          "c005": 0.3,
+          "c006": 0.13,
+          "c007": 0.05
+        },
+        "calls": 1,
+        "http_seconds": 0.19422439999971175,
+        "input_tokens": 4620
+      },
+      "new": {
+        "choice": "c006",
+        "selected": "check_interfaces",
+        "probabilities": {
+          "c000": 0.011666666666666667,
+          "c001": 0.03833333333333333,
+          "c002": 0.08833333333333333,
+          "c003": 0.13166666666666668,
+          "c004": 0.145,
+          "c005": 0.15833333333333333,
+          "c006": 0.3383333333333333,
+          "c007": 0.08833333333333333
+        },
+        "calls": 2,
+        "http_seconds": 0.4479918999995789,
+        "input_tokens": 18786
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 13,
+      "old": {
+        "choice": "c003",
+        "selected": "{\"device\": \"edge_2\"}",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.14,
+          "c002": 0.32,
+          "c003": 0.49,
+          "c004": 0.02,
+          "c005": 0.01,
+          "c006": 0.0,
+          "c007": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.1958191000003353,
+        "input_tokens": 4665
+      },
+      "new": {
+        "choice": "c002",
+        "selected": "{\"device\": \"edge_1\"}",
+        "probabilities": {
+          "c000": 0.09999999999999999,
+          "c001": 0.04,
+          "c002": 0.30333333333333334,
+          "c003": 0.10666666666666667,
+          "c004": 0.1633333333333333,
+          "c005": 0.028333333333333332,
+          "c006": 0.07833333333333332,
+          "c007": 0.18000000000000002
+        },
+        "calls": 2,
+        "http_seconds": 0.4427576999996745,
+        "input_tokens": 18876
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 14,
+      "old": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.05,
+          "c003": 0.2,
+          "c004": 0.17,
+          "c005": 0.37,
+          "c006": 0.15,
+          "c007": 0.05
+        },
+        "calls": 1,
+        "http_seconds": 0.20633889999999155,
+        "input_tokens": 5043
+      },
+      "new": {
+        "choice": "c006",
+        "selected": "check_interfaces",
+        "probabilities": {
+          "c000": 0.002857142857142857,
+          "c001": 0.022857142857142857,
+          "c002": 0.08571428571428572,
+          "c003": 0.16142857142857145,
+          "c004": 0.15571428571428572,
+          "c005": 0.18285714285714286,
+          "c006": 0.3171428571428571,
+          "c007": 0.07142857142857142
+        },
+        "calls": 2,
+        "http_seconds": 0.4804552999999032,
+        "input_tokens": 21790
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 15,
+      "old": {
+        "choice": "c004",
+        "selected": "{\"device\": \"edge_3\"}",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.01,
+          "c002": 0.13,
+          "c003": 0.16,
+          "c004": 0.64,
+          "c005": 0.03,
+          "c006": 0.0,
+          "c007": 0.02
+        },
+        "calls": 1,
+        "http_seconds": 0.2033184000001711,
+        "input_tokens": 5088
+      },
+      "new": {
+        "choice": "c002",
+        "selected": "{\"device\": \"edge_1\"}",
+        "probabilities": {
+          "c000": 0.18,
+          "c001": 0.042857142857142864,
+          "c002": 0.2671428571428572,
+          "c003": 0.052857142857142866,
+          "c004": 0.1742857142857143,
+          "c005": 0.027142857142857142,
+          "c006": 0.07714285714285715,
+          "c007": 0.1785714285714286
+        },
+        "calls": 2,
+        "http_seconds": 0.49342479999995703,
+        "input_tokens": 21880
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 16,
+      "old": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.0,
+          "c001": 0.0,
+          "c002": 0.05,
+          "c003": 0.14,
+          "c004": 0.12,
+          "c005": 0.4,
+          "c006": 0.23,
+          "c007": 0.06
+        },
+        "calls": 1,
+        "http_seconds": 0.19649669999989783,
+        "input_tokens": 5467
+      },
+      "new": {
+        "choice": "c006",
+        "selected": "check_interfaces",
+        "probabilities": {
+          "c000": 0.00375,
+          "c001": 0.026250000000000002,
+          "c002": 0.09,
+          "c003": 0.14625,
+          "c004": 0.17125,
+          "c005": 0.15000000000000002,
+          "c006": 0.33,
+          "c007": 0.08249999999999999
+        },
+        "calls": 2,
+        "http_seconds": 0.4608415999996396,
+        "input_tokens": 24856
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 17,
+      "old": {
+        "choice": "c005",
+        "selected": "{\"device\": \"edge_4\"}",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.01,
+          "c002": 0.0,
+          "c003": 0.05,
+          "c004": 0.2,
+          "c005": 0.71,
+          "c006": 0.0,
+          "c007": 0.02
+        },
+        "calls": 1,
+        "http_seconds": 0.23175399999990987,
+        "input_tokens": 5512
+      },
+      "new": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.23249999999999998,
+          "c001": 0.06125,
+          "c002": 0.2225,
+          "c003": 0.06625,
+          "c004": 0.10750000000000001,
+          "c005": 0.08625000000000001,
+          "c006": 0.07,
+          "c007": 0.15375
+        },
+        "calls": 2,
+        "http_seconds": 0.5257821000004697,
+        "input_tokens": 24946
+      },
+      "same_choice": false,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 18,
+      "old": {
+        "choice": "c005",
+        "selected": "check_status",
+        "probabilities": {
+          "c000": 0.01,
+          "c001": 0.0,
+          "c002": 0.05,
+          "c003": 0.24,
+          "c004": 0.19,
+          "c005": 0.26,
+          "c006": 0.19,
+          "c007": 0.06
+        },
+        "calls": 1,
+        "http_seconds": 0.21518040000000838,
+        "input_tokens": 5891
+      },
+      "new": {
+        "choice": "c006",
+        "selected": "check_interfaces",
+        "probabilities": {
+          "c000": 0.0044444444444444444,
+          "c001": 0.031111111111111114,
+          "c002": 0.0811111111111111,
+          "c003": 0.15555555555555556,
+          "c004": 0.17555555555555558,
+          "c005": 0.15777777777777777,
+          "c006": 0.31444444444444447,
+          "c007": 0.08
+        },
+        "calls": 2,
+        "http_seconds": 0.46773620000021765,
+        "input_tokens": 27983
+      },
+      "same_choice": false,
+      "old_matches_historical": false
+    },
+    {
+      "judgment": 19,
+      "old": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.4,
+          "c001": 0.06,
+          "c002": 0.06,
+          "c003": 0.02,
+          "c004": 0.08,
+          "c005": 0.24,
+          "c006": 0.1,
+          "c007": 0.04
+        },
+        "calls": 1,
+        "http_seconds": 0.22684049999998024,
+        "input_tokens": 5936
+      },
+      "new": {
+        "choice": "c000",
+        "selected": "{\"device\": \"center\"}",
+        "probabilities": {
+          "c000": 0.4044444444444444,
+          "c001": 0.18444444444444447,
+          "c002": 0.14444444444444446,
+          "c003": 0.025555555555555554,
+          "c004": 0.05666666666666667,
+          "c005": 0.04666666666666667,
+          "c006": 0.06333333333333332,
+          "c007": 0.07444444444444445
+        },
+        "calls": 2,
+        "http_seconds": 0.5270330000003014,
+        "input_tokens": 28073
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 20,
+      "old": {
+        "choice": "c007",
+        "selected": "submit_diagnosis",
+        "probabilities": {
+          "c000": 0.0,
+          "c001": 0.0,
+          "c002": 0.03,
+          "c003": 0.06,
+          "c004": 0.05,
+          "c005": 0.04,
+          "c006": 0.06999999999999999,
+          "c007": 0.75
+        },
+        "calls": 1,
+        "http_seconds": 0.2065072999998847,
+        "input_tokens": 6647
+      },
+      "new": {
+        "choice": "c007",
+        "selected": "submit_diagnosis",
+        "probabilities": {
+          "c000": 0.0,
+          "c001": 0.0,
+          "c002": 0.045,
+          "c003": 0.13,
+          "c004": 0.09999999999999999,
+          "c005": 0.145,
+          "c006": 0.185,
+          "c007": 0.39499999999999996
+        },
+        "calls": 2,
+        "http_seconds": 0.498444599999857,
+        "input_tokens": 31603
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 21,
+      "old": {
+        "choice": "c002",
+        "selected": "link_failure",
+        "probabilities": {
+          "c000": 0.02,
+          "c001": 0.02,
+          "c002": 0.95,
+          "c003": 0.01
+        },
+        "calls": 1,
+        "http_seconds": 0.19533559999990757,
+        "input_tokens": 6590
+      },
+      "new": {
+        "choice": "c002",
+        "selected": "link_failure",
+        "probabilities": {
+          "c000": 0.08,
+          "c001": 0.25,
+          "c002": 0.6199999999999999,
+          "c003": 0.049999999999999996
+        },
+        "calls": 2,
+        "http_seconds": 0.4917641000001822,
+        "input_tokens": 31489
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    },
+    {
+      "judgment": 22,
+      "old": {
+        "choice": "c005",
+        "selected": "center->edge_5",
+        "probabilities": {
+          "c000": 0.0,
+          "c001": 0.0,
+          "c002": 0.0,
+          "c003": 0.0,
+          "c004": 0.0,
+          "c005": 0.89,
+          "c006": 0.0,
+          "c007": 0.0,
+          "c008": 0.0,
+          "c009": 0.0,
+          "c010": 0.0,
+          "c011": 0.0,
+          "c012": 0.0,
+          "c013": 0.0,
+          "c014": 0.0,
+          "c015": 0.0,
+          "c016": 0.0,
+          "c017": 0.0,
+          "c018": 0.0,
+          "c019": 0.0,
+          "c020": 0.0,
+          "c021": 0.0,
+          "c022": 0.0,
+          "c023": 0.0,
+          "c024": 0.0,
+          "c025": 0.0,
+          "c026": 0.0,
+          "c027": 0.0,
+          "c028": 0.0,
+          "c029": 0.0,
+          "c030": 0.0,
+          "c031": 0.0,
+          "c032": 0.0,
+          "c033": 0.0,
+          "c034": 0.0,
+          "c035": 0.0,
+          "c036": 0.0,
+          "c037": 0.0,
+          "c038": 0.0,
+          "c039": 0.0,
+          "c040": 0.0,
+          "c041": 0.0,
+          "c042": 0.11,
+          "c043": 0.0,
+          "c044": 0.0,
+          "c045": 0.0,
+          "c046": 0.0,
+          "c047": 0.0,
+          "c048": 0.0,
+          "c049": 0.0,
+          "c050": 0.0,
+          "c051": 0.0,
+          "c052": 0.0,
+          "c053": 0.0,
+          "c054": 0.0,
+          "c055": 0.0
+        },
+        "calls": 1,
+        "http_seconds": 0.20492860000013025,
+        "input_tokens": 7669
+      },
+      "new": {
+        "choice": "c005",
+        "selected": "center->edge_5",
+        "probabilities": {
+          "c000": 0.045,
+          "c001": 0.10300000000000002,
+          "c002": 0.034,
+          "c003": 0.009,
+          "c004": 0.052000000000000005,
+          "c005": 0.16699999999999998,
+          "c006": 0.13999999999999999,
+          "c007": 0.039999999999999994,
+          "c008": 0.018,
+          "c009": 0.0,
+          "c010": 0.004,
+          "c011": 0.004,
+          "c012": 0.004,
+          "c013": 0.004,
+          "c014": 0.022,
+          "c015": 0.0,
+          "c016": 0.008,
+          "c017": 0.004,
+          "c018": 0.004,
+          "c019": 0.004,
+          "c020": 0.004,
+          "c021": 0.014000000000000002,
+          "c022": 0.0,
+          "c023": 0.0,
+          "c024": 0.009,
+          "c025": 0.0,
+          "c026": 0.004,
+          "c027": 0.0,
+          "c028": 0.009,
+          "c029": 0.004,
+          "c030": 0.0,
+          "c031": 0.0,
+          "c032": 0.008,
+          "c033": 0.004,
+          "c034": 0.004,
+          "c035": 0.04,
+          "c036": 0.004,
+          "c037": 0.0,
+          "c038": 0.0,
+          "c039": 0.004,
+          "c040": 0.004,
+          "c041": 0.004,
+          "c042": 0.04,
+          "c043": 0.0,
+          "c044": 0.0,
+          "c045": 0.0,
+          "c046": 0.004,
+          "c047": 0.0,
+          "c048": 0.009,
+          "c049": 0.156,
+          "c050": 0.004,
+          "c051": 0.0,
+          "c052": 0.0,
+          "c053": 0.0,
+          "c054": 0.0,
+          "c055": 0.0
+        },
+        "calls": 3,
+        "http_seconds": 0.7368774000001395,
+        "input_tokens": 35647
+      },
+      "same_choice": true,
+      "old_matches_historical": true
+    }
+  ],
+  "limitation": "Single replay per variant. New choices do not alter subsequent historical observations; no new episode success rate."
+}

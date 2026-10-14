@@ -1,0 +1,66 @@
+{
+  "case": "0283628d-f76d-4f49-87ae-41925030db96",
+  "status": 400,
+  "state_bytes": 46096,
+  "history_events": 11,
+  "top_field_value_bytes": {
+    "task_description": 279,
+    "objective": 196,
+    "hint": 141,
+    "network_size": 1,
+    "max_steps": 3,
+    "tool_schemas": 1421,
+    "history": 42512,
+    "solver_turn": 2,
+    "original_agent_system_prompt": 988,
+    "initial_user_message": 384
+  },
+  "result_value_bytes_sum": {
+    "observation": 20288,
+    "reward": 44,
+    "terminated": 55,
+    "truncated": 55,
+    "info": 20568
+  },
+  "observation_value_bytes_sum": {
+    "discovery_matrix": 5291,
+    "device_status": 7317,
+    "recent_diagnostics": 5911,
+    "episode_metadata": 889
+  },
+  "info_value_bytes_sum": {
+    "step_count": 13,
+    "network_size": 11,
+    "discovered_devices": 11,
+    "episode_done": 55,
+    "episode_progress": 43,
+    "user_hint": 1551,
+    "action_spec": 1564,
+    "action_result": 4186,
+    "reward_breakdown": 792,
+    "valid_actions": 10461
+  },
+  "tools": [
+    "scan_network",
+    "discover_neighbors",
+    "check_status",
+    "ping",
+    "ping",
+    "ping",
+    "traceroute",
+    "check_interfaces",
+    "ping",
+    "ping",
+    "ping"
+  ],
+  "previous_request_usage": {
+    "input_tokens": 32342,
+    "output_tokens": 580
+  },
+  "unique_observation_values": {
+    "discovery_matrix": 1,
+    "device_status": 5,
+    "recent_diagnostics": 11,
+    "episode_metadata": 11
+  }
+}

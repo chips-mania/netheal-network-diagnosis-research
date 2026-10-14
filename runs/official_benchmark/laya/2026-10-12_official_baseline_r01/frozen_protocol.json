@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "experiments\\official_benchmark\\laya\\official_baseline.py": "9934830c349c0e451374ab82ce3ba33a4dabe787c4bc0408a62c20c804ad92a2",
+    "docs\\specs\\laya_official_baseline_execution_20261012.md": "ce4c127e25b6f97eab293e8b8684cda6a80859fc80ba3decd2ef5c323c90f180",
+    "netheal-topology-generalization\\scripts\\jev_official_eval_v4.py": "32e96d137362aaabf301c8de1024a87aed0d5862cac67b7e0c5be6ee41b2d711",
+    "netheal-topology-generalization\\scripts\\jev_context_codec_v4.py": "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "netheal-topology-generalization\\scripts\\jev_tree_partition_v4.py": "5ab774a18c493a5d9efc25492c5ee0ba7316e3f2fe85a21fc3931ef4650678e9",
+    ".runtime\\laya-venv\\Lib\\site-packages\\laya\\train.py": "c325941f275a90b486d00c3ca28dc4ee1ece795218fdaa7c67818d711ee79645",
+    ".runtime\\laya-venv\\Lib\\site-packages\\laya\\common.py": "f8e4c7408fb72e4088f4ac6db3c6764b387a955aea978e8360e0c189615a9505",
+    ".runtime\\laya-venv\\Lib\\site-packages\\laya\\agent.py": "cffbceab40c24ed787fffbbd9f8e435f965f9e0eb8d304323d7eed5689e12fbc",
+    ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\model.safetensors": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\rl_agent_config.json": "ae287b56bbcf5f8c4f4541ae9dfd00c914c4c48b940b8398c3058af37ba92bbd",
+    ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\encoder\\config.json": "bf3ab80598fdccf414855a2ce80f22859e4492d06ca8a62ddd1cfb63972f8979",
+    ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\tokenizer\\tokenizer.json": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+    ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\tokenizer\\tokenizer_config.json": "50044de60daaa73df97d262e15a40d4faf0160e7d742df64b377877a1320dd12"
+  },
+  "snapshots": "efbd6109c9746d4753ed33771e2ac2c0a80893fc4d1ab996a4ca9e6926cf5b25",
+  "max_len": 8192,
+  "head_max_len": 8192,
+  "seed": 1012,
+  "dtype": "float32",
+  "temperature": "checkpoint built-in clamped option-count buckets",
+  "concurrency": 1,
+  "retry": "no automatic retries; interrupted attempts preserved and restarted",
+  "updates": 0
+}

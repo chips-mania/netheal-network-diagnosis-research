@@ -1,0 +1,18 @@
+{
+  "gpt": {
+    "status": "passed",
+    "action": {
+      "kind": "scan"
+    },
+    "estimated_usd": 0.000488,
+    "cost_unknown_requests": 0
+  },
+  "jev": {
+    "status": "passed",
+    "action": {
+      "kind": "scan"
+    },
+    "estimated_usd": 1.7766000000000002e-05,
+    "cost_unknown_requests": 0
+  }
+}

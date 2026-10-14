@@ -1,0 +1,11 @@
+{
+  "mode": "fixed historical observations; not a fresh end-to-end rollout",
+  "case_count": 1,
+  "judgments": 22,
+  "calls": 56,
+  "temperature": "API defaults unchanged",
+  "order": "alternate old/new by judgment",
+  "retries": 0,
+  "aggregation": "history-event weighted probabilities; single request provider choice",
+  "source_sha256": "8abcdabd1262849bf70c59c7be5786a1a62be2bad0d08c65e9187ea972d58260"
+}

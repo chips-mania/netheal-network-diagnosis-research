@@ -1,0 +1,5 @@
+# Validated Windows Python 3.13 environment for GTX 1660 SUPER.
+# Install in the separate LAYA environment, not the original experiment environment.
+--extra-index-url https://download.pytorch.org/whl/cu126
+laya==0.4.1
+torch==2.12.1+cu126

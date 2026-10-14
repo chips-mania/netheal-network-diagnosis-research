@@ -1,0 +1,289 @@
+[
+  {
+    "name": "list_actions",
+    "title": null,
+    "description": "List valid actions for discovered devices.",
+    "inputSchema": {
+      "properties": {},
+      "title": "tool_list_actionsArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_list_actionsOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "scan_network",
+    "title": null,
+    "description": "Discover network devices.",
+    "inputSchema": {
+      "properties": {},
+      "title": "tool_scan_networkArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_scan_networkOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "discover_neighbors",
+    "title": null,
+    "description": "Find neighbors of a device.",
+    "inputSchema": {
+      "properties": {
+        "device": {
+          "title": "Device",
+          "type": "string"
+        }
+      },
+      "required": [
+        "device"
+      ],
+      "title": "tool_discover_neighborsArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_discover_neighborsOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "ping",
+    "title": null,
+    "description": "Test connectivity between two devices.",
+    "inputSchema": {
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "destination"
+      ],
+      "title": "tool_pingArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_pingOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "traceroute",
+    "title": null,
+    "description": "Trace path between two devices.",
+    "inputSchema": {
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "destination"
+      ],
+      "title": "tool_tracerouteArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_tracerouteOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "check_status",
+    "title": null,
+    "description": "Check device operational status.",
+    "inputSchema": {
+      "properties": {
+        "device": {
+          "title": "Device",
+          "type": "string"
+        }
+      },
+      "required": [
+        "device"
+      ],
+      "title": "tool_check_statusArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_check_statusOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "check_interfaces",
+    "title": null,
+    "description": "Inspect device network interfaces.",
+    "inputSchema": {
+      "properties": {
+        "device": {
+          "title": "Device",
+          "type": "string"
+        }
+      },
+      "required": [
+        "device"
+      ],
+      "title": "tool_check_interfacesArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_check_interfacesOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  },
+  {
+    "name": "submit_diagnosis",
+    "title": null,
+    "description": "Submit final fault diagnosis. Ends the episode.",
+    "inputSchema": {
+      "properties": {
+        "fault_type": {
+          "title": "Fault Type",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fault_type",
+        "location"
+      ],
+      "title": "tool_submit_diagnosisArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "tool_submit_diagnosisOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null,
+    "execution": null
+  }
+]

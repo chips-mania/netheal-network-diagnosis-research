@@ -1,0 +1,17 @@
+{
+  "choice": "c001",
+  "selected": "scan_network",
+  "probabilities": {
+    "c000": 0.03,
+    "c001": 0.97,
+    "c002": 0.0,
+    "c003": 0.0,
+    "c004": 0.0,
+    "c005": 0.0,
+    "c006": 0.0,
+    "c007": 0.0
+  },
+  "calls": 1,
+  "http_seconds": 0.1895795000000362,
+  "input_tokens": 941
+}

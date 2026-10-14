@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "regression_tests": 7,
+  "smoke_run": "results/_tmp_reliability_smoke",
+  "episode_rows": 35200,
+  "paired_cases": 1600,
+  "checkpoints": 18,
+  "source_files": 85,
+  "checks": [
+    "source/checkpoint/demo SHA256",
+    "paired ground truth",
+    "balanced faults",
+    "summary recomputation",
+    "equal optimizer updates"
+  ]
+}

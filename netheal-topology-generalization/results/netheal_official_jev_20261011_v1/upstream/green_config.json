@@ -1,0 +1,177 @@
+﻿{
+    "architecture":  "amd64",
+    "config":  {
+                   "ExposedPorts":  {
+                                        "9020/tcp":  {
+
+                                                     }
+                                    },
+                   "Env":  [
+                               "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                               "LANG=C.UTF-8",
+                               "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                               "PYTHON_VERSION=3.11.14",
+                               "PYTHON_SHA256=8d3ed8ec5c88c1c95f5e558612a725450d2452813ddad5e58fdb1a53b1209b78",
+                               "PYTHONPATH=/app",
+                               "PYTHONUNBUFFERED=1"
+                           ],
+                   "Entrypoint":  [
+                                      "python",
+                                      "-m",
+                                      "netheal.aaa.cli"
+                                  ],
+                   "Cmd":  [
+                               "--host",
+                               "0.0.0.0",
+                               "--port",
+                               "9020"
+                           ],
+                   "WorkingDir":  "/app",
+                   "ArgsEscaped":  true,
+                   "Healthcheck":  {
+                                       "Test":  [
+                                                    "CMD-SHELL",
+                                                    "python -c \"import urllib.request; urllib.request.urlopen(\u0027http://localhost:9020/.well-known/agent.json\u0027)\" || exit 1"
+                                                ],
+                                       "Interval":  30000000000,
+                                       "Timeout":  10000000000,
+                                       "StartPeriod":  5000000000,
+                                       "Retries":  3
+                                   }
+               },
+    "created":  "2026-01-30T02:01:11.953148001Z",
+    "history":  [
+                    {
+                        "created":  "2026-01-12T00:00:00Z",
+                        "created_by":  "# debian.sh --arch \u0027amd64\u0027 out/ \u0027trixie\u0027 \u0027@1768176000\u0027",
+                        "comment":  "debuerreotype 0.17"
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "ENV LANG=C.UTF-8",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tnetbase \t\ttzdata \t; \tapt-get dist-clean # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "ENV PYTHON_VERSION=3.11.14",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T03:06:57.430703676Z",
+                        "created_by":  "ENV PYTHON_SHA256=8d3ed8ec5c88c1c95f5e558612a725450d2452813ddad5e58fdb1a53b1209b78",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T03:14:21.555046667Z",
+                        "created_by":  "RUN /bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdpkg-dev \t\tgcc \t\tgnupg \t\tlibbluetooth-dev \t\tlibbz2-dev \t\tlibc6-dev \t\tlibdb-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tliblzma-dev \t\tlibncursesw5-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tmake \t\ttk-dev \t\tuuid-dev \t\twget \t\txz-utils \t\tzlib1g-dev \t; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \techo \"$PYTHON_SHA256 *python.tar.xz\" | sha256sum -c -; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t$(test \"${gnuArch%%-*}\" != \u0027riscv64\u0027 \u0026\u0026 echo \u0027--with-lto\u0027) \t\t--with-ensurepip \t; \tnproc=\"$(nproc)\"; \tEXTRA_CFLAGS=\"$(dpkg-buildflags --get CFLAGS)\"; \tLDFLAGS=\"$(dpkg-buildflags --get LDFLAGS)\"; \tLDFLAGS=\"${LDFLAGS:--Wl},--strip-all\"; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:-}\" \t; \trm python; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:--Wl},-rpath=\u0027\\$\\$ORIGIN/../lib\u0027\" \t\tpython \t; \tmake install; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name \u0027*.pyc\u0027 -o -name \u0027*.pyo\u0027 -o -name \u0027libpython*.a\u0027 \\) \\) \t\t\\) -exec rm -rf \u0027{}\u0027 + \t; \t\tldconfig; \t\tapt-mark auto \u0027.*\u0027 \u003e /dev/null; \tapt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -not \\( -name \u0027*tkinter*\u0027 \\) -exec ldd \u0027{}\u0027 \u0027;\u0027 \t\t| awk \u0027/=\u003e/ { so = $(NF-1); if (index(so, \"/usr/local/\") == 1) { next }; gsub(\"^/(usr/)?\", \"\", so); printf \"*%s\\n\", so }\u0027 \t\t| sort -u \t\t| xargs -rt dpkg-query --search \t\t| awk \u0027sub(\":$\", \"\", $1) { print $1 }\u0027 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \tapt-get dist-clean; \t\texport PYTHONDONTWRITEBYTECODE=1; \tpython3 --version; \t\tpip3 install \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t\u0027setuptools==79.0.1\u0027 \t\t\u0027wheel\u003c0.46\u0027 \t; \tpip3 --version # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-13T03:14:21.6862975Z",
+                        "created_by":  "RUN /bin/sh -c set -eux; \tfor src in idle3 pip3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-13T03:14:21.6862975Z",
+                        "created_by":  "CMD [\"python3\"]",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-13T16:45:40.911754384Z",
+                        "created_by":  "WORKDIR /app",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-29T04:50:42.35947396Z",
+                        "created_by":  "COPY requirements.txt requirements-llm.txt ./ # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-29T05:05:38.490899792Z",
+                        "created_by":  "RUN /bin/sh -c pip install --no-cache-dir -r requirements.txt -r requirements-llm.txt # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.941346375Z",
+                        "created_by":  "COPY netheal/ ./netheal/ # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "COPY scenarios/ ./scenarios/ # buildkit",
+                        "comment":  "buildkit.dockerfile.v0"
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "ENV PYTHONPATH=/app",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "ENV PYTHONUNBUFFERED=1",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "EXPOSE [9020/tcp]",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "HEALTHCHECK \u0026{[\"CMD-SHELL\" \"python -c \\\"import urllib.request; urllib.request.urlopen(\u0027http://localhost:9020/.well-known/agent.json\u0027)\\\" || exit 1\"] \"30s\" \"10s\" \"5s\" \"0s\" \u0027\\x03\u0027}",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "ENTRYPOINT [\"python\" \"-m\" \"netheal.aaa.cli\"]",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    },
+                    {
+                        "created":  "2026-01-30T02:01:11.953148001Z",
+                        "created_by":  "CMD [\"--host\" \"0.0.0.0\" \"--port\" \"9020\"]",
+                        "comment":  "buildkit.dockerfile.v0",
+                        "empty_layer":  true
+                    }
+                ],
+    "os":  "linux",
+    "rootfs":  {
+                   "type":  "layers",
+                   "diff_ids":  [
+                                    "sha256:e50a58335e1366e2581fe61794c1651afe2fe04e881e795aa166f24f4fc78d92",
+                                    "sha256:523062ea36b5189e9ea6d7d86850296d1d7b5b4418109217e7ac12e13273fbba",
+                                    "sha256:5d89b1d5fc98cb4fa0c3a8ac89cf83932b8b287e318b7761badd4b9ce58b3ecb",
+                                    "sha256:49d74831a2871d1733e397932626f721303aef93edc180602b0877d68c6cbf5a",
+                                    "sha256:5eb748aae93a919a065d841ec60fa36ff2ef815a458d9f0d236f38df28de5660",
+                                    "sha256:26bf7a5cfde56542a2b472267915c3c13a2b8c0d412ebdd86adecde1ca0a8083",
+                                    "sha256:dc2524c2a5c6df05e4317c20fc16c54673c780a48c41543704841d2740d71ae2",
+                                    "sha256:fa2fb58848bcf8f1217b764baf38fbf691b535b953370f0f5ee8e5bba3f21a20",
+                                    "sha256:d3d48f2d1a288a8ed2c4c380dfd8e9fcb3727621e4a3aca6739743b908d84dd8"
+                                ]
+               }
+}

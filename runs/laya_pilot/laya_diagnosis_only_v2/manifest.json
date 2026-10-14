@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "episodes": 288,
+  "task": "Diagnosis only from held-out expert-collected public evidence; not end-to-end.",
+  "data_sha256": "5a078bd3f80f0eda897cb4ae05ad2c0a38ea903033445c5325d1953ec6960b33",
+  "source_sha256": "33088d62c13bce8bde6eedbac170318cb2fae0516f9d9ddfa17b9baea20db21b",
+  "precision": "fp32",
+  "teacher_fault_branch_used": false
+}

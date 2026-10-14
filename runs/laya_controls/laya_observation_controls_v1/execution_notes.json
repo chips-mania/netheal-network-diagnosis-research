@@ -1,0 +1,10 @@
+﻿{
+  "date": "2026-10-10",
+  "initial_launch": "failed before data generation: sandbox could not access the Python installation referenced by the existing venv",
+  "resolution": "Read-only escalation confirmed both Python paths exist. Existing venv commands ran with installation access; no environment files were changed.",
+  "environment_modified": false,
+  "settings_changed_after_evaluation": false,
+  "data_collection": "completed on first successfully launched collection process",
+  "gpu_concurrency": 1,
+  "paid_api_calls": 0
+}

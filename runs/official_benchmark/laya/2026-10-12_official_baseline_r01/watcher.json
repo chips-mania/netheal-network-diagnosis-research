@@ -1,0 +1,8 @@
+{
+  "status": "monitoring",
+  "evaluation_pids": [
+    1828,
+    23664
+  ],
+  "watcher_pid": 22456
+}

@@ -1,0 +1,98 @@
+[green_agent]
+agentbeats_id = "019bc450-9926-7f51-a195-3be6e03222e0"
+env = {
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}",
+  # Options: debug, info, warning, error
+  MCP_SERVER_LOG_LEVEL = "warning"
+}
+
+[[participants]]
+agentbeats_id = "019bc478-3ed8-7871-8341-d905ff27a587"
+name = "netheal-solver-bedrock-claude"
+# Solver type: "gpt" = LLM-based (uses LLM_PROVIDER below), "dummy" = baseline/random
+# solver = "gpt"  # default: gpt
+env = {
+  # LLM Provider - determines which API to use
+  # Options: openai, azure, anthropic, bedrock
+  LLM_PROVIDER = "bedrock",
+  LLM_MODEL = "${BEDROCK_MODEL_ID}",
+
+  # OpenAI settings (when LLM_PROVIDER = "openai")
+  OPENAI_API_KEY = "${OPENAI_API_KEY}",
+  OPENAI_MODEL = "${OPENAI_MODEL}",
+  OPENAI_BASE_URL = "${OPENAI_BASE_URL}",
+  OPENAI_ORG_ID = "${OPENAI_ORG_ID}",
+
+  # Azure OpenAI settings (when LLM_PROVIDER = "azure")
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}",
+
+  # Anthropic settings (when LLM_PROVIDER = "anthropic")
+  ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}",
+  ANTHROPIC_MODEL = "${ANTHROPIC_MODEL}",
+  ANTHROPIC_API_URL = "${ANTHROPIC_API_URL}",
+
+  # AWS Bedrock settings (when LLM_PROVIDER = "bedrock")
+  AWS_REGION = "${AWS_REGION}",
+  AWS_ACCESS_KEY_ID = "${AWS_ACCESS_KEY_ID}",
+  AWS_SECRET_ACCESS_KEY = "${AWS_SECRET_ACCESS_KEY}",
+  AWS_SESSION_TOKEN = "${AWS_SESSION_TOKEN}",
+  BEDROCK_MODEL_ID = "${BEDROCK_MODEL_ID}",
+
+  # Reasoning effort for o1/o3 models (optional)
+  # Options: low, medium, high
+  # REASONING_EFFORT = "high",
+
+  MCP_HTTP_FALLBACK = "0",
+  LLM_TEMPERATURE = "0"
+}
+
+[config]
+# =============================================================================
+# SNAPSHOT MODE (use_snapshots = true)
+# When enabled, episodes are replayed from pre-generated snapshots for
+# reproducibility. Settings marked [IGNORED IN SNAPSHOT MODE] have no effect.
+# =============================================================================
+use_snapshots = true
+snapshot_path = "snapshots/v1/"
+
+# Number of episodes to run
+# When use_snapshots=true, auto-detected from snapshot count (can be omitted)
+# num_episodes = 100
+
+# =============================================================================
+# [IGNORED IN SNAPSHOT MODE] - Episode generation settings
+# These only apply when use_snapshots = false
+# =============================================================================
+# min_devices = 3
+# max_devices = 15
+# seed = 1234
+# Options: star, mesh, hierarchical, random
+# topology_types = ["star", "mesh", "hierarchical"]
+# Options: uniform, weighted
+# fault_sampling_strategy = "uniform"
+# Fault types: device_failure, link_failure, misconfiguration, performance_degradation
+# fault_weights = { device_failure = 0.25, link_failure = 0.25, misconfiguration = 0.25, performance_degradation = 0.25 }
+# latency_multiplier_range = [10.0, 20.0]
+
+# =============================================================================
+# Runtime settings (always apply)
+# =============================================================================
+max_episode_steps = 100
+timeout_seconds = 600
+enable_user_hints = true
+
+# Concurrency and retry settings
+episode_concurrency = 25
+episode_retry_limit = 3
+max_timeouts = 50
+max_errors = 50
+
+# Hint provider mode
+# Options: heuristic, llm
+extra_env_options = { hint_provider_mode = "heuristic" }

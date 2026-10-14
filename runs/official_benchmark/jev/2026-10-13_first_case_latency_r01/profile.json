@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "total_seconds": 8.513317699999789,
+  "accounted_seconds": 8.51331190000019,
+  "fixed_wait_seconds": 0,
+  "categories": {
+    "episode_other": {
+      "seconds": 0.01260489999958736,
+      "percent": 0.14806096099981883,
+      "count": 1
+    },
+    "environment_setup": {
+      "seconds": 0.053708800000094925,
+      "percent": 0.6308797802776261,
+      "count": 1
+    },
+    "http_client_setup": {
+      "seconds": 0.6314170999999078,
+      "percent": 7.416815890706434,
+      "count": 1
+    },
+    "decision_adapter_other": {
+      "seconds": 0.04798039999695902,
+      "percent": 0.5635922643525945,
+      "count": 28
+    },
+    "partition_other": {
+      "seconds": 0.0017536000013933517,
+      "percent": 0.020598315053993524,
+      "count": 28
+    },
+    "compression_roundtrip": {
+      "seconds": 1.4135443999980453,
+      "percent": 16.603919292217654,
+      "count": 56
+    },
+    "log_write": {
+      "seconds": 0.054466700002649304,
+      "percent": 0.6397823025287857,
+      "count": 84
+    },
+    "api_http": {
+      "seconds": 6.2705750000009175,
+      "percent": 73.65606712881247,
+      "count": 28
+    },
+    "environment_tools": {
+      "seconds": 0.014304299999821524,
+      "percent": 0.16802262647641916,
+      "count": 14
+    },
+    "candidate_list_actions": {
+      "seconds": 0.012956700000813726,
+      "percent": 0.15219331002781733,
+      "count": 13
+    }
+  },
+  "calls": 28,
+  "input_tokens": 145208,
+  "result": {
+    "snapshot_id": "00bd290a-df64-46a6-8f06-f087bde022a9",
+    "status": "completed",
+    "seconds": 8.511467400000129,
+    "model_requests": 28,
+    "metrics": {
+      "diagnosis_success": true,
+      "network_size": 8,
+      "steps": 14,
+      "normalized_steps": 0.14,
+      "total_reward": 16.599999999999998,
+      "tool_cost": 12.5,
+      "tool_cost_normalized": 0.17857142857142858,
+      "tool_error_count": 0,
+      "tool_error_rate": 0.0,
+      "topology_coverage": 0.75,
+      "node_coverage": 1.0,
+      "edge_coverage": 0.5,
+      "evidence_sufficiency": 0.2727272727272727,
+      "redundancy_count": 0,
+      "redundancy_rate": 0.0,
+      "wall_time_seconds": 8.506680965423584,
+      "ground_truth_type": "link_failure",
+      "ground_truth_location": "center->edge_5",
+      "predicted_type": "link_failure",
+      "predicted_location": "center->edge_5",
+      "composite_episode_score": 16.599999999999998,
+      "location_correct": true,
+      "steps_per_device": 1.75,
+      "cost_efficiency": 0.8484848484848485,
+      "episode_seed": 1283,
+      "scenario_fingerprint": "bd4ca296e5f4fce321c46157b4560a425cde64385e335faf8afa7edc098927e0",
+      "snapshot_id": "00bd290a-df64-46a6-8f06-f087bde022a9"
+    }
+  },
+  "limitation": "One autonomous rollout; choices may differ from historical run. No retries."
+}

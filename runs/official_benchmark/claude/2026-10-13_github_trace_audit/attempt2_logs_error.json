@@ -1,0 +1,5 @@
+﻿{
+    "url":  "https://api.github.com/repos/manikyabard/netheal-agentbeats-leaderboard/actions/runs/21531644441/attempts/2/logs",
+    "error":  "원격 서버에서 (403) 사용할 수 없음 오류를 반환했습니다.",
+    "detail":  "{\"message\":\"Must have admin rights to Repository.\",\"documentation_url\":\"https://docs.github.com/rest/actions/workflow-runs#download-workflow-run-attempt-logs\",\"status\":\"403\"}"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "smoke_completed",
+  "seconds": 5.034334899999521,
+  "items": 8,
+  "history": [
+    2.6102418787777424
+  ],
+  "freeze_encoder": true,
+  "warning": "Smoke demonstrates gradients and runtime only, not useful fine-tuned accuracy.",
+  "head_weights_changed": true,
+  "full_training_completed": false
+}

@@ -1,0 +1,88 @@
+{
+  "created_on": "2026-10-10",
+  "arms": [
+    "label_tag",
+    "real_table"
+  ],
+  "seeds": [
+    41,
+    52,
+    63
+  ],
+  "epochs": 32,
+  "train_episodes": 16,
+  "validation_episodes": 32,
+  "task": "fault type only on final expert-collected evidence",
+  "optimizer_updates": 512,
+  "evaluation_epochs": [
+    0,
+    4,
+    8,
+    16,
+    32
+  ],
+  "freeze_encoder": true,
+  "loss": "rlcd",
+  "thresholds": {
+    "positive_control_train_and_validation": 0.95,
+    "memorization_train": 0.95
+  },
+  "warning": "Label-tag arm deliberately reveals truth in BOTH train and validation. Never count it as diagnosis performance.",
+  "training_seeds": [
+    2060068,
+    2250048,
+    2040021,
+    2060077,
+    2066068,
+    2256048,
+    2046021,
+    2066077,
+    2064068,
+    2254048,
+    2044021,
+    2064077,
+    2062068,
+    2252048,
+    2042021,
+    2062077
+  ],
+  "validation_seeds": [
+    2240034,
+    2050062,
+    2060054,
+    2040025,
+    2050071,
+    2240007,
+    2260034,
+    2260079,
+    2246034,
+    2056062,
+    2066054,
+    2046025,
+    2056071,
+    2246007,
+    2266034,
+    2266079,
+    2244034,
+    2054062,
+    2064054,
+    2044025,
+    2054071,
+    2244007,
+    2264034,
+    2264079,
+    2242034,
+    2052062,
+    2062054,
+    2042025,
+    2052071,
+    2242007,
+    2262034,
+    2262079
+  ],
+  "data_hashes": {
+    "train": "cf4d7362631ff50ac4dac19f811ab84e8f251b476360d0fcf64221d8976f4b39",
+    "validation": "5a078bd3f80f0eda897cb4ae05ad2c0a38ea903033445c5325d1953ec6960b33"
+  },
+  "script_sha256": "353a053d2481f33a4d7ec62b46ee51062cb1c2862d7b06e5186df7cf363a909f"
+}

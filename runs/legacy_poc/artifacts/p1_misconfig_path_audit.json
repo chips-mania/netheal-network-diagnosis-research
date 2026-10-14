@@ -1,0 +1,589 @@
+{
+  "narrative": "Misconfig@N10 failures are dominated by **not reaching conclude-match** (D_incomplete_discrimination) \u2014 evidence-path / Link\u2013Misconfig discrimination, not commit.",
+  "results": {
+    "baseline": {
+      "8": {
+        "n_devices": 8,
+        "n": 50,
+        "exact": 0.6,
+        "timeout": 0.4,
+        "bucket_counts": {
+          "C_commit_fail": 20,
+          "success": 30
+        },
+        "bucket_rates": {
+          "C_commit_fail": 0.4,
+          "success": 0.6
+        },
+        "wrong_conclude_types": {},
+        "cue_rates_all": {
+          "partial_any": 1.0,
+          "strong_partial_any": 1.0,
+          "conclude_match_any": 1.0,
+          "wrong_conclude_any": 0.0,
+          "iface_checked_gt": 0.76,
+          "asym_from_gt": 1.0,
+          "status_gt_up": 1.0
+        },
+        "samples": {
+          "C_commit_fail": [
+            {
+              "loc": "edge_0",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "center",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_0",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            }
+          ],
+          "success": [
+            {
+              "loc": "edge_4",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_4",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_5",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_5",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_3",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_3",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            }
+          ]
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "n": 50,
+        "exact": 0.0,
+        "timeout": 1.0,
+        "bucket_counts": {
+          "D_incomplete_discrimination": 22,
+          "C_commit_fail": 28
+        },
+        "bucket_rates": {
+          "D_incomplete_discrimination": 0.44,
+          "C_commit_fail": 0.56
+        },
+        "wrong_conclude_types": {},
+        "cue_rates_all": {
+          "partial_any": 1.0,
+          "strong_partial_any": 0.56,
+          "conclude_match_any": 0.56,
+          "wrong_conclude_any": 0.0,
+          "iface_checked_gt": 0.14,
+          "asym_from_gt": 1.0,
+          "status_gt_up": 0.56
+        },
+        "samples": {
+          "D_incomplete_discrimination": [
+            {
+              "loc": "edge_4",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_3",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_3",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            }
+          ],
+          "C_commit_fail": [
+            {
+              "loc": "edge_8",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces \u2192 check_interfaces",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 7
+            },
+            {
+              "loc": "edge_5",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_7",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 6
+            }
+          ]
+        }
+      }
+    },
+    "generic": {
+      "8": {
+        "n_devices": 8,
+        "n": 50,
+        "exact": 0.56,
+        "timeout": 0.18,
+        "bucket_counts": {
+          "D_incomplete_discrimination": 17,
+          "success": 28,
+          "C_commit_fail": 5
+        },
+        "bucket_rates": {
+          "D_incomplete_discrimination": 0.34,
+          "success": 0.56,
+          "C_commit_fail": 0.1
+        },
+        "wrong_conclude_types": {},
+        "cue_rates_all": {
+          "partial_any": 1.0,
+          "strong_partial_any": 0.66,
+          "conclude_match_any": 0.66,
+          "wrong_conclude_any": 0.0,
+          "iface_checked_gt": 0.56,
+          "asym_from_gt": 1.0,
+          "status_gt_up": 0.66
+        },
+        "samples": {
+          "D_incomplete_discrimination": [
+            {
+              "loc": "edge_0",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_1",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_2",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_0",
+              "timeout": false,
+              "submitted": true,
+              "pred": "link_failure:center->edge_1",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            }
+          ],
+          "success": [
+            {
+              "loc": "edge_4",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_4",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_5",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_5",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "edge_3",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:edge_3",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "center"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            }
+          ],
+          "C_commit_fail": [
+            {
+              "loc": "edge_6",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 6
+            },
+            {
+              "loc": "edge_6",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 6
+            },
+            {
+              "loc": "edge_6",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 6
+            }
+          ]
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "n": 50,
+        "exact": 0.08,
+        "timeout": 0.88,
+        "bucket_counts": {
+          "D_incomplete_discrimination": 46,
+          "success": 4
+        },
+        "bucket_rates": {
+          "D_incomplete_discrimination": 0.92,
+          "success": 0.08
+        },
+        "wrong_conclude_types": {},
+        "cue_rates_all": {
+          "partial_any": 1.0,
+          "strong_partial_any": 0.08,
+          "conclude_match_any": 0.08,
+          "wrong_conclude_any": 0.0,
+          "iface_checked_gt": 0.08,
+          "asym_from_gt": 1.0,
+          "status_gt_up": 0.08
+        },
+        "samples": {
+          "D_incomplete_discrimination": [
+            {
+              "loc": "edge_4",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_8",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            },
+            {
+              "loc": "edge_5",
+              "timeout": true,
+              "submitted": false,
+              "pred": "None:None",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status \u2192 check_status",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": null,
+                "iface_checked_gt": false,
+                "iface_downs": [],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": null
+            }
+          ],
+          "success": [
+            {
+              "loc": "center",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:center",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "edge_0"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "center",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:center",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "edge_0"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            },
+            {
+              "loc": "center",
+              "timeout": false,
+              "submitted": true,
+              "pred": "misconfiguration:center",
+              "traj": "scan \u2192 check_status \u2192 check_status \u2192 check_interfaces \u2192 diagnose",
+              "cues": {
+                "asym_from_gt": true,
+                "status_gt": "up",
+                "iface_checked_gt": true,
+                "iface_downs": [
+                  "edge_7"
+                ],
+                "n_missing": 1
+              },
+              "last_conclude": null,
+              "first_match_step": 5
+            }
+          ]
+        }
+      }
+    }
+  }
+}

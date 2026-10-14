@@ -1,0 +1,98 @@
+[
+  {
+    "n": 4,
+    "fault": "device_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 1186
+  },
+  {
+    "n": 4,
+    "fault": "performance_degradation",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 729
+  },
+  {
+    "n": 4,
+    "fault": "misconfiguration",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 875
+  },
+  {
+    "n": 4,
+    "fault": "link_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 700
+  },
+  {
+    "n": 5,
+    "fault": "device_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 1365
+  },
+  {
+    "n": 5,
+    "fault": "performance_degradation",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 854
+  },
+  {
+    "n": 5,
+    "fault": "misconfiguration",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 875
+  },
+  {
+    "n": 5,
+    "fault": "link_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 700
+  },
+  {
+    "n": 6,
+    "fault": "device_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 1525
+  },
+  {
+    "n": 6,
+    "fault": "performance_degradation",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 896
+  },
+  {
+    "n": 6,
+    "fault": "misconfiguration",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 875
+  },
+  {
+    "n": 6,
+    "fault": "link_failure",
+    "attempts": 175,
+    "accepted": 175,
+    "expert_success_rate": 1.0,
+    "transitions": 700
+  }
+]

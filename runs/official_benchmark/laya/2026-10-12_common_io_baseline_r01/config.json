@@ -1,0 +1,17 @@
+{
+  "model": ".runtime\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148",
+  "updates": 0,
+  "dtype": "float32",
+  "max_len": 4096,
+  "head_max_len": 1024,
+  "temperature": 1.0,
+  "seed": 1012,
+  "cases": 60,
+  "split": {
+    "train": 40,
+    "development": 20
+  },
+  "order_control": "reverse",
+  "training": false,
+  "network_calls": false
+}

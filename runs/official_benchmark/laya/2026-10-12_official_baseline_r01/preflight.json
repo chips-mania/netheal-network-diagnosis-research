@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "fingerprints": 100,
+  "smoke_status": "turn_limit",
+  "long_case_seed": 94020019,
+  "long_smoke_calls": 13,
+  "gpu_peak_allocated": 2746170368,
+  "gpu_peak_reserved": 5423235072
+}

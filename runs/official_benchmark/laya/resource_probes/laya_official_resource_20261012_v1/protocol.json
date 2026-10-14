@@ -1,0 +1,12 @@
+{
+  "script_sha256": "9a094dce9935824fe1aec0db50a4ef4700780fe4e5ca559fd3f5e3239712eb0c",
+  "spec_sha256": "33f303f71879fbcf6e58aadfa8b9c681e26b54f16398030e898b9bf533e57ac8",
+  "updates": 8,
+  "seed": 1012,
+  "dtype": "float32",
+  "optimizer": "AdamW8bit",
+  "max_len": 1024,
+  "head_max_len": 512,
+  "bnb_version": "0.50.2",
+  "torch_version": "2.12.1+cu126"
+}

@@ -1,0 +1,54 @@
+[green_agent]
+agentbeats_id = "019bc450-9926-7f51-a195-3be6e03222e0"
+env = {
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}",
+  MCP_SERVER_LOG_LEVEL = "debug"
+}
+
+[[participants]]
+agentbeats_id = "019bc478-3ed8-7871-8341-d905ff27a587"
+name = "netheal-solver-bedrock-claude"
+solver = "gpt"
+env = {
+  LLM_PROVIDER = "bedrock",
+  LLM_MODEL = "${BEDROCK_MODEL_ID}",
+  AWS_REGION = "${AWS_REGION}",
+  AWS_ACCESS_KEY_ID = "${AWS_ACCESS_KEY_ID}",
+  AWS_SECRET_ACCESS_KEY = "${AWS_SECRET_ACCESS_KEY}",
+  AWS_SESSION_TOKEN = "${AWS_SESSION_TOKEN}",
+  BEDROCK_MODEL_ID = "${BEDROCK_MODEL_ID}",
+  OPENAI_API_KEY = "${OPENAI_API_KEY}",
+  OPENAI_MODEL = "${OPENAI_MODEL}",
+  OPENAI_BASE_URL = "${OPENAI_BASE_URL}",
+  OPENAI_ORG_ID = "${OPENAI_ORG_ID}",
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}",
+  ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}",
+  ANTHROPIC_MODEL = "${ANTHROPIC_MODEL}",
+  ANTHROPIC_API_URL = "${ANTHROPIC_API_URL}",
+  REASONING_EFFORT = "high",
+  MCP_DEBUG = "1",
+  MCP_HTTP_FALLBACK = "0",
+  LLM_TEMPERATURE = "0"
+}
+
+[config]
+num_episodes = 50
+min_devices = 3
+max_devices = 15
+max_episode_steps = 100
+topology_types = ["star", "mesh", "hierarchical"]
+timeout_seconds = 600
+seed = 1234
+enable_user_hints = true
+episode_concurrency = 8
+episode_retry_limit = 5
+max_timeouts = 50
+max_errors = 0
+# retrigger run 2
+# retrigger run 1

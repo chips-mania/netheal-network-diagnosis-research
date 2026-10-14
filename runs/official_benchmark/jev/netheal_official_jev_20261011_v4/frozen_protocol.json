@@ -1,0 +1,10 @@
+{
+    "partition_sha256":  "5ab774a18c493a5d9efc25492c5ee0ba7316e3f2fe85a21fc3931ef4650678e9",
+    "codec_sha256":  "1e8e33582d6dfd12d82db7e2eca46c5c01e91a75f0995db7d2474d99f23e2927",
+    "spec_sha256":  "c8f5fccc4d05e0c16e03529d58e5c3694e250395e099460e1f4cd83878901a60",
+    "script_sha256":  "32e96d137362aaabf301c8de1024a87aed0d5862cac67b7e0c5be6ee41b2d711",
+    "max_request_text_bytes":  24000,
+    "frozen_at":  "2026-10-11T23:18:08.0250548+09:00",
+    "status":  "frozen_before_evaluation",
+    "episodes":  100
+}

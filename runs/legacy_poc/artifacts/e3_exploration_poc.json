@@ -1,0 +1,255 @@
+{
+  "stage_a_control": [
+    {
+      "timesteps": 2048,
+      "entropy_loss": null,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.375,
+      "p_scan": 0.2962962962962963,
+      "p_tool_given_post_scan": 0.5789473684210527,
+      "p_diagnosis_given_post_scan": 0.42105263157894735,
+      "tool_use_before_dx_nonlink": 0.8333333333333334
+    },
+    {
+      "timesteps": 5120,
+      "entropy_loss": -3.398019030690193,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 2.875,
+      "p_scan": 0.34782608695652173,
+      "p_tool_given_post_scan": 0.36666666666666664,
+      "p_diagnosis_given_post_scan": 0.5333333333333333,
+      "tool_use_before_dx_nonlink": 0.16666666666666666
+    },
+    {
+      "timesteps": 10240,
+      "entropy_loss": -3.352712566405535,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.25,
+      "p_scan": 0.3076923076923077,
+      "p_tool_given_post_scan": 0.5277777777777778,
+      "p_diagnosis_given_post_scan": 0.4444444444444444,
+      "tool_use_before_dx_nonlink": 0.4166666666666667
+    },
+    {
+      "timesteps": 20480,
+      "entropy_loss": -3.124978866428137,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.125,
+      "p_scan": 0.32,
+      "p_tool_given_post_scan": 0.5,
+      "p_diagnosis_given_post_scan": 0.47058823529411764,
+      "tool_use_before_dx_nonlink": 0.5833333333333334
+    },
+    {
+      "timesteps": 30720,
+      "entropy_loss": -2.707691026851535,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.25,
+      "p_scan": 0.3076923076923077,
+      "p_tool_given_post_scan": 0.5555555555555556,
+      "p_diagnosis_given_post_scan": 0.4444444444444444,
+      "tool_use_before_dx_nonlink": 0.6666666666666666
+    }
+  ],
+  "stage_b_e3": [
+    {
+      "timesteps": 2048,
+      "entropy_loss": null,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.375,
+      "p_scan": 0.2962962962962963,
+      "p_tool_given_post_scan": 0.5789473684210527,
+      "p_diagnosis_given_post_scan": 0.42105263157894735,
+      "tool_use_before_dx_nonlink": 0.8333333333333334
+    },
+    {
+      "timesteps": 5120,
+      "entropy_loss": -3.4214777782559396,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.125,
+      "p_scan": 0.32,
+      "p_tool_given_post_scan": 0.4411764705882353,
+      "p_diagnosis_given_post_scan": 0.47058823529411764,
+      "tool_use_before_dx_nonlink": 0.5
+    },
+    {
+      "timesteps": 10240,
+      "entropy_loss": -3.321948625892401,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.3125,
+      "p_scan": 0.3018867924528302,
+      "p_tool_given_post_scan": 0.5405405405405406,
+      "p_diagnosis_given_post_scan": 0.43243243243243246,
+      "tool_use_before_dx_nonlink": 0.6666666666666666
+    },
+    {
+      "timesteps": 20480,
+      "entropy_loss": -3.1396287798881533,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.0,
+      "p_scan": 0.3333333333333333,
+      "p_tool_given_post_scan": 0.46875,
+      "p_diagnosis_given_post_scan": 0.5,
+      "tool_use_before_dx_nonlink": 0.5833333333333334
+    },
+    {
+      "timesteps": 30720,
+      "entropy_loss": -2.849988343566656,
+      "ep_len_mean_sb3": null,
+      "avg_steps_stochastic": 3.25,
+      "p_scan": 0.3076923076923077,
+      "p_tool_given_post_scan": 0.5277777777777778,
+      "p_diagnosis_given_post_scan": 0.4444444444444444,
+      "tool_use_before_dx_nonlink": 0.5
+    }
+  ],
+  "control_stoch": {
+    "deterministic": false,
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.06,
+      "macro_f1": 0.21812326160152248,
+      "avg_steps_all": 2.58,
+      "normalized_steps_all": 0.17199999999999988,
+      "tool_cost_index": 0.3008833333333335,
+      "topology_coverage": 0.7399999999999998,
+      "ttd_success": 2.8333333333333335
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.3,
+      "location_accuracy": 0.3,
+      "exact_diagnosis_accuracy": 0.06
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.16,
+      "device_failure": 0.0,
+      "performance_degradation": 0.08,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 0.66,
+      "scan_then_diagnose": 0.66,
+      "shortcut_rate": 0.66
+    },
+    "avg_steps": 2.58,
+    "tool_use_before_dx_nonlink": 0.3466666666666667,
+    "p_scan": 0.39147286821705424,
+    "p_tool_given_post_scan": 0.3503184713375796,
+    "p_diagnosis_given_post_scan": 0.6369426751592356,
+    "_tool_nl_ge2": 0.3466666666666667
+  },
+  "e3_stoch": {
+    "deterministic": false,
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.13,
+      "macro_f1": 0.18225945017182127,
+      "avg_steps_all": 2.74,
+      "normalized_steps_all": 0.18266666666666656,
+      "tool_cost_index": 0.2991666666666668,
+      "topology_coverage": 0.7384999999999997,
+      "ttd_success": 3.230769230769231
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.27,
+      "location_accuracy": 0.36,
+      "exact_diagnosis_accuracy": 0.13
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.48,
+      "device_failure": 0.0,
+      "performance_degradation": 0.04,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 0.54,
+      "scan_then_diagnose": 0.54,
+      "shortcut_rate": 0.54
+    },
+    "avg_steps": 2.74,
+    "tool_use_before_dx_nonlink": 0.4266666666666667,
+    "p_scan": 0.3686131386861314,
+    "p_tool_given_post_scan": 0.42196531791907516,
+    "p_diagnosis_given_post_scan": 0.5780346820809249,
+    "_tool_nl_ge2": 0.4266666666666667
+  },
+  "control_det": {
+    "deterministic": true,
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.2,
+      "macro_f1": 0.272366220735786,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7344999999999995,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.39,
+      "location_accuracy": 0.56,
+      "exact_diagnosis_accuracy": 0.2
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.56,
+      "device_failure": 0.0,
+      "performance_degradation": 0.24,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx_nonlink": 0.0,
+    "p_scan": 0.5,
+    "p_tool_given_post_scan": 0.0,
+    "p_diagnosis_given_post_scan": 1.0,
+    "_tool_nl_ge2": 0.0
+  },
+  "e3_det": {
+    "deterministic": true,
+    "stats": {
+      "episodes": 100,
+      "dsr": 0.17,
+      "macro_f1": 0.1,
+      "avg_steps_all": 2.0,
+      "normalized_steps_all": 0.13333333333333308,
+      "tool_cost_index": 0.30000000000000027,
+      "topology_coverage": 0.7344999999999995,
+      "ttd_success": 2.0
+    },
+    "decomposition": {
+      "fault_type_accuracy": 0.25,
+      "location_accuracy": 0.53,
+      "exact_diagnosis_accuracy": 0.17
+    },
+    "per_fault_dsr": {
+      "link_failure": 0.68,
+      "device_failure": 0.0,
+      "performance_degradation": 0.0,
+      "misconfiguration": 0.0
+    },
+    "shortcut": {
+      "two_step_or_less": 1.0,
+      "scan_then_diagnose": 1.0,
+      "shortcut_rate": 1.0
+    },
+    "avg_steps": 2.0,
+    "tool_use_before_dx_nonlink": 0.0,
+    "p_scan": 0.5,
+    "p_tool_given_post_scan": 0.0,
+    "p_diagnosis_given_post_scan": 1.0,
+    "_tool_nl_ge2": 0.0
+  },
+  "go_nogo": {
+    "e3_avg_steps": 2.74,
+    "e3_tool_use_nonlink": 0.4266666666666667,
+    "control_avg_steps": 2.58,
+    "control_tool_use_nonlink": 0.3466666666666667,
+    "nogo": false,
+    "decision": "go",
+    "rule": "No-Go if AvgSteps < 3.0 AND non-link tool-use-before-dx < 10% (stochastic)"
+  }
+}

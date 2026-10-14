@@ -1,0 +1,6 @@
+﻿{
+    "incomplete_run":  "full_41",
+    "status":  "interrupted_resource_constraint",
+    "completed_runs":  3,
+    "reason":  "Full FP32 AdamW training saturates 6 GiB GPU; first epoch much slower than frozen runs. No full-training final score claimed."
+}

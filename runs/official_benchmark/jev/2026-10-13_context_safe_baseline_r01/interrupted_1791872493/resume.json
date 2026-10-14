@@ -1,0 +1,8 @@
+{
+  "reason": "Session ended; user requested continuation",
+  "restarted_incomplete_cases": [
+    "30239b4d-ed9b-455e-a683-6eb1b8dd3d57"
+  ],
+  "completed_cases_reused": true,
+  "frozen_sources_verified": true
+}

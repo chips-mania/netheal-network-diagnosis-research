@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "requests": 1571,
+  "max_partitions": 4,
+  "tree_partition_decisions": 6
+}

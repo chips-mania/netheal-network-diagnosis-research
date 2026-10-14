@@ -1,0 +1,414 @@
+{
+  "misconfiguration": {
+    "network_seed": 42,
+    "locations": [
+      "edge_0",
+      "edge_1",
+      "edge_2",
+      "edge_3",
+      "edge_4",
+      "center"
+    ],
+    "scan_patterns": [
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "edge_0",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 9,
+        "obs_distance_vs_healthy": 1.0,
+        "field_distances": {
+          "discovery_matrix": 1.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      },
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "edge_1",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 9,
+        "obs_distance_vs_healthy": 1.0,
+        "field_distances": {
+          "discovery_matrix": 1.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      },
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "edge_2",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 9,
+        "obs_distance_vs_healthy": 1.0,
+        "field_distances": {
+          "discovery_matrix": 1.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      },
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "edge_3",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 9,
+        "obs_distance_vs_healthy": 1.0,
+        "field_distances": {
+          "discovery_matrix": 1.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      },
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "edge_4",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 9,
+        "obs_distance_vs_healthy": 1.0,
+        "field_distances": {
+          "discovery_matrix": 1.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      },
+      {
+        "fault_type": "misconfiguration",
+        "fault_location": "center",
+        "healthy_discovery_nonzero": 10,
+        "fault_discovery_nonzero": 10,
+        "obs_distance_vs_healthy": 0.0,
+        "field_distances": {
+          "discovery_matrix": 0.0,
+          "device_status": 0.0,
+          "recent_diagnostics": 0.0,
+          "episode_metadata": 0.0
+        },
+        "scan_step_tool": {
+          "discovered_devices": [
+            "center",
+            "edge_0",
+            "edge_1",
+            "edge_2",
+            "edge_3",
+            "edge_4"
+          ]
+        }
+      }
+    ],
+    "post_scan_location_probe": {
+      "cv_accuracy": 0.0,
+      "cv_std": 0.0,
+      "n_samples": 6,
+      "cv_folds": 6
+    },
+    "interpretation": "Misconfiguration scan leaves one fewer discovery cell (blocked port), similar to link failure. If location probe is high, PPO can read fault site from scan-only obs but must still choose fault type."
+  },
+  "device": {
+    "anchor_device": "edge_0",
+    "performance_link": "center->edge_0",
+    "obs_distance_device_vs_perf": 1.4177446365356445,
+    "field_distances_device_vs_perf": {
+      "discovery_matrix": 0.0,
+      "device_status": 0.10000000149011612,
+      "recent_diagnostics": 1.4142135381698608,
+      "episode_metadata": 0.0
+    },
+    "post_scan_obs_identical": true,
+    "type_probe_after_diagnostics": {
+      "cv_accuracy": null,
+      "n_samples": 2,
+      "note": "insufficient classes"
+    },
+    "device_key_tool_results": {
+      "ping_center_to_anchor": {
+        "step_index": 14,
+        "action_label": "ping",
+        "target": "center->edge_0",
+        "tool_success": false,
+        "tool_data": {
+          "error": "Destination device edge_0 is unreachable"
+        }
+      },
+      "status_anchor": {
+        "step_index": 3,
+        "action_label": "check_status",
+        "target": "edge_0",
+        "tool_success": true,
+        "tool_data": {
+          "device_id": "edge_0",
+          "status": "down",
+          "ip_address": "192.168.1.2",
+          "device_type": "switch"
+        }
+      },
+      "interfaces_anchor": {
+        "step_index": 9,
+        "action_label": "check_interfaces",
+        "target": "edge_0",
+        "tool_success": false,
+        "tool_data": {
+          "error": "Device edge_0 is down"
+        }
+      }
+    },
+    "interpretation": "If type probe succeeds after diagnostics but PPO predicts performance_degradation, failure is policy mapping (action/reward), not missing evidence."
+  },
+  "performance": {
+    "network_seed": 42,
+    "locations": [
+      "center->edge_0",
+      "center->edge_1",
+      "center->edge_2"
+    ],
+    "post_scan_location_probe": {
+      "cv_accuracy": 0.0,
+      "cv_std": 0.0,
+      "n_samples": 3,
+      "cv_folds": 3
+    },
+    "post_interfaces_location_probe": {
+      "cv_accuracy": 0.0,
+      "cv_std": 0.0,
+      "n_samples": 3,
+      "cv_folds": 3
+    },
+    "interface_latency_signatures": [
+      {
+        "fault_location": "center->edge_0",
+        "center_interfaces": {
+          "step_index": 8,
+          "action_label": "check_interfaces",
+          "target": "center",
+          "tool_success": true,
+          "tool_data": {
+            "device_id": "center",
+            "total_interfaces": 5,
+            "interfaces": [
+              {
+                "interface": "eth-edge_0",
+                "destination": "edge_0",
+                "status": "up",
+                "bandwidth_mbps": 282.27902518542805,
+                "latency_ms": 23.909680907943628
+              },
+              {
+                "interface": "eth-edge_1",
+                "destination": "edge_1",
+                "status": "up",
+                "bandwidth_mbps": 111.47022440979242,
+                "latency_ms": 3.8330048510045414
+              },
+              {
+                "interface": "eth-edge_2",
+                "destination": "edge_2",
+                "status": "up",
+                "bandwidth_mbps": 96.06944430312198,
+                "latency_ms": 2.398648188583717
+              },
+              {
+                "interface": "eth-edge_3",
+                "destination": "edge_3",
+                "status": "up",
+                "bandwidth_mbps": 102.75828746297653,
+                "latency_ms": 1.5469740202583282
+              },
+              {
+                "interface": "eth-edge_4",
+                "destination": "edge_4",
+                "status": "up",
+                "bandwidth_mbps": 36.27060998702499,
+                "latency_ms": 1.3947694280899183
+              }
+            ],
+            "up_interfaces": 5,
+            "down_interfaces": 0
+          }
+        }
+      },
+      {
+        "fault_location": "center->edge_1",
+        "center_interfaces": {
+          "step_index": 8,
+          "action_label": "check_interfaces",
+          "target": "center",
+          "tool_success": true,
+          "tool_data": {
+            "device_id": "center",
+            "total_interfaces": 5,
+            "interfaces": [
+              {
+                "interface": "eth-edge_0",
+                "destination": "edge_0",
+                "status": "up",
+                "bandwidth_mbps": 282.27902518542805,
+                "latency_ms": 1.5044483216697024
+              },
+              {
+                "interface": "eth-edge_1",
+                "destination": "edge_1",
+                "status": "up",
+                "bandwidth_mbps": 111.47022440979242,
+                "latency_ms": 60.916630758314085
+              },
+              {
+                "interface": "eth-edge_2",
+                "destination": "edge_2",
+                "status": "up",
+                "bandwidth_mbps": 96.06944430312198,
+                "latency_ms": 2.398648188583717
+              },
+              {
+                "interface": "eth-edge_3",
+                "destination": "edge_3",
+                "status": "up",
+                "bandwidth_mbps": 102.75828746297653,
+                "latency_ms": 1.5469740202583282
+              },
+              {
+                "interface": "eth-edge_4",
+                "destination": "edge_4",
+                "status": "up",
+                "bandwidth_mbps": 36.27060998702499,
+                "latency_ms": 1.3947694280899183
+              }
+            ],
+            "up_interfaces": 5,
+            "down_interfaces": 0
+          }
+        }
+      },
+      {
+        "fault_location": "center->edge_2",
+        "center_interfaces": {
+          "step_index": 8,
+          "action_label": "check_interfaces",
+          "target": "center",
+          "tool_success": true,
+          "tool_data": {
+            "device_id": "center",
+            "total_interfaces": 5,
+            "interfaces": [
+              {
+                "interface": "eth-edge_0",
+                "destination": "edge_0",
+                "status": "up",
+                "bandwidth_mbps": 282.27902518542805,
+                "latency_ms": 1.5044483216697024
+              },
+              {
+                "interface": "eth-edge_1",
+                "destination": "edge_1",
+                "status": "up",
+                "bandwidth_mbps": 111.47022440979242,
+                "latency_ms": 3.8330048510045414
+              },
+              {
+                "interface": "eth-edge_2",
+                "destination": "edge_2",
+                "status": "up",
+                "bandwidth_mbps": 96.06944430312198,
+                "latency_ms": 38.12089253807211
+              },
+              {
+                "interface": "eth-edge_3",
+                "destination": "edge_3",
+                "status": "up",
+                "bandwidth_mbps": 102.75828746297653,
+                "latency_ms": 1.5469740202583282
+              },
+              {
+                "interface": "eth-edge_4",
+                "destination": "edge_4",
+                "status": "up",
+                "bandwidth_mbps": 36.27060998702499,
+                "latency_ms": 1.3947694280899183
+              }
+            ],
+            "up_interfaces": 5,
+            "down_interfaces": 0
+          }
+        }
+      }
+    ],
+    "ppo_fixed_guess": "edge_1->center (100% of perf-only eval episodes)",
+    "interpretation": "If location probe is low after scan but high after check_interfaces(center), PPO type shortcut without location tools explains 19% DSR."
+  },
+  "misconfiguration_ppo": {
+    "n_episodes": 100,
+    "wrong_type_predictions": {
+      "performance_degradation": 40,
+      "link_failure": 38
+    },
+    "dominant_wrong_patterns": {
+      "edge_1|link_failure|edge_1->center": 23,
+      "edge_4|performance_degradation|edge_4->center": 22,
+      "edge_0|performance_degradation|edge_0->center": 18,
+      "center|link_failure|edge_1->center": 15
+    },
+    "note": "Wrong-type predictions usually preserve location in target (edge_X or edge_X->center), matching scan-visible missing/blocked link pattern."
+  },
+  "device_ppo": {
+    "predicted_type_distribution": {
+      "performance_degradation": 100
+    },
+    "predicted_location_top": {
+      "edge_4->edge_0": 85,
+      "center->edge_0": 15
+    },
+    "note": "Device-only model always predicted performance_degradation despite using ping/interfaces."
+  }
+}

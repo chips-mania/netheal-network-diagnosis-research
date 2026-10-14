@@ -89,7 +89,7 @@ def _up_undirected_ping_pairs(root, connected: Set[Tuple[str, str]]) -> List[Tup
     """One directed ping per undirected up/discovered edge, high-degree first."""
     candidates: Set[Tuple[str, str]] = set()
     for a, b in _nominal_directed_edges(root):
-        if root.network.is_connection_up(a, b) or (a, b) in connected:
+        if (a, b) in connected:
             candidates.add((a, b))
     if connected:
         candidates = {(a, b) for (a, b) in candidates if (a, b) in connected}
@@ -378,7 +378,7 @@ class RuleAgentV2:
 
         if devices:
             for a, b in sorted(_nominal_directed_edges(root)):
-                if root.network.is_connection_up(a, b):
+                if (a, b) in _connected_pairs(structured_obs(env)):
                     return find_diagnosis(
                         root, FaultType.PERFORMANCE_DEGRADATION.value, f"{a}->{b}"
                     )

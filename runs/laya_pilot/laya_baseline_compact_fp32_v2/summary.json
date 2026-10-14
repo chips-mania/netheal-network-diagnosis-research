@@ -1,0 +1,52 @@
+{
+  "episodes": 64,
+  "exact": 0.0,
+  "type_accuracy": 0.0,
+  "location_accuracy": 0.0,
+  "fault_macro_f1": 0.0,
+  "termination_counts": {
+    "step_limit": 64
+  },
+  "wrong_diagnosis_rate": 0.0,
+  "mean_seconds": 20.0790039421874,
+  "p95_seconds": 34.72076370500108,
+  "mean_tool_calls": 40.0,
+  "mean_tool_cost": 20.0,
+  "repeated_tool_rate": 0.969921875,
+  "api_cost_usd": 0,
+  "local_compute_cost_usd": null,
+  "conditions": {
+    "linear_6": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "mesh_10": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "mesh_6": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "random_10": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "random_6": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "star_10": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "star_12": {
+      "n": 8,
+      "exact": 0.0
+    },
+    "star_6": {
+      "n": 8,
+      "exact": 0.0
+    }
+  }
+}

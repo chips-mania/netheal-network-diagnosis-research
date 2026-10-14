@@ -1,0 +1,658 @@
+{
+  "star_6": {
+    "star_augmentation_renamed": {
+      "delta": 0.3466666666666667,
+      "interval": [
+        0.2,
+        0.48333333333333334
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.21,
+        0.46,
+        0.37
+      ],
+      "verdict": "improvement"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.08666666666666667,
+      "interval": [
+        -0.02,
+        0.20333333333333334
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.07,
+        0.02,
+        0.17
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_original": {
+      "delta": 0.07833333333333334,
+      "interval": [
+        0.02,
+        0.14
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.06,
+        0.135,
+        0.04
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_removed": {
+      "delta": 0.0,
+      "interval": [
+        -0.016666666666666666,
+        0.016666666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.0,
+        0.01,
+        -0.01
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_augmented": {
+      "delta": -0.09,
+      "interval": [
+        -0.1817083333333332,
+        -0.008333333333333333
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.0,
+        -0.145,
+        -0.125
+      ],
+      "verdict": "deterioration"
+    }
+  },
+  "star_10": {
+    "star_augmentation_renamed": {
+      "delta": 0.27666666666666667,
+      "interval": [
+        -0.07,
+        0.5566666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.38,
+        0.55,
+        -0.1
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.24,
+      "interval": [
+        0.09,
+        0.37
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.12,
+        0.3,
+        0.3
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_original": {
+      "delta": 0.021666666666666667,
+      "interval": [
+        -0.19833333333333333,
+        0.18837500000000015
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.23,
+        0.17,
+        0.125
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_removed": {
+      "delta": -0.09,
+      "interval": [
+        -0.355,
+        0.095
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.395,
+        0.035,
+        0.09
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_augmented": {
+      "delta": 0.056666666666666664,
+      "interval": [
+        -0.28170833333333317,
+        0.51
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.3,
+        -0.075,
+        0.545
+      ],
+      "verdict": "inconclusive"
+    }
+  },
+  "star_12": {
+    "star_augmentation_renamed": {
+      "delta": 0.12666666666666668,
+      "interval": [
+        -0.15666666666666668,
+        0.5302500000000009
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.01,
+        0.55,
+        -0.16
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.32666666666666666,
+      "interval": [
+        0.22,
+        0.44666666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.27,
+        0.41,
+        0.3
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_original": {
+      "delta": 0.028333333333333332,
+      "interval": [
+        -0.08833333333333333,
+        0.17
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.07,
+        -0.035,
+        0.19
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_removed": {
+      "delta": 0.041666666666666664,
+      "interval": [
+        -0.34,
+        0.345
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.38,
+        0.14,
+        0.365
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_augmented": {
+      "delta": 0.20833333333333334,
+      "interval": [
+        -0.105,
+        0.655
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.045,
+        -0.11,
+        0.69
+      ],
+      "verdict": "inconclusive"
+    }
+  },
+  "linear_6": {
+    "star_augmentation_renamed": {
+      "delta": 0.03666666666666667,
+      "interval": [
+        -0.09,
+        0.15
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.08,
+        0.05,
+        0.14
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.17,
+      "interval": [
+        0.08333333333333333,
+        0.2633333333333333
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.14,
+        0.14,
+        0.23
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_original": {
+      "delta": 0.7433333333333333,
+      "interval": [
+        0.625,
+        0.835
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.635,
+        0.78,
+        0.815
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_removed": {
+      "delta": 0.76,
+      "interval": [
+        0.6733333333333333,
+        0.835
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.705,
+        0.785,
+        0.79
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_augmented": {
+      "delta": 0.775,
+      "interval": [
+        0.7116666666666667,
+        0.835
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.77,
+        0.78,
+        0.775
+      ],
+      "verdict": "improvement"
+    }
+  },
+  "mesh_6": {
+    "star_augmentation_renamed": {
+      "delta": 0.08,
+      "interval": [
+        -0.09,
+        0.24
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.08,
+        0.09,
+        0.23
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.06666666666666667,
+      "interval": [
+        -0.023333333333333334,
+        0.16333333333333333
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.04,
+        0.06,
+        0.1
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_original": {
+      "delta": 0.41333333333333333,
+      "interval": [
+        0.27,
+        0.5316666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.28,
+        0.475,
+        0.485
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_removed": {
+      "delta": 0.485,
+      "interval": [
+        0.34,
+        0.6167083333333335
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.385,
+        0.485,
+        0.585
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_augmented": {
+      "delta": 0.42,
+      "interval": [
+        0.32,
+        0.5200416666666668
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.415,
+        0.445,
+        0.4
+      ],
+      "verdict": "improvement"
+    }
+  },
+  "mesh_10": {
+    "star_augmentation_renamed": {
+      "delta": 0.01,
+      "interval": [
+        -0.03333333333333333,
+        0.056666666666666664
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.03,
+        0.01,
+        0.05
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": -0.02,
+      "interval": [
+        -0.11666666666666667,
+        0.08
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.06,
+        -0.1,
+        -0.02
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_original": {
+      "delta": 0.15833333333333333,
+      "interval": [
+        0.09833333333333333,
+        0.22833333333333333
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.17,
+        0.195,
+        0.11
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_removed": {
+      "delta": 0.15,
+      "interval": [
+        0.056625000000000154,
+        0.26166666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.26,
+        0.1,
+        0.09
+      ],
+      "verdict": "improvement"
+    },
+    "diversity_augmented": {
+      "delta": 0.1,
+      "interval": [
+        0.0033333333333333335,
+        0.22166666666666668
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.225,
+        0.05,
+        0.025
+      ],
+      "verdict": "improvement"
+    }
+  },
+  "random_6": {
+    "star_augmentation_renamed": {
+      "delta": 0.0033333333333333335,
+      "interval": [
+        -0.16008333333333302,
+        0.14
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.18,
+        0.09,
+        0.1
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": -0.023333333333333334,
+      "interval": [
+        -0.16,
+        0.13008333333333363
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.15,
+        -0.12,
+        -0.1
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_original": {
+      "delta": -0.0016666666666666668,
+      "interval": [
+        -0.135,
+        0.11166666666666666
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.135,
+        0.09,
+        0.04
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_removed": {
+      "delta": 0.058333333333333334,
+      "interval": [
+        -0.03333333333333333,
+        0.16
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.14,
+        0.04,
+        -0.005
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_augmented": {
+      "delta": -0.013333333333333334,
+      "interval": [
+        -0.1750416666666665,
+        0.1817083333333335
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.19,
+        -0.06,
+        -0.17
+      ],
+      "verdict": "inconclusive"
+    }
+  },
+  "random_10": {
+    "star_augmentation_renamed": {
+      "delta": 0.02,
+      "interval": [
+        -0.06666666666666667,
+        0.11
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        -0.07,
+        0.02,
+        0.11
+      ],
+      "verdict": "inconclusive"
+    },
+    "mixed_augmentation_renamed": {
+      "delta": 0.023333333333333334,
+      "interval": [
+        -0.06,
+        0.13
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.13,
+        -0.01,
+        -0.05
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_original": {
+      "delta": 0.03166666666666667,
+      "interval": [
+        -0.005,
+        0.06666666666666667
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.02,
+        0.03,
+        0.045
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_removed": {
+      "delta": 0.07,
+      "interval": [
+        -0.04,
+        0.2
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.21,
+        0.03,
+        -0.03
+      ],
+      "verdict": "inconclusive"
+    },
+    "diversity_augmented": {
+      "delta": 0.02666666666666667,
+      "interval": [
+        -0.09166666666666666,
+        0.16837500000000016
+      ],
+      "coverage": 0.95,
+      "replicas": 3,
+      "paired_scenarios": 100,
+      "per_replica_delta": [
+        0.18,
+        0.0,
+        -0.1
+      ],
+      "verdict": "inconclusive"
+    }
+  }
+}

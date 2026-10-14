@@ -1,0 +1,12 @@
+{
+  "case": "00bd290a-df64-46a6-8f06-f087bde022a9",
+  "concurrency": 1,
+  "fixed_sleep_seconds": 0,
+  "source_sha256": "32e96d137362aaabf301c8de1024a87aed0d5862cac67b7e0c5be6ee41b2d711",
+  "change": "Only fixed sleep replaced with asyncio.sleep(0); timing wrappers added.",
+  "retry": false,
+  "max_turns": 100,
+  "deadline_seconds": 1200,
+  "timing": "Exclusive nested wall time; imports/snapshot loading excluded; actual tools executed.",
+  "official_limits_checked": "https://docs.typesafe.ai/models: 80 requests/s, 100K tokens/s on 2026-10-13"
+}

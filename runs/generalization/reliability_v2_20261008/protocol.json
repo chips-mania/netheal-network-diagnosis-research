@@ -1,0 +1,97 @@
+{
+  "out": "results/reliability_v2_20261008",
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "demos_per_n": 700,
+  "epochs": 80,
+  "continuation_epochs": 40,
+  "eval_episodes": 200,
+  "budget": 40,
+  "smoke": false,
+  "train_seed_base": 300000,
+  "test_seed_base": 900000,
+  "conditions": [
+    [
+      "star_6",
+      "star",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_8",
+      "star",
+      8,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_10",
+      "star",
+      10,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_12",
+      "star",
+      12,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "linear_6",
+      "linear",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "mesh_6",
+      "mesh",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "random_6",
+      "random",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_10_mild",
+      "star",
+      10,
+      [
+        2.0,
+        5.0
+      ]
+    ]
+  ],
+  "known_inventory": true,
+  "tool_rng": "semantic-action/occurrence keyed",
+  "input": "observed-only; slot3 raw link-down disabled; step_count fixed",
+  "training": "same balanced successful expert trajectories across all seeds/models",
+  "updates": "fixed optimizer updates per arm; oversampling changes sampling probabilities only",
+  "network_probe_repeats": 5,
+  "clock": "host wall-clock stored separately from simulated network delay"
+}

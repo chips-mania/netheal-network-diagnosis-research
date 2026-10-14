@@ -1,0 +1,2 @@
+﻿name, driver_version, memory.total [MiB]
+NVIDIA GeForce GTX 1660 SUPER, 591.86, 6144 MiB

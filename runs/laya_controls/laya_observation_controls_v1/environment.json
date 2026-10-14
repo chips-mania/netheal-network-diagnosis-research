@@ -1,0 +1,13 @@
+{
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\leejaewon\\Desktop\\leejaewon\\projects\\netheal-network-diagnosis-research\\.runtime\\laya-venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "laya": "0.4.1",
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.6",
+    "transformers": "5.13.0",
+    "gymnasium": "1.4.0"
+  },
+  "api_calls": 0
+}

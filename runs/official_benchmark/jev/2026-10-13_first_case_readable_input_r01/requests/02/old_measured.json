@@ -1,0 +1,17 @@
+{
+  "choice": "c002",
+  "selected": "discover_neighbors",
+  "probabilities": {
+    "c000": 0.02,
+    "c001": 0.0,
+    "c002": 0.47,
+    "c003": 0.12,
+    "c004": 0.04,
+    "c005": 0.33,
+    "c006": 0.01,
+    "c007": 0.01
+  },
+  "calls": 1,
+  "http_seconds": 0.20105720000037763,
+  "input_tokens": 2413
+}

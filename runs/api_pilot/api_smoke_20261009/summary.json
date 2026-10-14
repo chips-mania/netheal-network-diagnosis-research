@@ -1,0 +1,44 @@
+{
+  "gpt": {
+    "episodes": 1,
+    "exact": 1.0,
+    "correct": 1,
+    "termination_counts": {
+      "diagnosed": 1
+    },
+    "mean_seconds": 26.04355680000299,
+    "p95_seconds": 26.04355680000299,
+    "mean_tool_calls": 6.0,
+    "known_estimated_usd": 0.036068,
+    "unknown_cost_requests": 0,
+    "mean_estimated_usd": 0.036068,
+    "usd_per_correct": 0.036068,
+    "conditions": {
+      "star_6": {
+        "n": 1,
+        "exact": 1.0
+      }
+    }
+  },
+  "jev": {
+    "episodes": 1,
+    "exact": 0.0,
+    "correct": 0,
+    "termination_counts": {
+      "diagnosed": 1
+    },
+    "mean_seconds": 0.6435963999974774,
+    "p95_seconds": 0.6435963999974774,
+    "mean_tool_calls": 2.0,
+    "known_estimated_usd": 0.00042798000000000006,
+    "unknown_cost_requests": 0,
+    "mean_estimated_usd": 0.00042798000000000006,
+    "usd_per_correct": null,
+    "conditions": {
+      "star_6": {
+        "n": 1,
+        "exact": 0.0
+      }
+    }
+  }
+}

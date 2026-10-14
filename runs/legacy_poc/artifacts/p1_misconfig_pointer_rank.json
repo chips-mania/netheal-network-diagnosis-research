@@ -1,0 +1,441 @@
+{
+  "narrative": "After asym-missing cue @N10, GT spoke rank collapses (top-1 very low) \u2192 **cue\u2192node binding** fails to generalize under scale.",
+  "online": {
+    "baseline": {
+      "6": {
+        "n_devices": 6,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9762684738636017,
+          "margin_mean": 6.664833679199218
+        },
+        "first_cue_spoke": {
+          "n": 41,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9710591144678069,
+          "margin_mean": 4.229837184999047
+        },
+        "first_cue_center": {
+          "n": 9,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 1.0,
+          "margin_mean": 17.75759548611111
+        },
+        "when_status_chosen": {
+          "n": 100,
+          "gt_top1": 0.5,
+          "gt_mean_rank": 2.1
+        },
+        "when_iface_chosen": {
+          "n": 50,
+          "chose_gt": 1.0,
+          "gt_top1": 1.0,
+          "gt_mean_rank": 1.0
+        }
+      },
+      "8": {
+        "n_devices": 8,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 1.48,
+          "top1": 0.76,
+          "top3": 1.0,
+          "p_gt_mean": 0.602701923623681,
+          "margin_mean": 1.6641270446777343
+        },
+        "first_cue_spoke": {
+          "n": 45,
+          "mean_rank": 1.5333333333333334,
+          "top1": 0.7333333333333333,
+          "top3": 1.0,
+          "p_gt_mean": 0.5585577194061544,
+          "margin_mean": 0.11473507351345485
+        },
+        "first_cue_center": {
+          "n": 5,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9999997615814209,
+          "margin_mean": 15.60865478515625
+        },
+        "when_status_chosen": {
+          "n": 302,
+          "gt_top1": 0.347682119205298,
+          "gt_mean_rank": 2.0397350993377485
+        },
+        "when_iface_chosen": {
+          "n": 80,
+          "chose_gt": 0.425,
+          "gt_top1": 0.425,
+          "gt_mean_rank": 1.6125
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 2.92,
+          "top1": 0.18,
+          "top3": 0.6,
+          "p_gt_mean": 0.20444529408589004,
+          "margin_mean": -1.8311827087402344
+        },
+        "first_cue_spoke": {
+          "n": 49,
+          "mean_rank": 2.9591836734693877,
+          "top1": 0.16326530612244897,
+          "top3": 0.5918367346938775,
+          "p_gt_mean": 0.1882094886267976,
+          "margin_mean": -2.181243740782446
+        },
+        "first_cue_center": {
+          "n": 1,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9999997615814209,
+          "margin_mean": 15.321807861328125
+        },
+        "when_status_chosen": {
+          "n": 609,
+          "gt_top1": 0.17733990147783252,
+          "gt_mean_rank": 5.0344827586206895
+        },
+        "when_iface_chosen": {
+          "n": 91,
+          "chose_gt": 0.08791208791208792,
+          "gt_top1": 0.08791208791208792,
+          "gt_mean_rank": 3.0
+        }
+      }
+    },
+    "generic": {
+      "6": {
+        "n_devices": 6,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.999532300233841,
+          "margin_mean": 9.919290161132812
+        },
+        "first_cue_spoke": {
+          "n": 41,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9994296344315133,
+          "margin_mean": 7.620852214534108
+        },
+        "first_cue_center": {
+          "n": 9,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 1.0,
+          "margin_mean": 20.389951917860245
+        },
+        "when_status_chosen": {
+          "n": 100,
+          "gt_top1": 0.5,
+          "gt_mean_rank": 2.18
+        },
+        "when_iface_chosen": {
+          "n": 50,
+          "chose_gt": 1.0,
+          "gt_top1": 1.0,
+          "gt_mean_rank": 1.0
+        }
+      },
+      "8": {
+        "n_devices": 8,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 1.52,
+          "top1": 0.48,
+          "top3": 1.0,
+          "p_gt_mean": 0.4970485546439886,
+          "margin_mean": 1.46831298828125
+        },
+        "first_cue_spoke": {
+          "n": 45,
+          "mean_rank": 1.5777777777777777,
+          "top1": 0.4222222222222222,
+          "top3": 1.0,
+          "p_gt_mean": 0.4411650607155429,
+          "margin_mean": -0.2658359103732639
+        },
+        "first_cue_center": {
+          "n": 5,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 1.0,
+          "margin_mean": 17.075653076171875
+        },
+        "when_status_chosen": {
+          "n": 276,
+          "gt_top1": 0.13043478260869565,
+          "gt_mean_rank": 3.1594202898550723
+        },
+        "when_iface_chosen": {
+          "n": 50,
+          "chose_gt": 0.48,
+          "gt_top1": 0.48,
+          "gt_mean_rank": 2.5
+        }
+      },
+      "10": {
+        "n_devices": 10,
+        "n_episodes": 50,
+        "first_cue_gt": {
+          "n": 50,
+          "mean_rank": 5.48,
+          "top1": 0.02,
+          "top3": 0.36,
+          "p_gt_mean": 0.02695158019039809,
+          "margin_mean": -6.817982788085938
+        },
+        "first_cue_spoke": {
+          "n": 49,
+          "mean_rank": 5.571428571428571,
+          "top1": 0.0,
+          "top3": 0.3469387755102041,
+          "p_gt_mean": 0.007093451606718246,
+          "margin_mean": -7.278953396544164
+        },
+        "first_cue_center": {
+          "n": 1,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9999998807907104,
+          "margin_mean": 15.769577026367188
+        },
+        "when_status_chosen": {
+          "n": 610,
+          "gt_top1": 0.001639344262295082,
+          "gt_mean_rank": 5.678688524590164
+        },
+        "when_iface_chosen": {
+          "n": 46,
+          "chose_gt": 0.021739130434782608,
+          "gt_top1": 0.021739130434782608,
+          "gt_mean_rank": 5.478260869565218
+        }
+      }
+    }
+  },
+  "offline": {
+    "baseline": {
+      "6": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 3.125,
+          "top1": 0.0,
+          "top3": 0.825,
+          "p_gt_mean": 0.00011353917812538805,
+          "margin_mean": -12.21693115234375
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 2.0625,
+          "top1": 0.5,
+          "top3": 0.9125,
+          "p_gt_mean": 0.47878109131204705,
+          "margin_mean": -3.307126522064209
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9984655201435089,
+          "margin_mean": 7.639746952056885
+        },
+        "pred_is_gt_when_status": 0.5,
+        "pred_is_gt_when_iface": 1.0,
+        "n_status": 80,
+        "n_iface": 40
+      },
+      "8": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 4.475,
+          "top1": 0.0,
+          "top3": 0.1,
+          "p_gt_mean": 0.0004698622492706636,
+          "margin_mean": -10.739118957519532
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 2.8375,
+          "top1": 0.45,
+          "top3": 0.55,
+          "p_gt_mean": 0.34656192371554695,
+          "margin_mean": -3.730297088623047
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 1.25,
+          "top1": 0.85,
+          "top3": 1.0,
+          "p_gt_mean": 0.8584166701883078,
+          "margin_mean": 4.180884552001953
+        },
+        "pred_is_gt_when_status": 0.45,
+        "pred_is_gt_when_iface": 0.85,
+        "n_status": 80,
+        "n_iface": 40
+      },
+      "10": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 4.775,
+          "top1": 0.0,
+          "top3": 0.325,
+          "p_gt_mean": 0.001284159478555724,
+          "margin_mean": -9.513076019287109
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 3.6875,
+          "top1": 0.15,
+          "top3": 0.5125,
+          "p_gt_mean": 0.15927438622029094,
+          "margin_mean": -4.414545249938965
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 2.125,
+          "top1": 0.825,
+          "top3": 0.825,
+          "p_gt_mean": 0.7402433925832156,
+          "margin_mean": 1.3491708755493164
+        },
+        "pred_is_gt_when_status": 0.15,
+        "pred_is_gt_when_iface": 0.825,
+        "n_status": 80,
+        "n_iface": 40
+      }
+    },
+    "generic": {
+      "6": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 3.575,
+          "top1": 0.0,
+          "top3": 0.5,
+          "p_gt_mean": 8.066104400126715e-08,
+          "margin_mean": -18.894017028808594
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 2.2875,
+          "top1": 0.5,
+          "top3": 0.75,
+          "p_gt_mean": 0.49974598074757326,
+          "margin_mean": -4.632579612731933
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9999947100877762,
+          "margin_mean": 13.138184547424316
+        },
+        "pred_is_gt_when_status": 0.5,
+        "pred_is_gt_when_iface": 1.0,
+        "n_status": 80,
+        "n_iface": 40
+      },
+      "8": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 4.025,
+          "top1": 0.0,
+          "top3": 0.175,
+          "p_gt_mean": 1.6445159985514768e-07,
+          "margin_mean": -16.646251106262206
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 2.7375,
+          "top1": 0.275,
+          "top3": 0.5875,
+          "p_gt_mean": 0.2846462512987483,
+          "margin_mean": -6.786968994140625
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9994317561388015,
+          "margin_mean": 9.044575500488282
+        },
+        "pred_is_gt_when_status": 0.275,
+        "pred_is_gt_when_iface": 1.0,
+        "n_status": 80,
+        "n_iface": 40
+      },
+      "10": {
+        "ok_episodes": 40,
+        "tries": 40,
+        "first_cue_gt": {
+          "n": 40,
+          "mean_rank": 4.625,
+          "top1": 0.0,
+          "top3": 0.125,
+          "p_gt_mean": 1.9840773340679824e-07,
+          "margin_mean": -16.162189102172853
+        },
+        "at_expert_status": {
+          "n": 80,
+          "mean_rank": 5.125,
+          "top1": 0.0625,
+          "top3": 0.2375,
+          "p_gt_mean": 0.06602346412150151,
+          "margin_mean": -10.354942893981933
+        },
+        "at_expert_iface": {
+          "n": 40,
+          "mean_rank": 1.0,
+          "top1": 1.0,
+          "top3": 1.0,
+          "p_gt_mean": 0.9748033627867698,
+          "margin_mean": 5.244684791564941
+        },
+        "pred_is_gt_when_status": 0.0625,
+        "pred_is_gt_when_iface": 1.0,
+        "n_status": 80,
+        "n_iface": 40
+      }
+    }
+  }
+}

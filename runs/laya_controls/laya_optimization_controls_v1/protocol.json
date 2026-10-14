@@ -1,0 +1,55 @@
+{
+  "arms": {
+    "reference": {
+      "epochs": 16,
+      "head_lr": 0.0001,
+      "shuffle_options": [
+        "choice"
+      ]
+    },
+    "head_lr_1e3": {
+      "epochs": 16,
+      "head_lr": 0.001,
+      "shuffle_options": [
+        "choice"
+      ]
+    },
+    "updates_1024": {
+      "epochs": 64,
+      "head_lr": 0.0001,
+      "shuffle_options": [
+        "choice"
+      ]
+    },
+    "fixed_order": {
+      "epochs": 16,
+      "head_lr": 0.0001,
+      "shuffle_options": []
+    }
+  },
+  "seeds": [
+    41,
+    52,
+    63
+  ],
+  "train_n": 16,
+  "validation_n": 32,
+  "encoder": "last block only",
+  "encoder_lr": 2.5e-05,
+  "loss": "soft-ce",
+  "threshold": 0.95,
+  "comparison": "one factor at a time against reference; no interaction inference",
+  "budget_caveat": "Cosine scheduler stretches with epochs; longer run changes the LR trajectory too.",
+  "tests": [
+    "canonical accuracy/CE/Brier/ECE",
+    "all 24 option orders",
+    "signal removal with same case IDs"
+  ],
+  "data_hashes": {
+    "train": "3e2fec58c2254cbb76ab8d5e6c640b38c69e5bab6c3622db0f3d3c66d0628c3b",
+    "validation": "9377b410b56ad30f661de5589dd21b94eb9cfaa554d79ff1cc068d08bd19ddb2"
+  },
+  "base_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "script_sha256": "a7817eb32a4362e80d96c5e8591ccbd8a799b7f314a5af357ff36805aaceedfa",
+  "warning": "Synthetic association and reused development split; NOT network diagnosis or generalization performance."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "episodes": 100,
+  "requests_verified": 1946,
+  "measurements_verified": 975,
+  "source_hashes_verified": true,
+  "every_input_equals_raw_observation_prefix_reduction": true,
+  "no_partition_decisions": true
+}

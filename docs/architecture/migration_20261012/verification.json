@@ -1,0 +1,15 @@
+﻿{
+  "status": "passed",
+  "actions": 115,
+  "action_types": {
+    "hardlink": 69,
+    "junction": 31,
+    "document": 15
+  },
+  "moved_files": 2362,
+  "moved_bytes": 11403449451,
+  "protected_hashes_unchanged": 66,
+  "local_links_checked": 164,
+  "broken_links": [],
+  "experiment_entrypoints": 9
+}

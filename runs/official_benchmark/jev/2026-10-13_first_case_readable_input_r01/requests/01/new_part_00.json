@@ -1,0 +1,49 @@
+{
+  "request": {
+    "model": "jev-1.13.0",
+    "state": "{\"task_description\":\"Diagnose the network fault. The simulated network has an injected fault (device failure, link failure, misconfiguration, or performance degradation). Use the diagnostic tools to explore the network, identify the fault, and submit your diagnosis using the submit_diagnosis tool.\",\"objective\":\"Identify the fault type and location within 100 tool calls. Call submit_diagnosis(fault_type, location) with your answer. Each tool call (except list_actions) consumes one step from your budget.\",\"hint\":\"Internal tools and the intranet keep timing out—pages never load—but Outlook and external sites work. People on my side of the office are all seeing it right now.\",\"network_size\":8,\"max_steps\":100,\"tool_schemas\":[{\"name\":\"list_actions\",\"description\":\"List valid actions for discovered devices.\",\"inputSchema\":{\"properties\":{},\"type\":\"object\"}},{\"name\":\"scan_network\",\"description\":\"Discover network devices.\",\"inputSchema\":{\"properties\":{},\"type\":\"object\"}},{\"name\":\"discover_neighbors\",\"description\":\"Find neighbors of a device.\",\"inputSchema\":{\"properties\":{\"device\":{\"type\":\"string\"}},\"required\":[\"device\"],\"type\":\"object\"}},{\"name\":\"ping\",\"description\":\"Test connectivity between two devices.\",\"inputSchema\":{\"properties\":{\"source\":{\"type\":\"string\"},\"destination\":{\"type\":\"string\"}},\"required\":[\"source\",\"destination\"],\"type\":\"object\"}},{\"name\":\"traceroute\",\"description\":\"Trace path between two devices.\",\"inputSchema\":{\"properties\":{\"source\":{\"type\":\"string\"},\"destination\":{\"type\":\"string\"}},\"required\":[\"source\",\"destination\"],\"type\":\"object\"}},{\"name\":\"check_status\",\"description\":\"Check device operational status.\",\"inputSchema\":{\"properties\":{\"device\":{\"type\":\"string\"}},\"required\":[\"device\"],\"type\":\"object\"}},{\"name\":\"check_interfaces\",\"description\":\"Inspect device network interfaces.\",\"inputSchema\":{\"properties\":{\"device\":{\"type\":\"string\"}},\"required\":[\"device\"],\"type\":\"object\"}},{\"name\":\"submit_diagnosis\",\"description\":\"Submit final fault diagnosis. Ends the episode.\",\"inputSchema\":{\"properties\":{\"fault_type\":{\"type\":\"string\"},\"location\":{\"type\":\"string\"}},\"required\":[\"fault_type\",\"location\"],\"type\":\"object\"}}],\"solver_turn\":0,\"history\":[]}",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "You are an AI agent that completes tasks using available tools. Read the task and objective. Use the tool descriptions and observed results to choose the next tool or its arguments. Complete the task before the budget runs out. Return a choice; no explanation text is required. Select the next tool.",
+        "criteria": {
+          "c000": "list_actions",
+          "c001": "scan_network",
+          "c002": "discover_neighbors",
+          "c003": "ping",
+          "c004": "traceroute",
+          "c005": "check_status",
+          "c006": "check_interfaces",
+          "c007": "submit_diagnosis"
+        }
+      }
+    }
+  },
+  "weight": 1,
+  "seconds": 0.1895795000000362,
+  "status": 200,
+  "response": {
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "c001",
+        "confidence": 0.97,
+        "probabilities": {
+          "c000": 0.03,
+          "c001": 0.97,
+          "c002": 0.0,
+          "c003": 0.0,
+          "c004": 0.0,
+          "c005": 0.0,
+          "c006": 0.0,
+          "c007": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 941,
+      "output_tokens": 100
+    },
+    "model": "jev-1.13.0"
+  }
+}

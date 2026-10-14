@@ -1,0 +1,8 @@
+[
+  {
+    "snapshot_id": "0f3393c8-6cc3-4016-a758-d0b60ffed2db",
+    "partitions": 2,
+    "status": "accepted",
+    "mode": "tree"
+  }
+]

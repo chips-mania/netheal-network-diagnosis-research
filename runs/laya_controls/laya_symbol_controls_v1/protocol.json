@@ -1,0 +1,21 @@
+{
+  "arms": [
+    "frozen",
+    "last_block"
+  ],
+  "seeds": [
+    41,
+    52,
+    63
+  ],
+  "epochs": 16,
+  "updates": 256,
+  "loss": "soft-ce",
+  "max_len": 512,
+  "head_max_len": 512,
+  "train_n": 16,
+  "validation_n": 32,
+  "threshold": 0.95,
+  "script_sha256": "3e04473e608a135450299f7e0ffcd42da51d4ef0d5be32003f3347352d1934fb",
+  "warning": "Synthetic arbitrary signal association, NOT network diagnosis accuracy. Different length and budget from prior controls."
+}

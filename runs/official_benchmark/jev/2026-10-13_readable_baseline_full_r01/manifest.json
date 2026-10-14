@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "evaluated": 100,
+  "total": 100,
+  "success": 36,
+  "statuses": {
+    "completed": 60,
+    "Jev HTTP 400": 40
+  }
+}

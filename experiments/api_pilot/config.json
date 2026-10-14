@@ -1,0 +1,15 @@
+{
+  "description": "Sol·Jev 예비 비교. 실행 시 유료 API를 사용할 수 있음.",
+  "stages": {
+    "run": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.run_api_comparison",
+      "cwd": "netheal-topology-generalization"
+    },
+    "report": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.report_api_comparison",
+      "cwd": "netheal-topology-generalization"
+    }
+  }
+}

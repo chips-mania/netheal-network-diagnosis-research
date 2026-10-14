@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netheal-research"
+version = "0.1.0"
+description = "Network diagnosis research and reproducible experiment organization"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["netheal_research*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "netheal-topology-generalization/tests"]
+pythonpath = ["src", "netheal-topology-generalization", "netheal-ai-agent-benchmark"]

@@ -1,0 +1,456 @@
+{
+  "overall": {
+    "gpt": {
+      "n": 1,
+      "exact": 1.0,
+      "exact_wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "type_accuracy": 1.0,
+      "location_accuracy": 1.0,
+      "macro_type_f1": 0.25,
+      "wrong_diagnosis_rate": 0.0,
+      "termination_counts": {
+        "diagnosed": 1
+      },
+      "episode_seconds": {
+        "n": 1,
+        "mean": 26.04355680000299,
+        "p50": 26.04355680000299,
+        "p95": 26.04355680000299
+      },
+      "successful_episode_seconds": {
+        "n": 1,
+        "mean": 26.04355680000299,
+        "p50": 26.04355680000299,
+        "p95": 26.04355680000299
+      },
+      "request_seconds": {
+        "n": 7,
+        "mean": 3.7186083000009864,
+        "p50": 2.959086800001387,
+        "p95": 5.667372640001121
+      },
+      "tool_seconds": {
+        "n": 1,
+        "mean": 0.0023564000075566582,
+        "p50": 0.0023564000075566582,
+        "p95": 0.0023564000075566582
+      },
+      "tool_calls": {
+        "n": 1,
+        "mean": 6.0,
+        "p50": 6.0,
+        "p95": 6.0
+      },
+      "weighted_tool_cost": {
+        "n": 1,
+        "mean": 6.5,
+        "p50": 6.5,
+        "p95": 6.5
+      },
+      "repeat_tool_rate": 0.0,
+      "known_estimated_usd": 0.036068,
+      "unknown_cost_requests": 0,
+      "episode_usd": {
+        "n": 1,
+        "mean": 0.036068,
+        "p50": 0.036068,
+        "p95": 0.036068
+      },
+      "usd_per_correct": 0.036068,
+      "failed_episode_known_usd": 0,
+      "api_requests": 7,
+      "input_tokens": 16044,
+      "output_tokens": 398,
+      "cached_tokens": 0,
+      "reasoning_tokens": 283,
+      "per_fault": {
+        "device_failure": {
+          "n": 1,
+          "exact": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "performance_degradation": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        },
+        "misconfiguration": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        },
+        "link_failure": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        }
+      },
+      "confusion": [
+        {
+          "true": "device_failure",
+          "predicted": "device_failure",
+          "n": 1
+        }
+      ]
+    },
+    "jev": {
+      "n": 1,
+      "exact": 0.0,
+      "exact_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "type_accuracy": 1.0,
+      "location_accuracy": 0.0,
+      "macro_type_f1": 0.25,
+      "wrong_diagnosis_rate": 1.0,
+      "termination_counts": {
+        "diagnosed": 1
+      },
+      "episode_seconds": {
+        "n": 1,
+        "mean": 0.6435963999974774,
+        "p50": 0.6435963999974774,
+        "p95": 0.6435963999974774
+      },
+      "successful_episode_seconds": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      },
+      "request_seconds": {
+        "n": 3,
+        "mean": 0.21260256666816227,
+        "p50": 0.21227750000252854,
+        "p95": 0.23806781000384944
+      },
+      "tool_seconds": {
+        "n": 1,
+        "mean": 0.0009278999932575971,
+        "p50": 0.0009278999932575971,
+        "p95": 0.0009278999932575971
+      },
+      "tool_calls": {
+        "n": 1,
+        "mean": 2.0,
+        "p50": 2.0,
+        "p95": 2.0
+      },
+      "weighted_tool_cost": {
+        "n": 1,
+        "mean": 2.5,
+        "p50": 2.5,
+        "p95": 2.5
+      },
+      "repeat_tool_rate": 0.0,
+      "known_estimated_usd": 0.00042798000000000006,
+      "unknown_cost_requests": 0,
+      "episode_usd": {
+        "n": 1,
+        "mean": 0.00042798000000000006,
+        "p50": 0.00042798000000000006,
+        "p95": 0.00042798000000000006
+      },
+      "usd_per_correct": null,
+      "failed_episode_known_usd": 0.00042798000000000006,
+      "api_requests": 3,
+      "input_tokens": 10190,
+      "output_tokens": 1410,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0,
+      "per_fault": {
+        "device_failure": {
+          "n": 1,
+          "exact": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "performance_degradation": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        },
+        "misconfiguration": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        },
+        "link_failure": {
+          "n": 0,
+          "exact": null,
+          "precision": 0,
+          "recall": null,
+          "f1": 0
+        }
+      },
+      "confusion": [
+        {
+          "true": "device_failure",
+          "predicted": "device_failure",
+          "n": 1
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "star_6": {
+      "gpt": {
+        "n": 1,
+        "exact": 1.0,
+        "exact_wilson95": [
+          0.20654931437723745,
+          1.0
+        ],
+        "type_accuracy": 1.0,
+        "location_accuracy": 1.0,
+        "macro_type_f1": 0.25,
+        "wrong_diagnosis_rate": 0.0,
+        "termination_counts": {
+          "diagnosed": 1
+        },
+        "episode_seconds": {
+          "n": 1,
+          "mean": 26.04355680000299,
+          "p50": 26.04355680000299,
+          "p95": 26.04355680000299
+        },
+        "successful_episode_seconds": {
+          "n": 1,
+          "mean": 26.04355680000299,
+          "p50": 26.04355680000299,
+          "p95": 26.04355680000299
+        },
+        "request_seconds": {
+          "n": 7,
+          "mean": 3.7186083000009864,
+          "p50": 2.959086800001387,
+          "p95": 5.667372640001121
+        },
+        "tool_seconds": {
+          "n": 1,
+          "mean": 0.0023564000075566582,
+          "p50": 0.0023564000075566582,
+          "p95": 0.0023564000075566582
+        },
+        "tool_calls": {
+          "n": 1,
+          "mean": 6.0,
+          "p50": 6.0,
+          "p95": 6.0
+        },
+        "weighted_tool_cost": {
+          "n": 1,
+          "mean": 6.5,
+          "p50": 6.5,
+          "p95": 6.5
+        },
+        "repeat_tool_rate": 0.0,
+        "known_estimated_usd": 0.036068,
+        "unknown_cost_requests": 0,
+        "episode_usd": {
+          "n": 1,
+          "mean": 0.036068,
+          "p50": 0.036068,
+          "p95": 0.036068
+        },
+        "usd_per_correct": 0.036068,
+        "failed_episode_known_usd": 0,
+        "api_requests": 7,
+        "input_tokens": 16044,
+        "output_tokens": 398,
+        "cached_tokens": 0,
+        "reasoning_tokens": 283,
+        "per_fault": {
+          "device_failure": {
+            "n": 1,
+            "exact": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "performance_degradation": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          },
+          "misconfiguration": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          },
+          "link_failure": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          }
+        },
+        "confusion": [
+          {
+            "true": "device_failure",
+            "predicted": "device_failure",
+            "n": 1
+          }
+        ]
+      },
+      "jev": {
+        "n": 1,
+        "exact": 0.0,
+        "exact_wilson95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "type_accuracy": 1.0,
+        "location_accuracy": 0.0,
+        "macro_type_f1": 0.25,
+        "wrong_diagnosis_rate": 1.0,
+        "termination_counts": {
+          "diagnosed": 1
+        },
+        "episode_seconds": {
+          "n": 1,
+          "mean": 0.6435963999974774,
+          "p50": 0.6435963999974774,
+          "p95": 0.6435963999974774
+        },
+        "successful_episode_seconds": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null
+        },
+        "request_seconds": {
+          "n": 3,
+          "mean": 0.21260256666816227,
+          "p50": 0.21227750000252854,
+          "p95": 0.23806781000384944
+        },
+        "tool_seconds": {
+          "n": 1,
+          "mean": 0.0009278999932575971,
+          "p50": 0.0009278999932575971,
+          "p95": 0.0009278999932575971
+        },
+        "tool_calls": {
+          "n": 1,
+          "mean": 2.0,
+          "p50": 2.0,
+          "p95": 2.0
+        },
+        "weighted_tool_cost": {
+          "n": 1,
+          "mean": 2.5,
+          "p50": 2.5,
+          "p95": 2.5
+        },
+        "repeat_tool_rate": 0.0,
+        "known_estimated_usd": 0.00042798000000000006,
+        "unknown_cost_requests": 0,
+        "episode_usd": {
+          "n": 1,
+          "mean": 0.00042798000000000006,
+          "p50": 0.00042798000000000006,
+          "p95": 0.00042798000000000006
+        },
+        "usd_per_correct": null,
+        "failed_episode_known_usd": 0.00042798000000000006,
+        "api_requests": 3,
+        "input_tokens": 10190,
+        "output_tokens": 1410,
+        "cached_tokens": 0,
+        "reasoning_tokens": 0,
+        "per_fault": {
+          "device_failure": {
+            "n": 1,
+            "exact": 0.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "performance_degradation": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          },
+          "misconfiguration": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          },
+          "link_failure": {
+            "n": 0,
+            "exact": null,
+            "precision": 0,
+            "recall": null,
+            "f1": 0
+          }
+        },
+        "confusion": [
+          {
+            "true": "device_failure",
+            "predicted": "device_failure",
+            "n": 1
+          }
+        ]
+      }
+    }
+  },
+  "paired_exploratory": {
+    "exact": {
+      "direction": "GPT minus Jev",
+      "delta": 1.0,
+      "exploratory_98_33_ci": [
+        1.0,
+        1.0
+      ],
+      "paired_cases": 1,
+      "bootstrap": "paired within-condition case resampling"
+    },
+    "wall_seconds": {
+      "direction": "GPT minus Jev",
+      "delta": 25.39996040000551,
+      "exploratory_98_33_ci": [
+        25.39996040000551,
+        25.39996040000551
+      ],
+      "paired_cases": 1,
+      "bootstrap": "paired within-condition case resampling"
+    },
+    "estimated_usd": {
+      "direction": "GPT minus Jev",
+      "delta": 0.03564002,
+      "exploratory_98_33_ci": [
+        0.03564002,
+        0.03564002
+      ],
+      "paired_cases": 1,
+      "bootstrap": "paired within-condition case resampling"
+    }
+  }
+}

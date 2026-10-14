@@ -1,0 +1,17 @@
+{
+  "description": "LAYA 실제 공개 관측 표·문장 대조. 기존 실험 완료.",
+  "stages": {
+    "prepare": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_observation_data.py"
+    },
+    "run": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_observation_controls.py"
+    },
+    "report": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/report_laya_observation_controls.py"
+    }
+  }
+}

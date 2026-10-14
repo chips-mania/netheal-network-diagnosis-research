@@ -1,0 +1,12 @@
+{
+  "selected_episodes": 48,
+  "selected_steps": 258,
+  "question_count": 516,
+  "teacher_kind_counts": {
+    "scan": 48,
+    "ping": 83,
+    "check_status": 67,
+    "diagnose": 48,
+    "check_interfaces": 12
+  }
+}

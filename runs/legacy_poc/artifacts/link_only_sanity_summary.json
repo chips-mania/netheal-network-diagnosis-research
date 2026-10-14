@@ -1,0 +1,84 @@
+{
+  "ppo_stats": {
+    "episodes": 100,
+    "dsr": 1.0,
+    "macro_f1": 0.25,
+    "avg_steps_all": 2.0,
+    "normalized_steps_all": 0.13333333333333308,
+    "tool_cost_index": 0.30000000000000027,
+    "topology_coverage": 0.6999999999999987,
+    "ttd_success": 2.0
+  },
+  "rv_stats": {
+    "episodes": 100,
+    "dsr": 0.03,
+    "macro_f1": 0.14285714285714288,
+    "avg_steps_all": 15.0,
+    "normalized_steps_all": 1.0,
+    "tool_cost_index": 0.2803333333333334,
+    "topology_coverage": 0.7925000000000005,
+    "ttd_success": 15.0
+  },
+  "ppo_behavior": {
+    "first_action_diagnosis_rate": 0.0,
+    "invalid_action_rate": 0.0,
+    "avg_tool_actions_before_diagnosis": 1.0,
+    "avg_tool_actions_before_diagnosis_success_only": 1.0,
+    "scan_usage_rate": 1.0,
+    "ping_usage_rate": 0.0,
+    "traceroute_usage_rate": 0.0,
+    "check_status_usage_rate": 0.0,
+    "check_interfaces_usage_rate": 0.0,
+    "action_type_frequency": {
+      "scan_network": 100
+    },
+    "action_category_frequency": {
+      "topology_discovery": 100,
+      "diagnosis": 100
+    },
+    "predicted_diagnosis_distribution": {
+      "link_failure": 100
+    },
+    "actual_fault_distribution": {
+      "link_failure": 100
+    },
+    "fault_type_dsr": {
+      "link_failure": 1.0
+    },
+    "confusion_matrix": {
+      "link_failure": {
+        "link_failure": 100
+      }
+    }
+  },
+  "loc_analysis": {
+    "actual_location_distribution": {
+      "edge_2->center": 15,
+      "edge_0->center": 13,
+      "center->edge_1": 12,
+      "edge_1->center": 10,
+      "center->edge_0": 10,
+      "edge_3->center": 9,
+      "center->edge_4": 9,
+      "center->edge_2": 8,
+      "edge_4->center": 7,
+      "center->edge_3": 7
+    },
+    "predicted_location_distribution": {
+      "center->edge_2": 23,
+      "center->edge_0": 23,
+      "edge_1->center": 22,
+      "edge_4->center": 16,
+      "center->edge_3": 16
+    },
+    "unique_predicted_locations": 5,
+    "successful_location_matches": 100
+  },
+  "assessment": {
+    "case": "case2_shortcut",
+    "dsr_pass": true,
+    "evidence_gathering": false,
+    "location_diversity": true,
+    "overall_promising": false
+  }
+}

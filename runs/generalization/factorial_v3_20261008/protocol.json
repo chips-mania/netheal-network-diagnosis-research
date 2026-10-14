@@ -1,0 +1,109 @@
+{
+  "out": "results/factorial_v3_20261008",
+  "updates": 6000,
+  "demos_per_n": 704,
+  "episodes": 100,
+  "smoke": false,
+  "replicas": [
+    41,
+    52,
+    63
+  ],
+  "conditions": [
+    [
+      "star_6",
+      "star",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_10",
+      "star",
+      10,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "star_12",
+      "star",
+      12,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "linear_6",
+      "linear",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "mesh_6",
+      "mesh",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "mesh_10",
+      "mesh",
+      10,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "random_6",
+      "random",
+      6,
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    [
+      "random_10",
+      "random",
+      10,
+      [
+        10.0,
+        20.0
+      ]
+    ]
+  ],
+  "modes": [
+    "original",
+    "removed",
+    "augmented"
+  ],
+  "curricula": [
+    "star",
+    "mixed"
+  ],
+  "test_seed_base": 8000000,
+  "budget": 40,
+  "learning_rate": 0.0003,
+  "batch_size": 64,
+  "weight": 1,
+  "oversample": 1,
+  "augmentation_variants": 4,
+  "primary_interval": 0.975,
+  "excluded": [
+    "LAYA",
+    "Jev",
+    "general LLM"
+  ],
+  "spec_sha256": "682664a18aa4e3e08e0c49d32195c6fcfb96c5e217f8629773ec8f20a65fde3d"
+}

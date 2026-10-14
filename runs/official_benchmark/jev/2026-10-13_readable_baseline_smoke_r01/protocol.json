@@ -1,0 +1,25 @@
+{
+  "case": "00bd290a-df64-46a6-8f06-f087bde022a9",
+  "model": "jev-1.13.0",
+  "compression": false,
+  "partition": false,
+  "local_byte_guard": null,
+  "fixed_sleep": 0,
+  "concurrency": 1,
+  "max_turns": 100,
+  "max_environment_steps": 100,
+  "deadline_seconds": 1200,
+  "retries": 0,
+  "claude_source_sha256": "59ea19d9711aaede9a0df83b67600d01823cff15b15647cf544d8c3073f6d4ec",
+  "script_sha256": "75e8d24657e60c6d5757c20a7ecee72a80ec602ecea530eb5d36ac05a02a2633",
+  "original_system_prompt": "You are an AI agent that completes tasks using available tools.\n\nInstructions:\n1. Read the task description and objective provided to you carefully\n2. Discover available tools and understand what each does from their descriptions\n3. Use tools strategically to gather information and complete the objective\n4. Be mindful of any step/budget constraints mentioned in your objective\n5. Complete the task before running out of steps\n\nIMPORTANT - Response Format:\nBefore making ANY tool calls, you MUST explain your reasoning in text:\n- What you observe from the current state\n- What hypothesis you are testing\n- Why you chose this specific tool/action\n- What you expect to learn from it\n\nThis reasoning helps track your diagnostic process. After explaining your reasoning,\nthen make the appropriate tool call(s).\n\nIf you encounter errors indicating no actions are available, immediately attempt to complete \nyour objective with the information you have gathered so far.\n",
+  "adapter_instruction": "Follow the original agent task policy supplied in state. This interface returns a choice only; the original requirement to emit explanation text and native tool calls is replaced by the typed decision requested here. Select from all supplied options using the public observations. ",
+  "difference_from_original_claude": [
+    "choice-based tool and argument selection",
+    "no generated assistant reasoning text",
+    "JSON public history instead of native chat tool messages",
+    "schema title annotations and outputSchema omitted",
+    "Windows direct handler versus original container"
+  ],
+  "reference": "Published Claude result reused; no Claude API invocation."
+}

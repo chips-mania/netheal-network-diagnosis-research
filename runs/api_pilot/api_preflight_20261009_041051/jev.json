@@ -1,0 +1,51 @@
+[
+  {
+    "phase": "preflight",
+    "provider": "jev",
+    "attempt": 0,
+    "model_requested": "jev-1.13.0",
+    "utc_unix": 1791486656.703898,
+    "request_sha256": "3359214d876eb94ae934215592c0ec3616dc73d8c3dbc88c314bbf2bf1467176",
+    "request": {
+      "model": "jev-1.13.0",
+      "state": {
+        "test": "Connectivity check. Only scan is allowed."
+      },
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Choose the next action to diagnose exactly one network fault, including its type and location.\nUse only the observed state. Nominal inventory is not live health. Unknown observations are not healthy evidence.\nFaults: device_failure is a failed node; misconfiguration is a node configuration fault;\nlink_failure is a broken link; performance_degradation is an abnormally slow link.\nGather evidence with tools when needed, then diagnose. Minimize unnecessary or repeated tools.\nSelect one complete action from the supplied candidates. Do not assume hidden state.",
+          "criteria": {
+            "a000": "{\"kind\":\"scan\"}"
+          }
+        }
+      }
+    },
+    "http_status": 200,
+    "request_id": null,
+    "seconds": 0.24141480000253068,
+    "usage": {
+      "input_tokens": 423,
+      "output_tokens": 30
+    },
+    "estimated_usd": 1.7766000000000002e-05,
+    "response_model": "jev-1.13.0",
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "action": {
+          "type": "choice",
+          "choice": "a000",
+          "confidence": 1.0,
+          "probabilities": {
+            "a000": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 423,
+        "output_tokens": 30
+      }
+    }
+  }
+]

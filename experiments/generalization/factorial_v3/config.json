@@ -1,0 +1,15 @@
+{
+  "description": "ID·순서와 토폴로지 학습 구조 3×2 실험. 기존 결과 완료.",
+  "stages": {
+    "run": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.run_factorial_v3",
+      "cwd": "netheal-topology-generalization"
+    },
+    "report": {
+      "python": ".runtime/venv/Scripts/python.exe",
+      "module": "src.report_factorial_v3",
+      "cwd": "netheal-topology-generalization"
+    }
+  }
+}

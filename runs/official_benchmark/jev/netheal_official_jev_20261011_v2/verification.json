@@ -1,0 +1,62 @@
+{
+  "status": "completed_verified",
+  "episodes": 100,
+  "fingerprints_matching": 100,
+  "successes": 34,
+  "type_accuracy_unweighted": 0.39,
+  "location_accuracy_unweighted": 0.34,
+  "statuses": {
+    "completed": 61,
+    "Jev HTTP 400": 39
+  },
+  "paired": {
+    "both": 31,
+    "claude_only": 35,
+    "neither": 31,
+    "jev_only": 3
+  },
+  "costs": {
+    "netheal_official_jev_20261011_v1": {
+      "recorded_requests": 57,
+      "input_tokens": 624961,
+      "estimated_usd": 0.026248362,
+      "http_status": {
+        "200": 49,
+        "400": 8
+      },
+      "error_types": {}
+    },
+    "netheal_official_jev_20261011_v2": {
+      "recorded_requests": 1576,
+      "input_tokens": 22682136,
+      "estimated_usd": 0.952649712,
+      "http_status": {
+        "200": 1537,
+        "400": 39
+      },
+      "error_types": {
+        "max_tokens_exceeded": 39
+      }
+    }
+  },
+  "source_hash_matches": true,
+  "forbidden_private_keys_in_requests": 0,
+  "model_ids": [
+    "jev-1.13.0"
+  ],
+  "summed_api_seconds": 431.4550624999998,
+  "final_attempt_tool_counts": {
+    "scan_network": 100,
+    "check_status": 216,
+    "discover_neighbors": 115,
+    "ping": 117,
+    "traceroute": 62,
+    "check_interfaces": 105,
+    "submit_diagnosis": 61
+  },
+  "v2_error_types": {
+    "max_tokens_exceeded": 39
+  },
+  "largest_reported_input_tokens": 32926,
+  "repeated_tool_fraction": 0.005154639175257732
+}

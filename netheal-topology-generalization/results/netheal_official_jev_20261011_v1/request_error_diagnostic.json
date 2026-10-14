@@ -1,0 +1,5 @@
+{
+  "http_status": 400,
+  "error_body": "{\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}",
+  "request_bytes": 112467
+}

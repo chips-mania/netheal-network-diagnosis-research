@@ -1,0 +1,108 @@
+{
+  "step1_tiny_overfit": {
+    "n": 200,
+    "epochs": 300,
+    "last_loss": 0.0029783319997867303,
+    "loss_curve_tail": [
+      0.0032862568041309714,
+      0.003973965666123799,
+      0.0030781240036178914,
+      0.0034062364138662815,
+      0.0029783319997867303
+    ],
+    "heads": {
+      "kind_acc": 1.0,
+      "node_acc": 1.0,
+      "edge_acc": 1.0,
+      "fault_acc": 1.0,
+      "joint_required_acc": 1.0,
+      "counts": {
+        "kind": 200,
+        "node": 77,
+        "edge": 87,
+        "fault": 35
+      },
+      "by_kind": {
+        "scan": {
+          "n": 36,
+          "kind_acc": 1.0
+        },
+        "ping": {
+          "n": 67,
+          "kind_acc": 1.0
+        },
+        "check_status": {
+          "n": 55,
+          "kind_acc": 1.0
+        },
+        "diagnose": {
+          "n": 35,
+          "kind_acc": 1.0
+        },
+        "check_interfaces": {
+          "n": 7,
+          "kind_acc": 1.0
+        }
+      }
+    },
+    "pass_strict": true,
+    "pass_soft": true,
+    "arch_readout": "architecture_can_overfit"
+  },
+  "step2_per_head_full_subset": {
+    "n_transitions": 2301,
+    "epochs": 80,
+    "last_loss": 0.05086373531311336,
+    "heads": {
+      "kind_acc": 1.0,
+      "node_acc": 0.9858490566037735,
+      "edge_acc": 0.9981006647673314,
+      "fault_acc": 1.0,
+      "joint_required_acc": 0.9939156888309431,
+      "counts": {
+        "kind": 2301,
+        "node": 848,
+        "edge": 1053,
+        "fault": 400
+      },
+      "by_kind": {
+        "scan": {
+          "n": 400,
+          "kind_acc": 1.0
+        },
+        "ping": {
+          "n": 867,
+          "kind_acc": 1.0
+        },
+        "check_status": {
+          "n": 530,
+          "kind_acc": 1.0
+        },
+        "diagnose": {
+          "n": 400,
+          "kind_acc": 1.0
+        },
+        "check_interfaces": {
+          "n": 104,
+          "kind_acc": 1.0
+        }
+      }
+    }
+  },
+  "step3_p0": {
+    "n_actions": 589,
+    "n_transitions": 2211,
+    "tiny": {
+      "n": 200,
+      "last_loss": 0.31121636075632914,
+      "acc": 0.875,
+      "ok": false
+    },
+    "full": {
+      "last_loss": 0.5346828699111938,
+      "acc": 0.798733604703754
+    }
+  },
+  "bottleneck": "unclear_or_ok",
+  "next_step": "Increase P1 capacity/epochs with fixed recipe; target Seen\u226590%"
+}

@@ -1,0 +1,13 @@
+{
+  "description": "데이터 40/20 생성 완료. 입력 준비 중단; capped probe·본 학습·공식 평가 미실행. 인계 문서 먼저 확인.",
+  "stages": {
+    "prepare": {
+      "python": ".runtime/laya-official-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_official_prepare.py"
+    },
+    "capped_probe": {
+      "python": ".runtime/laya-official-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_official_capped_probe.py"
+    }
+  }
+}

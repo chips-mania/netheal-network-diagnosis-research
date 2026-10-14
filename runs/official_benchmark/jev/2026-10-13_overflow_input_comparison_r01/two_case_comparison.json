@@ -1,0 +1,71 @@
+﻿{
+    "status":  "completed_user_scope_two_cases",
+    "scope":  "First two historical overflow cases; three representations; no additional API calls",
+    "original_run_status":  "Interrupted after six complete cases; extra records preserved but excluded",
+    "rows":  [
+                 {
+                     "snapshot_id":  "0283628d-f76d-4f49-87ae-41925030db96",
+                     "source_line":  20,
+                     "variants":  {
+                                      "original":  {
+                                                       "status":  400,
+                                                       "input_tokens":  null,
+                                                       "state_utf8_bytes":  42481,
+                                                       "state_characters":  42459,
+                                                       "http_seconds":  0.23442290000002686,
+                                                       "error_detail":  {
+                                                                            "error_type":  "max_tokens_exceeded"
+                                                                        }
+                                                   },
+                                      "compressed":  {
+                                                         "status":  200,
+                                                         "input_tokens":  6451,
+                                                         "state_utf8_bytes":  15249,
+                                                         "state_characters":  15245,
+                                                         "http_seconds":  0.23848519999955897,
+                                                         "error_detail":  null
+                                                     },
+                                      "readable":  {
+                                                       "status":  200,
+                                                       "input_tokens":  30021,
+                                                       "state_utf8_bytes":  40008,
+                                                       "state_characters":  39986,
+                                                       "http_seconds":  0.383827100000417,
+                                                       "error_detail":  null
+                                                   }
+                                  }
+                 },
+                 {
+                     "snapshot_id":  "0307b569-27f1-434b-ad8a-0524761904d8",
+                     "source_line":  18,
+                     "variants":  {
+                                      "compressed":  {
+                                                         "status":  200,
+                                                         "input_tokens":  6300,
+                                                         "state_utf8_bytes":  14860,
+                                                         "state_characters":  14852,
+                                                         "http_seconds":  0.19954060000054596,
+                                                         "error_detail":  null
+                                                     },
+                                      "readable":  {
+                                                       "status":  200,
+                                                       "input_tokens":  29648,
+                                                       "state_utf8_bytes":  38890,
+                                                       "state_characters":  38850,
+                                                       "http_seconds":  0.35030839999944874,
+                                                       "error_detail":  null
+                                                   },
+                                      "original":  {
+                                                       "status":  400,
+                                                       "input_tokens":  null,
+                                                       "state_utf8_bytes":  41363,
+                                                       "state_characters":  41323,
+                                                       "http_seconds":  0.16713310000068304,
+                                                       "error_detail":  {
+                                                                            "error_type":  "max_tokens_exceeded"
+                                                                        }
+                                                   }
+                                  }
+                 }
+             ]
+}

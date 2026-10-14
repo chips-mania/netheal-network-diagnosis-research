@@ -1,0 +1,67 @@
+{
+  "loss": 1.0686701536178589,
+  "nonzero_gradient_tensors": 30,
+  "encoder_gradients_absent": true,
+  "gradient_norms": {
+    "head.layers.0.self_attn.in_proj_weight": 0.09955422580242157,
+    "head.layers.0.self_attn.in_proj_bias": 0.003290848806500435,
+    "head.layers.0.self_attn.out_proj.weight": 0.13988135755062103,
+    "head.layers.0.self_attn.out_proj.bias": 0.005459925159811974,
+    "head.layers.0.linear1.weight": 0.05909290909767151,
+    "head.layers.0.linear1.bias": 0.0015944541664794087,
+    "head.layers.0.linear2.weight": 0.02845071628689766,
+    "head.layers.0.linear2.bias": 5.563729064306244e-05,
+    "head.layers.0.norm1.weight": 0.008425360545516014,
+    "head.layers.0.norm1.bias": 0.005564909428358078,
+    "head.layers.0.norm2.weight": 0.09538741409778595,
+    "head.layers.0.norm2.bias": 0.008668803609907627,
+    "head.layers.1.self_attn.in_proj_weight": 0.0036327862180769444,
+    "head.layers.1.self_attn.in_proj_bias": 0.00010748716158559546,
+    "head.layers.1.self_attn.out_proj.weight": 0.004614399280399084,
+    "head.layers.1.self_attn.out_proj.bias": 5.538742334465496e-05,
+    "head.layers.1.linear1.weight": 0.007439299952238798,
+    "head.layers.1.linear1.bias": 0.00022802397143095732,
+    "head.layers.1.linear2.weight": 0.013699689880013466,
+    "head.layers.1.linear2.bias": 5.6411070545436814e-05,
+    "head.layers.1.norm1.weight": 0.0005813877796754241,
+    "head.layers.1.norm1.bias": 0.00044732552487403154,
+    "head.layers.1.norm2.weight": 0.0022334333043545485,
+    "head.layers.1.norm2.bias": 0.0013485380914062262,
+    "type_emb.weight": 0.006516717374324799,
+    "scorer.0.weight": 0.017724912613630295,
+    "scorer.0.bias": 0.022074317559599876,
+    "scorer.1.weight": 0.5503331422805786,
+    "scorer.1.bias": 0.018470479175448418,
+    "scorer.3.weight": 1.2541862726211548,
+    "scorer.3.bias": 0.0
+  },
+  "checked_parameter": "scorer.3.weight",
+  "parameter_max_change": 0.00010005012154579163,
+  "logits_before": [
+    [
+      3.353891372680664,
+      1.7941482067108154,
+      0.11605483293533325,
+      2.9286949634552
+    ]
+  ],
+  "logits_after": [
+    [
+      3.4136879444122314,
+      1.8949402570724487,
+      0.1678316295146942,
+      3.0296289920806885
+    ]
+  ],
+  "logit_max_change": 0.10093402862548828,
+  "eval_fastpath_max_difference": 2.384185791015625e-07,
+  "target": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "warning": "One controlled soft-CE update checks mechanics, not useful task learning or RLCD convergence."
+}

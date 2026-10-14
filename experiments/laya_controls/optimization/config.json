@@ -1,0 +1,17 @@
+{
+  "description": "LAYA 학습률·update 예산·선택지 순서 대조.",
+  "stages": {
+    "run": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_optimization_controls.py"
+    },
+    "verify": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/verify_laya_optimization_restore.py"
+    },
+    "report": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/report_laya_optimization_controls.py"
+    }
+  }
+}

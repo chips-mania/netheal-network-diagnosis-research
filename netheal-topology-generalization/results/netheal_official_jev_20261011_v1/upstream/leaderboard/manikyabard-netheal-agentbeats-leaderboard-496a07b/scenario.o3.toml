@@ -1,0 +1,38 @@
+[green_agent]
+agentbeats_id = "019bc450-9926-7f51-a195-3be6e03222e0"
+env = {
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}"
+}
+
+[[participants]]
+agentbeats_id = "PURPLE_AGENT_ID"
+name = "netheal-solver-o3"
+solver = "gpt"
+env = {
+  LLM_PROVIDER = "openai",
+  LLM_MODEL = "o3",
+  OPENAI_API_KEY = "${OPENAI_API_KEY}",
+  OPENAI_MODEL = "${OPENAI_MODEL}",
+  OPENAI_BASE_URL = "${OPENAI_BASE_URL}",
+  OPENAI_ORG_ID = "${OPENAI_ORG_ID}",
+  AZURE_OPENAI_API_KEY = "${AZURE_OPENAI_API_KEY}",
+  AZURE_OPENAI_ENDPOINT = "${AZURE_OPENAI_ENDPOINT}",
+  AZURE_OPENAI_DEPLOYMENT = "${AZURE_OPENAI_DEPLOYMENT}",
+  AZURE_OPENAI_API_VERSION = "${AZURE_OPENAI_API_VERSION}",
+  ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}",
+  ANTHROPIC_MODEL = "${ANTHROPIC_MODEL}",
+  ANTHROPIC_API_URL = "${ANTHROPIC_API_URL}"
+}
+
+[config]
+num_episodes = 5
+min_devices = 3
+max_devices = 15
+max_episode_steps = 100
+topology_types = ["star", "mesh", "hierarchical"]
+timeout_seconds = 300
+seed = 1234
+enable_user_hints = true

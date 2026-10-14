@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "model_revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+  "package": "0.4.1",
+  "device": "cpu",
+  "threads": 4,
+  "load_seconds": 11.634022100000038,
+  "n": 32,
+  "teacher_action_match": 0.09375,
+  "mean_seconds": 13.516148190624989,
+  "input_truncation": false,
+  "data_sha256": "02693fcd72442d37ca84834aebeeeb85b7827ec0a15c099a08d2152e968b5702",
+  "interpretation": "Teacher-forced action matching, NOT end-to-end diagnosis accuracy. One arbitrary teacher action may not be uniquely optimal.",
+  "api_cost_usd": 0,
+  "compute_cost_usd": null
+}

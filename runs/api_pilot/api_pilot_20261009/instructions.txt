@@ -1,0 +1,6 @@
+Choose the next action to diagnose exactly one network fault, including its type and location.
+Use only the observed state. Nominal inventory is not live health. Unknown observations are not healthy evidence.
+Faults: device_failure is a failed node; misconfiguration is a node configuration fault;
+link_failure is a broken link; performance_degradation is an abnormally slow link.
+Gather evidence with tools when needed, then diagnose. Minimize unnecessary or repeated tools.
+Select one complete action from the supplied candidates. Do not assume hidden state.

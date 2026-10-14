@@ -1,0 +1,13 @@
+{
+  "description": "LAYA 학습 가능 여부 대조. 과거 실행 경로와 조건 보존.",
+  "stages": {
+    "run": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/laya_learning_controls.py"
+    },
+    "report": {
+      "python": ".runtime/laya-venv/Scripts/python.exe",
+      "script": "netheal-topology-generalization/scripts/report_laya_learning_controls.py"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "status": "completed_verified",
+  "episodes": 100,
+  "fingerprints_matching": 100,
+  "source_hashes_match": true,
+  "request_roundtrips_exact": 2916,
+  "forbidden_private_keys": 0,
+  "model_ids": [
+    "jev-1.13.0"
+  ],
+  "statuses": {
+    "completed": 100
+  },
+  "outcomes": {
+    "success": 42,
+    "wrong_diagnosis": 58
+  },
+  "context_error_episodes": 0,
+  "type_accuracy_unweighted": 0.71,
+  "location_accuracy_unweighted": 0.42,
+  "original_39_outcomes": {
+    "wrong_diagnosis": 30,
+    "success": 9
+  },
+  "paired_v2": {
+    "both": 30,
+    "neither": 54,
+    "v4_only": 12,
+    "v2_only": 4
+  },
+  "paired_claude": {
+    "both": 36,
+    "claude_only": 30,
+    "neither": 28,
+    "jev_only": 6
+  },
+  "costs": {
+    "oversized_arguments_check": {
+      "requests": 2,
+      "input_tokens": 17959,
+      "http_status": {
+        "200": 2
+      },
+      "estimated_usd": 0.000754278
+    },
+    "oversized_event_check": {
+      "requests": 1,
+      "input_tokens": 3520,
+      "http_status": {
+        "200": 1
+      },
+      "estimated_usd": 0.00014784
+    },
+    "smoke": {
+      "requests": 5,
+      "input_tokens": 10972,
+      "http_status": {
+        "200": 5
+      },
+      "estimated_usd": 0.00046082400000000003
+    },
+    "session_interrupted_20261012\\d70c12a9-801e-4571-84e2-390c4470fe24\\attempt_00": {
+      "requests": 13,
+      "input_tokens": 47194,
+      "http_status": {
+        "200": 13
+      },
+      "estimated_usd": 0.001982148
+    },
+    "session_interrupted_20261012\\d6fbe6af-68f0-4ad7-84d1-173d23766d5c\\attempt_00": {
+      "requests": 15,
+      "input_tokens": 53218,
+      "http_status": {
+        "200": 15
+      },
+      "estimated_usd": 0.002235156
+    },
+    "session_interrupted_20261012\\d505059f-7ad2-46b2-96f8-f0cd9e8c92e3\\attempt_00": {
+      "requests": 22,
+      "input_tokens": 98253,
+      "http_status": {
+        "200": 22
+      },
+      "estimated_usd": 0.004126626
+    },
+    "session_interrupted_20261012\\d1c910d2-a567-4f86-af37-fc3f318a1385\\attempt_00": {
+      "requests": 24,
+      "input_tokens": 109428,
+      "http_status": {
+        "200": 24
+      },
+      "estimated_usd": 0.004595976000000001
+    },
+    "session_interrupted_20261012\\cb9e42d7-9dd6-48f0-b98a-f4ab39f2a232\\attempt_00": {
+      "requests": 27,
+      "input_tokens": 140320,
+      "http_status": {
+        "200": 27
+      },
+      "estimated_usd": 0.005893440000000001
+    },
+    "evaluation": {
+      "requests": 2916,
+      "input_tokens": 17243745,
+      "http_status": {
+        "200": 2916
+      },
+      "estimated_usd": 0.72423729
+    }
+  },
+  "estimated_total_v4_usd": 0.744433578,
+  "interrupted_v3": {
+    "recorded_requests": 380,
+    "input_tokens": 1856190,
+    "estimated_usd": 0.07795998000000001,
+    "http_status": {
+      "200": 378,
+      "400": 2
+    },
+    "finalized_episodes": 14,
+    "status": "interrupted_due_to_local_input_guard"
+  },
+  "context_fix_total_usd": 0.822393558,
+  "evaluation_http": {
+    "200": 2916
+  },
+  "partitioned_decisions": 161,
+  "partition_requests": 541,
+  "tree_partition_groups_reconstructed": 36,
+  "partition_modes": {
+    "history": 125,
+    "tree": 36
+  },
+  "maximum_partitions": 24,
+  "max_guard_bytes": 23998,
+  "largest_reported_input_tokens": 12219,
+  "api_seconds_sum": 651.5058934000119,
+  "mean_episode_seconds": 76.84792544700001,
+  "verified_at": "2026-10-12T09:29:54.173297+09:00"
+}

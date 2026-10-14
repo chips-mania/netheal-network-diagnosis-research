@@ -1,0 +1,13 @@
+﻿{
+    "status":  "verified",
+    "image":  "manikya/netheal-purple-agent@sha256:afc3a3d86cd668defb721f758cef59f247ef65da3405c08b690e17de66dc00f7",
+    "platform":  "linux/amd64",
+    "source_layer_verified":  true,
+    "config_digest_verified":  true,
+    "gpt_agent_sha256":  "59ea19d9711aaede9a0df83b67600d01823cff15b15647cf544d8c3073f6d4ec",
+    "purple_server_sha256":  "79605ded83ffb1d47964e798e1323bfff01ab2b33622c735719b820871ff7138",
+    "green_source_identical":  true,
+    "solver":  "gpt",
+    "provider":  "bedrock",
+    "image_executed":  false
+}

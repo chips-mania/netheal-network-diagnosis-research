@@ -1,0 +1,14 @@
+{
+  "status": "training_completed_uncalibrated",
+  "seconds": 183.3391159999992,
+  "items": 516,
+  "history": [
+    1.7027340660434822,
+    1.6683487180591554
+  ],
+  "freeze_encoder": true,
+  "peak_gpu_allocated_bytes": 2150486528,
+  "warning": "Smoke demonstrates gradients and runtime only, not useful fine-tuned accuracy.",
+  "head_weights_changed": true,
+  "full_training_completed": true
+}

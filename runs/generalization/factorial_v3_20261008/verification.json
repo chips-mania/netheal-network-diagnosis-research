@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "episodes": 29600,
+  "paired_cases": 800,
+  "trained_models": 18,
+  "source_files": 90,
+  "training_completed_before_evaluation": true,
+  "checks": [
+    "paired ground truth",
+    "source/data/model hashes",
+    "summary recalculation",
+    "balanced faults",
+    "matched demo budgets",
+    "matched update budgets",
+    "disjoint train/eval seeds"
+  ]
+}

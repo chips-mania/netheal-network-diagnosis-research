@@ -1,0 +1,13 @@
+{
+  "choice": "c002",
+  "selected": "link_failure",
+  "probabilities": {
+    "c000": 0.08,
+    "c001": 0.25,
+    "c002": 0.6199999999999999,
+    "c003": 0.049999999999999996
+  },
+  "calls": 2,
+  "http_seconds": 0.4917641000001822,
+  "input_tokens": 31489
+}
